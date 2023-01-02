@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MTProto vs. Bot API &mdash; Pyrogram Documentation</title>
+  <title>MTProto vs. Bot API &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -97,7 +97,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -112,7 +112,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -131,9 +131,9 @@
              
   <section id="mtproto-vs-bot-api">
 <h1>MTProto vs. Bot API<a class="headerlink" href="#mtproto-vs-bot-api" title="Permalink to this heading"></a></h1>
-<p>Pyrogram is a framework written from the ground up that acts as a fully-fledged Telegram client based on the MTProto
-API. This means that Pyrogram is able to execute any official client and bot API action and more. This page will
-therefore show you why Pyrogram might be a better choice for your project by comparing the two APIs, but first, let’s
+<p>PyroFork is a framework written from the ground up that acts as a fully-fledged Telegram client based on the MTProto
+API. This means that PyroFork is able to execute any official client and bot API action and more. This page will
+therefore show you why PyroFork might be a better choice for your project by comparing the two APIs, but first, let’s
 make it clear what actually is the MTProto and the Bot API.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
@@ -152,7 +152,7 @@ itself — it’s the only protocol used to exchange information between a clien
 from the Bot API. The main Telegram API is able to authorize both users and bots and is built on top of the MTProto
 encryption protocol by means of <a class="reference external" href="https://core.telegram.org/mtproto/serialize">binary data serialized</a> in a specific way, as described by the <a class="reference external" href="https://core.telegram.org/mtproto/TL">TL language</a>, and
 delivered using UDP, TCP or even HTTP as transport-layer protocol. Clients that make use of Telegram’s main API, such as
-Pyrogram, implement all these details.</p>
+PyroFork, implement all these details.</p>
 </section>
 <section id="what-is-the-bot-api">
 <h2>What is the Bot API?<a class="headerlink" href="#what-is-the-bot-api" title="Permalink to this heading"></a></h2>
@@ -166,8 +166,8 @@ servers using MTProto.</p>
 </section>
 <section id="advantages-of-the-mtproto-api">
 <h2>Advantages of the MTProto API<a class="headerlink" href="#advantages-of-the-mtproto-api" title="Permalink to this heading"></a></h2>
-<p>Here is a non-exhaustive list of all the advantages in using MTProto-based libraries – such as Pyrogram – instead of
-the official HTTP Bot API. Using Pyrogram you can:</p>
+<p>Here is a non-exhaustive list of all the advantages in using MTProto-based libraries – such as PyroFork – instead of
+the official HTTP Bot API. Using PyroFork you can:</p>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><span class="guilabel">+</span> <strong>Authorize both user and bot identities</strong></p></li>
 <li><p><span class="guilabel">–</span> The Bot API only allows bot accounts</p></li>

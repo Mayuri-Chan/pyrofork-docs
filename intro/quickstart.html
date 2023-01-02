@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick Start &mdash; Pyrogram Documentation</title>
+  <title>Quick Start &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Install Guide" href="install.html" />
-    <link rel="prev" title="Welcome to Pyrogram" href="../index.html" /> 
+    <link rel="prev" title="Welcome to PyroFork" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -46,7 +46,7 @@
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#get-pyrogram-real-fast">Get Pyrogram Real Fast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-pyrofork-real-fast">Get PyroFork Real Fast</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#enjoy-the-api">Enjoy the API</a></li>
 </ul>
 </li>
@@ -63,7 +63,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -96,7 +96,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -111,7 +111,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -130,16 +130,16 @@
              
   <section id="quick-start">
 <h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
-<p>The next few steps serve as a quick start to see Pyrogram in action as fast as possible.</p>
-<section id="get-pyrogram-real-fast">
-<h2>Get Pyrogram Real Fast<a class="headerlink" href="#get-pyrogram-real-fast" title="Permalink to this heading"></a></h2>
+<p>The next few steps serve as a quick start to see PyroFork in action as fast as possible.</p>
+<section id="get-pyrofork-real-fast">
+<h2>Get PyroFork Real Fast<a class="headerlink" href="#get-pyrofork-real-fast" title="Permalink to this heading"></a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Cloud Credits</p>
 <p>If you need a cloud server to host your applications, try Hetzner Cloud. You can sign up with
 <a class="reference external" href="https://hetzner.cloud/?ref=9CyT92gZEINU">this link</a> to get €20 in cloud credits.</p>
 </div>
 <ol class="arabic">
-<li><p>Install Pyrogram with <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">pyrogram</span></code>.</p></li>
+<li><p>Install PyroFork with <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">pyrogram</span></code>.</p></li>
 <li><p>Get your own Telegram API key from <a class="reference external" href="https://my.telegram.org/apps">https://my.telegram.org/apps</a>.</p></li>
 <li><p>Open the text editor of your choice and paste the following:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
@@ -151,7 +151,7 @@
 
 <span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">api_id</span><span class="p">,</span> <span class="n">api_hash</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
-        <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;Greetings from **Pyrogram**!&quot;</span><span class="p">)</span>
+        <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;Greetings from **PyroFork**!&quot;</span><span class="p">)</span>
 
 
 <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
@@ -162,7 +162,7 @@
 <li><p>Save the file as <code class="docutils literal notranslate"><span class="pre">hello.py</span></code>.</p></li>
 <li><p>Run the script with <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">hello.py</span></code></p></li>
 <li><p>Follow the instructions on your terminal to login.</p></li>
-<li><p>Watch Pyrogram send a message to yourself.</p></li>
+<li><p>Watch PyroFork send a message to yourself.</p></li>
 </ol>
 </section>
 <section id="enjoy-the-api">
@@ -178,7 +178,7 @@ later to learn some more details.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Pyrogram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to PyroFork" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="install.html" class="btn btn-neutral float-right" title="Install Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

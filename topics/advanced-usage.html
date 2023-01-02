@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Usage &mdash; Pyrogram Documentation</title>
+  <title>Advanced Usage &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -97,7 +97,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -112,7 +112,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -131,9 +131,9 @@
              
   <section id="advanced-usage">
 <h1>Advanced Usage<a class="headerlink" href="#advanced-usage" title="Permalink to this heading"></a></h1>
-<p>Pyrogram’s API – which consists of well documented <a class="reference internal" href="../api/methods/index.html"><span class="doc">methods</span></a> and
+<p>PyroFork’s API – which consists of well documented <a class="reference internal" href="../api/methods/index.html"><span class="doc">methods</span></a> and
 <a class="reference internal" href="../api/types/index.html"><span class="doc">types</span></a> – exists to provide an easier interface to the more complex Telegram API.</p>
-<p>In this section, you’ll be shown the alternative way of communicating with Telegram using Pyrogram: the main “raw”
+<p>In this section, you’ll be shown the alternative way of communicating with Telegram using PyroFork: the main “raw”
 Telegram API with its functions and types.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
@@ -152,12 +152,12 @@ Telegram API, you have to use the raw <a class="reference internal" href="../tel
 take into consideration when working with the raw API.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Every available high-level method in Pyrogram is built on top of these raw functions.</p>
+<p>Every available high-level method in PyroFork is built on top of these raw functions.</p>
 </div>
 </section>
 <section id="invoking-functions">
 <h2>Invoking Functions<a class="headerlink" href="#invoking-functions" title="Permalink to this heading"></a></h2>
-<p>Unlike the <a class="reference internal" href="../api/methods/index.html"><span class="doc">methods</span></a> found in Pyrogram’s API, which can be called in the usual simple way,
+<p>Unlike the <a class="reference internal" href="../api/methods/index.html"><span class="doc">methods</span></a> found in PyroFork’s API, which can be called in the usual simple way,
 functions to be invoked from the raw Telegram API have a different way of usage.</p>
 <p>First of all, both <a class="reference internal" href="../telegram/functions/index.html"><span class="doc">raw functions</span></a> and <a class="reference internal" href="../telegram/types/index.html"><span class="doc">raw types</span></a>
 live in their respective packages (and sub-packages): <code class="docutils literal notranslate"><span class="pre">pyrogram.raw.functions</span></code>, <code class="docutils literal notranslate"><span class="pre">pyrogram.raw.types</span></code>. They all exist
@@ -214,7 +214,7 @@ Client class and pass the function object you created.</p>
 <section id="chat-ids">
 <h2>Chat IDs<a class="headerlink" href="#chat-ids" title="Permalink to this heading"></a></h2>
 <p>The way Telegram works makes it not possible to directly send a message to a user or a chat by using their IDs only.
-Instead, a pair of <code class="docutils literal notranslate"><span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">access_hash</span></code> wrapped in a so called <code class="docutils literal notranslate"><span class="pre">InputPeer</span></code> is always needed. Pyrogram allows
+Instead, a pair of <code class="docutils literal notranslate"><span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">access_hash</span></code> wrapped in a so called <code class="docutils literal notranslate"><span class="pre">InputPeer</span></code> is always needed. PyroFork allows
 sending messages with IDs only thanks to cached access hashes.</p>
 <p>There are three different InputPeer types, one for each kind of Telegram entity.
 Whenever an InputPeer is needed you must pass one of these:</p>
@@ -223,14 +223,14 @@ Whenever an InputPeer is needed you must pass one of these:</p>
 <li><p><a class="reference internal" href="../telegram/types/input-peer-chat.html#pyrogram.raw.types.InputPeerChat" title="pyrogram.raw.types.InputPeerChat"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputPeerChat</span></code></a> -  Basic Chats</p></li>
 <li><p><a class="reference internal" href="../telegram/types/input-peer-channel.html#pyrogram.raw.types.InputPeerChannel" title="pyrogram.raw.types.InputPeerChannel"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputPeerChannel</span></code></a> - Channels &amp; Supergroups</p></li>
 </ul>
-<p>But you don’t necessarily have to manually instantiate each object because Pyrogram already provides
+<p>But you don’t necessarily have to manually instantiate each object because PyroFork already provides
 <a class="reference internal" href="../api/methods/resolve_peer.html#pyrogram.Client.resolve_peer" title="pyrogram.Client.resolve_peer"><code class="xref py py-meth docutils literal notranslate"><span class="pre">resolve_peer()</span></code></a> as a convenience utility method that returns the correct InputPeer
 by accepting a peer ID only.</p>
 <p>Another thing to take into consideration about chat IDs is the way they are represented: they are all integers and
 all positive within their respective raw types.</p>
-<p>Things are different when working with Pyrogram’s API because having them in the same space could lead to
-collisions, and that’s why Pyrogram uses a slightly different representation for each kind of ID.</p>
-<p>For example, given the ID <em>123456789</em>, here’s how Pyrogram can tell entities apart:</p>
+<p>Things are different when working with PyroFork’s API because having them in the same space could lead to
+collisions, and that’s why PyroFork uses a slightly different representation for each kind of ID.</p>
+<p>For example, given the ID <em>123456789</em>, here’s how PyroFork can tell entities apart:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">+ID</span></code> User: <em>123456789</em></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-ID</span></code> Chat: <em>-123456789</em></p></li>

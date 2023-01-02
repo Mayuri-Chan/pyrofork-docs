@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Storage Engines &mdash; Pyrogram Documentation</title>
+  <title>Storage Engines &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -101,7 +101,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -116,7 +116,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -135,7 +135,7 @@
              
   <section id="storage-engines">
 <h1>Storage Engines<a class="headerlink" href="#storage-engines" title="Permalink to this heading"></a></h1>
-<p>Every time you login to Telegram, some personal piece of data are created and held by both parties (the client, Pyrogram
+<p>Every time you login to Telegram, some personal piece of data are created and held by both parties (the client, PyroFork
 and the server, Telegram). This session data is uniquely bound to your own account, indefinitely (until you logout or
 decide to manually terminate it) and is used to authorize a client to execute API calls on behalf of your identity.</p>
 <div class="contents local topic" id="contents">
@@ -150,11 +150,11 @@ decide to manually terminate it) and is used to authorize a client to execute AP
 <section id="persisting-sessions">
 <h2>Persisting Sessions<a class="headerlink" href="#persisting-sessions" title="Permalink to this heading"></a></h2>
 <p>In order to make a client reconnect successfully between restarts, that is, without having to start a new
-authorization process from scratch each time, Pyrogram needs to store the generated session data somewhere.</p>
+authorization process from scratch each time, PyroFork needs to store the generated session data somewhere.</p>
 </section>
 <section id="different-storage-engines">
 <h2>Different Storage Engines<a class="headerlink" href="#different-storage-engines" title="Permalink to this heading"></a></h2>
-<p>Pyrogram offers two different types of storage engines: a <strong>File Storage</strong> and a <strong>Memory Storage</strong>.
+<p>PyroFork offers two different types of storage engines: a <strong>File Storage</strong> and a <strong>Memory Storage</strong>.
 These engines are well integrated in the framework and require a minimal effort to set up. Here’s how they work:</p>
 <section id="file-storage">
 <h3>File Storage<a class="headerlink" href="#file-storage" title="Permalink to this heading"></a></h3>
@@ -170,7 +170,7 @@ data whenever they are needed.</p>
 </pre></div>
 </div>
 <p>Once you successfully log in (either with a user or a bot identity), a session file will be created and saved to disk as
-<code class="docutils literal notranslate"><span class="pre">my_account.session</span></code>. Any subsequent client restart will make Pyrogram search for a file named that way and the
+<code class="docutils literal notranslate"><span class="pre">my_account.session</span></code>. Any subsequent client restart will make PyroFork search for a file named that way and the
 session database will be automatically loaded.</p>
 </section>
 <section id="memory-storage">
@@ -207,7 +207,7 @@ login using the same session; the storage used will still be in-memory:</p>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Session strings are useful when you want to run authorized Pyrogram clients on platforms where their ephemeral
+<p>Session strings are useful when you want to run authorized PyroFork clients on platforms where their ephemeral
 filesystems makes it harder for a file-based storage engine to properly work as intended.</p>
 </section>
 </section>

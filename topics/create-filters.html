@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creating Filters &mdash; Pyrogram Documentation</title>
+  <title>Creating Filters &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -98,7 +98,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -113,7 +113,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -132,7 +132,7 @@
              
   <section id="creating-filters">
 <h1>Creating Filters<a class="headerlink" href="#creating-filters" title="Permalink to this heading"></a></h1>
-<p>Pyrogram already provides lots of built-in <a class="reference internal" href="../api/filters.html#module-pyrogram.filters" title="pyrogram.filters"><code class="xref py py-class docutils literal notranslate"><span class="pre">filters</span></code></a> to work with, but in case you can’t find a
+<p>PyroFork already provides lots of built-in <a class="reference internal" href="../api/filters.html#module-pyrogram.filters" title="pyrogram.filters"><code class="xref py py-class docutils literal notranslate"><span class="pre">filters</span></code></a> to work with, but in case you can’t find a
 specific one for your needs or want to build a custom filter by yourself you can use
 <a class="reference internal" href="../api/filters.html#pyrogram.filters.create" title="pyrogram.filters.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">filters.create()</span></code></a>.</p>
 <div class="contents local topic" id="contents">
@@ -156,7 +156,7 @@ button:</p>
 
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
     <span class="s2">&quot;username&quot;</span><span class="p">,</span>  <span class="c1"># Change this to your username or id</span>
-    <span class="s2">&quot;Pyrogram custom filter test&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PyroFork custom filter test&quot;</span><span class="p">,</span>
     <span class="n">reply_markup</span><span class="o">=</span><span class="n">InlineKeyboardMarkup</span><span class="p">(</span>
         <span class="p">[[</span><span class="n">InlineKeyboardButton</span><span class="p">(</span><span class="s2">&quot;Press me&quot;</span><span class="p">,</span> <span class="s2">&quot;pyrogram&quot;</span><span class="p">)]]</span>
     <span class="p">)</span>

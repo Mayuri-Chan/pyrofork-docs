@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code hangs when calling stop, restart, add/remove_handler &mdash; Pyrogram Documentation</title>
+  <title>Code hangs when calling stop, restart, add/remove_handler &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -111,7 +111,7 @@
 <li class="toctree-l2"><a class="reference internal" href="the-account-has-been-limited-deactivated.html">The account has been limited/deactivated</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -126,7 +126,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -147,10 +147,10 @@
   <section id="code-hangs-when-calling-stop-restart-add-remove-handler">
 <h1>Code hangs when calling stop, restart, add/remove_handler<a class="headerlink" href="#code-hangs-when-calling-stop-restart-add-remove-handler" title="Permalink to this heading"></a></h1>
 <p>You tried to <code class="docutils literal notranslate"><span class="pre">.stop()</span></code>, <code class="docutils literal notranslate"><span class="pre">.restart()</span></code>, <code class="docutils literal notranslate"><span class="pre">.add_handler()</span></code> or <code class="docutils literal notranslate"><span class="pre">.remove_handler()</span></code> inside a running handler, but
-that can’t be done because the way Pyrogram deals with handlers would make it hang.</p>
-<p>When calling one of the methods above inside an event handler, Pyrogram needs to wait for all running handlers to finish
+that can’t be done because the way PyroFork deals with handlers would make it hang.</p>
+<p>When calling one of the methods above inside an event handler, PyroFork needs to wait for all running handlers to finish
 in order to continue. Since your handler is blocking the execution by waiting for the called method to finish
-and since Pyrogram needs to wait for your handler to finish, you are left with a deadlock.</p>
+and since PyroFork needs to wait for your handler to finish, you are left with a deadlock.</p>
 <p>The solution to this problem is to pass <code class="docutils literal notranslate"><span class="pre">block=False</span></code> to such methods so that they return immediately and the actual
 code called asynchronously.</p>
 </section>

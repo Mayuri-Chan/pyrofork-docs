@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Speedups &mdash; Pyrogram Documentation</title>
+  <title>Speedups &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -104,7 +104,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -119,7 +119,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -138,7 +138,7 @@
              
   <section id="speedups">
 <h1>Speedups<a class="headerlink" href="#speedups" title="Permalink to this heading"></a></h1>
-<p>Pyrogram’s speed can be boosted up by using TgCrypto and uvloop.</p>
+<p>PyroFork’s speed can be boosted up by using TgCrypto and uvloop.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
@@ -149,7 +149,7 @@
 <hr class="docutils" />
 <section id="tgcrypto">
 <h2>TgCrypto<a class="headerlink" href="#tgcrypto" title="Permalink to this heading"></a></h2>
-<p><a class="reference external" href="https://github.com/pyrogram/tgcrypto">TgCrypto</a> is a high-performance, easy-to-install cryptography library specifically written in C for Pyrogram as a Python
+<p><a class="reference external" href="https://github.com/pyrogram/tgcrypto">TgCrypto</a> is a high-performance, easy-to-install cryptography library specifically written in C for PyroFork as a Python
 extension. It is a replacement for a slower Python-only alternative and implements the cryptographic algorithms Telegram
 requires, namely: AES-256-IGE, AES-256-CTR and AES-256-CBC.</p>
 <section id="installation">
@@ -160,7 +160,7 @@ requires, namely: AES-256-IGE, AES-256-CTR and AES-256-CBC.</p>
 </section>
 <section id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h3>
-<p>Pyrogram will automatically make use of TgCrypto when detected, all you need to do is to install it.</p>
+<p>PyroFork will automatically make use of TgCrypto when detected, all you need to do is to install it.</p>
 </section>
 </section>
 <section id="uvloop">

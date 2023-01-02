@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Synchronous Usage &mdash; Pyrogram Documentation</title>
+  <title>Synchronous Usage &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Pyrogram
+            <a href="../index.html" class="icon icon-home"> PyroFork
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -59,7 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrogram Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -97,7 +97,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -112,7 +112,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Pyrogram</a>
+          <a href="../index.html">PyroFork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -131,12 +131,12 @@
              
   <section id="synchronous-usage">
 <h1>Synchronous Usage<a class="headerlink" href="#synchronous-usage" title="Permalink to this heading"></a></h1>
-<p>Pyrogram is an asynchronous framework and as such is subject to the asynchronous rules. It can, however, run in
+<p>PyroFork is an asynchronous framework and as such is subject to the asynchronous rules. It can, however, run in
 synchronous mode (also known as non-asynchronous or sync/non-async for short). This mode exists mainly as a convenience
 way for invoking methods without the need of <code class="docutils literal notranslate"><span class="pre">async</span></code>/<code class="docutils literal notranslate"><span class="pre">await</span></code> keywords and the extra boilerplate, but <strong>it’s not the
 intended way to use the framework</strong>.</p>
-<p>You can use Pyrogram in this synchronous mode when you want to write something short and contained without the
-async boilerplate or in case you want to combine Pyrogram with other libraries that are not async.</p>
+<p>You can use PyroFork in this synchronous mode when you want to write something short and contained without the
+async boilerplate or in case you want to combine PyroFork with other libraries that are not async.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You have to be very careful when using the framework in its synchronous, non-native form, especially when combined
@@ -155,7 +155,7 @@ will make the program run erratically.</p>
 <section id="synchronous-invocations">
 <h2>Synchronous Invocations<a class="headerlink" href="#synchronous-invocations" title="Permalink to this heading"></a></h2>
 <p>The following is a standard example of running asynchronous functions with Python’s asyncio.
-Pyrogram is being used inside the main function with its asynchronous interface.</p>
+PyroFork is being used inside the main function with its asynchronous interface.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
 <span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 
@@ -170,7 +170,7 @@ Pyrogram is being used inside the main function with its asynchronous interface.
 <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>To run Pyrogram synchronously, use the non-async context manager as shown in the following example.
+<p>To run PyroFork synchronously, use the non-async context manager as shown in the following example.
 As you can see, the non-async example becomes less cluttered.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 
@@ -198,8 +198,8 @@ possible.</p>
 </section>
 <section id="uvloop-usage">
 <h2>uvloop usage<a class="headerlink" href="#uvloop-usage" title="Permalink to this heading"></a></h2>
-<p>When using Pyrogram in its synchronous mode combined with uvloop, you need to call <code class="docutils literal notranslate"><span class="pre">uvloop.install()</span></code> before importing
-Pyrogram.</p>
+<p>When using PyroFork in its synchronous mode combined with uvloop, you need to call <code class="docutils literal notranslate"><span class="pre">uvloop.install()</span></code> before importing
+PyroFork.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uvloop</span>
 <span class="n">uvloop</span><span class="o">.</span><span class="n">install</span><span class="p">()</span>
 
