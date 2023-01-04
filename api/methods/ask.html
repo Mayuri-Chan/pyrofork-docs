@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>stop_transmission() &mdash; PyroFork Documentation</title>
+  <title>ask() &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/methods/stop_transmission.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/methods/ask.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -31,8 +31,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="export_session_string()" href="export_session_string.html" />
-    <link rel="prev" title="remove_handler()" href="remove_handler.html" /> 
+    <link rel="next" title="listen()" href="listen.html" />
+    <link rel="prev" title="set_parse_mode()" href="set_parse_mode.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -75,13 +75,13 @@
 <li class="toctree-l3"><a class="reference internal" href="restart.html">restart</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add_handler.html">add_handler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="remove_handler.html">remove_handler</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">stop_transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.stop_transmission"><code class="docutils literal notranslate"><span class="pre">Client.stop_transmission()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="stop_transmission.html">stop_transmission</a></li>
 <li class="toctree-l3"><a class="reference internal" href="export_session_string.html">export_session_string</a></li>
 <li class="toctree-l3"><a class="reference internal" href="set_parse_mode.html">set_parse_mode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ask.html">ask</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ask</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.ask"><code class="docutils literal notranslate"><span class="pre">Client.ask()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="listen.html">listen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="idle.html">idle()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="compose.html">compose()</a></li>
@@ -153,7 +153,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Available Methods</a> &raquo;</li>
-      <li>stop_transmission()</li>
+      <li>ask()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -162,25 +162,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="stop-transmission">
-<h1>stop_transmission()<a class="headerlink" href="#stop-transmission" title="Permalink to this heading"></a></h1>
+  <section id="ask">
+<h1>ask()<a class="headerlink" href="#ask" title="Permalink to this heading"></a></h1>
 <dl class="py method">
-<dt class="sig sig-object py" id="pyrogram.Client.stop_transmission">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">stop_transmission</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.stop_transmission" title="Permalink to this definition"></a></dt>
-<dd><p>Stop downloading or uploading a file.</p>
-<p>This method must be called inside a progress callback function in order to stop the transmission at the
-desired time. The progress callback is called every time a file chunk is uploaded/downloaded.</p>
+<dt class="sig sig-object py" id="pyrogram.Client.ask">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">ask</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.ask" title="Permalink to this definition"></a></dt>
+<dd><p>Send message then awaits for a new message in the specified chat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+For your personal cloud (Saved Messages) you can simply use “me” or “self”.
+For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
+<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the message to be sent.</p></li>
+<li><p><strong>filters</strong> (<a class="reference internal" href="../filters.html#module-pyrogram.filters" title="pyrogram.filters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a>, <em>optional</em>) – Pass one or more filters to allow only a subset of messages to be passed
+in your function.</p></li>
+<li><p><strong>timeout</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The waiting timeout.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, text message is returned.</p>
+</dd>
+</dl>
 <p class="rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Stop transmission once the upload progress reaches 50%</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">progress</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">total</span><span class="p">,</span> <span class="n">client</span><span class="p">):</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">current</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">total</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
-        <span class="n">client</span><span class="o">.</span><span class="n">stop_transmission</span><span class="p">()</span>
-
-<span class="k">async</span> <span class="k">with</span> <span class="n">app</span><span class="p">:</span>
-    <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_document</span><span class="p">(</span>
-        <span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;file.zip&quot;</span><span class="p">,</span>
-        <span class="n">progress</span><span class="o">=</span><span class="n">progress</span><span class="p">,</span>
-        <span class="n">progress_args</span><span class="o">=</span><span class="p">(</span><span class="n">app</span><span class="p">,))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">answer</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Client</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="s2">&quot;Your name:&quot;</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">answer</span><span class="o">.</span><span class="n">text</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -191,8 +197,8 @@ desired time. The progress callback is called every time a file chunk is uploade
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="remove_handler.html" class="btn btn-neutral float-left" title="remove_handler()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="export_session_string.html" class="btn btn-neutral float-right" title="export_session_string()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="set_parse_mode.html" class="btn btn-neutral float-left" title="set_parse_mode()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="listen.html" class="btn btn-neutral float-right" title="listen()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
