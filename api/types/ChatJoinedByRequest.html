@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChatPreview &mdash; PyroFork Documentation</title>
+  <title>ChatJoinedByRequest &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/types/ChatPreview.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/types/ChatJoinedByRequest.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -31,8 +31,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ChatPhoto" href="ChatPhoto.html" />
-    <link rel="prev" title="Chat" href="Chat.html" /> 
+    <link rel="next" title="Dialog" href="Dialog.html" />
+    <link rel="prev" title="ChatJoiner" href="ChatJoiner.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -72,10 +72,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#users-chats">Users &amp; Chats</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="User.html">User</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Chat.html">Chat</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">ChatPreview</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.ChatPreview"><code class="docutils literal notranslate"><span class="pre">ChatPreview</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="ChatPreview.html">ChatPreview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatPhoto.html">ChatPhoto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatMember.html">ChatMember</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatPermissions.html">ChatPermissions</a></li>
@@ -87,7 +84,10 @@
 <li class="toctree-l3"><a class="reference internal" href="ChatMemberUpdated.html">ChatMemberUpdated</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatJoinRequest.html">ChatJoinRequest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatJoiner.html">ChatJoiner</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ChatJoinedByRequest.html">ChatJoinedByRequest</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ChatJoinedByRequest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.ChatJoinedByRequest"><code class="docutils literal notranslate"><span class="pre">ChatJoinedByRequest</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Dialog.html">Dialog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Restriction.html">Restriction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="EmojiStatus.html">EmojiStatus</a></li>
@@ -159,7 +159,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Available Types</a> &raquo;</li>
-      <li>ChatPreview</li>
+      <li>ChatJoinedByRequest</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -168,23 +168,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="chatpreview">
-<h1>ChatPreview<a class="headerlink" href="#chatpreview" title="Permalink to this heading"></a></h1>
+  <section id="chatjoinedbyrequest">
+<h1>ChatJoinedByRequest<a class="headerlink" href="#chatjoinedbyrequest" title="Permalink to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.ChatPreview">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">ChatPreview</span></span><a class="headerlink" href="#pyrogram.types.ChatPreview" title="Permalink to this definition"></a></dt>
-<dd><p>A chat preview.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Title of the chat.</p></li>
-<li><p><strong>type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Type of chat, can be either, “group”, “supergroup” or “channel”.</p></li>
-<li><p><strong>members_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Chat members count.</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Chat photo.</p></li>
-<li><p><strong>members</strong> (List of <a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Preview of some of the chat members.</p></li>
-</ul>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pyrogram.types.ChatJoinedByRequest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">ChatJoinedByRequest</span></span><a class="headerlink" href="#pyrogram.types.ChatJoinedByRequest" title="Permalink to this definition"></a></dt>
+<dd><p>A service message about a user join request approved in the chat.</p>
+<p>Currently holds no information.</p>
 </dd></dl>
 
 </section>
@@ -193,8 +183,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Chat.html" class="btn btn-neutral float-left" title="Chat" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ChatPhoto.html" class="btn btn-neutral float-right" title="ChatPhoto" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ChatJoiner.html" class="btn btn-neutral float-left" title="ChatJoiner" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Dialog.html" class="btn btn-neutral float-right" title="Dialog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
