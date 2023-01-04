@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChatEventFilter &mdash; PyroFork Documentation</title>
+  <title>PeerChat &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/types/ChatEventFilter.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/types/PeerChat.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -31,8 +31,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ChatMemberUpdated" href="ChatMemberUpdated.html" />
-    <link rel="prev" title="ChatEvent" href="ChatEvent.html" /> 
+    <link rel="next" title="Message" href="Message.html" />
+    <link rel="prev" title="PeerUser" href="PeerUser.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -80,10 +80,7 @@
 <li class="toctree-l3"><a class="reference internal" href="ChatInviteLink.html">ChatInviteLink</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatAdminWithInviteLinks.html">ChatAdminWithInviteLinks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatEvent.html">ChatEvent</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">ChatEventFilter</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.ChatEventFilter"><code class="docutils literal notranslate"><span class="pre">ChatEventFilter</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="ChatEventFilter.html">ChatEventFilter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatMemberUpdated.html">ChatMemberUpdated</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatJoinRequest.html">ChatJoinRequest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ChatJoiner.html">ChatJoiner</a></li>
@@ -92,7 +89,7 @@
 <li class="toctree-l3"><a class="reference internal" href="EmojiStatus.html">EmojiStatus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ForumTopic.html">ForumTopic</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PeerUser.html">PeerUser</a></li>
-<li class="toctree-l3"><a class="reference internal" href="PeerChat.html">PeerChat</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PeerChat</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#messages-media">Messages &amp; Media</a></li>
@@ -158,7 +155,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Available Types</a> &raquo;</li>
-      <li>ChatEventFilter</li>
+      <li>PeerChat</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -167,52 +164,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="chateventfilter">
-<h1>ChatEventFilter<a class="headerlink" href="#chateventfilter" title="Permalink to this heading"></a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.ChatEventFilter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">ChatEventFilter</span></span><a class="headerlink" href="#pyrogram.types.ChatEventFilter" title="Permalink to this definition"></a></dt>
-<dd><p>Set of filters used to obtain a chat event log.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>new_restrictions</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if member restricted/unrestricted/banned/unbanned events should be returned.
-Defaults to False.</p></li>
-<li><p><strong>new_privileges</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if member promotion/demotion events should be returned.
-Defaults to False.</p></li>
-<li><p><strong>new_members</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if members joining events should be returned.
-Defaults to False.</p></li>
-<li><p><strong>chat_info</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if chat info changes should be returned. That is, when description, linked chat, location, photo,
-sticker set, title or username have been modified.
-Defaults to False.</p></li>
-<li><p><strong>chat_settings</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if chat settings changes should be returned. That is, when invites, hidden history, message
-signatures, default chat permissions have been modified.
-Defaults to False.</p></li>
-<li><p><strong>invite_links</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if invite links events (edit, revoke, delete) should be returned.
-Defaults to False.</p></li>
-<li><p><strong>deleted_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if deleted messages events should be returned.
-Defaults to False.</p></li>
-<li><p><strong>edited_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if edited messages events, including closed polls, should be returned.
-Defaults to False.</p></li>
-<li><p><strong>pinned_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if pinned/unpinned messages events should be returned.
-Defaults to False.</p></li>
-<li><p><strong>leaving_members</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if members leaving events should be returned.
-Defaults to False.</p></li>
-<li><p><strong>video_chats</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if video chats events should be returned.
-Defaults to False.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
+  <section id="peerchat">
+<h1>PeerChat<a class="headerlink" href="#peerchat" title="Permalink to this heading"></a></h1>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ChatEvent.html" class="btn btn-neutral float-left" title="ChatEvent" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ChatMemberUpdated.html" class="btn btn-neutral float-right" title="ChatMemberUpdated" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="PeerUser.html" class="btn btn-neutral float-left" title="PeerUser" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Message.html" class="btn btn-neutral float-right" title="Message" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
