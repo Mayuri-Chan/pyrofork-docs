@@ -241,35 +241,41 @@
 <tr class="row-even"><td><p>BOT_MISSING</p></td>
 <td><p>This method can only be run by a bot</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_PAYMENTS_DISABLED</p></td>
+<tr class="row-odd"><td><p>BOT_ONESIDE_NOT_AVAIL</p></td>
+<td><p>Bots can’t pin messages for one side only in private chats</p></td>
+</tr>
+<tr class="row-even"><td><p>BOT_PAYMENTS_DISABLED</p></td>
 <td><p>This method can only be run by a bot</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_POLLS_DISABLED</p></td>
+<tr class="row-odd"><td><p>BOT_POLLS_DISABLED</p></td>
 <td><p>Sending polls by bots has been disabled</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_RESPONSE_TIMEOUT</p></td>
+<tr class="row-even"><td><p>BOT_RESPONSE_TIMEOUT</p></td>
 <td><p>The bot did not answer to the callback query in time</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_SCORE_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>BOT_SCORE_NOT_MODIFIED</p></td>
 <td><p>The bot score was not modified</p></td>
 </tr>
-<tr class="row-odd"><td><p>BROADCAST_ID_INVALID</p></td>
+<tr class="row-even"><td><p>BROADCAST_ID_INVALID</p></td>
 <td><p>The channel is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>BROADCAST_PUBLIC_VOTERS_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>BROADCAST_PUBLIC_VOTERS_FORBIDDEN</p></td>
 <td><p>Polls with public voters cannot be sent in channels</p></td>
 </tr>
-<tr class="row-odd"><td><p>BROADCAST_REQUIRED</p></td>
+<tr class="row-even"><td><p>BROADCAST_REQUIRED</p></td>
 <td><p>The request can only be used with a channel</p></td>
 </tr>
-<tr class="row-even"><td><p>BUTTON_DATA_INVALID</p></td>
+<tr class="row-odd"><td><p>BUTTON_DATA_INVALID</p></td>
 <td><p>The button callback data is invalid or too large</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUTTON_TYPE_INVALID</p></td>
+<tr class="row-even"><td><p>BUTTON_TYPE_INVALID</p></td>
 <td><p>The type of one of the buttons you provided is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>BUTTON_URL_INVALID</p></td>
+<tr class="row-odd"><td><p>BUTTON_URL_INVALID</p></td>
 <td><p>The button url is invalid</p></td>
+</tr>
+<tr class="row-even"><td><p>BUTTON_USER_PRIVACY_RESTRICTED</p></td>
+<td><p>The privacy settings of the user specified in a keyboard button do not allow creating such button</p></td>
 </tr>
 <tr class="row-odd"><td><p>CALL_ALREADY_ACCEPTED</p></td>
 <td><p>The call is already accepted</p></td>
@@ -457,164 +463,170 @@
 <tr class="row-even"><td><p>ENTITIES_TOO_LONG</p></td>
 <td><p>The entity provided contains data that is too long, or you passed too many entities to this message</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENTITY_MENTION_USER_INVALID</p></td>
+<tr class="row-odd"><td><p>ENTITY_BOUNDS_INVALID</p></td>
+<td><p>The message entity bounds are invalid</p></td>
+</tr>
+<tr class="row-even"><td><p>ENTITY_MENTION_USER_INVALID</p></td>
 <td><p>The mentioned entity is not an user</p></td>
 </tr>
-<tr class="row-even"><td><p>ERROR_TEXT_EMPTY</p></td>
+<tr class="row-odd"><td><p>ERROR_TEXT_EMPTY</p></td>
 <td><p>The provided error message is empty</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXPIRE_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>EXPIRE_DATE_INVALID</p></td>
 <td><p>The expiration date is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>EXPORT_CARD_INVALID</p></td>
+<tr class="row-odd"><td><p>EXPORT_CARD_INVALID</p></td>
 <td><p>The provided card is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXTERNAL_URL_INVALID</p></td>
+<tr class="row-even"><td><p>EXTERNAL_URL_INVALID</p></td>
 <td><p>The external media URL is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>FIELD_NAME_EMPTY</p></td>
+<tr class="row-odd"><td><p>FIELD_NAME_EMPTY</p></td>
 <td><p>The field with the name FIELD_NAME is missing</p></td>
 </tr>
-<tr class="row-odd"><td><p>FIELD_NAME_INVALID</p></td>
+<tr class="row-even"><td><p>FIELD_NAME_INVALID</p></td>
 <td><p>The field with the name FIELD_NAME is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_ID_INVALID</p></td>
 <td><p>The file id is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_MIGRATE_X</p></td>
+<tr class="row-even"><td><p>FILE_MIGRATE_X</p></td>
 <td><p>The file is in Data Center No. {value}</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PARTS_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_PARTS_INVALID</p></td>
 <td><p>Invalid number of parts.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_EMPTY</p></td>
+<tr class="row-even"><td><p>FILE_PART_EMPTY</p></td>
 <td><p>The file part sent is empty</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_PART_INVALID</p></td>
 <td><p>The file part number is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_LENGTH_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_PART_LENGTH_INVALID</p></td>
 <td><p>The length of a file part is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_SIZE_CHANGED</p></td>
+<tr class="row-odd"><td><p>FILE_PART_SIZE_CHANGED</p></td>
 <td><p>The part size is different from the size of one of the previous parts in the same file</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_SIZE_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_PART_SIZE_INVALID</p></td>
 <td><p>The file part size is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_TOO_BIG</p></td>
+<tr class="row-odd"><td><p>FILE_PART_TOO_BIG</p></td>
 <td><p>The size limit for the content of the file part has been exceeded</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_X_MISSING</p></td>
+<tr class="row-even"><td><p>FILE_PART_X_MISSING</p></td>
 <td><p>Part {value} of the file is missing from storage</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_EMPTY</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_EMPTY</p></td>
 <td><p>The file id contains an empty file reference, you must obtain a valid one by fetching the message from the origin context</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_EXPIRED</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_EXPIRED</p></td>
 <td><p>The file id contains an expired file reference, you must obtain a valid one by fetching the message from the origin context</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_INVALID</p></td>
 <td><p>The file id contains an invalid file reference, you must obtain a valid one by fetching the message from the origin context</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILTER_ID_INVALID</p></td>
+<tr class="row-even"><td><p>FILTER_ID_INVALID</p></td>
 <td><p>The specified filter ID is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>FIRSTNAME_INVALID</p></td>
+<tr class="row-odd"><td><p>FIRSTNAME_INVALID</p></td>
 <td><p>The first name is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>FOLDER_ID_EMPTY</p></td>
+<tr class="row-even"><td><p>FOLDER_ID_EMPTY</p></td>
 <td><p>The folder you tried to delete was already empty</p></td>
 </tr>
-<tr class="row-even"><td><p>FOLDER_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>FOLDER_ID_INVALID</p></td>
 <td><p>The folder id is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You can’t change administrator settings in this chat because your session was logged-in recently</p></td>
 </tr>
-<tr class="row-even"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
+<tr class="row-odd"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
 <td><p>Bots can’t use fromMessage min constructors</p></td>
 </tr>
-<tr class="row-odd"><td><p>FROM_PEER_INVALID</p></td>
+<tr class="row-even"><td><p>FROM_PEER_INVALID</p></td>
 <td><p>The from peer value is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>GAME_BOT_INVALID</p></td>
+<tr class="row-odd"><td><p>GAME_BOT_INVALID</p></td>
 <td><p>You cannot send that game with the current bot</p></td>
 </tr>
-<tr class="row-odd"><td><p>GEO_POINT_INVALID</p></td>
+<tr class="row-even"><td><p>GEO_POINT_INVALID</p></td>
 <td><p>Invalid geo point provided</p></td>
 </tr>
-<tr class="row-even"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
 <td><p>GIF content-type invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIF_ID_INVALID</p></td>
+<tr class="row-even"><td><p>GIF_ID_INVALID</p></td>
 <td><p>The provided gif/animation id is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>GRAPH_INVALID_RELOAD</p></td>
+<tr class="row-odd"><td><p>GRAPH_INVALID_RELOAD</p></td>
 <td><p>Invalid graph token provided, please reload the stats and provide the updated token</p></td>
 </tr>
-<tr class="row-odd"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
+<tr class="row-even"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
 <td><p>The graph data is outdated</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
 <td><p>Too many group call synchronization source duplicates</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPED_MEDIA_INVALID</p></td>
+<tr class="row-even"><td><p>GROUPED_MEDIA_INVALID</p></td>
 <td><p>The album contains invalid media</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUP_CALL_INVALID</p></td>
+<tr class="row-odd"><td><p>GROUP_CALL_INVALID</p></td>
 <td><p>The group call is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>HASH_INVALID</p></td>
+<tr class="row-even"><td><p>HASH_INVALID</p></td>
 <td><p>The provided hash is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>IMAGE_PROCESS_FAILED</p></td>
+<tr class="row-odd"><td><p>IMAGE_PROCESS_FAILED</p></td>
 <td><p>The server failed to process your image</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>IMPORT_FILE_INVALID</p></td>
 <td><p>The imported file is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_FORMAT_UNRECOGNIZED</p></td>
+<tr class="row-odd"><td><p>IMPORT_FORMAT_UNRECOGNIZED</p></td>
 <td><p>The imported format is unrecognized</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_ID_INVALID</p></td>
+<tr class="row-even"><td><p>IMPORT_ID_INVALID</p></td>
 <td><p>The import id is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>INLINE_RESULT_EXPIRED</p></td>
+<tr class="row-odd"><td><p>INLINE_RESULT_EXPIRED</p></td>
 <td><p>The inline bot query expired</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_CONSTRUCTOR_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_CONSTRUCTOR_INVALID</p></td>
 <td><p>The provided constructor is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FETCH_ERROR</p></td>
+<tr class="row-odd"><td><p>INPUT_FETCH_ERROR</p></td>
 <td><p>An error occurred while deserializing TL parameters</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_FETCH_FAIL</p></td>
+<tr class="row-even"><td><p>INPUT_FETCH_FAIL</p></td>
 <td><p>Failed deserializing TL payload</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FILTER_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_FILTER_INVALID</p></td>
 <td><p>The filter is invalid for this query</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_LAYER_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_LAYER_INVALID</p></td>
 <td><p>The provided layer is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_METHOD_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_METHOD_INVALID</p></td>
 <td><p>The method invoked is invalid in the current schema</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
+<tr class="row-even"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
 <td><p>The input request is too long</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_USER_DEACTIVATED</p></td>
+<tr class="row-odd"><td><p>INPUT_USER_DEACTIVATED</p></td>
 <td><p>The target user has been deleted/deactivated</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_EMPTY</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_EMPTY</p></td>
 <td><p>The invite hash is empty</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_HASH_EXPIRED</p></td>
+<tr class="row-odd"><td><p>INVITE_HASH_EXPIRED</p></td>
 <td><p>The chat invite link is no longer valid</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_INVALID</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_INVALID</p></td>
 <td><p>The invite link hash is invalid</p></td>
+</tr>
+<tr class="row-odd"><td><p>INVITE_REQUEST_SENT</p></td>
+<td><p>The request to join this chat or channel has been successfully sent</p></td>
 </tr>
 <tr class="row-even"><td><p>INVITE_REVOKED_MISSING</p></td>
 <td><p>The action required a chat invite link to be revoked first</p></td>
@@ -1045,11 +1057,11 @@
 <tr class="row-even"><td><p>STICKER_TGS_NOTGS</p></td>
 <td><p>A tgs sticker file was expected, but something else was provided</p></td>
 </tr>
-<tr class="row-odd"><td><p>STICKER_VIDEO_NOWEBM</p></td>
-<td><p>A webm video file was expected, but something else was provided</p></td>
-</tr>
-<tr class="row-even"><td><p>STICKER_THUMB_PNG_NOPNG</p></td>
+<tr class="row-odd"><td><p>STICKER_THUMB_PNG_NOPNG</p></td>
 <td><p>A png sticker thumbnail file was expected, but something else was provided</p></td>
+</tr>
+<tr class="row-even"><td><p>STICKER_VIDEO_NOWEBM</p></td>
+<td><p>A webm video file was expected, but something else was provided</p></td>
 </tr>
 <tr class="row-odd"><td><p>TAKEOUT_INVALID</p></td>
 <td><p>The takeout id is invalid</p></td>
@@ -1218,9 +1230,6 @@
 </tr>
 <tr class="row-even"><td><p>YOU_BLOCKED_USER</p></td>
 <td><p>You blocked this user</p></td>
-</tr>
-<tr class="row-odd"><td><p>ENTITY_BOUNDS_INVALID</p></td>
-<td><p>The message entity bounds are invalid</p></td>
 </tr>
 </tbody>
 </table>
