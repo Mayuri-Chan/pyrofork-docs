@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReplyKeyboardMarkup &mdash; PyroFork Documentation</title>
+  <title>RequestPeerTypeChat &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/types/ReplyKeyboardMarkup.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/types/RequestPeerTypeChat.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -31,8 +31,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="KeyboardButton" href="KeyboardButton.html" />
-    <link rel="prev" title="GeneralTopicUnhidden" href="GeneralTopicUnhidden.html" /> 
+    <link rel="next" title="RequestPeerTypeUser" href="RequestPeerTypeUser.html" />
+    <link rel="prev" title="ReplyKeyboardRemove" href="ReplyKeyboardRemove.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -72,13 +72,13 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#users-chats">Users &amp; Chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#messages-media">Messages &amp; Media</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#bot-keyboards">Bot keyboards</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">ReplyKeyboardMarkup</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.ReplyKeyboardMarkup"><code class="docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardMarkup.html">ReplyKeyboardMarkup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="KeyboardButton.html">KeyboardButton</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardRemove.html">ReplyKeyboardRemove</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChat.html">RequestPeerTypeChat</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">RequestPeerTypeChat</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.RequestPeerTypeChat"><code class="docutils literal notranslate"><span class="pre">RequestPeerTypeChat</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeUser.html">RequestPeerTypeUser</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardMarkup.html">InlineKeyboardMarkup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardButton.html">InlineKeyboardButton</a></li>
@@ -156,7 +156,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Available Types</a> &raquo;</li>
-      <li>ReplyKeyboardMarkup</li>
+      <li>RequestPeerTypeChat</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -165,30 +165,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="replykeyboardmarkup">
-<h1>ReplyKeyboardMarkup<a class="headerlink" href="#replykeyboardmarkup" title="Permalink to this heading"></a></h1>
+  <section id="requestpeertypechat">
+<h1>RequestPeerTypeChat<a class="headerlink" href="#requestpeertypechat" title="Permalink to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.ReplyKeyboardMarkup">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">ReplyKeyboardMarkup</span></span><a class="headerlink" href="#pyrogram.types.ReplyKeyboardMarkup" title="Permalink to this definition"></a></dt>
-<dd><p>A custom keyboard with reply options.</p>
+<dt class="sig sig-object py" id="pyrogram.types.RequestPeerTypeChat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">RequestPeerTypeChat</span></span><a class="headerlink" href="#pyrogram.types.RequestPeerTypeChat" title="Permalink to this definition"></a></dt>
+<dd><p>Object used to tell clients to request a suitable chat.</p>
+<p>The identifier of the selected chat will be shared with the bot when the corresponding button is pressed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>keyboard</strong> (List of List of <a class="reference internal" href="KeyboardButton.html#pyrogram.types.KeyboardButton" title="pyrogram.types.KeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a>) – List of button rows, each represented by a List of KeyboardButton objects.</p></li>
-<li><p><strong>is_persistent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Requests clients to always show the keyboard when the regular keyboard is hidden.
-Defaults to false, in which case the custom keyboard can be hidden and opened with a keyboard icon.</p></li>
-<li><p><strong>resize_keyboard</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if
-there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of
-the same height as the app’s standard keyboard.</p></li>
-<li><p><strong>one_time_keyboard</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Requests clients to hide the keyboard as soon as it’s been used. The keyboard will still be available,
-but clients will automatically display the usual letter-keyboard in the chat – the user can press a
-special button in the input field to see the custom keyboard again. Defaults to false.</p></li>
-<li><p><strong>selective</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Use this parameter if you want to show the keyboard to specific users only. Targets:
-1) users that are &#64;mentioned in the text of the Message object;
-2) if the bot’s message is a reply (has reply_to_message_id), sender of the original message.
-Example: A user requests to change the bot’s language, bot replies to the request with a keyboard to
-select the new language. Other users in the group don’t see the keyboard.</p></li>
-<li><p><strong>placeholder</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The placeholder to be shown in the input field when the keyboard is active; 1-64 characters.</p></li>
+<li><p><strong>creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to request a chat owned by the user.
+Otherwise, no additional restrictions are applied.</p></li>
+<li><p><strong>bot_participant</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to request a chat with the bot as a member.
+Otherwise, no additional restrictions are applied.</p></li>
+<li><p><strong>has_username</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to request a supergroup or a channel with a username, pass False to request a chat without a username.
+If not specified, no additional restrictions are applied.</p></li>
+<li><p><strong>is_forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to request a forum supergroup, pass False to request a non-forum chat.
+If not specified, no additional restrictions are applied.</p></li>
+<li><p><strong>user_admin_rights</strong> (<a class="reference internal" href="ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>, <em>optional</em>) – A JSON-serialized object listing the required administrator rights of the user in the chat.
+If not specified, no additional restrictions are applied.</p></li>
+<li><p><strong>bot_admin_rights</strong> (<a class="reference internal" href="ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>, <em>optional</em>) – A JSON-serialized object listing the required administrator rights of the bot in the chat. The rights must be a subset of user_administrator_rights.
+If not specified, no additional restrictions are applied.</p></li>
 </ul>
 </dd>
 </dl>
@@ -200,8 +198,8 @@ select the new language. Other users in the group don’t see the keyboard.</p><
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="GeneralTopicUnhidden.html" class="btn btn-neutral float-left" title="GeneralTopicUnhidden" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="KeyboardButton.html" class="btn btn-neutral float-right" title="KeyboardButton" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ReplyKeyboardRemove.html" class="btn btn-neutral float-left" title="ReplyKeyboardRemove" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="RequestPeerTypeUser.html" class="btn btn-neutral float-right" title="RequestPeerTypeUser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
