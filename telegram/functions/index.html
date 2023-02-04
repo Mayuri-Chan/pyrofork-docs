@@ -147,6 +147,7 @@
 <li class="toctree-l2"><a class="reference internal" href="account/create-theme.html">CreateTheme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/decline-password-reset.html">DeclinePasswordReset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/delete-account.html">DeleteAccount</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/delete-auto-save-exceptions.html">DeleteAutoSaveExceptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/delete-secure-value.html">DeleteSecureValue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/finish-takeout-session.html">FinishTakeoutSession</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-account-ttl.html">GetAccountTTL</a></li>
@@ -154,10 +155,13 @@
 <li class="toctree-l2"><a class="reference internal" href="account/get-authorization-form.html">GetAuthorizationForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-authorizations.html">GetAuthorizations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-auto-download-settings.html">GetAutoDownloadSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/get-auto-save-settings.html">GetAutoSaveSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-chat-themes.html">GetChatThemes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-contact-sign-up-notification.html">GetContactSignUpNotification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-content-settings.html">GetContentSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-default-emoji-statuses.html">GetDefaultEmojiStatuses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/get-default-group-photo-emojis.html">GetDefaultGroupPhotoEmojis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/get-default-profile-photo-emojis.html">GetDefaultProfilePhotoEmojis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-global-privacy-settings.html">GetGlobalPrivacySettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-multi-wall-papers.html">GetMultiWallPapers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-notify-exceptions.html">GetNotifyExceptions</a></li>
@@ -189,6 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="account/reset-web-authorization.html">ResetWebAuthorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/reset-web-authorizations.html">ResetWebAuthorizations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/save-auto-download-settings.html">SaveAutoDownloadSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/save-auto-save-settings.html">SaveAutoSaveSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/save-ringtone.html">SaveRingtone</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/save-secure-value.html">SaveSecureValue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/save-theme.html">SaveTheme</a></li>
@@ -235,6 +240,7 @@
 <li class="toctree-l2"><a class="reference internal" href="auth/import-web-token-authorization.html">ImportWebTokenAuthorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/log-out.html">LogOut</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/recover-password.html">RecoverPassword</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth/request-firebase-sms.html">RequestFirebaseSms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/request-password-recovery.html">RequestPasswordRecovery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/resend-code.html">ResendCode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/reset-authorizations.html">ResetAuthorizations</a></li>
@@ -434,9 +440,12 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/get-dialogs.html">GetDialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-discussion-message.html">GetDiscussionMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-document-by-hash.html">GetDocumentByHash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-groups.html">GetEmojiGroups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-keywords.html">GetEmojiKeywords</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-keywords-difference.html">GetEmojiKeywordsDifference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-keywords-languages.html">GetEmojiKeywordsLanguages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-profile-photo-groups.html">GetEmojiProfilePhotoGroups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-status-groups.html">GetEmojiStatusGroups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-stickers.html">GetEmojiStickers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-emoji-url.html">GetEmojiURL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-exported-chat-invite.html">GetExportedChatInvite</a></li>
@@ -517,9 +526,11 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/save-gif.html">SaveGif</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/save-recent-sticker.html">SaveRecentSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/search-custom-emoji.html">SearchCustomEmoji</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/search-global.html">SearchGlobal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/search-sent-media.html">SearchSentMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/search-sticker-sets.html">SearchStickerSets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/send-bot-requested-peer.html">SendBotRequestedPeer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/send-encrypted.html">SendEncrypted</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/send-encrypted-file.html">SendEncryptedFile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/send-encrypted-service.html">SendEncryptedService</a></li>
@@ -551,6 +562,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-bot-in-attach-menu.html">ToggleBotInAttachMenu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-dialog-pin.html">ToggleDialogPin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-no-forwards.html">ToggleNoForwards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/toggle-peer-translations.html">TogglePeerTranslations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-sticker-sets.html">ToggleStickerSets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/transcribe-audio.html">TranscribeAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/translate-text.html">TranslateText</a></li>
