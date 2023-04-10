@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reaction &mdash; PyroFork Documentation</title>
+  <title>StickerSet &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/types/Reaction.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/types/StickerSet.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -31,8 +31,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="VideoChatScheduled" href="VideoChatScheduled.html" />
-    <link rel="prev" title="Dice" href="Dice.html" /> 
+    <link rel="next" title="Game" href="Game.html" />
+    <link rel="prev" title="Sticker" href="Sticker.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -85,16 +85,16 @@
 <li class="toctree-l3"><a class="reference internal" href="Location.html">Location</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Venue.html">Venue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Sticker.html">Sticker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="StickerSet.html">StickerSet</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">StickerSet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.StickerSet"><code class="docutils literal notranslate"><span class="pre">StickerSet</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l3"><a class="reference internal" href="WebPage.html">WebPage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Poll.html">Poll</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PollOption.html">PollOption</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Dice.html">Dice</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Reaction</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Reaction"><code class="docutils literal notranslate"><span class="pre">Reaction</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="Reaction.html">Reaction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="VideoChatScheduled.html">VideoChatScheduled</a></li>
 <li class="toctree-l3"><a class="reference internal" href="VideoChatStarted.html">VideoChatStarted</a></li>
 <li class="toctree-l3"><a class="reference internal" href="VideoChatEnded.html">VideoChatEnded</a></li>
@@ -172,7 +172,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Available Types</a> &raquo;</li>
-      <li>Reaction</li>
+      <li>StickerSet</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -181,20 +181,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="reaction">
-<h1>Reaction<a class="headerlink" href="#reaction" title="Permalink to this heading"></a></h1>
+  <section id="stickerset">
+<h1>StickerSet<a class="headerlink" href="#stickerset" title="Permalink to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.Reaction">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">Reaction</span></span><a class="headerlink" href="#pyrogram.types.Reaction" title="Permalink to this definition"></a></dt>
-<dd><p>Contains information about a reaction.</p>
+<dt class="sig sig-object py" id="pyrogram.types.StickerSet">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">StickerSet</span></span><a class="headerlink" href="#pyrogram.types.StickerSet" title="Permalink to this definition"></a></dt>
+<dd><p>A stickerset.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Reaction emoji.</p></li>
-<li><p><strong>custom_emoji_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Custom emoji id.</p></li>
-<li><p><strong>count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Reaction count.</p></li>
-<li><p><strong>chosen_order</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Chosen reaction order.
-Available for chosen reactions.</p></li>
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">Integer</span></code>) – Identifier for this stickerset.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">String</span></code>) – Title of stickerset.</p></li>
+<li><p><strong>short_name</strong> (<code class="docutils literal notranslate"><span class="pre">String</span></code>) – Short name of stickerset, used when sharing stickerset using stickerset deep links.</p></li>
+<li><p><strong>count</strong> (<code class="docutils literal notranslate"><span class="pre">Integer</span></code>) – Number of stickers in stickerset.</p></li>
+<li><p><strong>masks</strong> (<code class="docutils literal notranslate"><span class="pre">Boolean</span></code>) – Is this a mask stickerset.</p></li>
+<li><p><strong>animated</strong> (<code class="docutils literal notranslate"><span class="pre">Boolean</span></code>) – Is this a animated stickerset.</p></li>
+<li><p><strong>videos</strong> (<code class="docutils literal notranslate"><span class="pre">Boolean</span></code>) – Is this a videos stickerset.</p></li>
+<li><p><strong>emojis</strong> (<code class="docutils literal notranslate"><span class="pre">Boolean</span></code>) – Is this a emojis stickerset.</p></li>
 </ul>
 </dd>
 </dl>
@@ -206,8 +209,8 @@ Available for chosen reactions.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Dice.html" class="btn btn-neutral float-left" title="Dice" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="VideoChatScheduled.html" class="btn btn-neutral float-right" title="VideoChatScheduled" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Sticker.html" class="btn btn-neutral float-left" title="Sticker" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Game.html" class="btn btn-neutral float-right" title="Game" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
