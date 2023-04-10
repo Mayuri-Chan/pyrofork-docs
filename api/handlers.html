@@ -67,9 +67,6 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="client.html">PyroFork Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="methods/index.html">Available Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/index.html">Available Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enums/index.html">Enumerations</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Update Handlers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#index">Index</a></li>
@@ -117,12 +114,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
 </ul>
 
         </div>
@@ -203,7 +194,7 @@ For a much more convenient way of registering callback functions have a look at 
 <dt class="sig sig-object py" id="pyrogram.handlers.MessageHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The Message handler class. Used to handle new messages.
-It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_message" title="pyrogram.Client.on_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -218,7 +209,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>message</strong> (<a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The received message.</p></li>
+<li><p><strong>message</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>) – The received message.</p></li>
 </ul>
 </dd>
 </dl>
@@ -228,7 +219,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.EditedMessageHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedMessageHandler" title="Permalink to this definition"></a></dt>
 <dd><dl class="simple">
-<dt>The EditedMessage handler class. Used to handle edited messages.</dt><dd><p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+<dt>The EditedMessage handler class. Used to handle edited messages.</dt><dd><p>It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 </dd>
 </dl>
 <p>For a nicer way to register this handler, have a look at the
@@ -245,7 +236,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>edited_message</strong> (<a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The received edited message.</p></li>
+<li><p><strong>edited_message</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>) – The received edited message.</p></li>
 </ul>
 </dd>
 </dl>
@@ -255,7 +246,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.DeletedMessagesHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedMessagesHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The deleted messages handler class. Used to handle deleted messages coming from any chat
-(private, group, channel). It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+(private, group, channel). It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_deleted_messages" title="pyrogram.Client.on_deleted_messages"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_deleted_messages()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -270,7 +261,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>messages</strong> (List of <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The deleted messages, as list.</p></li>
+<li><p><strong>messages</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>) – The deleted messages, as list.</p></li>
 </ul>
 </dd>
 </dl>
@@ -280,7 +271,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.CallbackQueryHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">CallbackQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.CallbackQueryHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The CallbackQuery handler class. Used to handle callback queries coming from inline buttons.
-It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_callback_query" title="pyrogram.Client.on_callback_query"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_callback_query()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -295,7 +286,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>callback_query</strong> (<a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>) – The received callback query.</p></li>
+<li><p><strong>callback_query</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code>) – The received callback query.</p></li>
 </ul>
 </dd>
 </dl>
@@ -305,7 +296,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.InlineQueryHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">InlineQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.InlineQueryHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The InlineQuery handler class. Used to handle inline queries.
-It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_inline_query" title="pyrogram.Client.on_inline_query"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_inline_query()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -320,7 +311,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the inline query handler.</p></li>
-<li><p><strong>inline_query</strong> (<a class="reference internal" href="types/InlineQuery.html#pyrogram.types.InlineQuery" title="pyrogram.types.InlineQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code></a>) – The received inline query.</p></li>
+<li><p><strong>inline_query</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code>) – The received inline query.</p></li>
 </ul>
 </dd>
 </dl>
@@ -330,7 +321,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.ChosenInlineResultHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChosenInlineResultHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChosenInlineResultHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries.
-It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_chosen_inline_result" title="pyrogram.Client.on_chosen_inline_result"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_chosen_inline_result()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -346,7 +337,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>chosen_inline_result</strong> (<a class="reference internal" href="types/ChosenInlineResult.html#pyrogram.types.ChosenInlineResult" title="pyrogram.types.ChosenInlineResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResult</span></code></a>) – The received chosen inline result.</p></li>
+<li><p><strong>chosen_inline_result</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResult</span></code>) – The received chosen inline result.</p></li>
 </ul>
 </dd>
 </dl>
@@ -356,7 +347,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.ChatMemberUpdatedHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChatMemberUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChatMemberUpdatedHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member.
-It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
+It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code>.</p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_chat_member_updated" title="pyrogram.Client.on_chat_member_updated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_chat_member_updated()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -371,7 +362,7 @@ description).</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the handler.</p></li>
-<li><p><strong>chat_member_updated</strong> (<a class="reference internal" href="types/ChatMemberUpdated.html#pyrogram.types.ChatMemberUpdated" title="pyrogram.types.ChatMemberUpdated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdated</span></code></a>) – The received chat member update.</p></li>
+<li><p><strong>chat_member_updated</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdated</span></code>) – The received chat member update.</p></li>
 </ul>
 </dd>
 </dl>
@@ -381,7 +372,7 @@ description).</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.UserStatusHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">UserStatusHandler</span></span><a class="headerlink" href="#pyrogram.handlers.UserStatusHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The UserStatus handler class. Used to handle user status updates (user going online or offline).
-It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
+It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code>.</p>
 <p>For a nicer way to register this handler, have a look at the <a class="reference internal" href="decorators.html#pyrogram.Client.on_user_status" title="pyrogram.Client.on_user_status"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_user_status()</span></code></a> decorator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -394,7 +385,7 @@ as positional arguments (look at the section below for a detailed description).<
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the user status handler.</p></li>
-<li><p><strong>user</strong> (<a class="reference internal" href="types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – The user containing the updated status.</p></li>
+<li><p><strong>user</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code>) – The user containing the updated status.</p></li>
 </ul>
 </dd>
 </dl>
@@ -404,7 +395,7 @@ as positional arguments (look at the section below for a detailed description).<
 <dt class="sig sig-object py" id="pyrogram.handlers.PollHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PollHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PollHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The Poll handler class. Used to handle polls updates.</p>
-<p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+<p>It is intended to be used with <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_poll" title="pyrogram.Client.on_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_poll()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -419,7 +410,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the poll handler.</p></li>
-<li><p><strong>poll</strong> (<a class="reference internal" href="types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a>) – The received poll.</p></li>
+<li><p><strong>poll</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code>) – The received poll.</p></li>
 </ul>
 </dd>
 </dl>
@@ -429,7 +420,7 @@ in your callback function.</p></li>
 <dt class="sig sig-object py" id="pyrogram.handlers.DisconnectHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DisconnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DisconnectHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The Disconnect handler class. Used to handle disconnections. It is intended to be used with
-<a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_disconnect" title="pyrogram.Client.on_disconnect"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_disconnect()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -448,7 +439,7 @@ is established.</p>
 <dt class="sig sig-object py" id="pyrogram.handlers.RawUpdateHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">RawUpdateHandler</span></span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler" title="Permalink to this definition"></a></dt>
 <dd><p>The Raw Update handler class. Used to handle raw updates. It is intended to be used with
-<a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_raw_update" title="pyrogram.Client.on_raw_update"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_raw_update()</span></code></a> decorator.</p>
 <dl class="field-list simple">
@@ -461,12 +452,12 @@ a detailed description).</p>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the update handler.</p></li>
 <li><p><strong>update</strong> (<code class="docutils literal notranslate"><span class="pre">Update</span></code>) – The received update, which can be one of the many single Updates listed in the
-<a class="reference internal" href="../telegram/base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a> base type.</p></li>
-<li><p><strong>users</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <a class="reference internal" href="types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a> mentioned in the update.
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code> base type.</p></li>
+<li><p><strong>users</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code> mentioned in the update.
 You can access extra info about the user (such as <em>first_name</em>, <em>last_name</em>, etc…) by using
 the IDs you find in the <em>update</em> argument (e.g.: <em>users[1768841572]</em>).</p></li>
-<li><p><strong>chats</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <a class="reference internal" href="types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> and
-<a class="reference internal" href="../telegram/types/channel.html#pyrogram.raw.types.Channel" title="pyrogram.raw.types.Channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Channel</span></code></a> mentioned in the update.
+<li><p><strong>chats</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code> and
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Channel</span></code> mentioned in the update.
 You can access extra info about the chat (such as <em>title</em>, <em>participants_count</em>, etc…)
 by using the IDs you find in the <em>update</em> argument (e.g.: <em>chats[1701277281]</em>).</p></li>
 </ul>
@@ -477,10 +468,10 @@ by using the IDs you find in the <em>update</em> argument (e.g.: <em>chats[17012
 <p>The following Empty or Forbidden types may exist inside the <em>users</em> and <em>chats</em> dictionaries.
 They mean you have been blocked by the user or banned from the group/channel.</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../telegram/types/user-empty.html#pyrogram.raw.types.UserEmpty" title="pyrogram.raw.types.UserEmpty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserEmpty</span></code></a></p></li>
-<li><p><a class="reference internal" href="../telegram/types/chat-empty.html#pyrogram.raw.types.ChatEmpty" title="pyrogram.raw.types.ChatEmpty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEmpty</span></code></a></p></li>
-<li><p><a class="reference internal" href="../telegram/types/chat-forbidden.html#pyrogram.raw.types.ChatForbidden" title="pyrogram.raw.types.ChatForbidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatForbidden</span></code></a></p></li>
-<li><p><a class="reference internal" href="../telegram/types/channel-forbidden.html#pyrogram.raw.types.ChannelForbidden" title="pyrogram.raw.types.ChannelForbidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelForbidden</span></code></a></p></li>
+<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserEmpty</span></code></p></li>
+<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEmpty</span></code></p></li>
+<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatForbidden</span></code></p></li>
+<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelForbidden</span></code></p></li>
 </ul>
 </div>
 </dd></dl>
