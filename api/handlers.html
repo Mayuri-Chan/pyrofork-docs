@@ -67,6 +67,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enums/index.html">Enumerations</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Update Handlers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#index">Index</a></li>
@@ -215,7 +218,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>message</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>) – The received message.</p></li>
+<li><p><strong>message</strong> (<a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The received message.</p></li>
 </ul>
 </dd>
 </dl>
@@ -242,7 +245,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>edited_message</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>) – The received edited message.</p></li>
+<li><p><strong>edited_message</strong> (<a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The received edited message.</p></li>
 </ul>
 </dd>
 </dl>
@@ -267,7 +270,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>messages</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>) – The deleted messages, as list.</p></li>
+<li><p><strong>messages</strong> (List of <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The deleted messages, as list.</p></li>
 </ul>
 </dd>
 </dl>
@@ -292,7 +295,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>callback_query</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code>) – The received callback query.</p></li>
+<li><p><strong>callback_query</strong> (<a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>) – The received callback query.</p></li>
 </ul>
 </dd>
 </dl>
@@ -317,7 +320,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the inline query handler.</p></li>
-<li><p><strong>inline_query</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code>) – The received inline query.</p></li>
+<li><p><strong>inline_query</strong> (<a class="reference internal" href="types/InlineQuery.html#pyrogram.types.InlineQuery" title="pyrogram.types.InlineQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code></a>) – The received inline query.</p></li>
 </ul>
 </dd>
 </dl>
@@ -343,7 +346,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
-<li><p><strong>chosen_inline_result</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResult</span></code>) – The received chosen inline result.</p></li>
+<li><p><strong>chosen_inline_result</strong> (<a class="reference internal" href="types/ChosenInlineResult.html#pyrogram.types.ChosenInlineResult" title="pyrogram.types.ChosenInlineResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResult</span></code></a>) – The received chosen inline result.</p></li>
 </ul>
 </dd>
 </dl>
@@ -368,7 +371,7 @@ description).</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the handler.</p></li>
-<li><p><strong>chat_member_updated</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdated</span></code>) – The received chat member update.</p></li>
+<li><p><strong>chat_member_updated</strong> (<a class="reference internal" href="types/ChatMemberUpdated.html#pyrogram.types.ChatMemberUpdated" title="pyrogram.types.ChatMemberUpdated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdated</span></code></a>) – The received chat member update.</p></li>
 </ul>
 </dd>
 </dl>
@@ -391,7 +394,7 @@ as positional arguments (look at the section below for a detailed description).<
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the user status handler.</p></li>
-<li><p><strong>user</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code>) – The user containing the updated status.</p></li>
+<li><p><strong>user</strong> (<a class="reference internal" href="types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – The user containing the updated status.</p></li>
 </ul>
 </dd>
 </dl>
@@ -416,7 +419,7 @@ in your callback function.</p></li>
 <dt class="field-even">Other Parameters</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the poll handler.</p></li>
-<li><p><strong>poll</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code>) – The received poll.</p></li>
+<li><p><strong>poll</strong> (<a class="reference internal" href="types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a>) – The received poll.</p></li>
 </ul>
 </dd>
 </dl>
@@ -459,10 +462,10 @@ a detailed description).</p>
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the update handler.</p></li>
 <li><p><strong>update</strong> (<code class="docutils literal notranslate"><span class="pre">Update</span></code>) – The received update, which can be one of the many single Updates listed in the
 <a class="reference internal" href="../telegram/base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a> base type.</p></li>
-<li><p><strong>users</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code> mentioned in the update.
+<li><p><strong>users</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <a class="reference internal" href="types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a> mentioned in the update.
 You can access extra info about the user (such as <em>first_name</em>, <em>last_name</em>, etc…) by using
 the IDs you find in the <em>update</em> argument (e.g.: <em>users[1768841572]</em>).</p></li>
-<li><p><strong>chats</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code> and
+<li><p><strong>chats</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – Dictionary of all <a class="reference internal" href="types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> and
 <a class="reference internal" href="../telegram/types/channel.html#pyrogram.raw.types.Channel" title="pyrogram.raw.types.Channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Channel</span></code></a> mentioned in the update.
 You can access extra info about the chat (such as <em>title</em>, <em>participants_count</em>, etc…)
 by using the IDs you find in the <em>update</em> argument (e.g.: <em>chats[1701277281]</em>).</p></li>

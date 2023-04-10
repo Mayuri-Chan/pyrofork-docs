@@ -30,7 +30,9 @@
         <script src="../../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="request_callback_answer()" href="request_callback_answer.html" />
+    <link rel="prev" title="answer_callback_query()" href="answer_callback_query.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,8 +65,45 @@
 <li class="toctree-l1"><a class="reference internal" href="../../start/examples/index.html">Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../client.html">PyroFork Client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Available Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#utilities">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#messages">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#chats">Chats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stickers">Stickers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#users">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#invite-links">Invite Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#contacts">Contacts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#password">Password</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#bots">Bots</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="get_inline_bot_results.html">get_inline_bot_results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_inline_bot_result.html">send_inline_bot_result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="answer_callback_query.html">answer_callback_query</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">answer_inline_query</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.answer_inline_query"><code class="docutils literal notranslate"><span class="pre">Client.answer_inline_query()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="request_callback_answer.html">request_callback_answer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_game.html">send_game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set_game_score.html">set_game_score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_game_high_scores.html">get_game_high_scores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set_bot_commands.html">set_bot_commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_bot_commands.html">get_bot_commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_bot_commands.html">delete_bot_commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set_bot_default_privileges.html">set_bot_default_privileges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_bot_default_privileges.html">get_bot_default_privileges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set_chat_menu_button.html">set_chat_menu_button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_menu_button.html">get_chat_menu_button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="answer_web_app_query.html">answer_web_app_query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authorization">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#advanced">Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decorators.html">Decorators</a></li>
@@ -117,6 +156,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Available Methods</a> &raquo;</li>
       <li>answer_inline_query()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -139,7 +179,7 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul>
 <li><p><strong>inline_query_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for the answered query.</p></li>
-<li><p><strong>results</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResult</span></code>) – A list of results for the inline query.</p></li>
+<li><p><strong>results</strong> (List of <a class="reference internal" href="../types/InlineQueryResult.html#pyrogram.types.InlineQueryResult" title="pyrogram.types.InlineQueryResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResult</span></code></a>) – A list of results for the inline query.</p></li>
 <li><p><strong>cache_time</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum amount of time in seconds that the result of the inline query may be cached on the server.
 Defaults to 300.</p></li>
 <li><p><strong>is_gallery</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if results should be displayed in gallery mode instead of list mode.
@@ -184,7 +224,10 @@ where they wanted to use the bot’s inline capabilities.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="answer_callback_query.html" class="btn btn-neutral float-left" title="answer_callback_query()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="request_callback_answer.html" class="btn btn-neutral float-right" title="request_callback_answer()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

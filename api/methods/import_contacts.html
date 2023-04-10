@@ -30,7 +30,9 @@
         <script src="../../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="get_contacts()" href="get_contacts.html" />
+    <link rel="prev" title="delete_contacts()" href="delete_contacts.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,8 +65,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../../start/examples/index.html">Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../client.html">PyroFork Client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Available Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#utilities">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#messages">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#chats">Chats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stickers">Stickers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#users">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#invite-links">Invite Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#contacts">Contacts</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_contact.html">add_contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_contacts.html">delete_contacts</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">import_contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.import_contacts"><code class="docutils literal notranslate"><span class="pre">Client.import_contacts()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="get_contacts.html">get_contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_contacts_count.html">get_contacts_count</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#password">Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#bots">Bots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authorization">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#advanced">Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decorators.html">Decorators</a></li>
@@ -117,6 +145,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Available Methods</a> &raquo;</li>
       <li>import_contacts()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -136,7 +165,7 @@
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
 <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>contacts</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPhoneContact</span></code>) – The contact list to be added</p>
+<dd class="field-odd"><p><strong>contacts</strong> (List of <a class="reference internal" href="../types/InputPhoneContact.html#pyrogram.types.InputPhoneContact" title="pyrogram.types.InputPhoneContact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPhoneContact</span></code></a>) – The contact list to be added</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">types.contacts.ImportedContacts</span></code></p>
@@ -158,7 +187,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="delete_contacts.html" class="btn btn-neutral float-left" title="delete_contacts()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="get_contacts.html" class="btn btn-neutral float-right" title="get_contacts()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

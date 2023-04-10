@@ -30,7 +30,9 @@
         <script src="../../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="get_chat_admin_invite_links_count()" href="get_chat_admin_invite_links_count.html" />
+    <link rel="prev" title="get_chat_invite_link_joiners_count()" href="get_chat_invite_link_joiners_count.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,8 +65,46 @@
 <li class="toctree-l1"><a class="reference internal" href="../../start/examples/index.html">Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../client.html">PyroFork Client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Available Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#utilities">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#messages">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#chats">Chats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stickers">Stickers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#users">Users</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#invite-links">Invite Links</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="get_chat_invite_link.html">get_chat_invite_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="export_chat_invite_link.html">export_chat_invite_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_chat_invite_link.html">create_chat_invite_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_chat_invite_link.html">edit_chat_invite_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="revoke_chat_invite_link.html">revoke_chat_invite_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_chat_invite_link.html">delete_chat_invite_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_invite_link_joiners.html">get_chat_invite_link_joiners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_invite_link_joiners_count.html">get_chat_invite_link_joiners_count</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">get_chat_admin_invite_links</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.get_chat_admin_invite_links"><code class="docutils literal notranslate"><span class="pre">Client.get_chat_admin_invite_links()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_admin_invite_links_count.html">get_chat_admin_invite_links_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_admins_with_invite_links.html">get_chat_admins_with_invite_links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_join_requests.html">get_chat_join_requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_chat_admin_invite_links.html">delete_chat_admin_invite_links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="approve_chat_join_request.html">approve_chat_join_request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="approve_all_chat_join_requests.html">approve_all_chat_join_requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="decline_chat_join_request.html">decline_chat_join_request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="decline_all_chat_join_requests.html">decline_all_chat_join_requests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#contacts">Contacts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#password">Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#bots">Bots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authorization">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#advanced">Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decorators.html">Decorators</a></li>
@@ -117,6 +157,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Available Methods</a> &raquo;</li>
       <li>get_chat_admin_invite_links()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -154,10 +195,10 @@ By default, no limit is applied and all invite links are returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code> objects.</p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a> objects.</p>
 </dd>
 <dt class="field-odd">Yields</dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code> objects.</p>
+<dd class="field-odd"><p><a class="reference internal" href="../types/ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a> objects.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -167,7 +208,10 @@ By default, no limit is applied and all invite links are returned.</p></li>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="get_chat_invite_link_joiners_count.html" class="btn btn-neutral float-left" title="get_chat_invite_link_joiners_count()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="get_chat_admin_invite_links_count.html" class="btn btn-neutral float-right" title="get_chat_admin_invite_links_count()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

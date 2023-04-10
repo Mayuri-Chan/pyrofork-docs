@@ -30,7 +30,9 @@
         <script src="../../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="send_audio()" href="send_audio.html" />
+    <link rel="prev" title="copy_media_group()" href="copy_media_group.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,8 +65,77 @@
 <li class="toctree-l1"><a class="reference internal" href="../../start/examples/index.html">Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../client.html">PyroFork Client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Available Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#utilities">Utilities</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#messages">Messages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="send_message.html">send_message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="forward_messages.html">forward_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_message.html">copy_message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_media_group.html">copy_media_group</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">send_photo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.send_photo"><code class="docutils literal notranslate"><span class="pre">Client.send_photo()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="send_audio.html">send_audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_document.html">send_document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_sticker.html">send_sticker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_video.html">send_video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_animation.html">send_animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_voice.html">send_voice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_video_note.html">send_video_note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_media_group.html">send_media_group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_location.html">send_location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_venue.html">send_venue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_contact.html">send_contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_cached_media.html">send_cached_media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_reaction.html">send_reaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_message_text.html">edit_message_text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_message_caption.html">edit_message_caption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_message_media.html">edit_message_media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_message_reply_markup.html">edit_message_reply_markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_inline_text.html">edit_inline_text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_inline_caption.html">edit_inline_caption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_inline_media.html">edit_inline_media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_inline_reply_markup.html">edit_inline_reply_markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_chat_action.html">send_chat_action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_messages.html">delete_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_messages.html">get_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_media_group.html">get_media_group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_history.html">get_chat_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_chat_history_count.html">get_chat_history_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="read_chat_history.html">read_chat_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_poll.html">send_poll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vote_poll.html">vote_poll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stop_poll.html">stop_poll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retract_vote.html">retract_vote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_dice.html">send_dice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="search_messages.html">search_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="search_messages_count.html">search_messages_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="search_global.html">search_global</a></li>
+<li class="toctree-l3"><a class="reference internal" href="search_global_count.html">search_global_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="download_media.html">download_media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stream_media.html">stream_media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_discussion_message.html">get_discussion_message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_discussion_replies.html">get_discussion_replies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_discussion_replies_count.html">get_discussion_replies_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_custom_emoji_stickers.html">get_custom_emoji_stickers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#chats">Chats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stickers">Stickers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#users">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#invite-links">Invite Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#contacts">Contacts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#password">Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#bots">Bots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authorization">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#advanced">Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decorators.html">Decorators</a></li>
@@ -117,6 +188,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Available Methods</a> &raquo;</li>
       <li>send_photo()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -148,7 +220,7 @@ pass a binary file-like object with its attribute “.name” set for in-memory 
 <li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo caption, 0-1024 characters.</p></li>
 <li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
 <li><p><strong>has_spoiler</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
 <li><p><strong>ttl_seconds</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Self-Destruct Timer.
 If you set a timer, the photo will self-destruct in <em>ttl_seconds</em>
@@ -160,7 +232,7 @@ for forum supergroups only.</p></li>
 <li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
 <li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
-<li><p><strong>reply_markup</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
+<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
 instructions to remove reply keyboard or to force a reply from the user.</p></li>
 <li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
@@ -180,7 +252,7 @@ You can either keep <code class="docutils literal notranslate"><span class="pre"
 </ul>
 </dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code> | <code class="docutils literal notranslate"><span class="pre">None</span></code> – On success, the sent photo message is returned, otherwise, in
+<dd class="field-odd"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | <code class="docutils literal notranslate"><span class="pre">None</span></code> – On success, the sent photo message is returned, otherwise, in
 case the upload is deliberately stopped with <a class="reference internal" href="stop_transmission.html#pyrogram.Client.stop_transmission" title="pyrogram.Client.stop_transmission"><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop_transmission()</span></code></a>, None is returned.</p>
 </dd>
 </dl>
@@ -205,7 +277,10 @@ case the upload is deliberately stopped with <a class="reference internal" href=
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="copy_media_group.html" class="btn btn-neutral float-left" title="copy_media_group()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="send_audio.html" class="btn btn-neutral float-right" title="send_audio()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
