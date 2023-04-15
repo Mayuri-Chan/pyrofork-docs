@@ -207,7 +207,7 @@ If <em>reply_to_message_id</em> is passed, this parameter will be ignored.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
 <li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Duration of sent video in seconds.</p></li>
 <li><p><strong>length</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Video width and height.</p></li>
-<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Thumbnail of the video sent.
+<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Thumbnail of the video sent.
 The thumbnail should be in JPEG format and less than 200 KB in size.
 A thumbnail’s width and height should not exceed 320 pixels.
 Thumbnails can’t be reused and can be only uploaded as a new file.</p></li>

@@ -67,6 +67,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/decorators.html">Decorators</a></li>
@@ -110,6 +113,12 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
 </ul>
 
         </div>
@@ -206,7 +215,7 @@ text message you sent and the other containing the reversed text message.</p>
 </li>
 </ul>
 <p>This is already nice and doesn’t add <em>too much</em> boilerplate code, but things can get boring still; you have to
-manually <code class="docutils literal notranslate"><span class="pre">import</span></code>, manually <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code> and manually instantiate each
+manually <code class="docutils literal notranslate"><span class="pre">import</span></code>, manually <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> and manually instantiate each
 <a class="reference internal" href="../api/handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> object because you can’t use decorators for your functions.
 So, what if you could? Smart Plugins solve this issue by taking care of handlers registration automatically.</p>
 </section>
@@ -382,7 +391,7 @@ the groups they were registered on <code class="docutils literal notranslate"><s
 <section id="unloading">
 <h3>Unloading<a class="headerlink" href="#unloading" title="Permalink to this heading"></a></h3>
 <p>In order to unload a plugin, all you need to do is obtain a reference to it by importing the relevant module and call
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_handler()</span></code> Client’s method with your function’s <em>handler</em> instance:</p>
+<a class="reference internal" href="../api/methods/remove_handler.html#pyrogram.Client.remove_handler" title="pyrogram.Client.remove_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_handler()</span></code></a> Client’s method with your function’s <em>handler</em> instance:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">main.py</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plugins.handlers</span> <span class="kn">import</span> <span class="n">echo</span>
@@ -407,7 +416,7 @@ exactly what is needed. The same could have been achieved with:</p>
 <section id="loading">
 <h3>Loading<a class="headerlink" href="#loading" title="Permalink to this heading"></a></h3>
 <p>Similarly to the unloading process, in order to load again a previously unloaded plugin you do the same, but this time
-using <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code> instead. Example:</p>
+using <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> instead. Example:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">main.py</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plugins.handlers</span> <span class="kn">import</span> <span class="n">echo</span>

@@ -67,6 +67,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/decorators.html">Decorators</a></li>
@@ -102,6 +105,12 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
 </ul>
 
         </div>
@@ -146,7 +155,7 @@ updates are allowed or not to be passed in your callback functions, based on the
 <h2>Single Filters<a class="headerlink" href="#single-filters" title="Permalink to this heading"></a></h2>
 <p>Let’s start right away with a simple example:</p>
 <ul>
-<li><p>This example will show you how to <strong>only</strong> handle messages containing a <code class="xref py py-class docutils literal notranslate"><span class="pre">Sticker</span></code> object and
+<li><p>This example will show you how to <strong>only</strong> handle messages containing a <a class="reference internal" href="../api/types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sticker</span></code></a> object and
 ignore any other message. Filters are passed as the first argument of the decorator:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">filters</span>
 

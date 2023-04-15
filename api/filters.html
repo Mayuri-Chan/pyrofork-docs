@@ -67,6 +67,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="decorators.html">Decorators</a></li>
@@ -161,6 +164,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
+</ul>
 
         </div>
       </div>
@@ -204,7 +213,7 @@ update should be handled, False otherwise.
 The <em>filter</em> argument refers to the filter itself and can be used to access keyword arguments (read below).
 The <em>client</em> argument refers to the <a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> that received the update.
 The <em>update</em> argument type will vary depending on which <a class="reference external" href="handlers">Handler</a> is coming from.
-For example, in a <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> the <em>update</em> argument will be a <code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.CallbackQueryHandler" title="pyrogram.handlers.CallbackQueryHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQueryHandler</span></code></a> the <em>update</em> will be a <code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code>.
+For example, in a <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> the <em>update</em> argument will be a <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.CallbackQueryHandler" title="pyrogram.handlers.CallbackQueryHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQueryHandler</span></code></a> the <em>update</em> will be a <a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>.
 Your function body can then access the incoming update attributes and decide whether to allow it or not.</p></li>
 <li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Your filter’s name. Can be anything you like.
 Defaults to “CustomFilter”.</p></li>
@@ -272,43 +281,43 @@ Defaults to “CustomFilter”.</p></li>
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.audio">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">audio</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.audio_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.audio" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.document">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">document</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.document_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.document" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Document.html#pyrogram.types.Document" title="pyrogram.types.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.photo">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.photo" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.sticker">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">sticker</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.sticker_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.sticker" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.animation">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">animation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.animation_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.animation" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.game">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.game_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.game" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Game.html#pyrogram.types.Game" title="pyrogram.types.Game"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Video.html#pyrogram.types.Video" title="pyrogram.types.Video"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
@@ -320,31 +329,31 @@ Defaults to “CustomFilter”.</p></li>
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.voice">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">voice</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.voice_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.voice" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code> note objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a> note objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video_note">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_note</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_note_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_note" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoNote</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/VideoNote.html#pyrogram.types.VideoNote" title="pyrogram.types.VideoNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoNote</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.contact">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">contact</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.contact_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.contact" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Contact.html#pyrogram.types.Contact" title="pyrogram.types.Contact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.location">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.location_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.location" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Location.html#pyrogram.types.Location" title="pyrogram.types.Location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.venue">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">venue</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.venue_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.venue" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
@@ -356,13 +365,13 @@ Defaults to “CustomFilter”.</p></li>
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.poll">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">poll</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.poll_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.poll" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.dice">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">dice</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.dice_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.dice" title="Permalink to this definition"></a></dt>
-<dd><p>Filter messages that contain <code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code> objects.</p>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Dice.html#pyrogram.types.Dice" title="pyrogram.types.Dice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
@@ -549,7 +558,7 @@ Defaults to “CustomFilter”.</p></li>
 <li><p><strong>commands</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – The command or list of commands as string the filter should look for.
 Examples: “start”, [“start”, “help”, “settings”]. When a message text containing
 a command arrives, the command itself and its arguments will be stored in the <em>command</em>
-field of the <code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>.</p></li>
+field of the <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
 <li><p><strong>prefixes</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>, <em>optional</em>) – A prefix or a list of prefixes as string the filter should look for.
 Defaults to “/” (slash). Examples: “.”, “!”, [“/”, “!”, “.”], list(“.:!”).
 Pass None or “” (empty string) to allow commands with no prefix at all.</p></li>
@@ -566,9 +575,9 @@ Examples: when True, command=”Start” would trigger /Start but not /start.</p
 <dd><p>Filter updates that match a given regular expression pattern.</p>
 <p>Can be applied to handlers that receive one of the following updates:</p>
 <ul class="simple">
-<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>: The filter will match <code class="docutils literal notranslate"><span class="pre">text</span></code> or <code class="docutils literal notranslate"><span class="pre">caption</span></code>.</p></li>
-<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code>: The filter will match <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p></li>
-<li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code>: The filter will match <code class="docutils literal notranslate"><span class="pre">query</span></code>.</p></li>
+<li><p><a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">text</span></code> or <code class="docutils literal notranslate"><span class="pre">caption</span></code>.</p></li>
+<li><p><a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p></li>
+<li><p><a class="reference internal" href="types/InlineQuery.html#pyrogram.types.InlineQuery" title="pyrogram.types.InlineQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">query</span></code>.</p></li>
 </ul>
 <p>When a pattern matches, all the <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> are
 stored in the <code class="docutils literal notranslate"><span class="pre">matches</span></code> field of the update object itself.</p>

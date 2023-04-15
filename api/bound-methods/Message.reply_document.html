@@ -205,7 +205,7 @@ pass a file path as string to upload a new file that exists on your local machin
 <li><p><strong>quote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
 If <em>reply_to_message_id</em> is passed, this parameter will be ignored.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
-<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Thumbnail of the file sent.
+<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Thumbnail of the file sent.
 The thumbnail should be in JPEG format and less than 200 KB in size.
 A thumbnail’s width and height should not exceed 320 pixels.
 Thumbnails can’t be reused and can be only uploaded as a new file.</p></li>

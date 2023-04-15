@@ -67,6 +67,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/decorators.html">Decorators</a></li>
@@ -104,6 +107,12 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
 </ul>
 
         </div>
@@ -169,7 +178,7 @@ list of the basic styles currently supported by PyroFork.</p>
 <section id="markdown-style">
 <h2>Markdown Style<a class="headerlink" href="#markdown-style" title="Permalink to this heading"></a></h2>
 <p>To strictly use this mode, pass <a class="reference internal" href="../api/enums/ParseMode.html#pyrogram.enums.ParseMode.MARKDOWN" title="pyrogram.enums.ParseMode.MARKDOWN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code></a> to the <em>parse_mode</em> parameter when using
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code>. Use the following syntax in your message:</p>
+<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. Use the following syntax in your message:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>**bold**
 
 __italic__
@@ -219,7 +228,7 @@ pre-formatted
 <section id="html-style">
 <h2>HTML Style<a class="headerlink" href="#html-style" title="Permalink to this heading"></a></h2>
 <p>To strictly use this mode, pass <code class="xref py py-obj docutils literal notranslate"><span class="pre">HTML</span></code> to the <em>parse_mode</em> parameter when using
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code>. The following tags are currently supported:</p>
+<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. The following tags are currently supported:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;
 
 &lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;

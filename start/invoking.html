@@ -75,6 +75,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/decorators.html">Decorators</a></li>
@@ -105,6 +108,12 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
 </ul>
 
         </div>
@@ -181,7 +190,7 @@ call; this is required for all asynchronous methods.</p>
 </pre></div>
 </div>
 </li>
-<li><p>Finally, we tell Python to schedule our <code class="docutils literal notranslate"><span class="pre">main()</span></code> async function by using PyroFork’s <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code>
+<li><p>Finally, we tell Python to schedule our <code class="docutils literal notranslate"><span class="pre">main()</span></code> async function by using PyroFork’s <a class="reference internal" href="../api/methods/run.html#pyrogram.Client.run" title="pyrogram.Client.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a>
 method.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </pre></div>
@@ -193,8 +202,8 @@ method.</p>
 <section id="context-manager">
 <h2>Context Manager<a class="headerlink" href="#context-manager" title="Permalink to this heading"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">with</span></code> statement starts a context manager, which is used as a shortcut for starting, executing and stopping
-the Client, asynchronously. It does so by automatically calling <code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code> and
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code> in a more convenient way which also gracefully stops the client, even in case of
+the Client, asynchronously. It does so by automatically calling <a class="reference internal" href="../api/methods/start.html#pyrogram.Client.start" title="pyrogram.Client.start"><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a> and
+<a class="reference internal" href="../api/methods/stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop"><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> in a more convenient way which also gracefully stops the client, even in case of
 unhandled exceptions in your code.</p>
 <p>Below there’s the same example as above, but without the use of the context manager:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
@@ -214,7 +223,7 @@ unhandled exceptions in your code.</p>
 </section>
 <section id="using-asyncio-run">
 <h2>Using asyncio.run()<a class="headerlink" href="#using-asyncio-run" title="Permalink to this heading"></a></h2>
-<p>Alternatively to the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> method, you can use Python’s <code class="docutils literal notranslate"><span class="pre">asyncio.run()</span></code> to execute the main
+<p>Alternatively to the <a class="reference internal" href="../api/methods/run.html#pyrogram.Client.run" title="pyrogram.Client.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, you can use Python’s <code class="docutils literal notranslate"><span class="pre">asyncio.run()</span></code> to execute the main
 function, with one little caveat: the Client instance (and possibly other asyncio resources you are going to use) must
 be instantiated inside the main function.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
