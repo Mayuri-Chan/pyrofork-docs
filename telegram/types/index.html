@@ -193,12 +193,24 @@
 <li class="toctree-l2"><a class="reference internal" href="auth/sent-code-type-sms.html">SentCodeTypeSms</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="bots/index.html">Bots</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bots/bot-info.html">BotInfo</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="channels/index.html">Channels</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="channels/admin-log-results.html">AdminLogResults</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/channel-participant.html">ChannelParticipant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/channel-participants.html">ChannelParticipants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/channel-participants-not-modified.html">ChannelParticipantsNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/send-as-peers.html">SendAsPeers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chatlists/index.html">Chatlists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chatlists/chatlist-invite.html">ChatlistInvite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chatlists/chatlist-invite-already.html">ChatlistInviteAlready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chatlists/chatlist-updates.html">ChatlistUpdates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chatlists/exported-chatlist-invite.html">ExportedChatlistInvite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chatlists/exported-invites.html">ExportedInvites</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contacts/index.html">Contacts</a><ul>
@@ -548,6 +560,7 @@
 <li class="toctree-l1"><a class="reference internal" href="dh-gen-retry.html">DhGenRetry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter.html">DialogFilter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dialog-filter-chatlist.html">DialogFilterChatlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter-default.html">DialogFilterDefault</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter-suggested.html">DialogFilterSuggested</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-folder.html">DialogFolder</a></li>
@@ -592,6 +605,7 @@
 <li class="toctree-l1"><a class="reference internal" href="encrypted-message.html">EncryptedMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypted-message-service.html">EncryptedMessageService</a></li>
 <li class="toctree-l1"><a class="reference internal" href="error.html">Error</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exported-chatlist-invite.html">ExportedChatlistInvite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exported-contact-token.html">ExportedContactToken</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exported-message-link.html">ExportedMessageLink</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file-hash.html">FileHash</a></li>
@@ -614,6 +628,7 @@
 <li class="toctree-l1"><a class="reference internal" href="imported-contact.html">ImportedContact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-bot-switch-pm.html">InlineBotSwitchPM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-bot-web-view.html">InlineBotWebView</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-bot-pm.html">InlineQueryPeerTypeBotPM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-broadcast.html">InlineQueryPeerTypeBroadcast</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-chat.html">InlineQueryPeerTypeChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-megagroup.html">InlineQueryPeerTypeMegagroup</a></li>
@@ -641,6 +656,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-chat-photo.html">InputChatPhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-chat-photo-empty.html">InputChatPhotoEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-chat-uploaded-photo.html">InputChatUploadedPhoto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-chatlist-dialog-filter.html">InputChatlistDialogFilter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-check-password-empty.html">InputCheckPasswordEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-check-password-srp.html">InputCheckPasswordSRP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-client-proxy.html">InputClientProxy</a></li>
@@ -857,7 +873,9 @@
 <li class="toctree-l1"><a class="reference internal" href="message-action-secure-values-sent.html">MessageActionSecureValuesSent</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-secure-values-sent-me.html">MessageActionSecureValuesSentMe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-set-chat-theme.html">MessageActionSetChatTheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-set-chat-wall-paper.html">MessageActionSetChatWallPaper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-set-messages-ttl.html">MessageActionSetMessagesTTL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-set-same-chat-wall-paper.html">MessageActionSetSameChatWallPaper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-suggest-profile-photo.html">MessageActionSuggestProfilePhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-topic-create.html">MessageActionTopicCreate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-topic-edit.html">MessageActionTopicEdit</a></li>
