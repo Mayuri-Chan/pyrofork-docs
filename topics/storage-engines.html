@@ -202,11 +202,9 @@ mongodb config as <code class="docutils literal notranslate"><span class="pre">d
 
 <span class="c1"># uri (``str``):</span>
 <span class="c1">#   mongodb database uri</span>
-<span class="c1"># db_name (``str``, *optional*):</span>
-<span class="c1">#   custom database name, default = pyrofork-session</span>
 <span class="c1"># remove_peers (``bool``, *optional*):</span>
 <span class="c1">#   remove peers collection on logout, default = False</span>
-<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">mongodb</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">uri</span><span class="o">=</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">,</span> <span class="n">db_name</span><span class="o">=</span><span class="s2">&quot;pyrofork-session&quot;</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">mongodb</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">uri</span><span class="o">=</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
 </pre></div>
 </div>
