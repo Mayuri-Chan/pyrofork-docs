@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Message.click() &mdash; PyroFork Documentation</title>
@@ -18,10 +18,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -40,11 +39,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PyroFork
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -167,9 +170,9 @@
         <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Bound Methods</a> &raquo;</li>
-      <li>Message.click()</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Bound Methods</a></li>
+      <li class="breadcrumb-item active">Message.click()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -215,7 +218,7 @@ The origin (0, 0) is top-left.</p></li>
 Only the first matching button will be pressed.</p></li>
 </ol>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Used as integer index, integer abscissa (in pair with y) or as string label.
 Defaults to 0 (first button).</p></li>
@@ -226,7 +229,7 @@ Defaults to <code class="docutils literal notranslate"><span class="pre">True</s
 <li><p><strong>timeout</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Timeout in seconds.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p>The result of <a class="reference internal" href="../methods/request_callback_answer.html#pyrogram.Client.request_callback_answer" title="pyrogram.Client.request_callback_answer"><code class="xref py py-meth docutils literal notranslate"><span class="pre">request_callback_answer()</span></code></a> in case of inline callback button clicks.</p></li>
 <li><p>The result of <a class="reference internal" href="Message.reply.html#pyrogram.types.Message.reply" title="pyrogram.types.Message.reply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply()</span></code></a> in case of normal button clicks.</p></li>
@@ -235,7 +238,7 @@ Defaults to <code class="docutils literal notranslate"><span class="pre">True</s
 </ul>
 </p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – In case the provided index or position is out of range or the button label was not found.</p></li>

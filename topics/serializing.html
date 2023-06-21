@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Object Serialization &mdash; PyroFork Documentation</title>
@@ -18,10 +18,9 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -40,11 +39,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PyroFork
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -125,8 +128,8 @@
         <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Object Serialization</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Object Serialization</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -140,13 +143,13 @@
 <p>Serializing means converting a PyroFork object, which exists as Python class instance, to a text string that can be
 easily shared and stored anywhere. PyroFork provides two formats for serializing its objects: one good looking for
 humans and another more compact for machines that is able to recover the original structures.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#for-humans-str-obj" id="id1">For Humans - str(obj)</a></p></li>
 <li><p><a class="reference internal" href="#for-machines-repr-obj" id="id2">For Machines - repr(obj)</a></p></li>
 </ul>
-</div>
+</nav>
 <hr class="docutils" />
 <section id="for-humans-str-obj">
 <h2>For Humans - str(obj)<a class="headerlink" href="#for-humans-str-obj" title="Permalink to this heading"></a></h2>

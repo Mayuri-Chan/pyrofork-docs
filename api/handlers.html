@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Update Handlers &mdash; PyroFork Documentation</title>
@@ -18,10 +18,9 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -40,11 +39,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PyroFork
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -138,8 +141,8 @@
         <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Update Handlers</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Update Handlers</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -167,13 +170,13 @@ For a much more convenient way of registering callback functions have a look at 
 <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#index" id="id1">Index</a></p></li>
 <li><p><a class="reference internal" href="#details" id="id2">Details</a></p></li>
 </ul>
-</div>
+</nav>
 <hr class="docutils" />
 <section id="index">
 <h2>Index<a class="headerlink" href="#index" title="Permalink to this heading"></a></h2>
@@ -207,7 +210,7 @@ It is intended to be used with <a class="reference internal" href="methods/add_h
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_message" title="pyrogram.Client.on_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new Message arrives. It takes <em>(client, message)</em>
 as positional arguments (look at the section below for a detailed description).</p></li>
@@ -215,7 +218,7 @@ as positional arguments (look at the section below for a detailed description).<
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
 <li><p><strong>message</strong> (<a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The received message.</p></li>
@@ -234,7 +237,7 @@ in your callback function.</p></li>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_edited_message" title="pyrogram.Client.on_edited_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_edited_message()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new edited message arrives. It takes <em>(client, message)</em>
 as positional arguments (look at the section below for a detailed description).</p></li>
@@ -242,7 +245,7 @@ as positional arguments (look at the section below for a detailed description).<
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
 <li><p><strong>edited_message</strong> (<a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The received edited message.</p></li>
@@ -259,7 +262,7 @@ in your callback function.</p></li>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_deleted_messages" title="pyrogram.Client.on_deleted_messages"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_deleted_messages()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when one or more messages have been deleted.
 It takes <em>(client, messages)</em> as positional arguments (look at the section below for a detailed description).</p></li>
@@ -267,7 +270,7 @@ It takes <em>(client, messages)</em> as positional arguments (look at the sectio
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
 <li><p><strong>messages</strong> (List of <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The deleted messages, as list.</p></li>
@@ -284,7 +287,7 @@ It is intended to be used with <a class="reference internal" href="methods/add_h
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_callback_query" title="pyrogram.Client.on_callback_query"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_callback_query()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new CallbackQuery arrives. It takes <em>(client, callback_query)</em>
 as positional arguments (look at the section below for a detailed description).</p></li>
@@ -292,7 +295,7 @@ as positional arguments (look at the section below for a detailed description).<
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
 <li><p><strong>callback_query</strong> (<a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>) – The received callback query.</p></li>
@@ -309,7 +312,7 @@ It is intended to be used with <a class="reference internal" href="methods/add_h
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_inline_query" title="pyrogram.Client.on_inline_query"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_inline_query()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new InlineQuery arrives. It takes <em>(client, inline_query)</em>
 as positional arguments (look at the section below for a detailed description).</p></li>
@@ -317,7 +320,7 @@ as positional arguments (look at the section below for a detailed description).<
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the inline query handler.</p></li>
 <li><p><strong>inline_query</strong> (<a class="reference internal" href="types/InlineQuery.html#pyrogram.types.InlineQuery" title="pyrogram.types.InlineQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code></a>) – The received inline query.</p></li>
@@ -334,7 +337,7 @@ It is intended to be used with <a class="reference internal" href="methods/add_h
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_chosen_inline_result" title="pyrogram.Client.on_chosen_inline_result"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_chosen_inline_result()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new chosen inline result arrives.
 It takes <em>(client, chosen_inline_result)</em> as positional arguments (look at the section below for a
@@ -343,7 +346,7 @@ detailed description).</p></li>
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the message handler.</p></li>
 <li><p><strong>chosen_inline_result</strong> (<a class="reference internal" href="types/ChosenInlineResult.html#pyrogram.types.ChosenInlineResult" title="pyrogram.types.ChosenInlineResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResult</span></code></a>) – The received chosen inline result.</p></li>
@@ -360,7 +363,7 @@ It is intended to be used with <a class="reference internal" href="methods/add_h
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_chat_member_updated" title="pyrogram.Client.on_chat_member_updated"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_chat_member_updated()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new ChatMemberUpdated event arrives. It takes
 <em>(client, chat_member_updated)</em> as positional arguments (look at the section below for a detailed
@@ -368,7 +371,7 @@ description).</p></li>
 <li><p><strong>filters</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters</span></code>) – Pass one or more filters to allow only a subset of updates to be passed in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the handler.</p></li>
 <li><p><strong>chat_member_updated</strong> (<a class="reference internal" href="types/ChatMemberUpdated.html#pyrogram.types.ChatMemberUpdated" title="pyrogram.types.ChatMemberUpdated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdated</span></code></a>) – The received chat member update.</p></li>
@@ -384,14 +387,14 @@ description).</p></li>
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
 <p>For a nicer way to register this handler, have a look at the <a class="reference internal" href="decorators.html#pyrogram.Client.on_user_status" title="pyrogram.Client.on_user_status"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_user_status()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new user status update arrives. It takes <em>(client, user)</em>
 as positional arguments (look at the section below for a detailed description).</p></li>
 <li><p><strong>filters</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters</span></code>) – Pass one or more filters to allow only a subset of users to be passed in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the user status handler.</p></li>
 <li><p><strong>user</strong> (<a class="reference internal" href="types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – The user containing the updated status.</p></li>
@@ -408,7 +411,7 @@ as positional arguments (look at the section below for a detailed description).<
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_poll" title="pyrogram.Client.on_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_poll()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new poll update arrives. It takes <em>(client, poll)</em>
 as positional arguments (look at the section below for a detailed description).</p></li>
@@ -416,7 +419,7 @@ as positional arguments (look at the section below for a detailed description).<
 in your callback function.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the poll handler.</p></li>
 <li><p><strong>poll</strong> (<a class="reference internal" href="types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a>) – The received poll.</p></li>
@@ -433,11 +436,11 @@ in your callback function.</p></li>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_disconnect" title="pyrogram.Client.on_disconnect"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_disconnect()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a disconnection occurs. It takes <em>(client)</em>
 as positional argument (look at the section below for a detailed description).</p>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself. Useful, for example, when you want to change the proxy before a new connection
 is established.</p>
 </dd>
@@ -452,12 +455,12 @@ is established.</p>
 <p>For a nicer way to register this handler, have a look at the
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_raw_update" title="pyrogram.Client.on_raw_update"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_raw_update()</span></code></a> decorator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – A function that will be called when a new update is received from the server. It takes
 <em>(client, update, users, chats)</em> as positional arguments (look at the section below for
 a detailed description).</p>
 </dd>
-<dt class="field-even">Other Parameters</dt>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the update handler.</p></li>
 <li><p><strong>update</strong> (<code class="docutils literal notranslate"><span class="pre">Update</span></code>) – The received update, which can be one of the many single Updates listed in the
