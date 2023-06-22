@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>idle() &mdash; PyroFork Documentation</title>
+  <title>run_sync() &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/methods/idle.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/methods/run_sync.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -30,8 +30,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="compose()" href="compose.html" />
-    <link rel="prev" title="set_parse_mode()" href="set_parse_mode.html" /> 
+    <link rel="next" title="restart()" href="restart.html" />
+    <link rel="prev" title="run()" href="run.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -75,17 +75,17 @@
 <li class="toctree-l3"><a class="reference internal" href="start.html">start</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stop.html">stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="run.html">run</a></li>
-<li class="toctree-l3"><a class="reference internal" href="run_sync.html">run_sync</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">run_sync</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.run_sync"><code class="docutils literal notranslate"><span class="pre">Client.run_sync()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="restart.html">restart</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add_handler.html">add_handler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="remove_handler.html">remove_handler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stop_transmission.html">stop_transmission</a></li>
 <li class="toctree-l3"><a class="reference internal" href="export_session_string.html">export_session_string</a></li>
 <li class="toctree-l3"><a class="reference internal" href="set_parse_mode.html">set_parse_mode</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">idle()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.idle"><code class="docutils literal notranslate"><span class="pre">idle()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="idle.html">idle()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="compose.html">compose()</a></li>
 </ul>
 </li>
@@ -156,7 +156,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Available Methods</a></li>
-      <li class="breadcrumb-item active">idle()</li>
+      <li class="breadcrumb-item active">run_sync()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -165,44 +165,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="idle">
-<h1>idle()<a class="headerlink" href="#idle" title="Permalink to this heading"></a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="pyrogram.idle">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.</span></span><span class="sig-name descname"><span class="pre">idle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.idle" title="Permalink to this definition"></a></dt>
-<dd><p>Block the main script execution until a signal is received.</p>
-<p>This function will run indefinitely in order to block the main script execution and prevent it from
-exiting while having client(s) that are still running in the background.</p>
-<p>It is useful for event-driven application only, that are, applications which react upon incoming Telegram
-updates through handlers, rather than executing a set of methods sequentially.</p>
-<p>Once a signal is received (e.g.: from CTRL+C) the function will terminate and your main script will continue.
-Don’t forget to call <a class="reference internal" href="stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop"><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> for each running client before the script ends.</p>
-<p class="rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">idle</span>
-
-
-<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">apps</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;account1&quot;</span><span class="p">),</span>
-        <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;account2&quot;</span><span class="p">),</span>
-        <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;account3&quot;</span><span class="p">)</span>
-    <span class="p">]</span>
-
-    <span class="o">...</span>  <span class="c1"># Set up handlers</span>
-
-    <span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">apps</span><span class="p">:</span>
-        <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-
-    <span class="k">await</span> <span class="n">idle</span><span class="p">()</span>
-
-    <span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">apps</span><span class="p">:</span>
-        <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
-
-
-<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
-</pre></div>
-</div>
+  <section id="run-sync">
+<h1>run_sync()<a class="headerlink" href="#run-sync" title="Permalink to this heading"></a></h1>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyrogram.Client.run_sync">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">run_sync</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.run_sync" title="Permalink to this definition"></a></dt>
+<dd><p>Runs the given sync function (optionally with arguments) on a separate thread.</p>
+<p>Parameters:
+func (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>):</p>
+<blockquote>
+<div><p>Sync function to run.</p>
+</div></blockquote>
+<dl class="simple">
+<dt><em>args (``any``, *optional</em>):</dt><dd><p>Function argument.</p>
+</dd>
+<dt><a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs (<code class="docutils literal notranslate"><span class="pre">any</span></code>, <em>optional</em>):</dt><dd><p>Function extras arguments.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -211,8 +190,8 @@ Don’t forget to call <a class="reference internal" href="stop.html#pyrogram.Cl
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="set_parse_mode.html" class="btn btn-neutral float-left" title="set_parse_mode()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="compose.html" class="btn btn-neutral float-right" title="compose()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="run.html" class="btn btn-neutral float-left" title="run()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="restart.html" class="btn btn-neutral float-right" title="restart()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
