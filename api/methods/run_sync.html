@@ -171,15 +171,16 @@
 <dt class="sig sig-object py" id="pyrogram.Client.run_sync">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">run_sync</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.run_sync" title="Permalink to this definition"></a></dt>
 <dd><p>Runs the given sync function (optionally with arguments) on a separate thread.</p>
-<p>Parameters:
-func (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>):</p>
-<blockquote>
-<div><p>Sync function to run.</p>
-</div></blockquote>
-<dl class="simple">
-<dt><em>args (``any``, *optional</em>):</dt><dd><p>Function argument.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>func</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Sync function to run.</p></li>
+<li><p><strong>*args</strong> (<code class="docutils literal notranslate"><span class="pre">any</span></code>, <em>optional</em>) – Function argument.</p></li>
+<li><p><strong>**kwargs</strong> (<code class="docutils literal notranslate"><span class="pre">any</span></code>, <em>optional</em>) – Function extras arguments.</p></li>
+</ul>
 </dd>
-<dt><a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs (<code class="docutils literal notranslate"><span class="pre">any</span></code>, <em>optional</em>):</dt><dd><p>Function extras arguments.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">any</span></code> – The function result.</p>
 </dd>
 </dl>
 </dd></dl>
