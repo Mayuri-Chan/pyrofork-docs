@@ -196,6 +196,8 @@ pass to the <code class="docutils literal notranslate"><span class="pre">session
 Defaults to False.</p></li>
 <li><p><strong>mongodb</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>, <em>optional</em>) – Mongodb config as dict, e.g.: <em>dict(connection=async_pymongo.AsyncClient(“mongodb://…”), remove_peers=False)</em>.
 Only applicable for new sessions.</p></li>
+<li><p><strong>storage (`obj</strong> – ~pyrogram.storage.Storage`, <em>optional</em>):
+Custom session storage.</p></li>
 <li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the phone number as string (with the Country Code prefix included) to avoid entering it manually.
 Only applicable for new sessions.</p></li>
 <li><p><strong>phone_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the phone code as string (for test numbers only) to avoid entering it manually.
