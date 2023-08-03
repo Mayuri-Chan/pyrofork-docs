@@ -140,6 +140,9 @@
 <li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardRemove.html">ReplyKeyboardRemove</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardMarkup.html">InlineKeyboardMarkup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardButton.html">InlineKeyboardButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChannel.html">RequestPeerTypeChannel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChat.html">RequestPeerTypeChat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeUser.html">RequestPeerTypeUser</a></li>
 <li class="toctree-l3"><a class="reference internal" href="LoginUrl.html">LoginUrl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ForceReply.html">ForceReply</a></li>
 <li class="toctree-l3"><a class="reference internal" href="CallbackQuery.html">CallbackQuery</a></li>
@@ -493,39 +496,48 @@ Empty fields aren’t shown when, for example, using <code class="docutils liter
 <tr class="row-odd"><td><p><a class="reference internal" href="InlineKeyboardButton.html#pyrogram.types.InlineKeyboardButton" title="pyrogram.types.InlineKeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardButton</span></code></a></p></td>
 <td><p>One button of an inline keyboard.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="LoginUrl.html#pyrogram.types.LoginUrl" title="pyrogram.types.LoginUrl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoginUrl</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="RequestPeerTypeChannel.html#pyrogram.types.RequestPeerTypeChannel" title="pyrogram.types.RequestPeerTypeChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestPeerTypeChannel</span></code></a></p></td>
+<td><p>Object used to request clients to send a channel identifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="RequestPeerTypeChat.html#pyrogram.types.RequestPeerTypeChat" title="pyrogram.types.RequestPeerTypeChat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestPeerTypeChat</span></code></a></p></td>
+<td><p>Object used to request clients to send a chat identifier.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="RequestPeerTypeUser.html#pyrogram.types.RequestPeerTypeUser" title="pyrogram.types.RequestPeerTypeUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestPeerTypeUser</span></code></a></p></td>
+<td><p>Object used to request clients to send a user identifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="LoginUrl.html#pyrogram.types.LoginUrl" title="pyrogram.types.LoginUrl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoginUrl</span></code></a></p></td>
 <td><p>Represents a parameter of the inline keyboard button used to automatically authorize a user.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a></p></td>
 <td><p>Object used to force clients to show a reply interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a></p></td>
 <td><p>An incoming callback query from a callback button in an inline keyboard.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="GameHighScore.html#pyrogram.types.GameHighScore" title="pyrogram.types.GameHighScore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GameHighScore</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="GameHighScore.html#pyrogram.types.GameHighScore" title="pyrogram.types.GameHighScore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GameHighScore</span></code></a></p></td>
 <td><p>One row of the high scores table for a game.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="CallbackGame.html#pyrogram.types.CallbackGame" title="pyrogram.types.CallbackGame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackGame</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="CallbackGame.html#pyrogram.types.CallbackGame" title="pyrogram.types.CallbackGame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackGame</span></code></a></p></td>
 <td><p>Placeholder, currently holds no information.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="WebAppInfo.html#pyrogram.types.WebAppInfo" title="pyrogram.types.WebAppInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppInfo</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="WebAppInfo.html#pyrogram.types.WebAppInfo" title="pyrogram.types.WebAppInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppInfo</span></code></a></p></td>
 <td><p><p>Contains information about a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a>.</p>
 </p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="MenuButton.html#pyrogram.types.MenuButton" title="pyrogram.types.MenuButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButton</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="MenuButton.html#pyrogram.types.MenuButton" title="pyrogram.types.MenuButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButton</span></code></a></p></td>
 <td><p>Describes the bot's menu button in a private chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="MenuButtonCommands.html#pyrogram.types.MenuButtonCommands" title="pyrogram.types.MenuButtonCommands"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonCommands</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="MenuButtonCommands.html#pyrogram.types.MenuButtonCommands" title="pyrogram.types.MenuButtonCommands"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonCommands</span></code></a></p></td>
 <td><p>A menu button, which opens the bot's list of commands.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="MenuButtonWebApp.html#pyrogram.types.MenuButtonWebApp" title="pyrogram.types.MenuButtonWebApp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonWebApp</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="MenuButtonWebApp.html#pyrogram.types.MenuButtonWebApp" title="pyrogram.types.MenuButtonWebApp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonWebApp</span></code></a></p></td>
 <td><p><p>A menu button, which launches a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a>.</p>
 </p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="MenuButtonDefault.html#pyrogram.types.MenuButtonDefault" title="pyrogram.types.MenuButtonDefault"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonDefault</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="MenuButtonDefault.html#pyrogram.types.MenuButtonDefault" title="pyrogram.types.MenuButtonDefault"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonDefault</span></code></a></p></td>
 <td><p>Describes that no specific value for the menu button was set.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="SentWebAppMessage.html#pyrogram.types.SentWebAppMessage" title="pyrogram.types.SentWebAppMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentWebAppMessage</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="SentWebAppMessage.html#pyrogram.types.SentWebAppMessage" title="pyrogram.types.SentWebAppMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentWebAppMessage</span></code></a></p></td>
 <td><p><p>Contains information about an inline message sent by a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> on behalf of a user.</p>
 </p></td>
 </tr>

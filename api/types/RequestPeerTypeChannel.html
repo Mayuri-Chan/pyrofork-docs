@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CallbackQuery &mdash; PyroFork Documentation</title>
+  <title>RequestPeerTypeChannel &mdash; PyroFork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/api/types/CallbackQuery.html"/>
+    <link rel="canonical" href="https://docs.pyrogram.org/api/types/RequestPeerTypeChannel.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -30,8 +30,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="GameHighScore" href="GameHighScore.html" />
-    <link rel="prev" title="ForceReply" href="ForceReply.html" /> 
+    <link rel="next" title="RequestPeerTypeChat" href="RequestPeerTypeChat.html" />
+    <link rel="prev" title="InlineKeyboardButton" href="InlineKeyboardButton.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -80,15 +80,15 @@
 <li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardRemove.html">ReplyKeyboardRemove</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardMarkup.html">InlineKeyboardMarkup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardButton.html">InlineKeyboardButton</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChannel.html">RequestPeerTypeChannel</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">RequestPeerTypeChannel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.RequestPeerTypeChannel"><code class="docutils literal notranslate"><span class="pre">RequestPeerTypeChannel</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChat.html">RequestPeerTypeChat</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeUser.html">RequestPeerTypeUser</a></li>
 <li class="toctree-l3"><a class="reference internal" href="LoginUrl.html">LoginUrl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ForceReply.html">ForceReply</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">CallbackQuery</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.CallbackQuery"><code class="docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="GameHighScore.html">GameHighScore</a></li>
 <li class="toctree-l3"><a class="reference internal" href="CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l3"><a class="reference internal" href="WebAppInfo.html">WebAppInfo</a></li>
@@ -160,7 +160,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Available Types</a></li>
-      <li class="breadcrumb-item active">CallbackQuery</li>
+      <li class="breadcrumb-item active">RequestPeerTypeChannel</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -169,29 +169,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="callbackquery">
-<h1>CallbackQuery<a class="headerlink" href="#callbackquery" title="Permalink to this heading"></a></h1>
+  <section id="requestpeertypechannel">
+<h1>RequestPeerTypeChannel<a class="headerlink" href="#requestpeertypechannel" title="Permalink to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.CallbackQuery">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">CallbackQuery</span></span><a class="headerlink" href="#pyrogram.types.CallbackQuery" title="Permalink to this definition"></a></dt>
-<dd><p>An incoming callback query from a callback button in an inline keyboard.</p>
-<p>If the button that originated the query was attached to a message sent by the bot, the field <em>message</em>
-will be present. If the button was attached to a message sent via the bot (in inline mode), the field
-<em>inline_message_id</em> will be present. Exactly one of the fields <em>data</em> or <em>game_short_name</em> will be present.</p>
+<dt class="sig sig-object py" id="pyrogram.types.RequestPeerTypeChannel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">RequestPeerTypeChannel</span></span><a class="headerlink" href="#pyrogram.types.RequestPeerTypeChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Object used to request clients to send a channel identifier.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this query.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – Sender.</p></li>
-<li><p><strong>chat_instance</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Global identifier, uniquely corresponding to the chat to which the message with the callback button was
-sent. Useful for high scores in games.</p></li>
-<li><p><strong>message</strong> (<a class="reference internal" href="Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>, <em>optional</em>) – Message with the callback button that originated the query. Note that message content and message date will
-not be available if the message is too old.</p></li>
-<li><p><strong>inline_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier of the message sent via the bot in inline mode, that originated the query.</p></li>
-<li><p><strong>data</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>optional</em>) – Data associated with the callback button. Be aware that a bad client can send arbitrary data in this field.</p></li>
-<li><p><strong>game_short_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Short name of a Game to be returned, serves as the unique identifier for the game.</p></li>
-<li><p><strong>matches</strong> (<em>List of regex Matches, *optional*</em>) – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
-the data of this callback query. Only applicable when using <code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters.regex</span></code>.</p></li>
+<li><p><strong>is_creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Channel which user is the owner.</p></li>
+<li><p><strong>is_username</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Channel which has username.</p></li>
 </ul>
 </dd>
 </dl>
@@ -203,8 +191,8 @@ the data of this callback query. Only applicable when using <code class="xref py
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ForceReply.html" class="btn btn-neutral float-left" title="ForceReply" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="GameHighScore.html" class="btn btn-neutral float-right" title="GameHighScore" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="InlineKeyboardButton.html" class="btn btn-neutral float-left" title="InlineKeyboardButton" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="RequestPeerTypeChat.html" class="btn btn-neutral float-right" title="RequestPeerTypeChat" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

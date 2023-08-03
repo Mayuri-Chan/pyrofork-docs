@@ -83,6 +83,9 @@
 <li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardRemove.html">ReplyKeyboardRemove</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardMarkup.html">InlineKeyboardMarkup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InlineKeyboardButton.html">InlineKeyboardButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChannel.html">RequestPeerTypeChannel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChat.html">RequestPeerTypeChat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeUser.html">RequestPeerTypeUser</a></li>
 <li class="toctree-l3"><a class="reference internal" href="LoginUrl.html">LoginUrl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ForceReply.html">ForceReply</a></li>
 <li class="toctree-l3"><a class="reference internal" href="CallbackQuery.html">CallbackQuery</a></li>
@@ -183,6 +186,15 @@ the button is pressed.</p></li>
 Available in private chats only.</p></li>
 <li><p><strong>request_location</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the user’s current location will be sent when the button is pressed.
 Available in private chats only.</p></li>
+<li><p><strong>request_channel (“obj</strong> – <cite>~pyrogram.types.RequestPeerTypeChannel</cite>, <em>optional</em>):
+If specified, defines the criteria used to request a suitable channels.
+The identifier of the selected channels will be shared with the bot when the corresponding button is pressed.</p></li>
+<li><p><strong>request_chat (“obj</strong> – <cite>~pyrogram.types.RequestPeerTypeChat</cite>, <em>optional</em>):
+If specified, defines the criteria used to request a suitable chats.
+The identifier of the selected chats will be shared with the bot when the corresponding button is pressed.</p></li>
+<li><p><strong>request_user (“obj</strong> – <cite>~pyrogram.types.RequestPeerTypeUser</cite>, <em>optional</em>):
+If specified, defines the criteria used to request a suitable users.
+The identifier of the selected users will be shared with the bot when the corresponding button is pressed.</p></li>
 <li><p><strong>web_app</strong> (<a class="reference internal" href="WebAppInfo.html#pyrogram.types.WebAppInfo" title="pyrogram.types.WebAppInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppInfo</span></code></a>, <em>optional</em>) – If specified, the described <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> will be launched when the
 button is pressed. The Web App will be able to send a “web_app_data” service message. Available in private
 chats only.</p></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RequestPeerTypeUser &mdash; PyroFork Documentation</title>
@@ -18,10 +18,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -31,7 +30,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="InlineKeyboardMarkup" href="InlineKeyboardMarkup.html" />
+    <link rel="next" title="LoginUrl" href="LoginUrl.html" />
     <link rel="prev" title="RequestPeerTypeChat" href="RequestPeerTypeChat.html" /> 
 </head>
 
@@ -40,11 +39,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PyroFork
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -75,13 +78,14 @@
 <li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardMarkup.html">ReplyKeyboardMarkup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="KeyboardButton.html">KeyboardButton</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplyKeyboardRemove.html">ReplyKeyboardRemove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="InlineKeyboardMarkup.html">InlineKeyboardMarkup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="InlineKeyboardButton.html">InlineKeyboardButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChannel.html">RequestPeerTypeChannel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RequestPeerTypeChat.html">RequestPeerTypeChat</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">RequestPeerTypeUser</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.RequestPeerTypeUser"><code class="docutils literal notranslate"><span class="pre">RequestPeerTypeUser</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="InlineKeyboardMarkup.html">InlineKeyboardMarkup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="InlineKeyboardButton.html">InlineKeyboardButton</a></li>
 <li class="toctree-l3"><a class="reference internal" href="LoginUrl.html">LoginUrl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ForceReply.html">ForceReply</a></li>
 <li class="toctree-l3"><a class="reference internal" href="CallbackQuery.html">CallbackQuery</a></li>
@@ -154,9 +158,9 @@
         <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Available Types</a> &raquo;</li>
-      <li>RequestPeerTypeUser</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Available Types</a></li>
+      <li class="breadcrumb-item active">RequestPeerTypeUser</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -170,15 +174,12 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.types.RequestPeerTypeUser">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">RequestPeerTypeUser</span></span><a class="headerlink" href="#pyrogram.types.RequestPeerTypeUser" title="Permalink to this definition"></a></dt>
-<dd><p>Object used to tell clients to request a suitable user.</p>
-<p>The identifier of the selected user will be shared with the bot when the corresponding button is pressed.</p>
+<dd><p>Object used to request clients to send a user identifier.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>is_bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to request a bot, pass False to request a regular user.
-If not specified, no additional restrictions are applied.</p></li>
-<li><p><strong>is_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to request a premium user, pass False to request a non-premium user.
-If not specified, no additional restrictions are applied.</p></li>
+<li><p><strong>is_bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Bots.</p></li>
+<li><p><strong>is_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Premium Users.</p></li>
 </ul>
 </dd>
 </dl>
@@ -191,7 +192,7 @@ If not specified, no additional restrictions are applied.</p></li>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="RequestPeerTypeChat.html" class="btn btn-neutral float-left" title="RequestPeerTypeChat" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="InlineKeyboardMarkup.html" class="btn btn-neutral float-right" title="InlineKeyboardMarkup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="LoginUrl.html" class="btn btn-neutral float-right" title="LoginUrl" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
