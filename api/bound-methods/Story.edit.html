@@ -29,7 +29,9 @@
         <script src="../../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Story.edit_animation()" href="Story.edit_animation.html" />
+    <link rel="prev" title="Story.delete()" href="Story.delete.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -66,11 +68,43 @@
 <li class="toctree-l1"><a class="reference internal" href="../../start/examples/index.html">Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../client.html">PyroFork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../types/index.html">Available Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Bound Methods</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Bound Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#message">Message</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#story">Story</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Story.delete.html">delete</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">edit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Story.edit"><code class="docutils literal notranslate"><span class="pre">Story.edit()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Story.edit_animation.html">edit_animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.edit_caption.html">edit_caption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.edit_photo.html">edit_photo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.edit_privacy.html">edit_privacy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.edit_video.html">edit_video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.export_link.html">export_link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_text.html">reply_text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_animation.html">reply_animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_audio.html">reply_audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_cached_media.html">reply_cached_media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_media_group.html">reply_media_group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_photo.html">reply_photo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_sticker.html">reply_sticker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_video.html">reply_video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_video_note.html">reply_video_note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Story.reply_voice.html">reply_voice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#chat">Chat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#user">User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#callbackquery">CallbackQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#inlinequery">InlineQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#chatjoinrequest">ChatJoinRequest</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decorators.html">Decorators</a></li>
@@ -123,6 +157,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Bound Methods</a></li>
       <li class="breadcrumb-item active">Story.edit()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -168,7 +203,7 @@ Pass a file_id as string to send a video that exists on the Telegram servers,
 pass an HTTP URL as a string for Telegram to get a video from the Internet,
 pass a file path as string to upload a new video that exists on your local machine, or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>privacy</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacy</span></code>, <em>optional</em>) – Story privacy.</p></li>
+<li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy" title="pyrogram.enums.StoriesPrivacy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacy</span></code></a>, <em>optional</em>) – Story privacy.</p></li>
 <li><p><strong>allowed_chats</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of chat_id which participant allowed to view the story.</p></li>
 <li><p><strong>denied_chats</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of chat_id which participant denied to view the story.</p></li>
 <li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos allowed to view the story.</p></li>
@@ -193,7 +228,10 @@ You can combine both syntaxes together.</p></li>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Story.delete.html" class="btn btn-neutral float-left" title="Story.delete()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Story.edit_animation.html" class="btn btn-neutral float-right" title="Story.edit_animation()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

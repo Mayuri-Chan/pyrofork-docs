@@ -1151,6 +1151,8 @@
       </ul></li>
       <li><a href="api/methods/close_forum_topic.html#pyrogram.Client.close_forum_topic">close_forum_topic() (pyrogram.Client method)</a>
 </li>
+      <li><a href="api/enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy.CLOSE_FRIENDS">CLOSE_FRIENDS (pyrogram.enums.StoriesPrivacy attribute)</a>
+</li>
       <li><a href="api/methods/close_general_topic.html#pyrogram.Client.close_general_topic">close_general_topic() (pyrogram.Client method)</a>
 </li>
       <li><a href="api/enums/MessageEntityType.html#pyrogram.enums.MessageEntityType.CODE">CODE (pyrogram.enums.MessageEntityType attribute)</a>
@@ -1219,6 +1221,8 @@
         <li><a href="telegram/types/contacts/contacts.html#pyrogram.raw.types.contacts.Contacts">(class in pyrogram.raw.types.contacts)</a>
 </li>
       </ul></li>
+      <li><a href="api/enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy.CONTACTS">CONTACTS (pyrogram.enums.StoriesPrivacy attribute)</a>
+</li>
       <li><a href="telegram/types/contacts/contacts-not-modified.html#pyrogram.raw.types.contacts.ContactsNotModified">ContactsNotModified (class in pyrogram.raw.types.contacts)</a>
 </li>
       <li><a href="telegram/base/contact-status.html#pyrogram.raw.base.ContactStatus">ContactStatus (class in pyrogram.raw.base)</a>
@@ -1363,6 +1367,8 @@
 </li>
       <li><a href="api/methods/delete_profile_photos.html#pyrogram.Client.delete_profile_photos">delete_profile_photos() (pyrogram.Client method)</a>
 </li>
+      <li><a href="api/methods/delete_stories.html#pyrogram.Client.delete_stories">delete_stories() (pyrogram.Client method)</a>
+</li>
       <li><a href="api/methods/delete_supergroup.html#pyrogram.Client.delete_supergroup">delete_supergroup() (pyrogram.Client method)</a>
 </li>
       <li><a href="api/methods/delete_user_history.html#pyrogram.Client.delete_user_history">delete_user_history() (pyrogram.Client method)</a>
@@ -1435,10 +1441,10 @@
 </li>
       <li><a href="telegram/types/destroy-session-none.html#pyrogram.raw.types.DestroySessionNone">DestroySessionNone (class in pyrogram.raw.types)</a>
 </li>
-      <li><a href="telegram/types/destroy-session-ok.html#pyrogram.raw.types.DestroySessionOk">DestroySessionOk (class in pyrogram.raw.types)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="telegram/types/destroy-session-ok.html#pyrogram.raw.types.DestroySessionOk">DestroySessionOk (class in pyrogram.raw.types)</a>
+</li>
       <li><a href="telegram/base/destroy-session-res.html#pyrogram.raw.base.DestroySessionRes">DestroySessionRes (class in pyrogram.raw.base)</a>
 </li>
       <li><a href="telegram/base/messages/dh-config.html#pyrogram.raw.base.messages.DhConfig">DhConfig (class in pyrogram.raw.base.messages)</a>
@@ -1648,6 +1654,8 @@
 </li>
       </ul></li>
       <li><a href="api/bound-methods/Story.edit_photo.html#pyrogram.types.Story.edit_photo">edit_photo() (pyrogram.types.Story method)</a>
+</li>
+      <li><a href="api/bound-methods/Story.edit_privacy.html#pyrogram.types.Story.edit_privacy">edit_privacy() (pyrogram.types.Story method)</a>
 </li>
       <li><a href="api/bound-methods/Message.edit_reply_markup.html#pyrogram.types.Message.edit_reply_markup">edit_reply_markup() (pyrogram.types.Message method)</a>
 </li>
@@ -4230,6 +4238,8 @@
 </li>
       <li><a href="api/enums/NextCodeType.html#pyrogram.enums.NextCodeType">NextCodeType (class in pyrogram.enums)</a>
 </li>
+      <li><a href="api/enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy.NO_CONTACTS">NO_CONTACTS (pyrogram.enums.StoriesPrivacy attribute)</a>
+</li>
       <li><a href="telegram/types/help/no-app-update.html#pyrogram.raw.types.help.NoAppUpdate">NoAppUpdate (class in pyrogram.raw.types.help)</a>
 </li>
   </ul></td>
@@ -4710,14 +4720,14 @@
         <li><a href="telegram/types/popular-contact.html#pyrogram.raw.types.PopularContact">(class in pyrogram.raw.types)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="telegram/base/post-address.html#pyrogram.raw.base.PostAddress">PostAddress (class in pyrogram.raw.base)</a>
 
       <ul>
         <li><a href="telegram/types/post-address.html#pyrogram.raw.types.PostAddress">(class in pyrogram.raw.types)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="telegram/base/pq-inner-data.html#pyrogram.raw.base.PQInnerData">PQInnerData (class in pyrogram.raw.base)</a>
 
       <ul>
@@ -4801,7 +4811,11 @@
       <li><a href="api/filters.html#pyrogram.filters.private">private (in module pyrogram.filters)</a>
 </li>
       <li><a href="api/enums/ChatType.html#pyrogram.enums.ChatType.PRIVATE">PRIVATE (pyrogram.enums.ChatType attribute)</a>
+
+      <ul>
+        <li><a href="api/enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy.PRIVATE">(pyrogram.enums.StoriesPrivacy attribute)</a>
 </li>
+      </ul></li>
       <li><a href="telegram/functions/messages/prolong-web-view.html#pyrogram.raw.functions.messages.ProlongWebView">ProlongWebView (class in pyrogram.raw.functions.messages)</a>
 </li>
       <li><a href="telegram/base/help/promo-data.html#pyrogram.raw.base.help.PromoData">PromoData (class in pyrogram.raw.base.help)</a>
@@ -4815,6 +4829,8 @@
       <li><a href="api/methods/promote_chat_member.html#pyrogram.Client.promote_chat_member">promote_chat_member() (pyrogram.Client method)</a>
 </li>
       <li><a href="api/bound-methods/Chat.promote_member.html#pyrogram.types.Chat.promote_member">promote_member() (pyrogram.types.Chat method)</a>
+</li>
+      <li><a href="api/enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy.PUBLIC">PUBLIC (pyrogram.enums.StoriesPrivacy attribute)</a>
 </li>
       <li>
     pyrogram.filters
@@ -6428,8 +6444,12 @@
         <li><a href="telegram/types/stories/stories.html#pyrogram.raw.types.stories.Stories">(class in pyrogram.raw.types.stories)</a>
 </li>
       </ul></li>
-      <li><a href="api/types/StoriesPrivacy.html#pyrogram.types.StoriesPrivacy">StoriesPrivacy (class in pyrogram.types)</a>
+      <li><a href="api/enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy">StoriesPrivacy (class in pyrogram.enums)</a>
+
+      <ul>
+        <li><a href="api/types/StoriesPrivacy.html#pyrogram.types.StoriesPrivacy">(class in pyrogram.types)</a>
 </li>
+      </ul></li>
       <li><a href="telegram/base/stories-stealth-mode.html#pyrogram.raw.base.StoriesStealthMode">StoriesStealthMode (class in pyrogram.raw.base)</a>
 
       <ul>
