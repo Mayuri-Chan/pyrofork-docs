@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Plugins &mdash; PyroFork Documentation</title>
+  <title>Smart Plugins &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/topics/smart-plugins.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/smart-plugins.html"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -69,7 +69,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrofork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -115,7 +115,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrofork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -130,7 +130,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">PyroFork</a>
+          <a href="../index.html">Pyrofork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -149,9 +149,9 @@
              
   <section id="smart-plugins">
 <h1>Smart Plugins<a class="headerlink" href="#smart-plugins" title="Permalink to this heading"></a></h1>
-<p>PyroFork embeds a smart, lightweight yet powerful plugin system that is meant to further simplify the organization
+<p>Pyrofork embeds a smart, lightweight yet powerful plugin system that is meant to further simplify the organization
 of large projects and to provide a way for creating pluggable (modular) components that can be easily shared across
-different PyroFork applications with minimal boilerplate code.</p>
+different Pyrofork applications with minimal boilerplate code.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Smart Plugins are completely optional and disabled by default.</p>
@@ -175,7 +175,7 @@ after importing your modules, like this:</p>
 <p class="admonition-title">Note</p>
 <p>This is an example application that replies in private chats with two messages: one containing the same
 text message you sent and the other containing the reversed text message.</p>
-<p>Example: <em>“PyroFork”</em> replies with <em>“PyroFork”</em> and <em>“margoryP”</em></p>
+<p>Example: <em>“Pyrofork”</em> replies with <em>“Pyrofork”</em> and <em>“margoryP”</em></p>
 </div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>myproject/
     handlers.py
@@ -224,7 +224,7 @@ So, what if you could? Smart Plugins solve this issue by taking care of handlers
 </section>
 <section id="using-smart-plugins">
 <h2>Using Smart Plugins<a class="headerlink" href="#using-smart-plugins" title="Permalink to this heading"></a></h2>
-<p>Setting up your PyroFork project to accommodate Smart Plugins is pretty straightforward:</p>
+<p>Setting up your Pyrofork project to accommodate Smart Plugins is pretty straightforward:</p>
 <ol class="arabic simple">
 <li><p>Create a new folder to store all the plugins (e.g.: “plugins”, “handlers”, …).</p></li>
 <li><p>Put your python files full of plugins inside. Organize them as you wish.</p></li>
@@ -269,8 +269,8 @@ So, what if you could? Smart Plugins solve this issue by taking care of handlers
 <p>The first important thing to note is the new <code class="docutils literal notranslate"><span class="pre">plugins</span></code> folder. You can put <em>any python file</em> in <em>any subfolder</em> and
 each file can contain <em>any decorated function</em> (handlers) with one limitation: within a single module (file) you must
 use different names for each decorated function.</p>
-<p>The second thing is telling PyroFork where to look for your plugins: you can use the Client parameter “plugins”;
-the <em>root</em> value must match the name of your plugins root folder. Your PyroFork Client instance will <strong>automatically</strong>
+<p>The second thing is telling Pyrofork where to look for your plugins: you can use the Client parameter “plugins”;
+the <em>root</em> value must match the name of your plugins root folder. Your Pyrofork Client instance will <strong>automatically</strong>
 scan the folder upon starting to search for valid handlers and register them for you.</p>
 <p>Then you’ll notice you can now use decorators. That’s right, you can apply the usual decorators to your callback
 functions in a static way, i.e. <strong>without having the Client instance around</strong>: simply use <code class="docutils literal notranslate"><span class="pre">&#64;Client</span></code> (Client class)

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Storage Engines &mdash; PyroFork Documentation</title>
+  <title>Storage Engines &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/topics/storage-engines.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/storage-engines.html"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -69,7 +69,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrofork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -112,7 +112,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrofork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -127,7 +127,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">PyroFork</a>
+          <a href="../index.html">Pyrofork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -146,7 +146,7 @@
              
   <section id="storage-engines">
 <h1>Storage Engines<a class="headerlink" href="#storage-engines" title="Permalink to this heading"></a></h1>
-<p>Every time you login to Telegram, some personal piece of data are created and held by both parties (the client, PyroFork
+<p>Every time you login to Telegram, some personal piece of data are created and held by both parties (the client, Pyrofork
 and the server, Telegram). This session data is uniquely bound to your own account, indefinitely (until you logout or
 decide to manually terminate it) and is used to authorize a client to execute API calls on behalf of your identity.</p>
 <nav class="contents local" id="contents">
@@ -161,11 +161,11 @@ decide to manually terminate it) and is used to authorize a client to execute AP
 <section id="persisting-sessions">
 <h2>Persisting Sessions<a class="headerlink" href="#persisting-sessions" title="Permalink to this heading"></a></h2>
 <p>In order to make a client reconnect successfully between restarts, that is, without having to start a new
-authorization process from scratch each time, PyroFork needs to store the generated session data somewhere.</p>
+authorization process from scratch each time, Pyrofork needs to store the generated session data somewhere.</p>
 </section>
 <section id="different-storage-engines">
 <h2>Different Storage Engines<a class="headerlink" href="#different-storage-engines" title="Permalink to this heading"></a></h2>
-<p>PyroFork offers two different types of storage engines: a <strong>File Storage</strong> and a <strong>Memory Storage</strong>.
+<p>Pyrofork offers two different types of storage engines: a <strong>File Storage</strong> and a <strong>Memory Storage</strong>.
 These engines are well integrated in the framework and require a minimal effort to set up. Here’s how they work:</p>
 <section id="file-storage">
 <h3>File Storage<a class="headerlink" href="#file-storage" title="Permalink to this heading"></a></h3>
@@ -181,7 +181,7 @@ data whenever they are needed.</p>
 </pre></div>
 </div>
 <p>Once you successfully log in (either with a user or a bot identity), a session file will be created and saved to disk as
-<code class="docutils literal notranslate"><span class="pre">my_account.session</span></code>. Any subsequent client restart will make PyroFork search for a file named that way and the
+<code class="docutils literal notranslate"><span class="pre">my_account.session</span></code>. Any subsequent client restart will make Pyrofork search for a file named that way and the
 session database will be automatically loaded.</p>
 </section>
 <section id="memory-storage">
@@ -201,26 +201,28 @@ a client, the entire database is discarded and the session details used for logg
 <h3>Mongodb Storage<a class="headerlink" href="#mongodb-storage" title="Permalink to this heading"></a></h3>
 <p>In case you want to have persistent session but you don’t have persistent storage you can use mongodb storage by passing
 mongodb config as <code class="docutils literal notranslate"><span class="pre">dict</span></code> to the <code class="docutils literal notranslate"><span class="pre">mongodb</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
-<p><em>Using async_pymongo (Recommended for python3.9+):</em></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">async_pymongo</span> <span class="kn">import</span> <span class="n">AsyncClient</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
-
-<span class="n">conn</span> <span class="o">=</span> <span class="n">AsyncClient</span><span class="p">(</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">)</span>
-
-<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">mongodb</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">connection</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
-</pre></div>
-</div>
-<p><em>Using motor:</em></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">motor.motor_asyncio</span> <span class="kn">import</span> <span class="n">AsyncIOMotorClient</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
-
-<span class="n">conn</span> <span class="o">=</span> <span class="n">AsyncIOMotorClient</span><span class="p">(</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">)</span>
-
-<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">mongodb</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">connection</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
-</pre></div>
-</div>
+<p>Using async_pymongo (Recommended for python3.9+):
+.. code-block:: python</p>
+<blockquote>
+<div><p>from async_pymongo import AsyncClient
+from pyrogram import Client</p>
+<p>conn = AsyncClient(“mongodb://…”)
+async with Client(“my_account”, mongodb=dict(connection=conn, remove_peers=False)) as app:</p>
+<blockquote>
+<div><p>print(await app.get_me())</p>
+</div></blockquote>
+</div></blockquote>
+<p>Using motor:
+.. code-block:: python</p>
+<blockquote>
+<div><p>from motor.motor_asyncio import AsyncIOMotorClient
+from pyrogram import Client</p>
+<p>conn = AsyncIOMotorClient(“mongodb://…”)
+async with Client(“my_account”, mongodb=dict(connection=conn, remove_peers=False)) as app:</p>
+<blockquote>
+<div><p>print(await app.get_me())</p>
+</div></blockquote>
+</div></blockquote>
 <p>This storage engine is backed by MongoDB, a session will be created and saved to mongodb database. Any subsequent client
 restart will make PyroFork search for a database named that way and the session database will be automatically loaded.</p>
 </section>
@@ -245,7 +247,7 @@ login using the same session; the storage used will still be in-memory:</p>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Session strings are useful when you want to run authorized PyroFork clients on platforms where their ephemeral
+<p>Session strings are useful when you want to run authorized Pyrofork clients on platforms where their ephemeral
 filesystems makes it harder for a file-based storage engine to properly work as intended.</p>
 </section>
 </section>

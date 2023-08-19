@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debugging &mdash; PyroFork Documentation</title>
+  <title>Debugging &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://docs.pyrogram.org/topics/debugging.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/debugging.html"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -69,7 +69,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/client.html">PyroFork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrofork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
@@ -107,7 +107,7 @@
 <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support.html">Support PyroFork</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrofork</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -122,7 +122,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">PyroFork</a>
+          <a href="../index.html">Pyrofork</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -142,7 +142,7 @@
   <section id="debugging">
 <h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h1>
 <p>When working with the API, chances are you’ll stumble upon bugs, get stuck and start wondering how to continue. Nothing
-to actually worry about since PyroFork provides some commodities to help you in this.</p>
+to actually worry about since Pyrofork provides some commodities to help you in this.</p>
 <nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
@@ -159,7 +159,7 @@ to actually worry about since PyroFork provides some commodities to help you in 
 <p class="attribution">—Brian Kernighan, “Unix for Beginners” (1979)</p>
 </div></blockquote>
 <p>Adding <code class="docutils literal notranslate"><span class="pre">print()</span></code> statements in crucial parts of your code is by far the most ancient, yet efficient technique for
-debugging programs, especially considering the concurrent nature of the framework itself. PyroFork goodness in this
+debugging programs, especially considering the concurrent nature of the framework itself. Pyrofork goodness in this
 respect comes with the fact that any object can be nicely printed just by calling <code class="docutils literal notranslate"><span class="pre">print(obj)</span></code>, thus giving to you
 an insight of all its inner details.</p>
 <p>Consider the following code:</p>
@@ -180,7 +180,7 @@ an insight of all its inner details.</p>
 <span class="w">    </span><span class="nt">&quot;is_verified&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;is_restricted&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;is_support&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;first_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PyroFork&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;first_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pyrofork&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;photo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">&quot;_&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ChatPhoto&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nt">&quot;small_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AbCdE...EdCbA&quot;</span><span class="p">,</span>
@@ -191,12 +191,12 @@ an insight of all its inner details.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>As you’ve probably guessed already, PyroFork objects can be nested. That’s how compound data are built, and nesting
+<p>As you’ve probably guessed already, Pyrofork objects can be nested. That’s how compound data are built, and nesting
 keeps going until we are left with base data types only, such as <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, etc.</p>
 </section>
 <section id="accessing-attributes">
 <h2>Accessing Attributes<a class="headerlink" href="#accessing-attributes" title="Permalink to this heading"></a></h2>
-<p>Even though you see a JSON output, it doesn’t mean we are dealing with dictionaries; in fact, all PyroFork types are
+<p>Even though you see a JSON output, it doesn’t mean we are dealing with dictionaries; in fact, all Pyrofork types are
 fully-fledged Python objects and the correct way to access any attribute of them is by using the dot notation <code class="docutils literal notranslate"><span class="pre">.</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">photo</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">photo</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>  <span class="c1"># ChatPhoto</span>
