@@ -133,6 +133,12 @@
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.scheduled"><code class="docutils literal notranslate"><span class="pre">scheduled</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.from_scheduled"><code class="docutils literal notranslate"><span class="pre">from_scheduled</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.linked_channel"><code class="docutils literal notranslate"><span class="pre">linked_channel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.forum_topic_closed"><code class="docutils literal notranslate"><span class="pre">forum_topic_closed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.forum_topic_created"><code class="docutils literal notranslate"><span class="pre">forum_topic_created</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.forum_topic_edited"><code class="docutils literal notranslate"><span class="pre">forum_topic_edited</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.forum_topic_reopened"><code class="docutils literal notranslate"><span class="pre">forum_topic_reopened</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.general_forum_topic_hidden"><code class="docutils literal notranslate"><span class="pre">general_forum_topic_hidden</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.general_forum_topic_unhidden"><code class="docutils literal notranslate"><span class="pre">general_forum_topic_unhidden</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.command"><code class="docutils literal notranslate"><span class="pre">command()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.regex"><code class="docutils literal notranslate"><span class="pre">regex()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.filters.user"><code class="docutils literal notranslate"><span class="pre">user</span></code></a></li>
@@ -549,6 +555,42 @@ Defaults to “CustomFilter”.</p></li>
 <dt class="sig sig-object py" id="pyrogram.filters.linked_channel">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">linked_channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.linked_channel_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.linked_channel" title="Permalink to this definition"></a></dt>
 <dd><p>Filter messages that are automatically forwarded from the linked channel to the group chat.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pyrogram.filters.forum_topic_closed">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_closed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_closed_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_closed" title="Permalink to this definition"></a></dt>
+<dd><p>Filter service message for closed forum topics</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pyrogram.filters.forum_topic_created">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_created" title="Permalink to this definition"></a></dt>
+<dd><p>Filter service message for created forum topics</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pyrogram.filters.forum_topic_edited">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_edited</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_edited_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_edited" title="Permalink to this definition"></a></dt>
+<dd><p>Filter service message for edited forum topics</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pyrogram.filters.forum_topic_reopened">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_reopened</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_reopened_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_reopened" title="Permalink to this definition"></a></dt>
+<dd><p>Filter service message for reopened forum topics</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pyrogram.filters.general_forum_topic_hidden">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_hidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.general_topic_hidden_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.general_forum_topic_hidden" title="Permalink to this definition"></a></dt>
+<dd><p>Filter service message for hidden general forum topics</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pyrogram.filters.general_forum_topic_unhidden">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_unhidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.general_topic_unhidden_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.general_forum_topic_unhidden" title="Permalink to this definition"></a></dt>
+<dd><p>Filter service message for unhidden general forum topics</p>
 </dd></dl>
 
 <dl class="py function">
