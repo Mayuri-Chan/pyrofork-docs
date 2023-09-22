@@ -30,7 +30,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="get_user_stories()" href="get_user_stories.html" />
+    <link rel="next" title="get_peer_stories()" href="get_peer_stories.html" />
     <link rel="prev" title="get_stories()" href="get_stories.html" /> 
 </head>
 
@@ -83,7 +83,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#pyrogram.Client.get_stories_history"><code class="docutils literal notranslate"><span class="pre">Client.get_stories_history()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="get_user_stories.html">get_user_stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_peer_stories.html">get_peer_stories</a></li>
 <li class="toctree-l3"><a class="reference internal" href="send_story.html">send_story</a></li>
 </ul>
 </li>
@@ -173,6 +173,7 @@
 <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
+<li><p><strong>channel_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier (int) of the target channel.</p></li>
 <li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of stories to be retrieved.
 By default, no limit is applied and all stories are returned.</p></li>
 <li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the first story to be returned.</p></li>
@@ -202,7 +203,7 @@ By default, no limit is applied and all stories are returned.</p></li>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="get_stories.html" class="btn btn-neutral float-left" title="get_stories()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="get_user_stories.html" class="btn btn-neutral float-right" title="get_user_stories()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="get_peer_stories.html" class="btn btn-neutral float-right" title="get_peer_stories()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

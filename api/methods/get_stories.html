@@ -83,7 +83,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="get_stories_history.html">get_stories_history</a></li>
-<li class="toctree-l3"><a class="reference internal" href="get_user_stories.html">get_user_stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_peer_stories.html">get_peer_stories</a></li>
 <li class="toctree-l3"><a class="reference internal" href="send_story.html">send_story</a></li>
 </ul>
 </li>
@@ -173,7 +173,7 @@
 <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user.
+<li><p><strong>from_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user/channel.
 For your personal story you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
 <li><p><strong>story_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pass a single story identifier or an iterable of story ids (as integers) to get the content of the
@@ -187,10 +187,10 @@ a list, a single story is returned, otherwise a list of stories is returned.</p>
 </dl>
 <p class="rubric">Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get one story</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_stories</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="mi">12345</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_stories</span><span class="p">(</span><span class="n">from_id</span><span class="p">,</span> <span class="mi">12345</span><span class="p">)</span>
 
 <span class="c1"># Get more than one story (list of stories)</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_stories</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="p">[</span><span class="mi">12345</span><span class="p">,</span> <span class="mi">12346</span><span class="p">])</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_stories</span><span class="p">(</span><span class="n">from_id</span><span class="p">,</span> <span class="p">[</span><span class="mi">12345</span><span class="p">,</span> <span class="mi">12346</span><span class="p">])</span>
 </pre></div>
 </div>
 <dl class="field-list simple">
