@@ -85,6 +85,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.ChosenInlineResultHandler"><code class="docutils literal notranslate"><span class="pre">ChosenInlineResultHandler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.ChatMemberUpdatedHandler"><code class="docutils literal notranslate"><span class="pre">ChatMemberUpdatedHandler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.UserStatusHandler"><code class="docutils literal notranslate"><span class="pre">UserStatusHandler</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.StoryHandler"><code class="docutils literal notranslate"><span class="pre">StoryHandler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.PollHandler"><code class="docutils literal notranslate"><span class="pre">PollHandler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.DisconnectHandler"><code class="docutils literal notranslate"><span class="pre">DisconnectHandler</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pyrogram.handlers.RawUpdateHandler"><code class="docutils literal notranslate"><span class="pre">RawUpdateHandler</span></code></a></li>
@@ -193,6 +194,7 @@ For a much more convenient way of registering callback functions have a look at 
 <li><p><a class="reference internal" href="#pyrogram.handlers.UserStatusHandler" title="pyrogram.handlers.UserStatusHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserStatusHandler</span></code></a></p></li>
 </ul>
 </td><td><ul class="simple">
+<li><p><a class="reference internal" href="#pyrogram.handlers.StoryHandler" title="pyrogram.handlers.StoryHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">StoryHandler</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.handlers.PollHandler" title="pyrogram.handlers.PollHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">PollHandler</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.handlers.DisconnectHandler" title="pyrogram.handlers.DisconnectHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisconnectHandler</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.handlers.RawUpdateHandler" title="pyrogram.handlers.RawUpdateHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">RawUpdateHandler</span></code></a></p></li>
@@ -398,6 +400,31 @@ as positional arguments (look at the section below for a detailed description).<
 <dd class="field-even"><ul class="simple">
 <li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the user status handler.</p></li>
 <li><p><strong>user</strong> (<a class="reference internal" href="types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – The user containing the updated status.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyrogram.handlers.StoryHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">StoryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.StoryHandler" title="Permalink to this definition"></a></dt>
+<dd><p>The Story handler class. Used to handle new stories.
+It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
+<p>For a nicer way to register this handler, have a look at the
+<a class="reference internal" href="decorators.html#pyrogram.Client.on_story" title="pyrogram.Client.on_story"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_story()</span></code></a> decorator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – Pass a function that will be called when a new Stories arrives. It takes <em>(client, story)</em>
+as positional arguments (look at the section below for a detailed description).</p></li>
+<li><p><strong>filters</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters</span></code>) – Pass one or more filters to allow only a subset of stories to be passed
+in your callback function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>) – The Client itself, useful when you want to call other API methods inside the story handler.</p></li>
+<li><p><strong>story</strong> (<a class="reference internal" href="types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a>) – The received story.</p></li>
 </ul>
 </dd>
 </dl>
