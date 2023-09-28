@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StoriesPrivacy &mdash; Pyrofork Documentation</title>
+  <title>StoryDeleted &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/types/StoriesPrivacy.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/types/StoryDeleted.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -30,8 +30,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="StoryViews" href="StoryViews.html" />
-    <link rel="prev" title="StorySkipped" href="StorySkipped.html" /> 
+    <link rel="next" title="StorySkipped" href="StorySkipped.html" />
+    <link rel="prev" title="Story" href="Story.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -76,12 +76,12 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#messages-media">Messages &amp; Media</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#stories">Stories</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Story.html">Story</a></li>
-<li class="toctree-l3"><a class="reference internal" href="StoryDeleted.html">StoryDeleted</a></li>
-<li class="toctree-l3"><a class="reference internal" href="StorySkipped.html">StorySkipped</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">StoriesPrivacy</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.StoriesPrivacy"><code class="docutils literal notranslate"><span class="pre">StoriesPrivacy</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">StoryDeleted</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.StoryDeleted"><code class="docutils literal notranslate"><span class="pre">StoryDeleted</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="StorySkipped.html">StorySkipped</a></li>
+<li class="toctree-l3"><a class="reference internal" href="StoriesPrivacy.html">StoriesPrivacy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="StoryViews.html">StoryViews</a></li>
 </ul>
 </li>
@@ -147,7 +147,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Available Types</a></li>
-      <li class="breadcrumb-item active">StoriesPrivacy</li>
+      <li class="breadcrumb-item active">StoryDeleted</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -156,15 +156,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="storiesprivacy">
-<h1>StoriesPrivacy<a class="headerlink" href="#storiesprivacy" title="Permalink to this heading"></a></h1>
+  <section id="storydeleted">
+<h1>StoryDeleted<a class="headerlink" href="#storydeleted" title="Permalink to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.StoriesPrivacy">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">StoriesPrivacy</span></span><a class="headerlink" href="#pyrogram.types.StoriesPrivacy" title="Permalink to this definition"></a></dt>
-<dd><p>A story privacy.</p>
+<dt class="sig sig-object py" id="pyrogram.types.StoryDeleted">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">StoryDeleted</span></span><a class="headerlink" href="#pyrogram.types.StoryDeleted" title="Permalink to this definition"></a></dt>
+<dd><p>A deleted story.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>type</strong> (<a class="reference internal" href="../enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy" title="pyrogram.enums.StoriesPrivacy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacy</span></code></a>) – Story privacy type.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique story identifier.</p></li>
+<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Sender of the story.</p></li>
+<li><p><strong>sender_chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Sender of the story. If the story is from channel.</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -175,8 +179,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="StorySkipped.html" class="btn btn-neutral float-left" title="StorySkipped" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="StoryViews.html" class="btn btn-neutral float-right" title="StoryViews" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Story.html" class="btn btn-neutral float-left" title="Story" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="StorySkipped.html" class="btn btn-neutral float-right" title="StorySkipped" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
