@@ -190,9 +190,7 @@ Pass a file_id as string to send a video that exists on the Telegram servers,
 pass an HTTP URL as a string for Telegram to get a video from the Internet,
 pass a file path as string to upload a new video that exists on your local machine, or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy" title="pyrogram.enums.StoriesPrivacy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacy</span></code></a>, <em>optional</em>) – Story privacy.</p></li>
-<li><p><strong>allowed_chats</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of chat_id which participant allowed to view the story.</p></li>
-<li><p><strong>denied_chats</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of chat_id which participant denied to view the story.</p></li>
+<li><p><strong>privacy</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code>, <em>optional</em>) – Story privacy.</p></li>
 <li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos allowed to view the story.</p></li>
 <li><p><strong>denied_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos denied to view the story.</p></li>
 <li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Story caption, 0-1024 characters.</p></li>
@@ -213,7 +211,7 @@ You can combine both syntaxes together.</p></li>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – In case of invalid arguments.</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.12)"><strong>ValueError</strong></a> – In case of invalid arguments.</p>
 </dd>
 </dl>
 </dd></dl>

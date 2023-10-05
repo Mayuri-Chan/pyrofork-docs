@@ -176,20 +176,18 @@
 <p>Use as a shortcut for:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">edit_story</span><span class="p">(</span>
     <span class="n">story_id</span><span class="o">=</span><span class="n">story</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">privacy</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">StoriesPrivacy</span><span class="o">.</span><span class="n">PUBLIC</span>
+    <span class="n">privacy</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">StoriesPrivacyRules</span><span class="o">.</span><span class="n">PUBLIC</span>
 <span class="p">)</span>
 </pre></div>
 </div>
 <p class="rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">story</span><span class="o">.</span><span class="n">edit_privacy</span><span class="p">(</span><span class="n">enums</span><span class="o">.</span><span class="n">StoriesPrivacy</span><span class="o">.</span><span class="n">PUBLIC</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">story</span><span class="o">.</span><span class="n">edit_privacy</span><span class="p">(</span><span class="n">enums</span><span class="o">.</span><span class="n">StoriesPrivacyRules</span><span class="o">.</span><span class="n">PUBLIC</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacy.html#pyrogram.enums.StoriesPrivacy" title="pyrogram.enums.StoriesPrivacy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacy</span></code></a>, <em>optional</em>) – Story privacy.</p></li>
-<li><p><strong>allowed_chats</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of chat_id which participant allowed to view the story.</p></li>
-<li><p><strong>denied_chats</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of chat_id which participant denied to view the story.</p></li>
+<li><p><strong>privacy</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code>, <em>optional</em>) – Story privacy.</p></li>
 <li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos allowed to view the story.</p></li>
 <li><p><strong>denied_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos denied to view the story.</p></li>
 </ul>
