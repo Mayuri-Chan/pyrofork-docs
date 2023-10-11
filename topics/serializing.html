@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/serializing.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -139,7 +139,7 @@
            <div itemprop="articleBody">
              
   <section id="object-serialization">
-<h1>Object Serialization<a class="headerlink" href="#object-serialization" title="Permalink to this heading"></a></h1>
+<h1>Object Serialization<a class="headerlink" href="#object-serialization" title="Link to this heading"></a></h1>
 <p>Serializing means converting a Pyrofork object, which exists as Python class instance, to a text string that can be
 easily shared and stored anywhere. Pyrofork provides two formats for serializing its objects: one good looking for
 humans and another more compact for machines that is able to recover the original structures.</p>
@@ -152,7 +152,7 @@ humans and another more compact for machines that is able to recover the origina
 </nav>
 <hr class="docutils" />
 <section id="for-humans-str-obj">
-<h2>For Humans - str(obj)<a class="headerlink" href="#for-humans-str-obj" title="Permalink to this heading"></a></h2>
+<h2>For Humans - str(obj)<a class="headerlink" href="#for-humans-str-obj" title="Link to this heading"></a></h2>
 <p>If you want a nicely formatted, human readable JSON representation of any object in the API you can use <code class="docutils literal notranslate"><span class="pre">str(obj)</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
 
@@ -168,7 +168,7 @@ have done that above just to show you how to explicitly convert a Pyrofork objec
 </div>
 </section>
 <section id="for-machines-repr-obj">
-<h2>For Machines - repr(obj)<a class="headerlink" href="#for-machines-repr-obj" title="Permalink to this heading"></a></h2>
+<h2>For Machines - repr(obj)<a class="headerlink" href="#for-machines-repr-obj" title="Link to this heading"></a></h2>
 <p>If you want to share or store objects for future references in a more compact way, you can use <code class="docutils literal notranslate"><span class="pre">repr(obj)</span></code>. While
 still pretty much readable, this format is not intended for humans. The advantage of this format is that once you
 serialize your object, you can use <code class="docutils literal notranslate"><span class="pre">eval()</span></code> to get back the original structure; just make sure to <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pyrogram</span></code>,

@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/use-filters.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -140,7 +140,7 @@
            <div itemprop="articleBody">
              
   <section id="using-filters">
-<h1>Using Filters<a class="headerlink" href="#using-filters" title="Permalink to this heading"></a></h1>
+<h1>Using Filters<a class="headerlink" href="#using-filters" title="Link to this heading"></a></h1>
 <p>So far we’ve seen <a class="reference internal" href="../start/updates.html"><span class="doc">how to register a callback function</span></a> that executes every time an update comes
 from the server, but there’s much more than that to come.</p>
 <p>Here we’ll discuss about <a class="reference internal" href="../api/filters.html#module-pyrogram.filters" title="pyrogram.filters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a>. Filters enable a fine-grain control over what kind of
@@ -155,7 +155,7 @@ updates are allowed or not to be passed in your callback functions, based on the
 </nav>
 <hr class="docutils" />
 <section id="single-filters">
-<h2>Single Filters<a class="headerlink" href="#single-filters" title="Permalink to this heading"></a></h2>
+<h2>Single Filters<a class="headerlink" href="#single-filters" title="Link to this heading"></a></h2>
 <p>Let’s start right away with a simple example:</p>
 <ul>
 <li><p>This example will show you how to <strong>only</strong> handle messages containing a <a class="reference internal" href="../api/types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sticker</span></code></a> object and
@@ -186,7 +186,7 @@ callback function itself:</p>
 </ul>
 </section>
 <section id="combining-filters">
-<h2>Combining Filters<a class="headerlink" href="#combining-filters" title="Permalink to this heading"></a></h2>
+<h2>Combining Filters<a class="headerlink" href="#combining-filters" title="Link to this heading"></a></h2>
 <p>Filters can be used in a more advanced way by inverting and combining more filters together using bitwise
 operators <code class="docutils literal notranslate"><span class="pre">~</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> and <code class="docutils literal notranslate"><span class="pre">|</span></code>:</p>
 <ul class="simple">
@@ -212,7 +212,7 @@ operators <code class="docutils literal notranslate"><span class="pre">~</span><
 </ul>
 </section>
 <section id="advanced-filters">
-<h2>Advanced Filters<a class="headerlink" href="#advanced-filters" title="Permalink to this heading"></a></h2>
+<h2>Advanced Filters<a class="headerlink" href="#advanced-filters" title="Link to this heading"></a></h2>
 <p>Some filters, like <a class="reference internal" href="../api/filters.html#pyrogram.filters.command" title="pyrogram.filters.command"><code class="xref py py-meth docutils literal notranslate"><span class="pre">command()</span></code></a> or <a class="reference internal" href="../api/filters.html#pyrogram.filters.regex" title="pyrogram.filters.regex"><code class="xref py py-meth docutils literal notranslate"><span class="pre">regex()</span></code></a>
 can also accept arguments:</p>
 <ul>

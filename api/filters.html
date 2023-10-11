@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/filters.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -204,14 +204,14 @@
            <div itemprop="articleBody">
              
   <section id="update-filters">
-<h1>Update Filters<a class="headerlink" href="#update-filters" title="Permalink to this heading"></a></h1>
+<h1>Update Filters<a class="headerlink" href="#update-filters" title="Link to this heading"></a></h1>
 <p>Filters are objects that can be used to filter the content of incoming updates.
 <a class="reference internal" href="../topics/use-filters.html"><span class="doc">Read more about how filters work</span></a>.</p>
 <section id="module-pyrogram.filters">
-<span id="details"></span><h2>Details<a class="headerlink" href="#module-pyrogram.filters" title="Permalink to this heading"></a></h2>
+<span id="details"></span><h2>Details<a class="headerlink" href="#module-pyrogram.filters" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.filters.create">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.12)"><span class="pre">Callable</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Filter</span></span></span><a class="headerlink" href="#pyrogram.filters.create" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.12)"><span class="pre">Callable</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Filter</span></span></span><a class="headerlink" href="#pyrogram.filters.create" title="Link to this definition"></a></dt>
 <dd><p>Easily create a custom filter.</p>
 <p>Custom filters give you extra control over which updates are allowed or not to be processed by your handlers.</p>
 <dl class="field-list simple">
@@ -235,295 +235,295 @@ Defaults to “CustomFilter”.</p></li>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.all">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">all</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.all_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.all" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">all</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.all_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.all" title="Link to this definition"></a></dt>
 <dd><p>Filter all messages.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.me">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">me</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.me_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.me" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">me</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.me_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.me" title="Link to this definition"></a></dt>
 <dd><p>Filter messages generated by you yourself.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.bot">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">bot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.bot_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.bot" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">bot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.bot_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.bot" title="Link to this definition"></a></dt>
 <dd><p>Filter messages coming from bots.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.incoming">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">incoming</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.incoming_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.incoming" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">incoming</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.incoming_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.incoming" title="Link to this definition"></a></dt>
 <dd><p>Filter incoming messages. Messages sent to your own chat (Saved Messages) are also recognised as incoming.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.outgoing">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">outgoing</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.outgoing_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.outgoing" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">outgoing</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.outgoing_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.outgoing" title="Link to this definition"></a></dt>
 <dd><p>Filter outgoing messages. Messages sent to your own chat (Saved Messages) are not recognized as outgoing.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.text">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.text_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.text" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.text_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.text" title="Link to this definition"></a></dt>
 <dd><p>Filter text messages.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.reply">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">reply</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.reply_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.reply" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">reply</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.reply_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.reply" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that are replies to other messages.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.forwarded">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forwarded</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forwarded_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forwarded" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forwarded</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forwarded_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forwarded" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that are forwarded.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.caption">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">caption</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.caption_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.caption" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">caption</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.caption_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.caption" title="Link to this definition"></a></dt>
 <dd><p>Filter media messages that contain captions.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.audio">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">audio</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.audio_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.audio" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">audio</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.audio_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.audio" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.document">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">document</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.document_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.document" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">document</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.document_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.document" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Document.html#pyrogram.types.Document" title="pyrogram.types.Document"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.photo">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.photo" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.photo" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.sticker">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">sticker</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.sticker_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.sticker" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">sticker</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.sticker_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.sticker" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.animation">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">animation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.animation_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.animation" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">animation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.animation_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.animation" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.game">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.game_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.game" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.game_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.game" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Game.html#pyrogram.types.Game" title="pyrogram.types.Game"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Video.html#pyrogram.types.Video" title="pyrogram.types.Video"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.media_group">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media_group</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.media_group_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.media_group" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media_group</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.media_group_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.media_group" title="Link to this definition"></a></dt>
 <dd><p>Filter messages containing photos or videos being part of an album.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.voice">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">voice</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.voice_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.voice" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">voice</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.voice_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.voice" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a> note objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video_note">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_note</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_note_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_note" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_note</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_note_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_note" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/VideoNote.html#pyrogram.types.VideoNote" title="pyrogram.types.VideoNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoNote</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.contact">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">contact</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.contact_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.contact" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">contact</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.contact_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.contact" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Contact.html#pyrogram.types.Contact" title="pyrogram.types.Contact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.location">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.location_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.location" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.location_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.location" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Location.html#pyrogram.types.Location" title="pyrogram.types.Location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.venue">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">venue</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.venue_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.venue" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">venue</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.venue_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.venue" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.web_page">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">web_page</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.web_page_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.web_page" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">web_page</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.web_page_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.web_page" title="Link to this definition"></a></dt>
 <dd><p>Filter messages sent with a webpage preview.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.poll">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">poll</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.poll_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.poll" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">poll</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.poll_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.poll" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.dice">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">dice</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.dice_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.dice" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">dice</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.dice_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.dice" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/Dice.html#pyrogram.types.Dice" title="pyrogram.types.Dice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.media_spoiler">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media_spoiler</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.media_spoiler_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.media_spoiler" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media_spoiler</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.media_spoiler_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.media_spoiler" title="Link to this definition"></a></dt>
 <dd><p>Filter media messages that contain a spoiler.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.private">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">private</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.private_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.private" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">private</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.private_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.private" title="Link to this definition"></a></dt>
 <dd><p>Filter messages sent in private chats.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.group">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">group</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.group_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.group" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">group</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.group_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.group" title="Link to this definition"></a></dt>
 <dd><p>Filter messages sent in group or supergroup chats.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.channel">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.channel_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.channel" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.channel_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.channel" title="Link to this definition"></a></dt>
 <dd><p>Filter messages sent in channels.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.new_chat_members">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_members</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.new_chat_members_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.new_chat_members" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_members</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.new_chat_members_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.new_chat_members" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for new chat members.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.left_chat_member">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">left_chat_member</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.left_chat_member_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.left_chat_member" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">left_chat_member</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.left_chat_member_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.left_chat_member" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for members that left the chat.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.new_chat_title">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.new_chat_title_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.new_chat_title" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.new_chat_title_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.new_chat_title" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for new chat titles.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.new_chat_photo">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.new_chat_photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.new_chat_photo" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.new_chat_photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.new_chat_photo" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for new chat photos.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.delete_chat_photo">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">delete_chat_photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.delete_chat_photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.delete_chat_photo" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">delete_chat_photo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.delete_chat_photo_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.delete_chat_photo" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for deleted photos.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.group_chat_created">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">group_chat_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.group_chat_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.group_chat_created" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">group_chat_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.group_chat_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.group_chat_created" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for group chat creations.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.supergroup_chat_created">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">supergroup_chat_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.supergroup_chat_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.supergroup_chat_created" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">supergroup_chat_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.supergroup_chat_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.supergroup_chat_created" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for supergroup chat creations.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.channel_chat_created">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">channel_chat_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.channel_chat_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.channel_chat_created" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">channel_chat_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.channel_chat_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.channel_chat_created" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for channel chat creations.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.migrate_to_chat_id">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">migrate_to_chat_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.migrate_to_chat_id_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.migrate_to_chat_id" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">migrate_to_chat_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.migrate_to_chat_id_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.migrate_to_chat_id" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages that contain migrate_to_chat_id.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.migrate_from_chat_id">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">migrate_from_chat_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.migrate_from_chat_id_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.migrate_from_chat_id" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">migrate_from_chat_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.migrate_from_chat_id_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.migrate_from_chat_id" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages that contain migrate_from_chat_id.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.pinned_message">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">pinned_message</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.pinned_message_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.pinned_message" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">pinned_message</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.pinned_message_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.pinned_message" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for pinned messages.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.game_high_score">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game_high_score</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.game_high_score_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.game_high_score" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game_high_score</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.game_high_score_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.game_high_score" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages for game high scores.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.reply_keyboard">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">reply_keyboard</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.reply_keyboard_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.reply_keyboard" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">reply_keyboard</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.reply_keyboard_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.reply_keyboard" title="Link to this definition"></a></dt>
 <dd><p>Filter messages containing reply keyboard markups</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.inline_keyboard">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">inline_keyboard</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.inline_keyboard_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.inline_keyboard" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">inline_keyboard</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.inline_keyboard_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.inline_keyboard" title="Link to this definition"></a></dt>
 <dd><p>Filter messages containing inline keyboard markups</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.mentioned">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">mentioned</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.mentioned_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.mentioned" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">mentioned</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.mentioned_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.mentioned" title="Link to this definition"></a></dt>
 <dd><p>Filter messages containing mentions</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.via_bot">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">via_bot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.via_bot_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.via_bot" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">via_bot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.via_bot_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.via_bot" title="Link to this definition"></a></dt>
 <dd><p>Filter messages sent via inline bots</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video_chat_started">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_started</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_chat_started_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_chat_started" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_started</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_chat_started_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_chat_started" title="Link to this definition"></a></dt>
 <dd><p>Filter messages for started video chats</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video_chat_ended">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_ended</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_chat_ended_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_chat_ended" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_ended</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_chat_ended_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_chat_ended" title="Link to this definition"></a></dt>
 <dd><p>Filter messages for ended video chats</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.video_chat_members_invited">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_members_invited</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_chat_members_invited_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_chat_members_invited" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_members_invited</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.video_chat_members_invited_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.video_chat_members_invited" title="Link to this definition"></a></dt>
 <dd><p>Filter messages for voice chat invited members</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.service">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">service</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.service_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.service" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">service</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.service_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.service" title="Link to this definition"></a></dt>
 <dd><p>Filter service messages.</p>
 <p>A service message contains any of the following fields set: <em>left_chat_member</em>,
 <em>new_chat_title</em>, <em>new_chat_photo</em>, <em>delete_chat_photo</em>, <em>group_chat_created</em>, <em>supergroup_chat_created</em>,
@@ -533,7 +533,7 @@ Defaults to “CustomFilter”.</p></li>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.media">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.media_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.media" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.media_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.media" title="Link to this definition"></a></dt>
 <dd><p>Filter media messages.</p>
 <p>A media message contains any of the following fields set: <em>audio</em>, <em>document</em>, <em>photo</em>, <em>sticker</em>, <em>video</em>,
 <em>animation</em>, <em>voice</em>, <em>video_note</em>, <em>contact</em>, <em>location</em>, <em>venue</em>, <em>poll</em>.</p>
@@ -541,61 +541,61 @@ Defaults to “CustomFilter”.</p></li>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.scheduled">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">scheduled</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.scheduled_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.scheduled" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">scheduled</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.scheduled_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.scheduled" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that have been scheduled (not yet sent).</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.from_scheduled">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">from_scheduled</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.from_scheduled_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.from_scheduled" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">from_scheduled</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.from_scheduled_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.from_scheduled" title="Link to this definition"></a></dt>
 <dd><p>Filter new automatically sent messages that were previously scheduled.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.linked_channel">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">linked_channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.linked_channel_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.linked_channel" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">linked_channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.linked_channel_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.linked_channel" title="Link to this definition"></a></dt>
 <dd><p>Filter messages that are automatically forwarded from the linked channel to the group chat.</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.forum_topic_closed">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_closed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_closed_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_closed" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_closed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_closed_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_closed" title="Link to this definition"></a></dt>
 <dd><p>Filter service message for closed forum topics</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.forum_topic_created">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_created" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_created</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_created_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_created" title="Link to this definition"></a></dt>
 <dd><p>Filter service message for created forum topics</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.forum_topic_edited">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_edited</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_edited_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_edited" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_edited</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_edited_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_edited" title="Link to this definition"></a></dt>
 <dd><p>Filter service message for edited forum topics</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.forum_topic_reopened">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_reopened</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_reopened_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_reopened" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_reopened</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.forum_topic_reopened_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.forum_topic_reopened" title="Link to this definition"></a></dt>
 <dd><p>Filter service message for reopened forum topics</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.general_forum_topic_hidden">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_hidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.general_topic_hidden_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.general_forum_topic_hidden" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_hidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.general_topic_hidden_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.general_forum_topic_hidden" title="Link to this definition"></a></dt>
 <dd><p>Filter service message for hidden general forum topics</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pyrogram.filters.general_forum_topic_unhidden">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_unhidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.general_topic_unhidden_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.general_forum_topic_unhidden" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_unhidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.general_topic_unhidden_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.general_forum_topic_unhidden" title="Link to this definition"></a></dt>
 <dd><p>Filter service message for unhidden general forum topics</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.filters.command">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefixes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_sensitive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.command" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefixes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_sensitive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.command" title="Link to this definition"></a></dt>
 <dd><p>Filter commands, i.e.: text messages starting with “/” or any other custom prefix.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -616,7 +616,7 @@ Examples: when True, command=”Start” would trigger /Start but not /start.</p
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.filters.regex">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">regex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Pattern" title="(in Python v3.12)"><span class="pre">Pattern</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.regex" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">regex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Pattern" title="(in Python v3.12)"><span class="pre">Pattern</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.regex" title="Link to this definition"></a></dt>
 <dd><p>Filter updates that match a given regular expression pattern.</p>
 <p>Can be applied to handlers that receive one of the following updates:</p>
 <ul class="simple">
@@ -638,7 +638,7 @@ stored in the <code class="docutils literal notranslate"><span class="pre">match
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.filters.user">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">users</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.user" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">users</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.user" title="Link to this definition"></a></dt>
 <dd><p>Filter messages coming from one or more users.</p>
 <p>You can use <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set">set bound methods</a> to manipulate the
 users container.</p>
@@ -653,7 +653,7 @@ Defaults to None (no users).</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.filters.chat">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">chat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.chat" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">chat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.chat" title="Link to this definition"></a></dt>
 <dd><p>Filter messages coming from one or more chats.</p>
 <p>You can use <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set">set bound methods</a> to manipulate the
 chats container.</p>

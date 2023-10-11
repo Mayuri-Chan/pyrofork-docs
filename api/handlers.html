@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/handlers.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -153,7 +153,7 @@
            <div itemprop="articleBody">
              
   <section id="update-handlers">
-<h1>Update Handlers<a class="headerlink" href="#update-handlers" title="Permalink to this heading"></a></h1>
+<h1>Update Handlers<a class="headerlink" href="#update-handlers" title="Link to this heading"></a></h1>
 <p>Handlers are used to instruct Pyrofork about which kind of updates you’d like to handle with your callback functions.
 For a much more convenient way of registering callback functions have a look at <a class="reference internal" href="decorators.html"><span class="doc">Decorators</span></a> instead.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
@@ -180,7 +180,7 @@ For a much more convenient way of registering callback functions have a look at 
 </nav>
 <hr class="docutils" />
 <section id="index">
-<h2>Index<a class="headerlink" href="#index" title="Permalink to this heading"></a></h2>
+<h2>Index<a class="headerlink" href="#index" title="Link to this heading"></a></h2>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><a class="reference internal" href="#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageHandler</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.handlers.EditedMessageHandler" title="pyrogram.handlers.EditedMessageHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">EditedMessageHandler</span></code></a></p></li>
@@ -203,10 +203,10 @@ For a much more convenient way of registering callback functions have a look at 
 </section>
 <hr class="docutils" />
 <section id="details">
-<h2>Details<a class="headerlink" href="#details" title="Permalink to this heading"></a></h2>
+<h2>Details<a class="headerlink" href="#details" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.MessageHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageHandler" title="Link to this definition"></a></dt>
 <dd><p>The Message handler class. Used to handle new messages.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -231,7 +231,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.EditedMessageHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedMessageHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedMessageHandler" title="Link to this definition"></a></dt>
 <dd><dl class="simple">
 <dt>The EditedMessage handler class. Used to handle edited messages.</dt><dd><p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 </dd>
@@ -258,7 +258,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.DeletedMessagesHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedMessagesHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedMessagesHandler" title="Link to this definition"></a></dt>
 <dd><p>The deleted messages handler class. Used to handle deleted messages coming from any chat
 (private, group, channel). It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -283,7 +283,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.CallbackQueryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">CallbackQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.CallbackQueryHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">CallbackQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.CallbackQueryHandler" title="Link to this definition"></a></dt>
 <dd><p>The CallbackQuery handler class. Used to handle callback queries coming from inline buttons.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -308,7 +308,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.InlineQueryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">InlineQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.InlineQueryHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">InlineQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.InlineQueryHandler" title="Link to this definition"></a></dt>
 <dd><p>The InlineQuery handler class. Used to handle inline queries.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -333,7 +333,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.ChosenInlineResultHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChosenInlineResultHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChosenInlineResultHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChosenInlineResultHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChosenInlineResultHandler" title="Link to this definition"></a></dt>
 <dd><p>The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -359,7 +359,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.ChatMemberUpdatedHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChatMemberUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChatMemberUpdatedHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChatMemberUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChatMemberUpdatedHandler" title="Link to this definition"></a></dt>
 <dd><p>The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
 <p>For a nicer way to register this handler, have a look at the
@@ -384,7 +384,7 @@ description).</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.UserStatusHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">UserStatusHandler</span></span><a class="headerlink" href="#pyrogram.handlers.UserStatusHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">UserStatusHandler</span></span><a class="headerlink" href="#pyrogram.handlers.UserStatusHandler" title="Link to this definition"></a></dt>
 <dd><p>The UserStatus handler class. Used to handle user status updates (user going online or offline).
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
 <p>For a nicer way to register this handler, have a look at the <a class="reference internal" href="decorators.html#pyrogram.Client.on_user_status" title="pyrogram.Client.on_user_status"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_user_status()</span></code></a> decorator.</p>
@@ -407,7 +407,7 @@ as positional arguments (look at the section below for a detailed description).<
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.StoryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">StoryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.StoryHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">StoryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.StoryHandler" title="Link to this definition"></a></dt>
 <dd><p>The Story handler class. Used to handle new stories.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -432,7 +432,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.PollHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PollHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PollHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PollHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PollHandler" title="Link to this definition"></a></dt>
 <dd><p>The Poll handler class. Used to handle polls updates.</p>
 <p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -457,7 +457,7 @@ in your callback function.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.DisconnectHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DisconnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DisconnectHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DisconnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DisconnectHandler" title="Link to this definition"></a></dt>
 <dd><p>The Disconnect handler class. Used to handle disconnections. It is intended to be used with
 <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -476,7 +476,7 @@ is established.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.handlers.RawUpdateHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">RawUpdateHandler</span></span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">RawUpdateHandler</span></span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler" title="Link to this definition"></a></dt>
 <dd><p>The Raw Update handler class. Used to handle raw updates. It is intended to be used with
 <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the

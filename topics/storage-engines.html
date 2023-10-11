@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/storage-engines.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -145,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="storage-engines">
-<h1>Storage Engines<a class="headerlink" href="#storage-engines" title="Permalink to this heading"></a></h1>
+<h1>Storage Engines<a class="headerlink" href="#storage-engines" title="Link to this heading"></a></h1>
 <p>Every time you login to Telegram, some personal piece of data are created and held by both parties (the client, Pyrofork
 and the server, Telegram). This session data is uniquely bound to your own account, indefinitely (until you logout or
 decide to manually terminate it) and is used to authorize a client to execute API calls on behalf of your identity.</p>
@@ -159,16 +159,16 @@ decide to manually terminate it) and is used to authorize a client to execute AP
 </nav>
 <hr class="docutils" />
 <section id="persisting-sessions">
-<h2>Persisting Sessions<a class="headerlink" href="#persisting-sessions" title="Permalink to this heading"></a></h2>
+<h2>Persisting Sessions<a class="headerlink" href="#persisting-sessions" title="Link to this heading"></a></h2>
 <p>In order to make a client reconnect successfully between restarts, that is, without having to start a new
 authorization process from scratch each time, Pyrofork needs to store the generated session data somewhere.</p>
 </section>
 <section id="different-storage-engines">
-<h2>Different Storage Engines<a class="headerlink" href="#different-storage-engines" title="Permalink to this heading"></a></h2>
+<h2>Different Storage Engines<a class="headerlink" href="#different-storage-engines" title="Link to this heading"></a></h2>
 <p>Pyrofork offers two different types of storage engines: a <strong>File Storage</strong> and a <strong>Memory Storage</strong>.
 These engines are well integrated in the framework and require a minimal effort to set up. Here’s how they work:</p>
 <section id="file-storage">
-<h3>File Storage<a class="headerlink" href="#file-storage" title="Permalink to this heading"></a></h3>
+<h3>File Storage<a class="headerlink" href="#file-storage" title="Link to this heading"></a></h3>
 <p>This is the most common storage engine. It is implemented by using <strong>SQLite</strong>, which will store the session details.
 The database will be saved to disk as a single portable file and is designed to efficiently store and retrieve
 data whenever they are needed.</p>
@@ -185,7 +185,7 @@ data whenever they are needed.</p>
 session database will be automatically loaded.</p>
 </section>
 <section id="memory-storage">
-<h3>Memory Storage<a class="headerlink" href="#memory-storage" title="Permalink to this heading"></a></h3>
+<h3>Memory Storage<a class="headerlink" href="#memory-storage" title="Link to this heading"></a></h3>
 <p>In case you don’t want to have any session file saved to disk, you can use an in-memory storage by passing True to the
 <code class="docutils literal notranslate"><span class="pre">in_memory</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
@@ -198,7 +198,7 @@ session database will be automatically loaded.</p>
 a client, the entire database is discarded and the session details used for logging in again will be lost forever.</p>
 </section>
 <section id="mongodb-storage">
-<h3>Mongodb Storage<a class="headerlink" href="#mongodb-storage" title="Permalink to this heading"></a></h3>
+<h3>Mongodb Storage<a class="headerlink" href="#mongodb-storage" title="Link to this heading"></a></h3>
 <p>In case you want to have persistent session but you don’t have persistent storage you can use mongodb storage by passing
 mongodb config as <code class="docutils literal notranslate"><span class="pre">dict</span></code> to the <code class="docutils literal notranslate"><span class="pre">mongodb</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
 <p>Using async_pymongo (Recommended for python3.9+):
@@ -228,7 +228,7 @@ restart will make PyroFork search for a database named that way and the session 
 </section>
 </section>
 <section id="session-strings">
-<h2>Session Strings<a class="headerlink" href="#session-strings" title="Permalink to this heading"></a></h2>
+<h2>Session Strings<a class="headerlink" href="#session-strings" title="Link to this heading"></a></h2>
 <p>In case you want to use an in-memory storage, but also want to keep access to the session you created, call
 <a class="reference internal" href="../api/methods/export_session_string.html#pyrogram.Client.export_session_string" title="pyrogram.Client.export_session_string"><code class="xref py py-meth docutils literal notranslate"><span class="pre">export_session_string()</span></code></a> anytime before stopping the client…</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>

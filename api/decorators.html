@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/decorators.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -154,7 +154,7 @@
            <div itemprop="articleBody">
              
   <section id="decorators">
-<h1>Decorators<a class="headerlink" href="#decorators" title="Permalink to this heading"></a></h1>
+<h1>Decorators<a class="headerlink" href="#decorators" title="Link to this heading"></a></h1>
 <p>Decorators are able to register callback functions for handling updates in a much easier and cleaner way compared to
 <a class="reference internal" href="handlers.html"><span class="doc">Handlers</span></a>; they do so by instantiating the correct handler and calling
 <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> automatically. All you need to do is adding the decorators on top of your
@@ -181,7 +181,7 @@ functions.</p>
 </nav>
 <hr class="docutils" />
 <section id="index">
-<h2>Index<a class="headerlink" href="#index" title="Permalink to this heading"></a></h2>
+<h2>Index<a class="headerlink" href="#index" title="Link to this heading"></a></h2>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><a class="reference internal" href="#pyrogram.Client.on_message" title="pyrogram.Client.on_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.Client.on_edited_message" title="pyrogram.Client.on_edited_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_edited_message()</span></code></a></p></li>
@@ -205,10 +205,10 @@ functions.</p>
 </section>
 <hr class="docutils" />
 <section id="details">
-<h2>Details<a class="headerlink" href="#details" title="Permalink to this heading"></a></h2>
+<h2>Details<a class="headerlink" href="#details" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_message">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_message</span></span><a class="headerlink" href="#pyrogram.Client.on_message" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_message</span></span><a class="headerlink" href="#pyrogram.Client.on_message" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling new messages.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a>.</p>
@@ -225,7 +225,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_edited_message">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_edited_message</span></span><a class="headerlink" href="#pyrogram.Client.on_edited_message" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_edited_message</span></span><a class="headerlink" href="#pyrogram.Client.on_edited_message" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling edited messages.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.EditedMessageHandler" title="pyrogram.handlers.EditedMessageHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditedMessageHandler</span></code></a>.</p>
@@ -242,7 +242,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_callback_query">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_callback_query</span></span><a class="headerlink" href="#pyrogram.Client.on_callback_query" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_callback_query</span></span><a class="headerlink" href="#pyrogram.Client.on_callback_query" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling callback queries.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.CallbackQueryHandler" title="pyrogram.handlers.CallbackQueryHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQueryHandler</span></code></a>.</p>
@@ -259,7 +259,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_inline_query">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_inline_query</span></span><a class="headerlink" href="#pyrogram.Client.on_inline_query" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_inline_query</span></span><a class="headerlink" href="#pyrogram.Client.on_inline_query" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling inline queries.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.InlineQueryHandler" title="pyrogram.handlers.InlineQueryHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryHandler</span></code></a>.</p>
@@ -276,7 +276,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_chosen_inline_result">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_chosen_inline_result</span></span><a class="headerlink" href="#pyrogram.Client.on_chosen_inline_result" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_chosen_inline_result</span></span><a class="headerlink" href="#pyrogram.Client.on_chosen_inline_result" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling chosen inline results.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.ChosenInlineResultHandler" title="pyrogram.handlers.ChosenInlineResultHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResultHandler</span></code></a>.</p>
@@ -293,7 +293,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_chat_member_updated">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_chat_member_updated</span></span><a class="headerlink" href="#pyrogram.Client.on_chat_member_updated" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_chat_member_updated</span></span><a class="headerlink" href="#pyrogram.Client.on_chat_member_updated" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling event changes on chat members.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.ChatMemberUpdatedHandler" title="pyrogram.handlers.ChatMemberUpdatedHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdatedHandler</span></code></a>.</p>
@@ -309,7 +309,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_chat_join_request">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_chat_join_request</span></span><a class="headerlink" href="#pyrogram.Client.on_chat_join_request" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_chat_join_request</span></span><a class="headerlink" href="#pyrogram.Client.on_chat_join_request" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling chat join requests.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatJoinRequestHandler</span></code>.</p>
@@ -325,7 +325,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_deleted_messages">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_deleted_messages</span></span><a class="headerlink" href="#pyrogram.Client.on_deleted_messages" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_deleted_messages</span></span><a class="headerlink" href="#pyrogram.Client.on_deleted_messages" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling deleted messages.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.DeletedMessagesHandler" title="pyrogram.handlers.DeletedMessagesHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DeletedMessagesHandler</span></code></a>.</p>
@@ -342,7 +342,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_user_status">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_user_status</span></span><a class="headerlink" href="#pyrogram.Client.on_user_status" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_user_status</span></span><a class="headerlink" href="#pyrogram.Client.on_user_status" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling user status updates.
 This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.UserStatusHandler" title="pyrogram.handlers.UserStatusHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatusHandler</span></code></a>.</p>
@@ -358,7 +358,7 @@ This does the same thing as <a class="reference internal" href="methods/add_hand
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_story">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_story</span></span><a class="headerlink" href="#pyrogram.Client.on_story" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_story</span></span><a class="headerlink" href="#pyrogram.Client.on_story" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling new stories.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.StoryHandler" title="pyrogram.handlers.StoryHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryHandler</span></code></a>.</p>
@@ -375,7 +375,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_poll">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_poll</span></span><a class="headerlink" href="#pyrogram.Client.on_poll" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_poll</span></span><a class="headerlink" href="#pyrogram.Client.on_poll" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling poll updates.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.PollHandler" title="pyrogram.handlers.PollHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollHandler</span></code></a>.</p>
@@ -392,7 +392,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_disconnect">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_disconnect</span></span><a class="headerlink" href="#pyrogram.Client.on_disconnect" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_disconnect</span></span><a class="headerlink" href="#pyrogram.Client.on_disconnect" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling disconnections.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.DisconnectHandler" title="pyrogram.handlers.DisconnectHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisconnectHandler</span></code></a>.</p>
@@ -400,7 +400,7 @@ in your function.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyrogram.Client.on_raw_update">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_raw_update</span></span><a class="headerlink" href="#pyrogram.Client.on_raw_update" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_raw_update</span></span><a class="headerlink" href="#pyrogram.Client.on_raw_update" title="Link to this definition"></a></dt>
 <dd><p>Decorator for handling raw updates.</p>
 <p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
 <a class="reference internal" href="handlers.html#pyrogram.handlers.RawUpdateHandler" title="pyrogram.handlers.RawUpdateHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RawUpdateHandler</span></code></a>.</p>

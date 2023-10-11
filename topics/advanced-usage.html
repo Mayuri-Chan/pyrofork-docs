@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/advanced-usage.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -140,7 +140,7 @@
            <div itemprop="articleBody">
              
   <section id="advanced-usage">
-<h1>Advanced Usage<a class="headerlink" href="#advanced-usage" title="Permalink to this heading"></a></h1>
+<h1>Advanced Usage<a class="headerlink" href="#advanced-usage" title="Link to this heading"></a></h1>
 <p>Pyrofork’s API – which consists of well documented <a class="reference internal" href="../api/methods/index.html"><span class="doc">methods</span></a> and
 <a class="reference internal" href="../api/types/index.html"><span class="doc">types</span></a> – exists to provide an easier interface to the more complex Telegram API.</p>
 <p>In this section, you’ll be shown the alternative way of communicating with Telegram using Pyrofork: the main “raw”
@@ -155,7 +155,7 @@ Telegram API with its functions and types.</p>
 </nav>
 <hr class="docutils" />
 <section id="telegram-raw-api">
-<h2>Telegram Raw API<a class="headerlink" href="#telegram-raw-api" title="Permalink to this heading"></a></h2>
+<h2>Telegram Raw API<a class="headerlink" href="#telegram-raw-api" title="Link to this heading"></a></h2>
 <p>If you can’t find a high-level method for your needs or if you want complete, low-level access to the whole
 Telegram API, you have to use the raw <a class="reference internal" href="../telegram/functions/index.html#module-pyrogram.raw.functions" title="pyrogram.raw.functions"><code class="xref py py-mod docutils literal notranslate"><span class="pre">functions</span></code></a> and <a class="reference internal" href="../telegram/types/index.html#module-pyrogram.raw.types" title="pyrogram.raw.types"><code class="xref py py-mod docutils literal notranslate"><span class="pre">types</span></code></a>.</p>
 <p>As already hinted, raw functions and types can be less convenient. This section will therefore explain some pitfalls to
@@ -166,7 +166,7 @@ take into consideration when working with the raw API.</p>
 </div>
 </section>
 <section id="invoking-functions">
-<h2>Invoking Functions<a class="headerlink" href="#invoking-functions" title="Permalink to this heading"></a></h2>
+<h2>Invoking Functions<a class="headerlink" href="#invoking-functions" title="Link to this heading"></a></h2>
 <p>Unlike the <a class="reference internal" href="../api/methods/index.html"><span class="doc">methods</span></a> found in Pyrofork’s API, which can be called in the usual simple way,
 functions to be invoked from the raw Telegram API have a different way of usage.</p>
 <p>First of all, both <a class="reference internal" href="../telegram/functions/index.html"><span class="doc">raw functions</span></a> and <a class="reference internal" href="../telegram/types/index.html"><span class="doc">raw types</span></a>
@@ -222,7 +222,7 @@ Client class and pass the function object you created.</p>
 </ul>
 </section>
 <section id="chat-ids">
-<h2>Chat IDs<a class="headerlink" href="#chat-ids" title="Permalink to this heading"></a></h2>
+<h2>Chat IDs<a class="headerlink" href="#chat-ids" title="Link to this heading"></a></h2>
 <p>The way Telegram works makes it not possible to directly send a message to a user or a chat by using their IDs only.
 Instead, a pair of <code class="docutils literal notranslate"><span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">access_hash</span></code> wrapped in a so called <code class="docutils literal notranslate"><span class="pre">InputPeer</span></code> is always needed. Pyrofork allows
 sending messages with IDs only thanks to cached access hashes.</p>
