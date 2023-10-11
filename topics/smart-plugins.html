@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/topics/smart-plugins.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=7f41d439"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../_static/copybutton.js?v=a56c686a"></script>
-        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/dark_mode_js/default_dark.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -70,9 +70,6 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrofork Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/decorators.html">Decorators</a></li>
@@ -117,12 +114,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrofork</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
-</ul>
 
         </div>
       </div>
@@ -148,7 +139,7 @@
            <div itemprop="articleBody">
              
   <section id="smart-plugins">
-<h1>Smart Plugins<a class="headerlink" href="#smart-plugins" title="Link to this heading"></a></h1>
+<h1>Smart Plugins<a class="headerlink" href="#smart-plugins" title="Permalink to this heading"></a></h1>
 <p>Pyrofork embeds a smart, lightweight yet powerful plugin system that is meant to further simplify the organization
 of large projects and to provide a way for creating pluggable (modular) components that can be easily shared across
 different Pyrofork applications with minimal boilerplate code.</p>
@@ -167,7 +158,7 @@ different Pyrofork applications with minimal boilerplate code.</p>
 </nav>
 <hr class="docutils" />
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Prior to the Smart Plugin system, pluggable handlers were already possible. For example, if you wanted to modularize
 your applications, you had to put your function definitions in separate files and register them inside your main script
 after importing your modules, like this:</p>
@@ -218,12 +209,12 @@ text message you sent and the other containing the reversed text message.</p>
 </li>
 </ul>
 <p>This is already nice and doesn’t add <em>too much</em> boilerplate code, but things can get boring still; you have to
-manually <code class="docutils literal notranslate"><span class="pre">import</span></code>, manually <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> and manually instantiate each
+manually <code class="docutils literal notranslate"><span class="pre">import</span></code>, manually <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code> and manually instantiate each
 <a class="reference internal" href="../api/handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> object because you can’t use decorators for your functions.
 So, what if you could? Smart Plugins solve this issue by taking care of handlers registration automatically.</p>
 </section>
 <section id="using-smart-plugins">
-<h2>Using Smart Plugins<a class="headerlink" href="#using-smart-plugins" title="Link to this heading"></a></h2>
+<h2>Using Smart Plugins<a class="headerlink" href="#using-smart-plugins" title="Permalink to this heading"></a></h2>
 <p>Setting up your Pyrofork project to accommodate Smart Plugins is pretty straightforward:</p>
 <ol class="arabic simple">
 <li><p>Create a new folder to store all the plugins (e.g.: “plugins”, “handlers”, …).</p></li>
@@ -277,7 +268,7 @@ functions in a static way, i.e. <strong>without having the Client instance aroun
 instead of the usual <code class="docutils literal notranslate"><span class="pre">&#64;app</span></code> (Client instance) and things will work just the same.</p>
 </section>
 <section id="specifying-the-plugins-to-include">
-<h2>Specifying the Plugins to include<a class="headerlink" href="#specifying-the-plugins-to-include" title="Link to this heading"></a></h2>
+<h2>Specifying the Plugins to include<a class="headerlink" href="#specifying-the-plugins-to-include" title="Permalink to this heading"></a></h2>
 <p>By default, if you don’t explicitly supply a list of plugins, every valid one found inside your plugins root folder will
 be included by following the alphabetical order of the directory structure (files and subfolders); the single handlers
 found inside each module will be, instead, loaded in the order they are defined, from top to bottom.</p>
@@ -306,7 +297,7 @@ separated by a blank space.</p>
 <div><p>E.g.: <code class="docutils literal notranslate"><span class="pre">subfolder.module</span> <span class="pre">fn2</span> <span class="pre">fn1</span> <span class="pre">fn3</span></code> will load <em>fn2</em>, <em>fn1</em> and <em>fn3</em> from <em>subfolder.module</em>, in this order.</p>
 </div></blockquote>
 <section id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h3>
 <p>Given this plugins folder structure with three modules, each containing their own handlers (fn1, fn2, etc…), which are
 also organized in subfolders:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>myproject/
@@ -370,7 +361,7 @@ also organized in subfolders:</p>
 </section>
 </section>
 <section id="load-unload-plugins-at-runtime">
-<h2>Load/Unload Plugins at Runtime<a class="headerlink" href="#load-unload-plugins-at-runtime" title="Link to this heading"></a></h2>
+<h2>Load/Unload Plugins at Runtime<a class="headerlink" href="#load-unload-plugins-at-runtime" title="Permalink to this heading"></a></h2>
 <p>In the previous section we’ve explained how to specify which plugins to load and which to ignore before your Client
 starts. Here we’ll show, instead, how to unload and load again a previously registered plugin at runtime.</p>
 <p>Each function decorated with the usual <code class="docutils literal notranslate"><span class="pre">on_message</span></code> decorator (or any other decorator that deals with Telegram
@@ -392,9 +383,9 @@ updates) will be modified in such a way that a special <code class="docutils lit
 the groups they were registered on <code class="docutils literal notranslate"><span class="pre">[(&lt;MessageHandler</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x10e3abc50&gt;,</span> <span class="pre">0)]</span></code>.</p></li>
 </ul>
 <section id="unloading">
-<h3>Unloading<a class="headerlink" href="#unloading" title="Link to this heading"></a></h3>
+<h3>Unloading<a class="headerlink" href="#unloading" title="Permalink to this heading"></a></h3>
 <p>In order to unload a plugin, all you need to do is obtain a reference to it by importing the relevant module and call
-<a class="reference internal" href="../api/methods/remove_handler.html#pyrogram.Client.remove_handler" title="pyrogram.Client.remove_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_handler()</span></code></a> Client’s method with your function’s <em>handler</em> instance:</p>
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_handler()</span></code> Client’s method with your function’s <em>handler</em> instance:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">main.py</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plugins.handlers</span> <span class="kn">import</span> <span class="n">echo</span>
@@ -417,9 +408,9 @@ exactly what is needed. The same could have been achieved with:</p>
 </div>
 </section>
 <section id="loading">
-<h3>Loading<a class="headerlink" href="#loading" title="Link to this heading"></a></h3>
+<h3>Loading<a class="headerlink" href="#loading" title="Permalink to this heading"></a></h3>
 <p>Similarly to the unloading process, in order to load again a previously unloaded plugin you do the same, but this time
-using <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> instead. Example:</p>
+using <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code> instead. Example:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">main.py</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plugins.handlers</span> <span class="kn">import</span> <span class="n">echo</span>
