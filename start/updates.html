@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
+      <link rel="stylesheet" href="../https://docs.pyrogram.org/_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/start/updates.html"/>
@@ -18,15 +18,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
-        <script src="../_static/dark_mode_js/default_dark.js"></script>
-        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -78,6 +78,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api/client.html">Pyrofork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/decorators.html">Decorators</a></li>
@@ -109,6 +112,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support Pyrofork</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
+</ul>
 
         </div>
       </div>
@@ -134,7 +143,7 @@
            <div itemprop="articleBody">
              
   <section id="handling-updates">
-<h1>Handling Updates<a class="headerlink" href="#handling-updates" title="Permalink to this heading"></a></h1>
+<h1>Handling Updates<a class="headerlink" href="#handling-updates" title="Link to this heading"></a></h1>
 <p><a class="reference internal" href="invoking.html"><span class="doc">Invoking API methods</span></a> sequentially is one way to use Pyrofork. This page deals with Telegram updates
 and how to handle new incoming messages or other events in Pyrofork.</p>
 <nav class="contents local" id="contents">
@@ -146,7 +155,7 @@ and how to handle new incoming messages or other events in Pyrofork.</p>
 </nav>
 <hr class="docutils" />
 <section id="defining-updates">
-<h2>Defining Updates<a class="headerlink" href="#defining-updates" title="Permalink to this heading"></a></h2>
+<h2>Defining Updates<a class="headerlink" href="#defining-updates" title="Link to this heading"></a></h2>
 <p>Updates are events that happen in your Telegram account (incoming messages, new members join,
 bot button presses, etc.), which are meant to notify you about a new specific state that has changed. These updates are
 handled by registering one or more callback functions in your app using <a class="reference internal" href="../api/handlers.html"><span class="doc">Handlers</span></a>.</p>
@@ -154,12 +163,12 @@ handled by registering one or more callback functions in your app using <a class
 function will be called back by the framework and its body executed.</p>
 </section>
 <section id="registering-a-handler">
-<h2>Registering a Handler<a class="headerlink" href="#registering-a-handler" title="Permalink to this heading"></a></h2>
-<p>To explain how handlers work let’s examine the one which will be in charge for handling <code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code>
+<h2>Registering a Handler<a class="headerlink" href="#registering-a-handler" title="Link to this heading"></a></h2>
+<p>To explain how handlers work let’s examine the one which will be in charge for handling <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a>
 updates coming from all around your chats. Every other kind of handler shares the same setup logic and you should not
 have troubles settings them up once you learn from this section.</p>
 <section id="using-decorators">
-<h3>Using Decorators<a class="headerlink" href="#using-decorators" title="Permalink to this heading"></a></h3>
+<h3>Using Decorators<a class="headerlink" href="#using-decorators" title="Link to this heading"></a></h3>
 <p>The most elegant way to register a message handler is by using the <a class="reference internal" href="../api/decorators.html#pyrogram.Client.on_message" title="pyrogram.Client.on_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a> decorator:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 
@@ -176,13 +185,13 @@ have troubles settings them up once you learn from this section.</p>
 </div>
 <p>The defined function <code class="docutils literal notranslate"><span class="pre">my_handler</span></code>, which accepts the two arguments <em>(client, message)</em>, will be the function that gets
 executed every time a new message arrives.</p>
-<p>In the last line we see again the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> method, this time used without any argument.
-Its purpose here is simply to automatically <code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code>, keep the Client online so that it can listen
-for updates and <code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code> it once you hit <code class="docutils literal notranslate"><span class="pre">CTRL+C</span></code>.</p>
+<p>In the last line we see again the <a class="reference internal" href="../api/methods/run.html#pyrogram.Client.run" title="pyrogram.Client.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, this time used without any argument.
+Its purpose here is simply to automatically <a class="reference internal" href="../api/methods/start.html#pyrogram.Client.start" title="pyrogram.Client.start"><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a>, keep the Client online so that it can listen
+for updates and <a class="reference internal" href="../api/methods/stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop"><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> it once you hit <code class="docutils literal notranslate"><span class="pre">CTRL+C</span></code>.</p>
 </section>
 <section id="using-add-handler">
-<h3>Using add_handler()<a class="headerlink" href="#using-add-handler" title="Permalink to this heading"></a></h3>
-<p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code> method takes any handler instance that wraps around your defined callback
+<h3>Using add_handler()<a class="headerlink" href="#using-add-handler" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> method takes any handler instance that wraps around your defined callback
 function and registers it in your Client. It is useful in case you want to programmatically add handlers.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 <span class="kn">from</span> <span class="nn">pyrogram.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>

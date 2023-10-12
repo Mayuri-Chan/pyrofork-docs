@@ -18,15 +18,15 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
-        <script src="_static/clipboard.min.js"></script>
-        <script src="_static/copybutton.js"></script>
-        <script src="_static/dark_mode_js/default_dark.js"></script>
-        <script src="_static/dark_mode_js/theme_switcher.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=7f41d439"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=a56c686a"></script>
+        <script src="_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -69,6 +69,9 @@
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/client.html">Pyrofork Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/methods/index.html">Available Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/types/index.html">Available Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/decorators.html">Decorators</a></li>
@@ -100,6 +103,12 @@
 <li class="toctree-l1"><a class="reference internal" href="faq/index.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="support.html">Support Pyrofork</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="telegram/functions/index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="telegram/base/index.html">Raw Base</a></li>
+</ul>
 
         </div>
       </div>
@@ -125,7 +134,7 @@
            <div itemprop="articleBody">
              
   <section id="welcome-to-pyrofork">
-<h1>Welcome to Pyrofork<a class="headerlink" href="#welcome-to-pyrofork" title="Permalink to this heading"></a></h1>
+<h1>Welcome to Pyrofork<a class="headerlink" href="#welcome-to-pyrofork" title="Link to this heading"></a></h1>
 <div align="center">
     <a href="/">
         <div class="pyrogram-logo-index"><img src="_static/pyrogram.png" alt="Pyrofork"></div>
@@ -157,21 +166,21 @@
 It enables you to easily interact with the main Telegram API through a user account (custom client) or a bot identity
 (bot API alternative) using Python.</p>
 <section id="support">
-<h2>Support<a class="headerlink" href="#support" title="Permalink to this heading"></a></h2>
+<h2>Support<a class="headerlink" href="#support" title="Link to this heading"></a></h2>
 <p>If you’d like to support Pyrofork, you can consider:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/sponsors/Mayuri-Chan">Become a GitHub sponsor</a>.</p></li>
 </ul>
 </section>
 <section id="how-the-documentation-is-organized">
-<h2>How the Documentation is Organized<a class="headerlink" href="#how-the-documentation-is-organized" title="Permalink to this heading"></a></h2>
+<h2>How the Documentation is Organized<a class="headerlink" href="#how-the-documentation-is-organized" title="Link to this heading"></a></h2>
 <p>Contents are organized into sections composed of self-contained topics which can be all accessed from the sidebar, or by
 following them in order using the <span class="guilabel">Next</span> button at the end of each page.
 You can also switch to Dark or Light theme or leave on Auto (follows system preferences) by using the dedicated button
 in the top left corner.</p>
 <p>Here below you can, instead, find a list of the most relevant pages for a quick access.</p>
 <section id="first-steps">
-<h3>First Steps<a class="headerlink" href="#first-steps" title="Permalink to this heading"></a></h3>
+<h3>First Steps<a class="headerlink" href="#first-steps" title="Link to this heading"></a></h3>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><a class="reference internal" href="intro/quickstart.html"><span class="doc">Quick Start</span></a>: Overview to get you started quickly.</p></li>
 <li><p><a class="reference internal" href="start/invoking.html"><span class="doc">Invoking Methods</span></a>: How to call Pyrofork’s methods.</p></li>
@@ -181,18 +190,18 @@ in the top left corner.</p>
 </td></tr></table>
 </section>
 <section id="api-reference">
-<h3>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h3>
+<h3>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h3>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><a class="reference internal" href="api/client.html"><span class="doc">Pyrofork Client</span></a>: Reference details about the Client class.</p></li>
-<li><p><span class="xref std std-doc">Available Methods</span>: List of available high-level methods.</p></li>
-<li><p><span class="xref std std-doc">Available Types</span>: List of available high-level types.</p></li>
+<li><p><a class="reference internal" href="api/methods/index.html"><span class="doc">Available Methods</span></a>: List of available high-level methods.</p></li>
+<li><p><a class="reference internal" href="api/types/index.html"><span class="doc">Available Types</span></a>: List of available high-level types.</p></li>
 <li><p><a class="reference internal" href="api/enums/index.html"><span class="doc">Enumerations</span></a>: List of available enumerations.</p></li>
-<li><p><span class="xref std std-doc">Bound Methods</span>: List of convenient bound methods.</p></li>
+<li><p><a class="reference internal" href="api/bound-methods/index.html"><span class="doc">Bound Methods</span></a>: List of convenient bound methods.</p></li>
 </ul>
 </td></tr></table>
 </section>
 <section id="meta">
-<h3>Meta<a class="headerlink" href="#meta" title="Permalink to this heading"></a></h3>
+<h3>Meta<a class="headerlink" href="#meta" title="Link to this heading"></a></h3>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><a class="reference internal" href="faq/index.html"><span class="doc">Pyrofork FAQ</span></a>: Answers to common Pyrofork questions.</p></li>
 <li><p><a class="reference internal" href="support.html"><span class="doc">Support Pyrofork</span></a>: Ways to show your appreciation.</p></li>
