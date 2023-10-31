@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Message.edit_media() &mdash; Pyrofork Documentation</title>
+  <title>WebPagePreview &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="../../_static/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/bound-methods/Message.edit_media.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/types/WebPagePreview.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -30,8 +30,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Message.edit_reply_markup()" href="Message.edit_reply_markup.html" />
-    <link rel="prev" title="Message.edit_caption()" href="Message.edit_caption.html" /> 
+    <link rel="next" title="Poll" href="Poll.html" />
+    <link rel="prev" title="WebPageEmpty" href="WebPageEmpty.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -71,56 +71,61 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../client.html">Pyrofork Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../methods/index.html">Available Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../types/index.html">Available Types</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Bound Methods</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#message">Message</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Message.click.html">click</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.delete.html">delete</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.download.html">download</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.forward.html">forward</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.copy.html">copy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.pin.html">pin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.unpin.html">unpin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.edit.html">edit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.edit_text.html">edit_text</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.edit_caption.html">edit_caption</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">edit_media</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Message.edit_media"><code class="docutils literal notranslate"><span class="pre">Message.edit_media()</span></code></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Available Types</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#users-chats">Users &amp; Chats</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#messages-media">Messages &amp; Media</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Message.html">Message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MessageEntity.html">MessageEntity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Photo.html">Photo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Thumbnail.html">Thumbnail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Audio.html">Audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Document.html">Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Animation.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Video.html">Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Voice.html">Voice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VideoNote.html">VideoNote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Contact.html">Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Location.html">Location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Venue.html">Venue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sticker.html">Sticker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="StickerSet.html">StickerSet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Game.html">Game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MessageStory.html">MessageStory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WebPage.html">WebPage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WebPageEmpty.html">WebPageEmpty</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">WebPagePreview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.WebPagePreview"><code class="docutils literal notranslate"><span class="pre">WebPagePreview</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="Message.edit_reply_markup.html">edit_reply_markup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply.html">reply</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_text.html">reply_text</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_animation.html">reply_animation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_audio.html">reply_audio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_cached_media.html">reply_cached_media</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_chat_action.html">reply_chat_action</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_contact.html">reply_contact</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_document.html">reply_document</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_game.html">reply_game</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_inline_bot_result.html">reply_inline_bot_result</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_location.html">reply_location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_media_group.html">reply_media_group</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_photo.html">reply_photo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_poll.html">reply_poll</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_sticker.html">reply_sticker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_venue.html">reply_venue</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_video.html">reply_video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_video_note.html">reply_video_note</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_voice.html">reply_voice</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_web_page.html">reply_web_page</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.get_media_group.html">get_media_group</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.react.html">react</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Poll.html">Poll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PollOption.html">PollOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Dice.html">Dice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Reaction.html">Reaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VideoChatScheduled.html">VideoChatScheduled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VideoChatStarted.html">VideoChatStarted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VideoChatEnded.html">VideoChatEnded</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VideoChatMembersInvited.html">VideoChatMembersInvited</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WebAppData.html">WebAppData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MessageReactions.html">MessageReactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ChatReactions.html">ChatReactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ForumTopicCreated.html">ForumTopicCreated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ForumTopicEdited.html">ForumTopicEdited</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ForumTopicClosed.html">ForumTopicClosed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ForumTopicReopened.html">ForumTopicReopened</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GeneralTopicHidden.html">GeneralTopicHidden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GeneralTopicUnhidden.html">GeneralTopicUnhidden</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#story">Story</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#chat">Chat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#user">User</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#callbackquery">CallbackQuery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#inlinequery">InlineQuery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#chatjoinrequest">ChatJoinRequest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stories">Stories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#bot-keyboards">Bot keyboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#bot-commands">Bot commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#input-media">Input Media</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#inline-mode">Inline Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#inputmessagecontent">InputMessageContent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authorization">Authorization</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../bound-methods/index.html">Bound Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../enums/index.html">Enumerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers.html">Update Handlers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decorators.html">Decorators</a></li>
@@ -173,8 +178,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">Bound Methods</a></li>
-      <li class="breadcrumb-item active">Message.edit_media()</li>
+          <li class="breadcrumb-item"><a href="index.html">Available Types</a></li>
+      <li class="breadcrumb-item active">WebPagePreview</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -183,36 +188,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="message-edit-media">
-<h1>Message.edit_media()<a class="headerlink" href="#message-edit-media" title="Link to this heading"></a></h1>
-<dl class="py method">
-<dt class="sig sig-object py" id="pyrogram.types.Message.edit_media">
-<span class="sig-prename descclassname"><span class="pre">Message.</span></span><span class="sig-name descname"><span class="pre">edit_media</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.types.Message.edit_media" title="Link to this definition"></a></dt>
-<dd><p>Bound method <em>edit_media</em> of <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p>
-<p>Use as a shortcut for:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">edit_message_media</span><span class="p">(</span>
-    <span class="n">chat_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">message_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">media</span><span class="o">=</span><span class="n">media</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-<p class="rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">edit_media</span><span class="p">(</span><span class="n">media</span><span class="p">)</span>
-</pre></div>
-</div>
+  <section id="webpagepreview">
+<h1>WebPagePreview<a class="headerlink" href="#webpagepreview" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyrogram.types.WebPagePreview">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">WebPagePreview</span></span><a class="headerlink" href="#pyrogram.types.WebPagePreview" title="Link to this definition"></a></dt>
+<dd><p>A web page preview.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>media</strong> (<a class="reference internal" href="../types/InputMedia.html#pyrogram.types.InputMedia" title="pyrogram.types.InputMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>) – One of the InputMedia objects describing an animation, audio, document, photo or video.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a>, <em>optional</em>) – An InlineKeyboardMarkup object.</p></li>
+<li><p><strong>webpage</strong> (<a class="reference internal" href="WebPage.html#pyrogram.types.WebPage" title="pyrogram.types.WebPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebPage</span></code></a>) – Web Page Information.</p></li>
+<li><p><strong>force_large_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, If the preview media size is forced to large.</p></li>
+<li><p><strong>force_small_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, If the preview media size is forced to small.</p></li>
 </ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>On success, the edited <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> is returned.</p>
-</dd>
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -223,8 +211,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Message.edit_caption.html" class="btn btn-neutral float-left" title="Message.edit_caption()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Message.edit_reply_markup.html" class="btn btn-neutral float-right" title="Message.edit_reply_markup()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="WebPageEmpty.html" class="btn btn-neutral float-left" title="WebPageEmpty" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Poll.html" class="btn btn-neutral float-right" title="Poll" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

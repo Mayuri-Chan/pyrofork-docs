@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Message.edit_media() &mdash; Pyrofork Documentation</title>
+  <title>Message.reply_web_page() &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="../../_static/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/bound-methods/Message.edit_media.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/bound-methods/Message.reply_web_page.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -30,8 +30,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Message.edit_reply_markup()" href="Message.edit_reply_markup.html" />
-    <link rel="prev" title="Message.edit_caption()" href="Message.edit_caption.html" /> 
+    <link rel="next" title="Message.get_media_group()" href="Message.get_media_group.html" />
+    <link rel="prev" title="Message.reply_voice()" href="Message.reply_voice.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -84,10 +84,7 @@
 <li class="toctree-l3"><a class="reference internal" href="Message.edit.html">edit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.edit_text.html">edit_text</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.edit_caption.html">edit_caption</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">edit_media</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Message.edit_media"><code class="docutils literal notranslate"><span class="pre">Message.edit_media()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="Message.edit_media.html">edit_media</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.edit_reply_markup.html">edit_reply_markup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.reply.html">reply</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.reply_text.html">reply_text</a></li>
@@ -108,7 +105,10 @@
 <li class="toctree-l3"><a class="reference internal" href="Message.reply_video.html">reply_video</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.reply_video_note.html">reply_video_note</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.reply_voice.html">reply_voice</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Message.reply_web_page.html">reply_web_page</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">reply_web_page</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Message.reply_web_page"><code class="docutils literal notranslate"><span class="pre">Message.reply_web_page()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Message.get_media_group.html">get_media_group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Message.react.html">react</a></li>
 </ul>
@@ -174,7 +174,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Bound Methods</a></li>
-      <li class="breadcrumb-item active">Message.edit_media()</li>
+      <li class="breadcrumb-item active">Message.reply_web_page()</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -183,33 +183,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="message-edit-media">
-<h1>Message.edit_media()<a class="headerlink" href="#message-edit-media" title="Link to this heading"></a></h1>
+  <section id="message-reply-web-page">
+<h1>Message.reply_web_page()<a class="headerlink" href="#message-reply-web-page" title="Link to this heading"></a></h1>
 <dl class="py method">
-<dt class="sig sig-object py" id="pyrogram.types.Message.edit_media">
-<span class="sig-prename descclassname"><span class="pre">Message.</span></span><span class="sig-name descname"><span class="pre">edit_media</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.types.Message.edit_media" title="Link to this definition"></a></dt>
-<dd><p>Bound method <em>edit_media</em> of <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p>
+<dt class="sig sig-object py" id="pyrogram.types.Message.reply_web_page">
+<span class="sig-prename descclassname"><span class="pre">Message.</span></span><span class="sig-name descname"><span class="pre">reply_web_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.types.Message.reply_web_page" title="Link to this definition"></a></dt>
+<dd><p>Bound method <em>reply_web_page</em> of <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p>
 <p>Use as a shortcut for:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">edit_message_media</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">send_web_page</span><span class="p">(</span>
     <span class="n">chat_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">message_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">media</span><span class="o">=</span><span class="n">media</span>
+    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://github.com/Mayuri-Chan/pyrofork&quot;</span><span class="p">,</span>
+    <span class="n">reply_to_message_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span>
 <span class="p">)</span>
 </pre></div>
 </div>
 <p class="rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">edit_media</span><span class="p">(</span><span class="n">media</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">reply_web_page</span><span class="p">(</span><span class="s2">&quot;https://github.com/Mayuri-Chan/pyrofork&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>media</strong> (<a class="reference internal" href="../types/InputMedia.html#pyrogram.types.InputMedia" title="pyrogram.types.InputMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>) – One of the InputMedia objects describing an animation, audio, document, photo or video.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a>, <em>optional</em>) – An InlineKeyboardMarkup object.</p></li>
+<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Link that will be previewed.</p></li>
+<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the message to be sent.</p></li>
+<li><p><strong>quote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
+If <em>reply_to_message_id</em> is passed, this parameter will be ignored.
+Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
+<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+You can combine both syntaxes together.</p></li>
+<li><p><strong>entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>large_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Make web page preview image larger.</p></li>
+<li><p><strong>invert_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Move web page preview to above the message.</p></li>
+<li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
+Users will receive a notification with no sound.</p></li>
+<li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
+<li><p><strong>quote_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text to quote.
+for reply_to_message only.</p></li>
+<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
+<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
+<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
+instructions to remove reply keyboard or to force a reply from the user.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>On success, the edited <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> is returned.</p>
+<dd class="field-even"><p>On success, the sent Message is returned.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
@@ -223,8 +240,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Message.edit_caption.html" class="btn btn-neutral float-left" title="Message.edit_caption()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Message.edit_reply_markup.html" class="btn btn-neutral float-right" title="Message.edit_reply_markup()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Message.reply_voice.html" class="btn btn-neutral float-left" title="Message.reply_voice()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Message.get_media_group.html" class="btn btn-neutral float-right" title="Message.get_media_group()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
