@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact &mdash; Pyrofork Documentation</title>
+  <title>Giveaway &mdash; Pyrofork Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="../../_static/css/all.min.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
-    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/types/Contact.html"/>
+    <link rel="canonical" href="https://pyrofork.mayuri.my.id/api/types/Giveaway.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -30,8 +30,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Location" href="Location.html" />
-    <link rel="prev" title="VideoNote" href="VideoNote.html" /> 
+    <link rel="next" title="MessageStory" href="MessageStory.html" />
+    <link rel="prev" title="Game" href="Game.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -84,16 +84,16 @@
 <li class="toctree-l3"><a class="reference internal" href="Video.html">Video</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Voice.html">Voice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="VideoNote.html">VideoNote</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Contact</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Contact"><code class="docutils literal notranslate"><span class="pre">Contact</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="Contact.html">Contact</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Location.html">Location</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Venue.html">Venue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Sticker.html">Sticker</a></li>
 <li class="toctree-l3"><a class="reference internal" href="StickerSet.html">StickerSet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Game.html">Game</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Giveaway.html">Giveaway</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Giveaway</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyrogram.types.Giveaway"><code class="docutils literal notranslate"><span class="pre">Giveaway</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="MessageStory.html">MessageStory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="WebPage.html">WebPage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="WebPageEmpty.html">WebPageEmpty</a></li>
@@ -180,7 +180,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Available Types</a></li>
-      <li class="breadcrumb-item active">Contact</li>
+      <li class="breadcrumb-item active">Giveaway</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -189,20 +189,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="contact">
-<h1>Contact<a class="headerlink" href="#contact" title="Link to this heading"></a></h1>
+  <section id="giveaway">
+<h1>Giveaway<a class="headerlink" href="#giveaway" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.types.Contact">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">Contact</span></span><a class="headerlink" href="#pyrogram.types.Contact" title="Link to this definition"></a></dt>
-<dd><p>A phone contact.</p>
+<dt class="sig sig-object py" id="pyrogram.types.Giveaway">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">Giveaway</span></span><a class="headerlink" href="#pyrogram.types.Giveaway" title="Link to this definition"></a></dt>
+<dd><p>A giveaway.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Contact’s phone number.</p></li>
-<li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Contact’s first name.</p></li>
-<li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Contact’s last name.</p></li>
-<li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Contact’s user identifier in Telegram.</p></li>
-<li><p><strong>vcard</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Additional data about the contact in the form of a vCard.</p></li>
+<li><p><strong>channel_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>) – List Unique identifier of the channel(s) which host the giveaway.</p></li>
+<li><p><strong>quantity</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Quantity of the giveaway prize.</p></li>
+<li><p><strong>months</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – How long the telegram premium last (in month).</p></li>
+<li><p><strong>expire_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – Date the giveaway winner(s) will be choosen.</p></li>
+<li><p><strong>new_subscribers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the giveaway only for new subscribers.</p></li>
+<li><p><strong>countries_iso2</strong> (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – List of ISO country codes which eligible to join the giveaway.</p></li>
 </ul>
 </dd>
 </dl>
@@ -214,8 +215,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="VideoNote.html" class="btn btn-neutral float-left" title="VideoNote" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Location.html" class="btn btn-neutral float-right" title="Location" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Game.html" class="btn btn-neutral float-left" title="Game" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MessageStory.html" class="btn btn-neutral float-right" title="MessageStory" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
