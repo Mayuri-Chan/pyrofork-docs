@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raw Base &mdash; Pyrofork Documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/my.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/all.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3f8afb21" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/my.css?v=2657a3c8" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=2cf48bf2" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dark_mode_css/general.css?v=c0a7eb24" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dark_mode_css/dark.css?v=70edf1c7" />
+
+  
     <link rel="canonical" href="https://pyrofork.mayuri.my.id/telegram/base/index.html"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
@@ -209,6 +211,9 @@
 <li class="toctree-l2"><a class="reference internal" href="help/deep-link-info.html">DeepLinkInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/invite-text.html">InviteText</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/passport-config.html">PassportConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/peer-color-option.html">PeerColorOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/peer-color-set.html">PeerColorSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/peer-colors.html">PeerColors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/premium-promo.html">PremiumPromo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/promo-data.html">PromoData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/recent-me-urls.html">RecentMeUrls</a></li>
@@ -308,6 +313,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stats/broadcast-stats.html">BroadcastStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/megagroup-stats.html">MegagroupStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/message-stats.html">MessageStats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stats/public-forwards.html">PublicForwards</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="stickers/index.html">Stickers</a><ul>
@@ -505,7 +511,6 @@
 <li class="toctree-l1"><a class="reference internal" href="message-entity.html">MessageEntity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-extended-media.html">MessageExtendedMedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-fwd-header.html">MessageFwdHeader</a></li>
-<li class="toctree-l1"><a class="reference internal" href="message-interaction-counters.html">MessageInteractionCounters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media.html">MessageMedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-peer-reaction.html">MessagePeerReaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-peer-vote.html">MessagePeerVote</a></li>
@@ -542,6 +547,7 @@
 <li class="toctree-l1"><a class="reference internal" href="payment-saved-credentials.html">PaymentSavedCredentials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer.html">Peer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-blocked.html">PeerBlocked</a></li>
+<li class="toctree-l1"><a class="reference internal" href="peer-color.html">PeerColor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-located.html">PeerLocated</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-notify-settings.html">PeerNotifySettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-settings.html">PeerSettings</a></li>
@@ -559,12 +565,14 @@
 <li class="toctree-l1"><a class="reference internal" href="pong.html">Pong</a></li>
 <li class="toctree-l1"><a class="reference internal" href="popular-contact.html">PopularContact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="post-address.html">PostAddress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="post-interaction-counters.html">PostInteractionCounters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="premium-gift-code-option.html">PremiumGiftCodeOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="premium-gift-option.html">PremiumGiftOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="premium-subscription-option.html">PremiumSubscriptionOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="prepaid-giveaway.html">PrepaidGiveaway</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-key.html">PrivacyKey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-rule.html">PrivacyRule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public-forward.html">PublicForward</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reaction.html">Reaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reaction-count.html">ReactionCount</a></li>
 <li class="toctree-l1"><a class="reference internal" href="read-participant-date.html">ReadParticipantDate</a></li>
@@ -615,6 +623,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sticker-set.html">StickerSet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sticker-set-covered.html">StickerSetCovered</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stories-stealth-mode.html">StoriesStealthMode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story-fwd-header.html">StoryFwdHeader</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-item.html">StoryItem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-view.html">StoryView</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-views.html">StoryViews</a></li>
