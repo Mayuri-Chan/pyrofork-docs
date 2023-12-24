@@ -1363,6 +1363,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stats/megagroup-stats.html">MegagroupStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/message-stats.html">MessageStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/public-forwards.html">PublicForwards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stats/story-stats.html">StoryStats</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="stickers/index.html">Stickers</a><ul>
@@ -1387,6 +1388,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stories/all-stories-not-modified.html">AllStoriesNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/peer-stories.html">PeerStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/stories.html">Stories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/story-reactions-list.html">StoryReactionsList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/story-views.html">StoryViews</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/story-views-list.html">StoryViewsList</a></li>
 </ul>
@@ -1472,16 +1474,18 @@
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event.html">ChannelAdminLogEvent</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-about.html">ChannelAdminLogEventActionChangeAbout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-available-reactions.html">ChannelAdminLogEventActionChangeAvailableReactions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-background-emoji.html">ChannelAdminLogEventActionChangeBackgroundEmoji</a></li>
-<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-color.html">ChannelAdminLogEventActionChangeColor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-emoji-status.html">ChannelAdminLogEventActionChangeEmojiStatus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-history-ttl.html">ChannelAdminLogEventActionChangeHistoryTTL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-linked-chat.html">ChannelAdminLogEventActionChangeLinkedChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-location.html">ChannelAdminLogEventActionChangeLocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-peer-color.html">ChannelAdminLogEventActionChangePeerColor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-photo.html">ChannelAdminLogEventActionChangePhoto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-profile-peer-color.html">ChannelAdminLogEventActionChangeProfilePeerColor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-sticker-set.html">ChannelAdminLogEventActionChangeStickerSet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-title.html">ChannelAdminLogEventActionChangeTitle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-username.html">ChannelAdminLogEventActionChangeUsername</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-usernames.html">ChannelAdminLogEventActionChangeUsernames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-change-wallpaper.html">ChannelAdminLogEventActionChangeWallpaper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-create-topic.html">ChannelAdminLogEventActionCreateTopic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-default-banned-rights.html">ChannelAdminLogEventActionDefaultBannedRights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-delete-message.html">ChannelAdminLogEventActionDeleteMessage</a></li>
@@ -1705,6 +1709,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-slug.html">InputInvoiceSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-keyboard-button-url-auth.html">InputKeyboardButtonUrlAuth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-keyboard-button-user-profile.html">InputKeyboardButtonUserProfile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-media-area-channel-post.html">InputMediaAreaChannelPost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-media-area-venue.html">InputMediaAreaVenue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-media-contact.html">InputMediaContact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-media-dice.html">InputMediaDice</a></li>
@@ -1808,6 +1813,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-animated-emoji.html">InputStickerSetAnimatedEmoji</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-animated-emoji-animations.html">InputStickerSetAnimatedEmojiAnimations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-dice.html">InputStickerSetDice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-sticker-set-emoji-channel-default-statuses.html">InputStickerSetEmojiChannelDefaultStatuses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-emoji-default-statuses.html">InputStickerSetEmojiDefaultStatuses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-emoji-default-topic-icons.html">InputStickerSetEmojiDefaultTopicIcons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-emoji-generic-animations.html">InputStickerSetEmojiGenericAnimations</a></li>
@@ -1870,6 +1876,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lang-pack-string-deleted.html">LangPackStringDeleted</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lang-pack-string-pluralized.html">LangPackStringPluralized</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mask-coords.html">MaskCoords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media-area-channel-post.html">MediaAreaChannelPost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-coordinates.html">MediaAreaCoordinates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-geo-point.html">MediaAreaGeoPoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-suggested-reaction.html">MediaAreaSuggestedReaction</a></li>
@@ -1948,6 +1955,7 @@
 <li class="toctree-l1"><a class="reference internal" href="message-media-geo.html">MessageMediaGeo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-geo-live.html">MessageMediaGeoLive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-giveaway.html">MessageMediaGiveaway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-media-giveaway-results.html">MessageMediaGiveawayResults</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-invoice.html">MessageMediaInvoice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-photo.html">MessageMediaPhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-poll.html">MessageMediaPoll</a></li>
@@ -2211,7 +2219,12 @@
 <li class="toctree-l1"><a class="reference internal" href="story-item.html">StoryItem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-item-deleted.html">StoryItemDeleted</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-item-skipped.html">StoryItemSkipped</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story-reaction.html">StoryReaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story-reaction-public-forward.html">StoryReactionPublicForward</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story-reaction-public-repost.html">StoryReactionPublicRepost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-view.html">StoryView</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story-view-public-forward.html">StoryViewPublicForward</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story-view-public-repost.html">StoryViewPublicRepost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story-views.html">StoryViews</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-anchor.html">TextAnchor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-bold.html">TextBold</a></li>
@@ -2251,6 +2264,8 @@
 <li class="toctree-l1"><a class="reference internal" href="update-bot-inline-query.html">UpdateBotInlineQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-inline-send.html">UpdateBotInlineSend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-menu-button.html">UpdateBotMenuButton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-bot-message-reaction.html">UpdateBotMessageReaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-bot-message-reactions.html">UpdateBotMessageReactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-precheckout-query.html">UpdateBotPrecheckoutQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-shipping-query.html">UpdateBotShippingQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-stopped.html">UpdateBotStopped</a></li>
@@ -2383,7 +2398,6 @@
 <li class="toctree-l1"><a class="reference internal" href="user-status-offline.html">UserStatusOffline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-status-online.html">UserStatusOnline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-status-recently.html">UserStatusRecently</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user-stories.html">UserStories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="username.html">Username</a></li>
 <li class="toctree-l1"><a class="reference internal" href="video-size.html">VideoSize</a></li>
 <li class="toctree-l1"><a class="reference internal" href="video-size-emoji-markup.html">VideoSizeEmojiMarkup</a></li>
