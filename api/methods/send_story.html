@@ -1652,6 +1652,11 @@ You can combine both syntaxes together.</p></li>
 <li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
 <li><p><strong>period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – How long the story will posted, in secs.
 only for premium users.</p></li>
+<li><p><strong>media_areas</strong> (List of <a class="reference internal" href="../types/InputMediaArea.html#pyrogram.types.InputMediaArea" title="pyrogram.types.InputMediaArea (Python class) — Content of a media area to be included in story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaArea</span></code></a>) – List of media area object to be included in story.</p></li>
+<li><p><strong>forward_from_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <a href="#id1"><span class="problematic" id="id2">*</span></a>optional) – Unique identifier (int) or username (str) of the source chat where the original story was sent.
+For your personal story you can simply use “me” or “self”.
+For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
+<li><p><strong>forward_from_story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Single story id.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_story-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_story-returns" title="Permalink to this headline">¶</a></dt>
