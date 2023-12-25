@@ -1621,7 +1621,7 @@
 <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.export_story_link-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.export_story_link-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>from_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user/channel.
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user/channel.
 For your personal story you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
 <li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Pass a single story identifier of story (as integers).</p></li>
@@ -1633,7 +1633,7 @@ For a contact that exists in your Telegram address book you can use his phone nu
 </dl>
 <p class="example rubric">Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Get story link</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">export_story_link</span><span class="p">(</span><span class="n">from_id</span><span class="p">,</span> <span class="mi">12345</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">export_story_link</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="mi">12345</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <dl class="field-list simple">
