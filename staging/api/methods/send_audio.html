@@ -2228,7 +2228,8 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
-For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
+For a contact that exists in your Telegram address book you can use his phone number (str).
+You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>audio</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>) – Audio file to send.
 Pass a file_id as string to send an audio file that exists on the Telegram servers,
 pass an HTTP URL as a string for Telegram to get an audio file from the Internet,
@@ -2253,8 +2254,9 @@ Users will receive a notification with no sound.</p></li>
 for forum supergroups only.</p></li>
 <li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
 <li><p><strong>reply_to_story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target story.</p></li>
-<li><p><strong>reply_to_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the origin chat.
-for reply to message from another chat.</p></li>
+<li><p><strong>reply_to_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier for the origin chat.
+for reply to message from another chat.
+You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>quote_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text to quote.
 for reply_to_message only.</p></li>
 <li><p><strong>quote_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – List of special entities that appear in quote_text, which can be specified instead of <em>parse_mode</em>.
