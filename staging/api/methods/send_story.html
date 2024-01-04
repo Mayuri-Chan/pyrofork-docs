@@ -1628,11 +1628,6 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the target channel.
 You can also use channel public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
-<li><p><strong>animation</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Animation to send.
-Pass a file_id as string to send a animation that exists on the Telegram servers,
-pass an HTTP URL as a string for Telegram to get a animation from the Internet,
-pass a file path as string to upload a new animation that exists on your local machine, or
-pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
 <li><p><strong>photo</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Photo to send.
 Pass a file_id as string to send a photo that exists on the Telegram servers,
 pass an HTTP URL as a string for Telegram to get a photo from the Internet,
@@ -1643,6 +1638,8 @@ Pass a file_id as string to send a video that exists on the Telegram servers,
 pass an HTTP URL as a string for Telegram to get a video from the Internet,
 pass a file path as string to upload a new video that exists on your local machine, or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
+<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – File name of the video sent.
+Defaults to file’s path basename.</p></li>
 <li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules" title="pyrogram.enums.StoriesPrivacyRules (Python class) — Stories privacy rules type enumeration used in send_story() and edit_story()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code></a>, <em>optional</em>) – Story privacy.
 Defaults to <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a></p></li>
 <li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos allowed to view the story.</p></li>
