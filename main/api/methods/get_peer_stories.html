@@ -1626,7 +1626,8 @@
 <dt class="field-odd" id="pyrogram.Client.get_peer_stories-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_peer_stories-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user/channel.
 For your personal story you can simply use “me” or “self”.
-For a contact that exists in your Telegram address book you can use his phone number (str).</p>
+For a contact that exists in your Telegram address book you can use his phone number (str).
+You can also use user profile/channel public link in form of <em>t.me/&lt;username&gt;</em> (str).</p>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_peer_stories-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_peer_stories-returns" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – On success, a generator yielding <a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — A story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> objects is returned.</p>

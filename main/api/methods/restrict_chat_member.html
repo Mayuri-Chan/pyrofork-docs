@@ -2243,9 +2243,11 @@ Pass True for all permissions to lift restrictions from a user.</p>
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.restrict_chat_member-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.restrict_chat_member-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user.
-For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
+For a contact that exists in your Telegram address book you can use his phone number (str).
+You can also use user profile link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>permissions</strong> (<a class="reference internal" href="../types/ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions (Python class) — Describes actions that a non-administrator user is allowed to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>) – New user permissions.</p></li>
 <li><p><strong>until_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the user will be unbanned.
 If user is banned for more than 366 days or less than 30 seconds from the current time they are

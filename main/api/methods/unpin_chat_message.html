@@ -2243,7 +2243,8 @@ right in the supergroup or “can_edit_messages” admin right in the channel.</
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.unpin_chat_message-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.unpin_chat_message-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of a message to unpin.
 If not specified, the most recent pinned message (by sending date) will be unpinned.</p></li>
 </ul>
