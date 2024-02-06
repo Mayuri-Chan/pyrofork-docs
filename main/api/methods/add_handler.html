@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrogram.Client.add_handler" class="md-skip">
+        <a href="#pyrofork.Client.add_handler" class="md-skip">
           Skip to content
         </a>
       
@@ -715,22 +715,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.Client.add_handler" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.add_handler (Python method) — Register an update handler." class="md-ellipsis">Client.<wbr>add_<wbr>handler</span>
+  <a href="#pyrofork.Client.add_handler" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.add_handler (Python method) — Register an update handler." class="md-ellipsis">Client.<wbr>add_<wbr>handler</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.add_handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.add_handler-parameters" class="md-nav__link">
+  <a href="#pyrofork.Client.add_handler-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.add_handler-returns" class="md-nav__link">
+  <a href="#pyrofork.Client.add_handler-returns" class="md-nav__link">
     <span class="md-ellipsis">Returns</span>
   </a>
   
@@ -1606,22 +1606,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.Client.add_handler" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.add_handler (Python method) — Register an update handler." class="md-ellipsis">Client.<wbr>add_<wbr>handler</span>
+  <a href="#pyrofork.Client.add_handler" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.add_handler (Python method) — Register an update handler." class="md-ellipsis">Client.<wbr>add_<wbr>handler</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.add_handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.add_handler-parameters" class="md-nav__link">
+  <a href="#pyrofork.Client.add_handler-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.add_handler-returns" class="md-nav__link">
+  <a href="#pyrofork.Client.add_handler-returns" class="md-nav__link">
     <span class="md-ellipsis">Returns</span>
   </a>
   
@@ -1648,27 +1648,27 @@
 
 <h1 id="add-handler">add_handler()<a class="headerlink" href="#add-handler" title="Link to this heading">¶</a></h1>
 <dl class="py method objdesc">
-<dt class="sig sig-object highlight py" id="pyrogram.Client.add_handler">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">add_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.add_handler" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object highlight py" id="pyrofork.Client.add_handler">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">add_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrofork.Client.add_handler" title="Link to this definition">¶</a></dt>
 <dd><p>Register an update handler.</p>
 <p>You can register multiple handlers, but at most one handler within a group will be used for a single update.
 To handle the same update more than once, register your handler using a different group id (lower group id
 == higher priority). This mechanism is explained in greater details at
 <a class="reference internal" href="../../topics/more-on-updates.html"><span class="doc">More on Updates</span></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.Client.add_handler-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.add_handler-parameters" title="Permalink to this headline">¶</a></dt>
+<dt class="field-odd" id="pyrofork.Client.add_handler-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrofork.Client.add_handler-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>handler</strong> (<code class="docutils literal notranslate"><span class="pre">Handler</span></code>) – The handler to be registered.</p></li>
 <li><p><strong>group</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The group identifier, defaults to 0.</p></li>
 </ul>
 </dd>
-<dt class="field-even" id="pyrogram.Client.add_handler-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.add_handler-returns" title="Permalink to this headline">¶</a></dt>
+<dt class="field-even" id="pyrofork.Client.add_handler-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrofork.Client.add_handler-returns" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">tuple</span></code> – A tuple consisting of <em>(handler, group)</em>.</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="kn">from</span> <span class="nn">pyrogram.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">from</span> <span class="nn">pyrofork.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
 
 <span class="k">async</span> <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>

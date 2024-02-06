@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrogram.types.Listener" class="md-skip">
+        <a href="#pyrofork.types.Listener" class="md-skip">
           Skip to content
         </a>
       
@@ -715,15 +715,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.types.Listener" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.types.Listener (Python class) — Designed to manage and handle different types of listeners used in pyromod. It enables you to wait for specific events like messages or callback queries and provides mechanisms for defining the conditions and filters that trigger these listeners." class="md-ellipsis">pyrogram.<wbr>types.<wbr>Listener</span>
+  <a href="#pyrofork.types.Listener" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrofork.types.Listener (Python class) — Designed to manage and handle different types of listeners used in pyromod. It enables you to wait for specific events like messages or callback queries and provides mechanisms for defining the conditions and filters that trigger these listeners." class="md-ellipsis">pyrofork.<wbr>types.<wbr>Listener</span>
   </a>
   
-    <nav class="md-nav" aria-label="pyrogram.types.Listener">
+    <nav class="md-nav" aria-label="pyrofork.types.Listener">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.types.Listener-parameters" class="md-nav__link">
+  <a href="#pyrofork.types.Listener-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
@@ -1404,15 +1404,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.types.Listener" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.types.Listener (Python class) — Designed to manage and handle different types of listeners used in pyromod. It enables you to wait for specific events like messages or callback queries and provides mechanisms for defining the conditions and filters that trigger these listeners." class="md-ellipsis">pyrogram.<wbr>types.<wbr>Listener</span>
+  <a href="#pyrofork.types.Listener" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrofork.types.Listener (Python class) — Designed to manage and handle different types of listeners used in pyromod. It enables you to wait for specific events like messages or callback queries and provides mechanisms for defining the conditions and filters that trigger these listeners." class="md-ellipsis">pyrofork.<wbr>types.<wbr>Listener</span>
   </a>
   
-    <nav class="md-nav" aria-label="pyrogram.types.Listener">
+    <nav class="md-nav" aria-label="pyrofork.types.Listener">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.types.Listener-parameters" class="md-nav__link">
+  <a href="#pyrofork.types.Listener-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
@@ -1439,19 +1439,19 @@
 
 <h1 id="listener">Listener<a class="headerlink" href="#listener" title="Link to this heading">¶</a></h1>
 <dl class="py class objdesc">
-<dt class="sig sig-object highlight py" id="pyrogram.types.Listener">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">Listener</span></span><a class="headerlink" href="#pyrogram.types.Listener" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object highlight py" id="pyrofork.types.Listener">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrofork.types.</span></span><span class="sig-name descname"><span class="pre">Listener</span></span><a class="headerlink" href="#pyrofork.types.Listener" title="Link to this definition">¶</a></dt>
 <dd><p>Designed to manage and handle different types of listeners used in pyromod.
 It enables you to wait for specific events like messages or callback queries and provides mechanisms for defining the conditions and filters that trigger these listeners.</p>
 <dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.types.Listener-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Listener-parameters" title="Permalink to this headline">¶</a></dt>
+<dt class="field-odd" id="pyrofork.types.Listener-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrofork.types.Listener-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>listener_type</strong> (<a class="reference internal" href="../enums/ListenerTypes.html#pyrogram.enums.ListenerTypes" title="pyrogram.enums.ListenerTypes (Python class) — Listener type enumeration used in Client."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ListenerTypes</span></code></a>) – The type of listener that specifies the event you want to listen for.
+<li><p><strong>listener_type</strong> (<a class="reference internal" href="../enums/ListenerTypes.html#pyrofork.enums.ListenerTypes" title="pyrofork.enums.ListenerTypes (Python class) — Listener type enumeration used in Client."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ListenerTypes</span></code></a>) – The type of listener that specifies the event you want to listen for.
 It can be either a “message” or a “callback_query.”</p></li>
 <li><p><strong>filters</strong> (<code class="xref py py-meth docutils literal notranslate"><span class="pre">Filter()</span></code>) – The chat ID to match. If None, it is not considered for matching.</p></li>
 <li><p><strong>unallowed_click_alert</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – A flag that determines whether to send an alert if a button click event doesn’t match the filter conditions.
 Setting this to True will send an alert message to the user in such cases.</p></li>
-<li><p><strong>identifier</strong> (<a class="reference internal" href="Identifier.html#pyrogram.types.Identifier" title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a>) – An <a class="reference internal" href="Identifier.html#pyrogram.types.Identifier" title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a> instance that defines the criteria for the event.
+<li><p><strong>identifier</strong> (<a class="reference internal" href="Identifier.html#pyrofork.types.Identifier" title="pyrofork.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a>) – An <a class="reference internal" href="Identifier.html#pyrofork.types.Identifier" title="pyrofork.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a> instance that defines the criteria for the event.
 It includes properties like chat_id, message_id, from_user_id, and inline_message_id that you want to match against the incoming event.</p></li>
 <li><p><strong>future</strong> (<a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a>, <em>optional</em>) – A <a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a> object representing the asynchronous task that waits for the event.
 When the event occurs, the <a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a> will be resolved, and the listener will be able to proceed.</p></li>

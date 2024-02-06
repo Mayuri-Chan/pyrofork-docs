@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrogram.Client.set_parse_mode" class="md-skip">
+        <a href="#pyrofork.Client.set_parse_mode" class="md-skip">
           Skip to content
         </a>
       
@@ -775,15 +775,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.Client.set_parse_mode" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.set_parse_mode (Python method) — Set the parse mode to be used globally by the client." class="md-ellipsis">Client.<wbr>set_<wbr>parse_<wbr>mode</span>
+  <a href="#pyrofork.Client.set_parse_mode" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.set_parse_mode (Python method) — Set the parse mode to be used globally by the client." class="md-ellipsis">Client.<wbr>set_<wbr>parse_<wbr>mode</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.set_parse_mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.set_parse_mode-parameters" class="md-nav__link">
+  <a href="#pyrofork.Client.set_parse_mode-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
@@ -1599,15 +1599,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.Client.set_parse_mode" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.set_parse_mode (Python method) — Set the parse mode to be used globally by the client." class="md-ellipsis">Client.<wbr>set_<wbr>parse_<wbr>mode</span>
+  <a href="#pyrofork.Client.set_parse_mode" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.set_parse_mode (Python method) — Set the parse mode to be used globally by the client." class="md-ellipsis">Client.<wbr>set_<wbr>parse_<wbr>mode</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.set_parse_mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.set_parse_mode-parameters" class="md-nav__link">
+  <a href="#pyrofork.Client.set_parse_mode-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
@@ -1634,19 +1634,19 @@
 
 <h1 id="set-parse-mode">set_parse_mode()<a class="headerlink" href="#set-parse-mode" title="Link to this heading">¶</a></h1>
 <dl class="py method objdesc">
-<dt class="sig sig-object highlight py" id="pyrogram.Client.set_parse_mode">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">set_parse_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.set_parse_mode" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object highlight py" id="pyrofork.Client.set_parse_mode">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">set_parse_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrofork.Client.set_parse_mode" title="Link to this definition">¶</a></dt>
 <dd><p>Set the parse mode to be used globally by the client.</p>
 <p>When setting the parse mode with this method, all other methods having a <em>parse_mode</em> parameter will follow the
 global value by default.</p>
 <dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.Client.set_parse_mode-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_parse_mode-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>) – By default, texts are parsed using both Markdown and HTML styles.
+<dt class="field-odd" id="pyrofork.Client.set_parse_mode-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrofork.Client.set_parse_mode-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrofork.enums.ParseMode" title="pyrofork.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>) – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">enums</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">enums</span>
 
 <span class="c1"># Default combined mode: Markdown + HTML</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;1. **markdown** and &lt;i&gt;html&lt;/i&gt;&quot;</span><span class="p">)</span>

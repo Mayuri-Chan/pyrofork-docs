@@ -1274,7 +1274,7 @@ texts (<code class="docutils literal notranslate"><span class="pre">filters.text
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Just Text&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<p>With <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> (without decorators) the same can be achieved with:</p>
+<p>With <a class="reference internal" href="../api/methods/add_handler.html#pyrofork.Client.add_handler" title="pyrofork.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> (without decorators) the same can be achieved with:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">app</span><span class="o">.</span><span class="n">add_handler</span><span class="p">(</span><span class="n">MessageHandler</span><span class="p">(</span><span class="n">just_text</span><span class="p">,</span> <span class="n">filters</span><span class="o">.</span><span class="n">text</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1336,7 +1336,7 @@ update anymore.</p>
 </code></pre></div>
 </div>
 <p>Example with <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">StopPropagation</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">StopPropagation</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">StopPropagation</span>
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
 <span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
@@ -1396,7 +1396,7 @@ next available handler.</p>
 </code></pre></div>
 </div>
 <p>Example with <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">ContinuePropagation</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">ContinuePropagation</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">ContinuePropagation</span>
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
 <span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>

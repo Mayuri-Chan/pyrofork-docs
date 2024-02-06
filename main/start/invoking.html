@@ -1247,7 +1247,7 @@ account; we are now aiming towards the core of the framework.</p>
 <hr class="docutils" />
 <h2 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Link to this heading">¶</a></h2>
 <p>Making API calls with Pyrofork is very simple. Here’s a basic example we are going to examine step by step:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span>
 
@@ -1263,7 +1263,7 @@ account; we are now aiming towards the core of the framework.</p>
 <h3 id="step-by-step">Step-by-step<a class="headerlink" href="#step-by-step" title="Link to this heading">¶</a></h3>
 <ol class="arabic">
 <li><p>Let’s begin by importing the Client class.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
 </code></pre></div>
 </div>
 </li>
@@ -1281,7 +1281,7 @@ call; this is required for all asynchronous methods.</p>
 </code></pre></div>
 </div>
 </li>
-<li><p>Finally, we tell Python to schedule our <code class="docutils literal notranslate"><span class="pre">main()</span></code> async function by using Pyrofork’s <a class="reference internal" href="../api/methods/run.html#pyrogram.Client.run" title="pyrogram.Client.run (Python method) — Start the client, idle the main script and finally stop the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a>
+<li><p>Finally, we tell Python to schedule our <code class="docutils literal notranslate"><span class="pre">main()</span></code> async function by using Pyrofork’s <a class="reference internal" href="../api/methods/run.html#pyrofork.Client.run" title="pyrofork.Client.run (Python method) — Start the client, idle the main script and finally stop the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a>
 method.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </code></pre></div>
@@ -1290,11 +1290,11 @@ method.</p>
 </ol>
 <h2 id="context-manager">Context Manager<a class="headerlink" href="#context-manager" title="Link to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">with</span></code> statement starts a context manager, which is used as a shortcut for starting, executing and stopping
-the Client, asynchronously. It does so by automatically calling <a class="reference internal" href="../api/methods/start.html#pyrogram.Client.start" title="pyrogram.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a> and
-<a class="reference internal" href="../api/methods/stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> in a more convenient way which also gracefully stops the client, even in case of
+the Client, asynchronously. It does so by automatically calling <a class="reference internal" href="../api/methods/start.html#pyrofork.Client.start" title="pyrofork.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a> and
+<a class="reference internal" href="../api/methods/stop.html#pyrofork.Client.stop" title="pyrofork.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> in a more convenient way which also gracefully stops the client, even in case of
 unhandled exceptions in your code.</p>
 <p>Below there’s the same example as above, but without the use of the context manager:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span>
 
@@ -1309,11 +1309,11 @@ unhandled exceptions in your code.</p>
 </code></pre></div>
 </div>
 <h2 id="using-asyncio-run">Using asyncio.run()<a class="headerlink" href="#using-asyncio-run" title="Link to this heading">¶</a></h2>
-<p>Alternatively to the <a class="reference internal" href="../api/methods/run.html#pyrogram.Client.run" title="pyrogram.Client.run (Python method) — Start the client, idle the main script and finally stop the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, you can use Python’s <code class="docutils literal notranslate"><span class="pre">asyncio.run()</span></code> to execute the main
+<p>Alternatively to the <a class="reference internal" href="../api/methods/run.html#pyrofork.Client.run" title="pyrofork.Client.run (Python method) — Start the client, idle the main script and finally stop the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, you can use Python’s <code class="docutils literal notranslate"><span class="pre">asyncio.run()</span></code> to execute the main
 function, with one little caveat: the Client instance (and possibly other asyncio resources you are going to use) must
 be instantiated inside the main function.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
 
 
 <span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>

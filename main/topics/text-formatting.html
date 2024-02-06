@@ -1259,7 +1259,7 @@ list of the basic styles currently supported by Pyrofork.</p>
 <li><p><span class="strike">strike</span></p></li>
 <li><p><span class="underline">underline</span></p></li>
 <li><p>spoiler</p></li>
-<li><p><a class="reference external" href="https://pyrogram.org">text URL</a></p></li>
+<li><p><a class="reference external" href="https://pyrofork.org">text URL</a></p></li>
 <li><p><a class="reference external" href="tg://user?id=123456789">user text mention</a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">inline</span> <span class="pre">fixed-width</span> <span class="pre">code</span></code></p></li>
 <li><div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>pre-formatted
@@ -1270,8 +1270,8 @@ list of the basic styles currently supported by Pyrofork.</p>
 </li>
 </ul>
 <h2 id="markdown-style">Markdown Style<a class="headerlink" href="#markdown-style" title="Link to this heading">¶</a></h2>
-<p>To strictly use this mode, pass <a class="reference internal" href="../api/enums/ParseMode.html#pyrogram.enums.ParseMode.MARKDOWN" title="pyrogram.enums.ParseMode.MARKDOWN (Python attribute) — Markdown only mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code></a> to the <em>parse_mode</em> parameter when using
-<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. Use the following syntax in your message:</p>
+<p>To strictly use this mode, pass <a class="reference internal" href="../api/enums/ParseMode.html#pyrofork.enums.ParseMode.MARKDOWN" title="pyrofork.enums.ParseMode.MARKDOWN (Python attribute) — Markdown only mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code></a> to the <em>parse_mode</em> parameter when using
+<a class="reference internal" href="../api/methods/send_message.html#pyrofork.Client.send_message" title="pyrofork.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. Use the following syntax in your message:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>**bold**
 
 __italic__
@@ -1282,7 +1282,7 @@ __italic__
 
 ||spoiler||
 
-[text URL](https://pyrogram.org/)
+[text URL](https://pyrofork.org/)
 
 [text user mention](tg://user?id=123456789)
 
@@ -1298,7 +1298,7 @@ pre-formatted
 </code></pre></div>
 </div>
 <p><strong>Example</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">enums</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">enums</span>
 
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
     <span class="s2">&quot;me&quot;</span><span class="p">,</span>
@@ -1308,7 +1308,7 @@ pre-formatted
         <span class="s2">&quot;--underline--, &quot;</span>
         <span class="s2">&quot;~~strike~~, &quot;</span>
         <span class="s2">&quot;||spoiler||, &quot;</span>
-        <span class="s2">&quot;[URL](https://pyrogram.org), &quot;</span>
+        <span class="s2">&quot;[URL](https://pyrofork.org), &quot;</span>
         <span class="s2">&quot;`code`, &quot;</span>
         <span class="s2">&quot;```&quot;</span>
         <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
@@ -1321,7 +1321,7 @@ pre-formatted
 </div>
 <h2 id="html-style">HTML Style<a class="headerlink" href="#html-style" title="Link to this heading">¶</a></h2>
 <p>To strictly use this mode, pass <code class="xref py py-obj docutils literal notranslate"><span class="pre">HTML</span></code> to the <em>parse_mode</em> parameter when using
-<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. The following tags are currently supported:</p>
+<a class="reference internal" href="../api/methods/send_message.html#pyrofork.Client.send_message" title="pyrofork.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. The following tags are currently supported:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;
 
 &lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;
@@ -1332,7 +1332,7 @@ pre-formatted
 
 &lt;spoiler&gt;spoiler&lt;/spoiler&gt;
 
-&lt;a href=&quot;https://pyrogram.org/&quot;&gt;text URL&lt;/a&gt;
+&lt;a href=&quot;https://pyrofork.org/&quot;&gt;text URL&lt;/a&gt;
 
 &lt;a href=&quot;tg://user?id=123456789&quot;&gt;inline mention&lt;/a&gt;
 
@@ -1350,7 +1350,7 @@ pre-formatted
 </code></pre></div>
 </div>
 <p><strong>Example</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">enums</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">enums</span>
 
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
     <span class="s2">&quot;me&quot;</span><span class="p">,</span>
@@ -1360,7 +1360,7 @@ pre-formatted
         <span class="s2">&quot;&lt;u&gt;underline&lt;/u&gt;, &quot;</span>
         <span class="s2">&quot;&lt;s&gt;strike&lt;/s&gt;, &quot;</span>
         <span class="s2">&quot;&lt;spoiler&gt;spoiler&lt;/spoiler&gt;, &quot;</span>
-        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">https://pyrogram.org/</span><span class="se">\&quot;</span><span class="s2">&gt;URL&lt;/a&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">https://pyrofork.org/</span><span class="se">\&quot;</span><span class="s2">&gt;URL&lt;/a&gt;, &quot;</span>
         <span class="s2">&quot;&lt;code&gt;code&lt;/code&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
         <span class="s2">&quot;&lt;pre&gt;&quot;</span>
         <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
@@ -1401,7 +1401,7 @@ This means you can combine together both syntaxes in the same text:</p>
 </div></blockquote>
 <p>If you don’t like this behaviour you can always choose to only enable either Markdown or HTML in strict mode by passing
 <code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">HTML</span></code> as argument to the <em>parse_mode</em> parameter.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">enums</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">enums</span>
 
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;**bold**, &lt;i&gt;italic&lt;/i&gt;&quot;</span><span class="p">,</span> <span class="n">parse_mode</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">MARKDOWN</span><span class="p">)</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;**bold**, &lt;i&gt;italic&lt;/i&gt;&quot;</span><span class="p">,</span> <span class="n">parse_mode</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">HTML</span><span class="p">)</span>
@@ -1414,7 +1414,7 @@ This means you can combine together both syntaxes in the same text:</p>
 </div></blockquote>
 <p>In case you want to completely turn off the style parser, simply pass <code class="xref py py-obj docutils literal notranslate"><span class="pre">DISABLED</span></code> to <em>parse_mode</em>.
 The text will be sent as-is.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">enums</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">enums</span>
 
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;**bold**, &lt;i&gt;italic&lt;/i&gt;&quot;</span><span class="p">,</span> <span class="n">parse_mode</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">DISABLED</span><span class="p">)</span>
 </code></pre></div>
