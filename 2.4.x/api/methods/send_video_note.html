@@ -2258,6 +2258,9 @@ You can combine both syntaxes together.
 For quote_text.</p></li>
 <li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
+<li><p><strong>ttl_seconds</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Self-Destruct Timer.
+If you set a timer, the video note will self-destruct in <em>ttl_seconds</em>
+seconds after it was viewed.</p></li>
 <li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrofork.types.InlineKeyboardMarkup" title="pyrofork.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrofork.types.ReplyKeyboardMarkup" title="pyrofork.types.ReplyKeyboardMarkup (Python class) — A custom keyboard with reply options."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrofork.types.ReplyKeyboardRemove" title="pyrofork.types.ReplyKeyboardRemove (Python class) — Object used to tell clients to remove a bot keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrofork.types.ForceReply" title="pyrofork.types.ForceReply (Python class) — Object used to force clients to show a reply interface."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
 instructions to remove reply keyboard or to force a reply from the user.</p></li>
 <li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
@@ -2289,6 +2292,9 @@ returned.</p>
 
 <span class="c1"># Set video note length</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_video_note</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;video_note.mp4&quot;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+
+<span class="c1"># Send self-destructing video note</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_voice</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;video_note.mp4&quot;</span><span class="p">,</span> <span class="n">ttl_seconds</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">31</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </dd></dl>
