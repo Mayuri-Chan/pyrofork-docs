@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrofork.Client.run" class="md-skip">
+        <a href="#pyrogram.Client.run" class="md-skip">
           Skip to content
         </a>
       
@@ -670,22 +670,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrofork.Client.run" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.run (Python method) — Start the client, idle the main script and finally stop the client." class="md-ellipsis">Client.<wbr>run</span>
+  <a href="#pyrogram.Client.run" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.run (Python method) — Start the client, idle the main script and finally stop the client." class="md-ellipsis">Client.<wbr>run</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.run">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrofork.Client.run-parameters" class="md-nav__link">
+  <a href="#pyrogram.Client.run-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyrofork.Client.run-raises" class="md-nav__link">
+  <a href="#pyrogram.Client.run-raises" class="md-nav__link">
     <span class="md-ellipsis">Raises</span>
   </a>
   
@@ -1606,22 +1606,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrofork.Client.run" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.run (Python method) — Start the client, idle the main script and finally stop the client." class="md-ellipsis">Client.<wbr>run</span>
+  <a href="#pyrogram.Client.run" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.run (Python method) — Start the client, idle the main script and finally stop the client." class="md-ellipsis">Client.<wbr>run</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.run">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrofork.Client.run-parameters" class="md-nav__link">
+  <a href="#pyrogram.Client.run-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyrofork.Client.run-raises" class="md-nav__link">
+  <a href="#pyrogram.Client.run-raises" class="md-nav__link">
     <span class="md-ellipsis">Raises</span>
   </a>
   
@@ -1648,33 +1648,33 @@
 
 <h1 id="run">run()<a class="headerlink" href="#run" title="Link to this heading">¶</a></h1>
 <dl class="py method objdesc">
-<dt class="sig sig-object highlight py" id="pyrofork.Client.run">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrofork.Client.run" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object highlight py" id="pyrogram.Client.run">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.run" title="Link to this definition">¶</a></dt>
 <dd><p>Start the client, idle the main script and finally stop the client.</p>
 <p>When calling this method without any argument it acts as a convenience method that calls
-<a class="reference internal" href="start.html#pyrofork.Client.start" title="pyrofork.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a>, <a class="reference internal" href="idle.html#pyrofork.idle" title="pyrofork.idle (Python function) — Block the main script execution until a signal is received."><code class="xref py py-meth docutils literal notranslate"><span class="pre">idle()</span></code></a> and <a class="reference internal" href="stop.html#pyrofork.Client.stop" title="pyrofork.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> in sequence.
+<a class="reference internal" href="start.html#pyrogram.Client.start" title="pyrogram.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a>, <a class="reference internal" href="idle.html#pyrogram.idle" title="pyrogram.idle (Python function) — Block the main script execution until a signal is received."><code class="xref py py-meth docutils literal notranslate"><span class="pre">idle()</span></code></a> and <a class="reference internal" href="stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> in sequence.
 It makes running a single client less verbose.</p>
 <p>In case a coroutine is passed as argument, runs the coroutine until it’s completed and doesn’t do any client
-operation. This is almost the same as <a class="reference external" href="https://docs.python.org/3/library/asyncio-runner.html#asyncio.run" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">asyncio.run</span></code></a> except for the fact that Pyrofork’s <code class="docutils literal notranslate"><span class="pre">run</span></code> uses the
+operation. This is almost the same as <a class="reference external" href="https://docs.python.org/3/library/asyncio-runner.html#asyncio.run" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">asyncio.run</span></code></a> except for the fact that Pyrogram’s <code class="docutils literal notranslate"><span class="pre">run</span></code> uses the
 current event loop instead of a new one.</p>
-<p>If you want to run multiple clients at once, see <a class="reference internal" href="compose.html#pyrofork.compose" title="pyrofork.compose (Python function) — Run multiple clients at once."><code class="xref py py-meth docutils literal notranslate"><span class="pre">pyrofork.compose()</span></code></a>.</p>
+<p>If you want to run multiple clients at once, see <a class="reference internal" href="compose.html#pyrogram.compose" title="pyrogram.compose (Python function) — Run multiple clients at once."><code class="xref py py-meth docutils literal notranslate"><span class="pre">pyrogram.compose()</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd" id="pyrofork.Client.run-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrofork.Client.run-parameters" title="Permalink to this headline">¶</a></dt>
+<dt class="field-odd" id="pyrogram.Client.run-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.run-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><p><strong>coroutine</strong> (<code class="docutils literal notranslate"><span class="pre">Coroutine</span></code>, <em>optional</em>) – Pass a coroutine to run it until it completes.</p>
 </dd>
-<dt class="field-even" id="pyrofork.Client.run-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrofork.Client.run-raises" title="Permalink to this headline">¶</a></dt>
+<dt class="field-even" id="pyrogram.Client.run-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.run-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ConnectionError" title="(in Python v3.12)"><strong>ConnectionError</strong></a> – In case you try to run an already started client.</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span>
 <span class="o">...</span>  <span class="c1"># Set handlers up</span>
 <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span>
 

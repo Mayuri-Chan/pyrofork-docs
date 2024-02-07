@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrofork.Client.remove_handler" class="md-skip">
+        <a href="#pyrogram.Client.remove_handler" class="md-skip">
           Skip to content
         </a>
       
@@ -730,15 +730,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrofork.Client.remove_handler" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.remove_handler (Python method) — Remove a previously-registered update handler." class="md-ellipsis">Client.<wbr>remove_<wbr>handler</span>
+  <a href="#pyrogram.Client.remove_handler" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.remove_handler (Python method) — Remove a previously-registered update handler." class="md-ellipsis">Client.<wbr>remove_<wbr>handler</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.remove_handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrofork.Client.remove_handler-parameters" class="md-nav__link">
+  <a href="#pyrogram.Client.remove_handler-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
@@ -1599,15 +1599,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrofork.Client.remove_handler" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrofork.Client.remove_handler (Python method) — Remove a previously-registered update handler." class="md-ellipsis">Client.<wbr>remove_<wbr>handler</span>
+  <a href="#pyrogram.Client.remove_handler" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.remove_handler (Python method) — Remove a previously-registered update handler." class="md-ellipsis">Client.<wbr>remove_<wbr>handler</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.remove_handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrofork.Client.remove_handler-parameters" class="md-nav__link">
+  <a href="#pyrogram.Client.remove_handler-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
   </a>
   
@@ -1634,13 +1634,13 @@
 
 <h1 id="remove-handler">remove_handler()<a class="headerlink" href="#remove-handler" title="Link to this heading">¶</a></h1>
 <dl class="py method objdesc">
-<dt class="sig sig-object highlight py" id="pyrofork.Client.remove_handler">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">remove_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrofork.Client.remove_handler" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object highlight py" id="pyrogram.Client.remove_handler">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">remove_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.remove_handler" title="Link to this definition">¶</a></dt>
 <dd><p>Remove a previously-registered update handler.</p>
 <p>Make sure to provide the right group where the handler was added in. You can use the return value of the
-<a class="reference internal" href="add_handler.html#pyrofork.Client.add_handler" title="pyrofork.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> method, a tuple of <em>(handler, group)</em>, and pass it directly.</p>
+<a class="reference internal" href="add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> method, a tuple of <em>(handler, group)</em>, and pass it directly.</p>
 <dl class="field-list simple">
-<dt class="field-odd" id="pyrofork.Client.remove_handler-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrofork.Client.remove_handler-parameters" title="Permalink to this headline">¶</a></dt>
+<dt class="field-odd" id="pyrogram.Client.remove_handler-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.remove_handler-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>handler</strong> (<code class="docutils literal notranslate"><span class="pre">Handler</span></code>) – The handler to be removed.</p></li>
 <li><p><strong>group</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The group identifier, defaults to 0.</p></li>
@@ -1648,8 +1648,8 @@
 </dd>
 </dl>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="kn">from</span> <span class="nn">pyrofork.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">from</span> <span class="nn">pyrogram.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
 
 <span class="k">async</span> <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>

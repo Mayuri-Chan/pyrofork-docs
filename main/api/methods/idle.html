@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrofork.idle" class="md-skip">
+        <a href="#pyrogram.idle" class="md-skip">
           Skip to content
         </a>
       
@@ -790,8 +790,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrofork.idle" class="md-nav__link">
-    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrofork.idle (Python function) — Block the main script execution until a signal is received." class="md-ellipsis">pyrofork.<wbr>idle</span>
+  <a href="#pyrogram.idle" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.idle (Python function) — Block the main script execution until a signal is received." class="md-ellipsis">pyrogram.<wbr>idle</span>
   </a>
   
 </li>
@@ -1586,8 +1586,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrofork.idle" class="md-nav__link">
-    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrofork.idle (Python function) — Block the main script execution until a signal is received." class="md-ellipsis">pyrofork.<wbr>idle</span>
+  <a href="#pyrogram.idle" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.idle (Python function) — Block the main script execution until a signal is received." class="md-ellipsis">pyrogram.<wbr>idle</span>
   </a>
   
 </li>
@@ -1608,18 +1608,18 @@
 
 <h1 id="idle">idle()<a class="headerlink" href="#idle" title="Link to this heading">¶</a></h1>
 <dl class="py function objdesc">
-<dt class="sig sig-object highlight py" id="pyrofork.idle">
-<span class="sig-prename descclassname"><span class="pre">pyrofork.</span></span><span class="sig-name descname"><span class="pre">idle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrofork.idle" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object highlight py" id="pyrogram.idle">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.</span></span><span class="sig-name descname"><span class="pre">idle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.idle" title="Link to this definition">¶</a></dt>
 <dd><p>Block the main script execution until a signal is received.</p>
 <p>This function will run indefinitely in order to block the main script execution and prevent it from
 exiting while having client(s) that are still running in the background.</p>
 <p>It is useful for event-driven application only, that are, applications which react upon incoming Telegram
 updates through handlers, rather than executing a set of methods sequentially.</p>
 <p>Once a signal is received (e.g.: from CTRL+C) the function will terminate and your main script will continue.
-Don’t forget to call <a class="reference internal" href="stop.html#pyrofork.Client.stop" title="pyrofork.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> for each running client before the script ends.</p>
+Don’t forget to call <a class="reference internal" href="stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> for each running client before the script ends.</p>
 <p class="example rubric">Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">idle</span>
+<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">idle</span>
 
 
 <span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>

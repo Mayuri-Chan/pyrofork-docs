@@ -1251,12 +1251,12 @@ handled by registering one or more callback functions in your app using <a class
 <p>Each handler deals with a specific event and once a matching update arrives from Telegram, your registered callback
 function will be called back by the framework and its body executed.</p>
 <h2 id="registering-a-handler">Registering a Handler<a class="headerlink" href="#registering-a-handler" title="Link to this heading">¶</a></h2>
-<p>To explain how handlers work let’s examine the one which will be in charge for handling <a class="reference internal" href="../api/types/Message.html#pyrofork.types.Message" title="pyrofork.types.Message (Python class) — A message."><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a>
+<p>To explain how handlers work let’s examine the one which will be in charge for handling <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a>
 updates coming from all around your chats. Every other kind of handler shares the same setup logic and you should not
 have troubles settings them up once you learn from this section.</p>
 <h3 id="using-decorators">Using Decorators<a class="headerlink" href="#using-decorators" title="Link to this heading">¶</a></h3>
-<p>The most elegant way to register a message handler is by using the <a class="reference internal" href="../api/decorators.html#pyrofork.Client.on_message" title="pyrofork.Client.on_message (Python function) — Decorator for handling new messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a> decorator:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
+<p>The most elegant way to register a message handler is by using the <a class="reference internal" href="../api/decorators.html#pyrogram.Client.on_message" title="pyrogram.Client.on_message (Python function) — Decorator for handling new messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a> decorator:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span>
 
@@ -1271,14 +1271,14 @@ have troubles settings them up once you learn from this section.</p>
 </div>
 <p>The defined function <code class="docutils literal notranslate"><span class="pre">my_handler</span></code>, which accepts the two arguments <em>(client, message)</em>, will be the function that gets
 executed every time a new message arrives.</p>
-<p>In the last line we see again the <a class="reference internal" href="../api/methods/run.html#pyrofork.Client.run" title="pyrofork.Client.run (Python method) — Start the client, idle the main script and finally stop the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, this time used without any argument.
-Its purpose here is simply to automatically <a class="reference internal" href="../api/methods/start.html#pyrofork.Client.start" title="pyrofork.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a>, keep the Client online so that it can listen
-for updates and <a class="reference internal" href="../api/methods/stop.html#pyrofork.Client.stop" title="pyrofork.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> it once you hit <code class="docutils literal notranslate"><span class="pre">CTRL+C</span></code>.</p>
+<p>In the last line we see again the <a class="reference internal" href="../api/methods/run.html#pyrogram.Client.run" title="pyrogram.Client.run (Python method) — Start the client, idle the main script and finally stop the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, this time used without any argument.
+Its purpose here is simply to automatically <a class="reference internal" href="../api/methods/start.html#pyrogram.Client.start" title="pyrogram.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a>, keep the Client online so that it can listen
+for updates and <a class="reference internal" href="../api/methods/stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> it once you hit <code class="docutils literal notranslate"><span class="pre">CTRL+C</span></code>.</p>
 <h3 id="using-add-handler">Using add_handler()<a class="headerlink" href="#using-add-handler" title="Link to this heading">¶</a></h3>
-<p>The <a class="reference internal" href="../api/methods/add_handler.html#pyrofork.Client.add_handler" title="pyrofork.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> method takes any handler instance that wraps around your defined callback
+<p>The <a class="reference internal" href="../api/methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> method takes any handler instance that wraps around your defined callback
 function and registers it in your Client. It is useful in case you want to programmatically add handlers.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="kn">from</span> <span class="nn">pyrofork.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">from</span> <span class="nn">pyrogram.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
 
 
 <span class="k">async</span> <span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>

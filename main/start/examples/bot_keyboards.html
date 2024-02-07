@@ -1323,8 +1323,8 @@
 Any attempt in sending keyboards with a user account will be simply ignored by the server.</p>
 <p>send_message() is used as example, but a keyboard can be sent with any other send_* methods,
 like send_audio(), send_document(), send_location(), etc…</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrofork</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="kn">from</span> <span class="nn">pyrofork.types</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ReplyKeyboardMarkup</span><span class="p">,</span> <span class="n">InlineKeyboardMarkup</span><span class="p">,</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ReplyKeyboardMarkup</span><span class="p">,</span> <span class="n">InlineKeyboardMarkup</span><span class="p">,</span>
                             <span class="n">InlineKeyboardButton</span><span class="p">)</span>
 
 <span class="c1"># Create a client using your bot token</span>
@@ -1365,11 +1365,11 @@ like send_audio(), send_document(), send_location(), etc…</p>
                     <span class="p">[</span>  <span class="c1"># Second row</span>
                         <span class="n">InlineKeyboardButton</span><span class="p">(</span>  <span class="c1"># Opens the inline interface</span>
                             <span class="s2">&quot;Choose chat&quot;</span><span class="p">,</span>
-                            <span class="n">switch_inline_query</span><span class="o">=</span><span class="s2">&quot;pyrofork&quot;</span>
+                            <span class="n">switch_inline_query</span><span class="o">=</span><span class="s2">&quot;pyrogram&quot;</span>
                         <span class="p">),</span>
                         <span class="n">InlineKeyboardButton</span><span class="p">(</span>  <span class="c1"># Opens the inline interface in the current chat</span>
                             <span class="s2">&quot;Inline here&quot;</span><span class="p">,</span>
-                            <span class="n">switch_inline_query_current_chat</span><span class="o">=</span><span class="s2">&quot;pyrofork&quot;</span>
+                            <span class="n">switch_inline_query_current_chat</span><span class="o">=</span><span class="s2">&quot;pyrogram&quot;</span>
                         <span class="p">)</span>
                     <span class="p">]</span>
                 <span class="p">]</span>
