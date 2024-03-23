@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.03ee1730f15ed0f74.min.css?v=e1a21df1" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e3bab952" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -2210,11 +2210,15 @@
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_custom_emoji_stickers-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_custom_emoji_stickers-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>custom_emoji_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>) – List of custom emoji identifiers.
+<dd class="field-odd"><p><strong>custom_emoji_ids</strong> (List[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">List[int]</span></code>]) – Custom emoji ID.
 At most 200 custom emoji identifiers can be specified.</p>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_custom_emoji_stickers-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_custom_emoji_stickers-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p>List of <a class="reference internal" href="../types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a> – On success, a list of sticker objects is returned.</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>obj: <cite>~pyrogram.types.Sticker</cite> | List of <a class="reference internal" href="../types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a>: In case <em>custom_emoji_ids</em> was not</dt><dd><p>a lost, a single sticker is returned, otherwise a list of stickers is returned.</p>
+</dd>
+</dl>
+</p>
 </dd>
 </dl>
 </dd></dl>
