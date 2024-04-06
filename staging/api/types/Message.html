@@ -2118,7 +2118,7 @@ only returned using when client.get_messages.</p></li>
 <li><p><strong>reply_to_message</strong> (<a class="reference internal" href="#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>, <em>optional</em>) – For replies, the original message. Note that the Message object in this field will not contain
 further reply_to_message fields even if it itself is a reply.</p></li>
 <li><p><strong>reply_to_story</strong> (<a class="reference internal" href="Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — A story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a>, <em>optional</em>) – For replies, the original story.</p></li>
-<li><p><strong>business_connection_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The business connection identifier.</p></li>
+<li><p><strong>business_connection_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The business connection identifier.</p></li>
 <li><p><strong>mentioned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The message contains a mention.</p></li>
 <li><p><strong>empty</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The message is empty.
 A message can be empty in case it was deleted or you tried to retrieve a message that doesn’t exist yet.</p></li>
