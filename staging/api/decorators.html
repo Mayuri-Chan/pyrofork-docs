@@ -684,6 +684,26 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pyrogram.Client.on_bot_business_message" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.Client.on_bot_business_message (Python function) — Decorator for handling new bot business messages." class="md-ellipsis">@pyrogram.<wbr>Client.<wbr>on_<wbr>bot_<wbr>business_<wbr>message</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="@pyrogram.Client.on_bot_business_message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.Client.on_bot_business_message-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pyrogram.Client.on_edited_message" class="md-nav__link">
     <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.Client.on_edited_message (Python function) — Decorator for handling edited messages." class="md-ellipsis">@pyrogram.<wbr>Client.<wbr>on_<wbr>edited_<wbr>message</span>
   </a>
@@ -1494,6 +1514,26 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pyrogram.Client.on_bot_business_message" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.Client.on_bot_business_message (Python function) — Decorator for handling new bot business messages." class="md-ellipsis">@pyrogram.<wbr>Client.<wbr>on_<wbr>bot_<wbr>business_<wbr>message</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="@pyrogram.Client.on_bot_business_message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.Client.on_bot_business_message-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pyrogram.Client.on_edited_message" class="md-nav__link">
     <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.Client.on_edited_message (Python function) — Decorator for handling edited messages." class="md-ellipsis">@pyrogram.<wbr>Client.<wbr>on_<wbr>edited_<wbr>message</span>
   </a>
@@ -1808,6 +1848,7 @@ functions.</p>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Link to this heading">¶</a></h2>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><a class="reference internal" href="#pyrogram.Client.on_message" title="pyrogram.Client.on_message (Python function) — Decorator for handling new messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#pyrogram.Client.on_bot_business_message" title="pyrogram.Client.on_bot_business_message (Python function) — Decorator for handling new bot business messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_bot_business_message()</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.Client.on_edited_message" title="pyrogram.Client.on_edited_message (Python function) — Decorator for handling edited messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_edited_message()</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.Client.on_callback_query" title="pyrogram.Client.on_callback_query (Python function) — Decorator for handling callback queries."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_callback_query()</span></code></a></p></li>
 <li><p><a class="reference internal" href="#pyrogram.Client.on_message_reaction_updated" title="pyrogram.Client.on_message_reaction_updated (Python function) — Decorator for handling reaction changes on messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message_reaction_updated()</span></code></a></p></li>
@@ -1838,6 +1879,23 @@ functions.</p>
 <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.on_message-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.on_message-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filters</strong> (<a class="reference internal" href="filters.html#module-pyrogram.filters" title="pyrogram.filters (Python module)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a>, <em>optional</em>) – Pass one or more filters to allow only a subset of messages to be passed
+in your function.</p></li>
+<li><p><strong>group</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The group identifier, defaults to 0.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.Client.on_bot_business_message">
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.Client.</span></span><span class="sig-name descname"><span class="pre">on_bot_business_message</span></span><a class="headerlink" href="#pyrogram.Client.on_bot_business_message" title="Link to this definition">¶</a></dt>
+<dd><p>Decorator for handling new bot business messages.</p>
+<p>This does the same thing as <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a> using the
+<a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.Client.on_bot_business_message-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.on_bot_business_message-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>filters</strong> (<a class="reference internal" href="filters.html#module-pyrogram.filters" title="pyrogram.filters (Python module)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a>, <em>optional</em>) – Pass one or more filters to allow only a subset of messages to be passed
 in your function.</p></li>
