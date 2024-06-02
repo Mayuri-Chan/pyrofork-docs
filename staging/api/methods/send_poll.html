@@ -2231,7 +2231,8 @@ For your personal cloud (Saved Messages) you can simply use “me” or “self�
 For a contact that exists in your Telegram address book you can use his phone number (str).
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>question</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Poll question, 1-255 characters.</p></li>
-<li><p><strong>options</strong> (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>) – List of answer options, 2-10 strings 1-100 characters each.</p></li>
+<li><p><strong>options</strong> (List of <a class="reference internal" href="../types/PollOption.html#pyrogram.types.PollOption" title="pyrogram.types.PollOption (Python class) — Contains information about one answer option in a poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOption</span></code></a>) – List of PollOption.</p></li>
+<li><p><strong>question_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – List of special entities that appear in the poll question, which can be specified instead of <em>parse_mode</em>.</p></li>
 <li><p><strong>is_anonymous</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the poll needs to be anonymous.
 Defaults to True.</p></li>
 <li><p><strong>type (</strong> – obj`~pyrogram.enums.PollType`, <em>optional</em>):

@@ -2151,9 +2151,10 @@
 <dt class="field-odd" id="pyrogram.types.PollOption-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.PollOption-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Option text, 1-100 characters.</p></li>
-<li><p><strong>voter_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Number of users that voted for this option.
+<li><p><strong>voter_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of users that voted for this option.
 Equals to 0 until you vote.</p></li>
-<li><p><strong>data</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – The data this poll option is holding.</p></li>
+<li><p><strong>data</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>optional</em>) – The data this poll option is holding.</p></li>
+<li><p><strong>entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities like usernames, URLs, bot commands, etc. that appear in the option text.</p></li>
 </ul>
 </dd>
 </dl>
