@@ -2258,6 +2258,8 @@ You can also use user profile link in form of <em>t.me/&lt;username&gt;</em> (st
 <li><p><strong>until_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the user will be unbanned.
 If user is banned for more than 366 days or less than 30 seconds from the current time they are
 considered to be banned forever. Defaults to epoch (ban forever).</p></li>
+<li><p><strong>revoke_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to delete all messages from the chat for the user that is being removed. If False, the user will be able to see messages in the group that were sent before the user was removed.
+Always True for supergroups and channels.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.ban_chat_member-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.ban_chat_member-returns" title="Permalink to this headline">¶</a></dt>
@@ -2346,7 +2348,7 @@ otherwise, in case a message object couldn’t be returned, True is returned.</p
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   

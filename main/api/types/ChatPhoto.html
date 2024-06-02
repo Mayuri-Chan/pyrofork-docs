@@ -1118,6 +1118,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CollectibleItemInfo.html" class="md-nav__link">
+        <span class="md-ellipsis">Collectible<wbr>Item<wbr>Info</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1873,6 +1888,9 @@ different accounts. Can’t be used to download or reuse the file.</p></li>
 This file_id can be used only for photo download and only for as long as the photo is not changed.</p></li>
 <li><p><strong>big_photo_unique_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique file identifier of big (640x640) chat photo, which is supposed to be the same over time and for
 different accounts. Can’t be used to download or reuse the file.</p></li>
+<li><p><strong>has_animation</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the photo has animated variant</p></li>
+<li><p><strong>is_personal</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the photo is visible only for the current user</p></li>
+<li><p><strong>minithumbnail</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StrippedThumbnail</span></code>, <em>optional</em>) – User profile photo minithumbnail; may be None.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1947,7 +1965,7 @@ different accounts. Can’t be used to download or reuse the file.</p></li>
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   

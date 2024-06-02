@@ -1327,6 +1327,21 @@
   
   
     <li class="md-nav__item">
+      <a href="index.html#precheckoutquery" class="md-nav__link">
+        <span class="md-ellipsis">Pre<wbr>Checkout<wbr>Query</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="index.html#chatjoinrequest" class="md-nav__link">
         <span class="md-ellipsis">Chat<wbr>Join<wbr>Request</span>
       </a>
@@ -1975,6 +1990,11 @@ Defaults to 0 (first button).</p></li>
 If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
 <li><p><strong>timeout</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Timeout in seconds.</p></li>
+<li><p><strong>request_write_access</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Only used in case of <a class="reference internal" href="../types/LoginUrl.html#pyrogram.types.LoginUrl" title="pyrogram.types.LoginUrl (Python class) — Represents a parameter of the inline keyboard button used to automatically authorize a user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoginUrl</span></code></a> button.
+True, if the bot can send messages to the user.
+Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>password</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – When clicking certain buttons (such as BotFather’s confirmation button to transfer ownership), if your account has 2FA enabled, you need to provide your account’s password.
+The 2-step verification password for the current user. Only applicable, if the <a class="reference internal" href="../types/InlineKeyboardButton.html#pyrogram.types.InlineKeyboardButton" title="pyrogram.types.InlineKeyboardButton (Python class) — One button of an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardButton</span></code></a> contains <code class="docutils literal notranslate"><span class="pre">requires_password</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.Message.click-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.click-returns" title="Permalink to this headline">¶</a></dt>
@@ -1983,6 +2003,8 @@ Defaults to <code class="docutils literal notranslate"><span class="pre">True</s
 <li><p>The result of <a class="reference internal" href="Message.reply.html#pyrogram.types.Message.reply" title="pyrogram.types.Message.reply (Python method) — Bound method reply_text of Message."><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply()</span></code></a> in case of normal button clicks.</p></li>
 <li><p>A string in case the inline button is a URL, a <em>switch_inline_query</em> or a
 <em>switch_inline_query_current_chat</em> button.</p></li>
+<li><p>A string URL with the user details, in case of a WebApp button.</p></li>
+<li><p>A <a class="reference internal" href="../types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> object in case of a <code class="docutils literal notranslate"><span class="pre">KeyboardButtonUserProfile</span></code> button.</p></li>
 </ul>
 </p>
 </dd>
@@ -2065,7 +2087,7 @@ Defaults to <code class="docutils literal notranslate"><span class="pre">True</s
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   

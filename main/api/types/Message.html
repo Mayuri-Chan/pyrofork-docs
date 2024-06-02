@@ -765,6 +765,21 @@
   
   
     <li class="md-nav__item">
+      <a href="AvailableEffect.html" class="md-nav__link">
+        <span class="md-ellipsis">Available<wbr>Effect</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Document.html" class="md-nav__link">
         <span class="md-ellipsis">Document</span>
       </a>
@@ -930,6 +945,21 @@
   
   
     <li class="md-nav__item">
+      <a href="GiftedPremium.html" class="md-nav__link">
+        <span class="md-ellipsis">Gifted<wbr>Premium</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Giveaway.html" class="md-nav__link">
         <span class="md-ellipsis">Giveaway</span>
       </a>
@@ -962,6 +992,21 @@
     <li class="md-nav__item">
       <a href="GiveawayResult.html" class="md-nav__link">
         <span class="md-ellipsis">Giveaway<wbr>Result</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageInvoice.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Invoice</span>
       </a>
     </li>
   
@@ -1352,6 +1397,21 @@
     <li class="md-nav__item">
       <a href="MessageReactionCountUpdated.html" class="md-nav__link">
         <span class="md-ellipsis">Message<wbr>Reaction<wbr>Count<wbr>Updated</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SuccessfulPayment.html" class="md-nav__link">
+        <span class="md-ellipsis">Successful<wbr>Payment</span>
       </a>
     </li>
   
@@ -2145,6 +2205,9 @@ will contain the same text as <em>text</em>.</p></li>
 in the caption.</p></li>
 <li><p><strong>quote_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Quoted reply text.</p></li>
 <li><p><strong>quote_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For quote text, special entities like usernames, URLs, bot commands, etc. that appear in the quote text.</p></li>
+<li><p><strong>effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier of the message effect added to the message.</p></li>
+<li><p><strong>invert_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, If the media position is inverted.
+only animation, photo, video, and webpage preview messages.</p></li>
 <li><p><strong>audio</strong> (<a class="reference internal" href="Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio (Python class) — An audio file to be treated as music by the Telegram clients."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a>, <em>optional</em>) – Message is an audio file, information about the file.</p></li>
 <li><p><strong>document</strong> (<a class="reference internal" href="Document.html#pyrogram.types.Document" title="pyrogram.types.Document (Python class) — A generic file (as opposed to photos, voice messages, audio files, ...)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a>, <em>optional</em>) – Message is a general file, information about the file.</p></li>
 <li><p><strong>photo</strong> (<a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Message is a photo, information about the photo.</p></li>
@@ -2153,6 +2216,7 @@ in the caption.</p></li>
 <li><p><strong>game</strong> (<a class="reference internal" href="Game.html#pyrogram.types.Game" title="pyrogram.types.Game (Python class) — A game. Use BotFather to create and edit games, their short names will act as unique identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a>, <em>optional</em>) – Message is a game, information about the game.</p></li>
 <li><p><strong>giveaway</strong> (<a class="reference internal" href="Giveaway.html#pyrogram.types.Giveaway" title="pyrogram.types.Giveaway (Python class) — A giveaway."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Giveaway</span></code></a>, <em>optional</em>) – Message is a giveaway, information about the giveaway.</p></li>
 <li><p><strong>giveaway_result</strong> (<a class="reference internal" href="GiveawayResult.html#pyrogram.types.GiveawayResult" title="pyrogram.types.GiveawayResult (Python class) — A giveaway result."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayResult</span></code></a>, <em>optional</em>) – Message is a giveaway result, information about the giveaway result.</p></li>
+<li><p><strong>invoice</strong> (<a class="reference internal" href="MessageInvoice.html#pyrogram.types.MessageInvoice" title="pyrogram.types.MessageInvoice (Python class) — Contains information about an Invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageInvoice</span></code></a>, <em>optional</em>) – Message is an invoice for a payment, information about the invoice.</p></li>
 <li><p><strong>story</strong> (<a class="reference internal" href="MessageStory.html#pyrogram.types.MessageStory" title="pyrogram.types.MessageStory (Python class) — Contains information about a forwarded story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageStory</span></code></a> | <a class="reference internal" href="Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — A story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a>, <em>optional</em>) – Message is a forwarded story, information about the forwarded story.</p></li>
 <li><p><strong>video</strong> (<a class="reference internal" href="Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a>, <em>optional</em>) – Message is a video, information about the video.</p></li>
 <li><p><strong>voice</strong> (<a class="reference internal" href="Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice (Python class) — A voice note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a>, <em>optional</em>) – Message is a voice message, information about the file.</p></li>
@@ -2216,17 +2280,21 @@ Only applicable when using <a class="reference internal" href="../filters.html#p
 <li><p><strong>forum_topic_edited</strong> (<a class="reference internal" href="ForumTopicEdited.html#pyrogram.types.ForumTopicEdited" title="pyrogram.types.ForumTopicEdited (Python class) — A service message about a forum topic renamed in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicEdited</span></code></a>, <em>optional</em>) – Service message: forum topic edited</p></li>
 <li><p><strong>general_topic_hidden</strong> (<a class="reference internal" href="GeneralTopicHidden.html#pyrogram.types.GeneralTopicHidden" title="pyrogram.types.GeneralTopicHidden (Python class) — A service message about a general topic hidden in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralTopicHidden</span></code></a>, <em>optional</em>) – Service message: forum general topic hidden</p></li>
 <li><p><strong>general_topic_unhidden</strong> (<a class="reference internal" href="GeneralTopicUnhidden.html#pyrogram.types.GeneralTopicUnhidden" title="pyrogram.types.GeneralTopicUnhidden (Python class) — A service message about a general topic unhidden in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralTopicUnhidden</span></code></a>, <em>optional</em>) – Service message: forum general topic unhidden</p></li>
+<li><p><strong>gifted_premium</strong> (<a class="reference internal" href="GiftedPremium.html#pyrogram.types.GiftedPremium" title="pyrogram.types.GiftedPremium (Python class) — Telegram Premium was gifted to the user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftedPremium</span></code></a>, <em>optional</em>) – Info about a gifted Telegram Premium subscription</p></li>
 <li><p><strong>giveaway_launcheded</strong> (<a class="reference internal" href="GiveawayLaunched.html#pyrogram.types.GiveawayLaunched" title="pyrogram.types.GiveawayLaunched (Python class) — A service message about a giveaway started in the channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayLaunched</span></code></a>, <em>optional</em>) – Service message: giveaway launched.</p></li>
 <li><p><strong>video_chat_scheduled</strong> (<a class="reference internal" href="VideoChatScheduled.html#pyrogram.types.VideoChatScheduled" title="pyrogram.types.VideoChatScheduled (Python class) — A service message about a voice chat scheduled in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatScheduled</span></code></a>, <em>optional</em>) – Service message: voice chat scheduled.</p></li>
 <li><p><strong>video_chat_started</strong> (<a class="reference internal" href="VideoChatStarted.html#pyrogram.types.VideoChatStarted" title="pyrogram.types.VideoChatStarted (Python class) — A service message about a voice chat started in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatStarted</span></code></a>, <em>optional</em>) – Service message: the voice chat started.</p></li>
 <li><p><strong>video_chat_ended</strong> (<a class="reference internal" href="VideoChatEnded.html#pyrogram.types.VideoChatEnded" title="pyrogram.types.VideoChatEnded (Python class) — A service message about a voice chat ended in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatEnded</span></code></a>, <em>optional</em>) – Service message: the voice chat has ended.</p></li>
 <li><p><strong>video_chat_members_invited</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">VoiceChatParticipantsInvited</span></code>, <em>optional</em>) – Service message: new members were invited to the voice chat.</p></li>
 <li><p><strong>web_app_data</strong> (<a class="reference internal" href="WebAppData.html#pyrogram.types.WebAppData" title="pyrogram.types.WebAppData (Python class) — Contains data sent from a Web App to the bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppData</span></code></a>, <em>optional</em>) – Service message: web app data sent to the bot.</p></li>
+<li><p><strong>successful_payment</strong> (<a class="reference internal" href="SuccessfulPayment.html#pyrogram.types.SuccessfulPayment" title="pyrogram.types.SuccessfulPayment (Python class) — Contains information about a successful payment."><code class="xref py py-obj docutils literal notranslate"><span class="pre">SuccessfulPayment</span></code></a>, <em>optional</em>) – Service message: successful payment.</p></li>
 <li><p><strong>boosts_applied</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Service message: how many boosts were applied.</p></li>
 <li><p><strong>reply_markup</strong> (<a class="reference internal" href="InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup (Python class) — A custom keyboard with reply options."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove (Python class) — Object used to tell clients to remove a bot keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply (Python class) — Object used to force clients to show a reply interface."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
 instructions to remove reply keyboard or to force a reply from the user.</p></li>
 <li><p><strong>reactions</strong> (List of <a class="reference internal" href="Reaction.html#pyrogram.types.Reaction" title="pyrogram.types.Reaction (Python class) — Contains information about a reaction."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Reaction</span></code></a>) – List of the reactions to this message.</p></li>
 <li><p><strong>raw</strong> (<code class="docutils literal notranslate"><span class="pre">pyrogram.raw.types.Message</span></code>, <em>optional</em>) – The raw message object, as received from the Telegram API.</p></li>
+<li><p><strong>gift_code</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftCode</span></code>, <em>optional</em>) – Contains a <a class="reference external" href="https://core.telegram.org/api/links#premium-giftcode-links">Telegram Premium giftcode link</a>.</p></li>
+<li><p><strong>gifted_premium</strong> (<a class="reference internal" href="GiftedPremium.html#pyrogram.types.GiftedPremium" title="pyrogram.types.GiftedPremium (Python class) — Telegram Premium was gifted to the user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftedPremium</span></code></a>, <em>optional</em>) – Info about a gifted Telegram Premium subscription</p></li>
 <li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a link to this message, only for groups and channels.</p></li>
 <li><p><strong>scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Message is a scheduled message and still in schedule.</p></li>
 <li><p><strong>from_scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Message is a scheduled message and has been sent.</p></li>
@@ -2263,7 +2331,7 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="ChatColor.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: ChatColor" rel="prev">
+        <a href="CollectibleItemInfo.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: CollectibleItemInfo" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2272,7 +2340,7 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
               <span class="md-footer__direction">
                 Previous
               </span>
-              ChatColor
+              CollectibleItemInfo
             </div>
           </div>
         </a>
@@ -2304,7 +2372,7 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   

@@ -1327,6 +1327,21 @@
   
   
     <li class="md-nav__item">
+      <a href="index.html#precheckoutquery" class="md-nav__link">
+        <span class="md-ellipsis">Pre<wbr>Checkout<wbr>Query</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="index.html#chatjoinrequest" class="md-nav__link">
         <span class="md-ellipsis">Chat<wbr>Join<wbr>Request</span>
       </a>
@@ -1956,6 +1971,9 @@
 <li><p><strong>action</strong> (<a class="reference internal" href="../enums/ChatAction.html#pyrogram.enums.ChatAction" title="pyrogram.enums.ChatAction (Python class) — Chat action enumeration used in ChatEvent."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAction</span></code></a>) – Type of action to broadcast.</p></li>
 <li><p><strong>business_connection_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Business connection identifier.
 for business bots only.</p></li>
+<li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The animated emoji. Only supported for <a class="reference internal" href="../enums/ChatAction.html#pyrogram.enums.ChatAction.TRIGGER_EMOJI_ANIMATION" title="pyrogram.enums.ChatAction.TRIGGER_EMOJI_ANIMATION (Python attribute) — User has clicked on an animated emoji triggering a reaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TRIGGER_EMOJI_ANIMATION</span></code></a> and <a class="reference internal" href="../enums/ChatAction.html#pyrogram.enums.ChatAction.WATCH_EMOJI_ANIMATION" title="pyrogram.enums.ChatAction.WATCH_EMOJI_ANIMATION (Python attribute) — The user is watching animations sent by the other party by clicking on an animated emoji"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WATCH_EMOJI_ANIMATION</span></code></a>.</p></li>
+<li><p><strong>emoji_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Message identifier of the message containing the animated emoji. Only supported for <a class="reference internal" href="../enums/ChatAction.html#pyrogram.enums.ChatAction.TRIGGER_EMOJI_ANIMATION" title="pyrogram.enums.ChatAction.TRIGGER_EMOJI_ANIMATION (Python attribute) — User has clicked on an animated emoji triggering a reaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TRIGGER_EMOJI_ANIMATION</span></code></a>.</p></li>
+<li><p><strong>emoji_message_interaction</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">raw.types.DataJSON</span></code>, <em>optional</em>) – Only supported for <a class="reference internal" href="../enums/ChatAction.html#pyrogram.enums.ChatAction.TRIGGER_EMOJI_ANIMATION" title="pyrogram.enums.ChatAction.TRIGGER_EMOJI_ANIMATION (Python attribute) — User has clicked on an animated emoji triggering a reaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TRIGGER_EMOJI_ANIMATION</span></code></a>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.Message.reply_chat_action-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_chat_action-returns" title="Permalink to this headline">¶</a></dt>
@@ -2039,7 +2057,7 @@ for business bots only.</p></li>
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
