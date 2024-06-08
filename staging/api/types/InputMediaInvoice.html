@@ -13,7 +13,7 @@
     
     
       
-        <title>edit_inline_media() - Pyrofork Documentation</title>
+        <title>InputMediaInvoice - Pyrofork Documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyrogram.Client.edit_inline_media" class="md-skip">
+        <a href="#pyrogram.types.InputMediaInvoice" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              edit_inline_media()
+              InputMediaInvoice
             
           </span>
         </div>
@@ -538,6 +538,21 @@
               
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -547,24 +562,24 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
       
       
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html"><span class="md-ellipsis">Available Methods</span></a>
+          <a href="index.html"><span class="md-ellipsis">Available Types</span></a>
           
-            <label for="__nav_3_2">
+            <label for="__nav_3_3">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Available Methods" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
+      <nav class="md-nav" aria-label="Available Types" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Available Methods</span>
+          <span class="md-ellipsis">Available Types</span>
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -575,8 +590,8 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#utilities" class="md-nav__link">
-        <span class="md-ellipsis">Utilities</span>
+      <a href="index.html#users-chats" class="md-nav__link">
+        <span class="md-ellipsis">Users &amp; Chats</span>
       </a>
     </li>
   
@@ -590,905 +605,10 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#conversation" class="md-nav__link">
-        <span class="md-ellipsis">Conversation</span>
+      <a href="index.html#messages-media" class="md-nav__link">
+        <span class="md-ellipsis">Messages &amp; Media</span>
       </a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" type="checkbox" id="__nav_3_2_3" checked>
-      
-      
-      
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#messages"><span class="md-ellipsis">Messages</span></a>
-          
-            <label for="__nav_3_2_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Messages" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_2_3">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Messages</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_message.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>message</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="forward_messages.html" class="md-nav__link">
-        <span class="md-ellipsis">forward_<wbr>messages</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="copy_message.html" class="md-nav__link">
-        <span class="md-ellipsis">copy_<wbr>message</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="copy_media_group.html" class="md-nav__link">
-        <span class="md-ellipsis">copy_<wbr>media_<wbr>group</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_photo.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>photo</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_audio.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>audio</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_document.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>document</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_invoice.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>invoice</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_sticker.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>sticker</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_video.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>video</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_animation.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>animation</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_voice.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>voice</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_video_note.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>video_<wbr>note</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_web_page.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>web_<wbr>page</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_media_group.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>media_<wbr>group</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_location.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>location</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_venue.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>venue</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_contact.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>contact</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_cached_media.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>cached_<wbr>media</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_reaction.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>reaction</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_message_text.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>message_<wbr>text</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_message_caption.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>message_<wbr>caption</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_message_media.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>message_<wbr>media</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_message_reply_markup.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>message_<wbr>reply_<wbr>markup</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_inline_text.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>inline_<wbr>text</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_inline_caption.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>inline_<wbr>caption</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-ellipsis">edit_<wbr>inline_<wbr>media</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="#" class="md-nav__link md-nav__link--active">
-        <span class="md-ellipsis">edit_<wbr>inline_<wbr>media</span>
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">edit_<wbr>inline_<wbr>media</span>
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pyrogram.Client.edit_inline_media" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.edit_inline_media (Python method) — Edit inline animation, audio, document, photo or video messages." class="md-ellipsis">Client.<wbr>edit_<wbr>inline_<wbr>media</span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Client.edit_inline_media">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.Client.edit_inline_media-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.Client.edit_inline_media-returns" class="md-nav__link">
-    <span class="md-ellipsis">Returns</span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="edit_inline_reply_markup.html" class="md-nav__link">
-        <span class="md-ellipsis">edit_<wbr>inline_<wbr>reply_<wbr>markup</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_chat_action.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>chat_<wbr>action</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="delete_messages.html" class="md-nav__link">
-        <span class="md-ellipsis">delete_<wbr>messages</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_available_effects.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>available_<wbr>effects</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_messages.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>messages</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_media_group.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>media_<wbr>group</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_chat_history.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>chat_<wbr>history</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_chat_history_count.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>chat_<wbr>history_<wbr>count</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="read_chat_history.html" class="md-nav__link">
-        <span class="md-ellipsis">read_<wbr>chat_<wbr>history</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_poll.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>poll</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="vote_poll.html" class="md-nav__link">
-        <span class="md-ellipsis">vote_<wbr>poll</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="stop_poll.html" class="md-nav__link">
-        <span class="md-ellipsis">stop_<wbr>poll</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="retract_vote.html" class="md-nav__link">
-        <span class="md-ellipsis">retract_<wbr>vote</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="send_dice.html" class="md-nav__link">
-        <span class="md-ellipsis">send_<wbr>dice</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="search_messages.html" class="md-nav__link">
-        <span class="md-ellipsis">search_<wbr>messages</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="search_messages_count.html" class="md-nav__link">
-        <span class="md-ellipsis">search_<wbr>messages_<wbr>count</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="search_global.html" class="md-nav__link">
-        <span class="md-ellipsis">search_<wbr>global</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="search_global_count.html" class="md-nav__link">
-        <span class="md-ellipsis">search_<wbr>global_<wbr>count</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="search_global_hashtag_messages.html" class="md-nav__link">
-        <span class="md-ellipsis">search_<wbr>global_<wbr>hashtag_<wbr>messages</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="search_global_hashtag_messages_count.html" class="md-nav__link">
-        <span class="md-ellipsis">search_<wbr>global_<wbr>hashtag_<wbr>messages_<wbr>count</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="download_media.html" class="md-nav__link">
-        <span class="md-ellipsis">download_<wbr>media</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="stream_media.html" class="md-nav__link">
-        <span class="md-ellipsis">stream_<wbr>media</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_discussion_message.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>discussion_<wbr>message</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_discussion_replies.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>discussion_<wbr>replies</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_discussion_replies_count.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>discussion_<wbr>replies_<wbr>count</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="get_custom_emoji_stickers.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>custom_<wbr>emoji_<wbr>stickers</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
   
 
             
@@ -1515,8 +635,8 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#chats" class="md-nav__link">
-        <span class="md-ellipsis">Chats</span>
+      <a href="index.html#pyromod" class="md-nav__link">
+        <span class="md-ellipsis">Pyromod</span>
       </a>
     </li>
   
@@ -1530,8 +650,8 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#stickers" class="md-nav__link">
-        <span class="md-ellipsis">Stickers</span>
+      <a href="index.html#bot-keyboards" class="md-nav__link">
+        <span class="md-ellipsis">Bot keyboards</span>
       </a>
     </li>
   
@@ -1545,8 +665,55 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#users" class="md-nav__link">
-        <span class="md-ellipsis">Users</span>
+      <a href="index.html#bot-commands" class="md-nav__link">
+        <span class="md-ellipsis">Bot commands</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_7" type="checkbox" id="__nav_3_3_7" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#input-media"><span class="md-ellipsis">Input Media</span></a>
+          
+            <label for="__nav_3_3_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Input Media" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Input Media</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMedia.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media</span>
       </a>
     </li>
   
@@ -1560,8 +727,8 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#invite-links" class="md-nav__link">
-        <span class="md-ellipsis">Invite Links</span>
+      <a href="InputMediaPhoto.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Photo</span>
       </a>
     </li>
   
@@ -1575,8 +742,8 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#contacts" class="md-nav__link">
-        <span class="md-ellipsis">Contacts</span>
+      <a href="InputMediaVideo.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Video</span>
       </a>
     </li>
   
@@ -1590,8 +757,8 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#password" class="md-nav__link">
-        <span class="md-ellipsis">Password</span>
+      <a href="InputMediaAudio.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Audio</span>
       </a>
     </li>
   
@@ -1605,8 +772,144 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html#bots" class="md-nav__link">
-        <span class="md-ellipsis">Bots</span>
+      <a href="InputMediaAnimation.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Animation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaDocument.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Document</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputPhoneContact.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Phone<wbr>Contact</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Input<wbr>Media<wbr>Invoice</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Invoice</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Input<wbr>Media<wbr>Invoice</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.InputMediaInvoice" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.types.InputMediaInvoice (Python class) — Content of a media invoice." class="md-ellipsis">pyrogram.<wbr>types.<wbr>Input<wbr>Media<wbr>Invoice</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.InputMediaInvoice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.InputMediaInvoice-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#inline-mode" class="md-nav__link">
+        <span class="md-ellipsis">Inline Mode</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#inputmessagecontent" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Message<wbr>Content</span>
       </a>
     </li>
   
@@ -1628,40 +931,10 @@
 
             
           
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="index.html#advanced" class="md-nav__link">
-        <span class="md-ellipsis">Advanced</span>
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
   
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../types/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Available Types</span>
-      </a>
-    </li>
   
 
             
@@ -2216,28 +1489,21 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">edit_<wbr>inline_<wbr>media</span>
+      <span class="md-ellipsis">Input<wbr>Media<wbr>Invoice</span>
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyrogram.Client.edit_inline_media" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.edit_inline_media (Python method) — Edit inline animation, audio, document, photo or video messages." class="md-ellipsis">Client.<wbr>edit_<wbr>inline_<wbr>media</span>
+  <a href="#pyrogram.types.InputMediaInvoice" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.types.InputMediaInvoice (Python class) — Content of a media invoice." class="md-ellipsis">pyrogram.<wbr>types.<wbr>Input<wbr>Media<wbr>Invoice</span>
   </a>
   
-    <nav class="md-nav" aria-label="Client.edit_inline_media">
+    <nav class="md-nav" aria-label="pyrogram.types.InputMediaInvoice">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyrogram.Client.edit_inline_media-parameters" class="md-nav__link">
+  <a href="#pyrogram.types.InputMediaInvoice-parameters" class="md-nav__link">
     <span class="md-ellipsis">Parameters</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.Client.edit_inline_media-returns" class="md-nav__link">
-    <span class="md-ellipsis">Returns</span>
   </a>
   
 </li>
@@ -2261,43 +1527,27 @@
                   
 
 
-<h1 id="edit-inline-media">edit_inline_media()<a class="headerlink" href="#edit-inline-media" title="Link to this heading">¶</a></h1>
-<dl class="py method objdesc">
-<dt class="sig sig-object highlight py" id="pyrogram.Client.edit_inline_media">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">edit_inline_media</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.edit_inline_media" title="Link to this definition">¶</a></dt>
-<dd><p>Edit inline animation, audio, document, photo or video messages.</p>
-<p>When the inline message is edited, a new file can’t be uploaded. Use a previously uploaded file via its file_id
-or specify a URL.</p>
-<strong>Usable by</strong>
-<span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Users</span>
-<span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.Client.edit_inline_media-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_inline_media-parameters" title="Permalink to this headline">¶</a></dt>
+<h1 id="inputmediainvoice">InputMediaInvoice<a class="headerlink" href="#inputmediainvoice" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.types.InputMediaInvoice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">InputMediaInvoice</span></span><a class="headerlink" href="#pyrogram.types.InputMediaInvoice" title="Link to this definition">¶</a></dt>
+<dd><p>Content of a media invoice.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.types.InputMediaInvoice-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.InputMediaInvoice-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>inline_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Required if <em>chat_id</em> and <em>message_id</em> are not specified.
-Identifier of the inline message.</p></li>
-<li><p><strong>media</strong> (<a class="reference internal" href="../types/InputMedia.html#pyrogram.types.InputMedia" title="pyrogram.types.InputMedia (Python class) — Content of a media message to be sent."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>) – One of the InputMedia objects describing an animation, audio, document, photo or video.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a>, <em>optional</em>) – An InlineKeyboardMarkup object.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product name.</p></li>
+<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product description.</p></li>
+<li><p><strong>invoice</strong> (<a class="reference internal" href="Invoice.html#pyrogram.types.Invoice" title="pyrogram.types.Invoice (Python class) — This object contains basic information about an invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Invoice</span></code></a>) – Invoice details.</p></li>
+<li><p><strong>provider</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Payment provider.</p></li>
+<li><p><strong>provider_data</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Provider data in json format.</p></li>
+<li><p><strong>photo_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo URL.</p></li>
+<li><p><strong>photo_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Photo size.</p></li>
+<li><p><strong>photo_mime_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo MIME type.</p></li>
+<li><p><strong>start_parameter</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique bot deep-linking parameter that can be used to generate this invoice.</p></li>
+<li><p><strong>extended_media</strong> (<a class="reference internal" href="InputMedia.html#pyrogram.types.InputMedia" title="pyrogram.types.InputMedia (Python class) — Content of a media message to be sent."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>, <em>optional</em>) – Additional media.</p></li>
 </ul>
 </dd>
-<dt class="field-even" id="pyrogram.Client.edit_inline_media-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_inline_media-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, True is returned.</p>
-</dd>
 </dl>
-<p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InputMediaPhoto</span><span class="p">,</span> <span class="n">InputMediaVideo</span><span class="p">,</span> <span class="n">InputMediaAudio</span>
-
-<span class="c1"># Bots only</span>
-
-<span class="c1"># Replace the current media with a local photo</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">edit_inline_media</span><span class="p">(</span><span class="n">inline_message_id</span><span class="p">,</span> <span class="n">InputMediaPhoto</span><span class="p">(</span><span class="s2">&quot;new_photo.jpg&quot;</span><span class="p">))</span>
-
-<span class="c1"># Replace the current media with a local video</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">edit_inline_media</span><span class="p">(</span><span class="n">inline_message_id</span><span class="p">,</span> <span class="n">InputMediaVideo</span><span class="p">(</span><span class="s2">&quot;new_video.mp4&quot;</span><span class="p">))</span>
-
-<span class="c1"># Replace the current media with a local audio</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">edit_inline_media</span><span class="p">(</span><span class="n">inline_message_id</span><span class="p">,</span> <span class="n">InputMediaAudio</span><span class="p">(</span><span class="s2">&quot;new_audio.mp3&quot;</span><span class="p">))</span>
-</code></pre></div>
-</div>
 </dd></dl>
 
 
@@ -2328,7 +1578,7 @@ Identifier of the inline message.</p></li>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="edit_inline_caption.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: edit_inline_caption()" rel="prev">
+        <a href="InputPhoneContact.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: InputPhoneContact" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2337,20 +1587,20 @@ Identifier of the inline message.</p></li>
               <span class="md-footer__direction">
                 Previous
               </span>
-              edit_inline_caption()
+              InputPhoneContact
             </div>
           </div>
         </a>
       
       
         
-        <a href="edit_inline_reply_markup.html" class="md-footer__link md-footer__link--next" aria-label="Next: edit_inline_reply_markup()" rel="next">
+        <a href="InlineQuery.html" class="md-footer__link md-footer__link--next" aria-label="Next: InlineQuery" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              edit_inline_reply_markup()
+              InlineQuery
             </div>
           </div>
           <div class="md-footer__button md-icon">
