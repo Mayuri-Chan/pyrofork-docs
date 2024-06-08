@@ -2272,7 +2272,27 @@
 <dt class="field-odd" id="pyrogram.Client.send_invoice-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_invoice-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for the target private chat or username of the target private chat.</p></li>
-<li><p><strong>invoice</strong> (<a class="reference internal" href="../types/InputMediaInvoice.html#pyrogram.types.InputMediaInvoice" title="pyrogram.types.InputMediaInvoice (Python class) — Content of a media invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaInvoice</span></code></a>) – Content of the invoice.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product name.</p></li>
+<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product description.</p></li>
+<li><p><strong>currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Three-letter ISO 4217 currency code.</p></li>
+<li><p><strong>prices</strong> (List of <a class="reference internal" href="../types/LabeledPrice.html#pyrogram.types.LabeledPrice" title="pyrogram.types.LabeledPrice (Python class) — This object represents a price for goods or services."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabeledPrice</span></code></a>) – Price with label.</p></li>
+<li><p><strong>is_test</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the invoice is a test invoice.</p></li>
+<li><p><strong>is_name_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the name is requested.</p></li>
+<li><p><strong>is_phone_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the phone number is requested.</p></li>
+<li><p><strong>is_email_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the email address is requested.</p></li>
+<li><p><strong>is_shipping_address_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the shipping address is requested.</p></li>
+<li><p><strong>is_flexible</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the final price depends on the shipping method.</p></li>
+<li><p><strong>is_recurring</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the payment is recurring.</p></li>
+<li><p><strong>max_tip_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Maximum amount of the tip.</p></li>
+<li><p><strong>suggested_tip_amounts</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of suggested tip amounts.</p></li>
+<li><p><strong>terms_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – URL for the terms of service.</p></li>
+<li><p><strong>provider</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Payment provider.</p></li>
+<li><p><strong>provider_data</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Provider data in json format.</p></li>
+<li><p><strong>photo_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo URL.</p></li>
+<li><p><strong>photo_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Photo size.</p></li>
+<li><p><strong>photo_mime_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo MIME type.</p></li>
+<li><p><strong>start_parameter</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique bot deep-linking parameter that can be used to generate this invoice.</p></li>
+<li><p><strong>extended_media</strong> (<a class="reference internal" href="../types/InputMedia.html#pyrogram.types.InputMedia" title="pyrogram.types.InputMedia (Python class) — Content of a media message to be sent."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>, <em>optional</em>) – Additional media.</p></li>
 <li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
 <li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target message thread (topic) of the forum.
 for forum supergroups only.</p></li>
@@ -2290,14 +2310,8 @@ for reply_to_message only.</p></li>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">app</span><span class="o">.</span><span class="n">send_invoice</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">InputMediaInvoice</span><span class="p">(</span>
     <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Product Name&quot;</span><span class="p">,</span>
     <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Product Description&quot;</span><span class="p">,</span>
-    <span class="n">invoice</span><span class="o">=</span><span class="n">types</span><span class="o">.</span><span class="n">InputMediaInvoice</span><span class="p">(</span>
-        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Product Name&quot;</span><span class="p">,</span>
-        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Product Description&quot;</span><span class="p">,</span>
-        <span class="n">invoice</span><span class="o">=</span><span class="n">types</span><span class="o">.</span><span class="n">Invoice</span><span class="p">(</span>
-            <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;USD&quot;</span><span class="p">,</span>
-            <span class="n">prices</span><span class="o">=</span><span class="p">[</span><span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)]</span>
-        <span class="p">)</span>
-    <span class="p">),</span>
+    <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+    <span class="n">prices</span><span class="o">=</span><span class="p">[</span><span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)],</span>
     <span class="n">provider</span><span class="o">=</span><span class="s2">&quot;Stripe&quot;</span><span class="p">,</span>
     <span class="n">provider_data</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span>
 <span class="p">))</span>
