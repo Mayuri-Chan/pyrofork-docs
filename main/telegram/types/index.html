@@ -1366,6 +1366,8 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/payment-result.html">PaymentResult</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/payment-verification-needed.html">PaymentVerificationNeeded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/saved-info.html">SavedInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/stars-revenue-stats.html">StarsRevenueStats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/stars-revenue-withdrawal-url.html">StarsRevenueWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/stars-status.html">StarsStatus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/validated-requested-info.html">ValidatedRequestedInfo</a></li>
 </ul>
@@ -1428,6 +1430,7 @@
 <li class="toctree-l1"><a class="reference internal" href="stories/index.html">Stories</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="stories/all-stories.html">AllStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/all-stories-not-modified.html">AllStoriesNotModified</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/found-stories.html">FoundStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/peer-stories.html">PeerStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/stories.html">Stories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/story-reactions-list.html">StoryReactionsList</a></li>
@@ -1702,8 +1705,10 @@
 <li class="toctree-l1"><a class="reference internal" href="folder-peer.html">FolderPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="forum-topic.html">ForumTopic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="forum-topic-deleted.html">ForumTopicDeleted</a></li>
+<li class="toctree-l1"><a class="reference internal" href="found-story.html">FoundStory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="geo-point.html">GeoPoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geo-point-address.html">GeoPointAddress</a></li>
 <li class="toctree-l1"><a class="reference internal" href="geo-point-empty.html">GeoPointEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="global-privacy-settings.html">GlobalPrivacySettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group-call.html">GroupCall</a></li>
@@ -1962,6 +1967,7 @@
 <li class="toctree-l1"><a class="reference internal" href="media-area-coordinates.html">MediaAreaCoordinates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-geo-point.html">MediaAreaGeoPoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-suggested-reaction.html">MediaAreaSuggestedReaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media-area-url.html">MediaAreaUrl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-venue.html">MediaAreaVenue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-boost-apply.html">MessageActionBoostApply</a></li>
@@ -2295,6 +2301,7 @@
 <li class="toctree-l1"><a class="reference internal" href="speaking-in-group-call-action.html">SpeakingInGroupCallAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sponsored-message.html">SponsoredMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sponsored-message-report-option.html">SponsoredMessageReportOption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stars-revenue-status.html">StarsRevenueStatus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stars-topup-option.html">StarsTopupOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stars-transaction.html">StarsTransaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stars-transaction-peer.html">StarsTransactionPeer</a></li>
@@ -2383,6 +2390,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-bot-webhook-json.html">UpdateBotWebhookJSON</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-webhook-json-query.html">UpdateBotWebhookJSONQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-broadcast-revenue-transactions.html">UpdateBroadcastRevenueTransactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-business-bot-callback-query.html">UpdateBusinessBotCallbackQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel.html">UpdateChannel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-available-messages.html">UpdateChannelAvailableMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-message-forwards.html">UpdateChannelMessageForwards</a></li>
@@ -2488,6 +2496,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-short-sent-message.html">UpdateShortSentMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-sms-job.html">UpdateSmsJob</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-stars-balance.html">UpdateStarsBalance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-stars-revenue-status.html">UpdateStarsRevenueStatus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-sticker-sets.html">UpdateStickerSets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-sticker-sets-order.html">UpdateStickerSetsOrder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-stories-stealth-mode.html">UpdateStoriesStealthMode</a></li>
