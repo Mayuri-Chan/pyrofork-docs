@@ -1125,6 +1125,36 @@
   
   
     <li class="md-nav__item">
+      <a href="PollResults.html" class="md-nav__link">
+        <span class="md-ellipsis">Poll<wbr>Results</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PollAnswerVoters.html" class="md-nav__link">
+        <span class="md-ellipsis">Poll<wbr>Answer<wbr>Voters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Dice.html" class="md-nav__link">
         <span class="md-ellipsis">Dice</span>
       </a>
@@ -2199,18 +2229,11 @@
 <li><p><strong>question</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Poll question, 1-255 characters.</p></li>
 <li><p><strong>options</strong> (List of <a class="reference internal" href="PollOption.html#pyrogram.types.PollOption" title="pyrogram.types.PollOption (Python class) — Contains information about one answer option in a poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOption</span></code></a>) – List of poll options.</p></li>
 <li><p><strong>question_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities like usernames, URLs, bot commands, etc. that appear in the poll question.</p></li>
-<li><p><strong>total_voter_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Total number of users that voted in the poll.</p></li>
 <li><p><strong>is_closed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the poll is closed.</p></li>
 <li><p><strong>is_anonymous</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the poll is anonymous</p></li>
 <li><p><strong>type</strong> (<a class="reference internal" href="../enums/PollType.html#pyrogram.enums.PollType" title="pyrogram.enums.PollType (Python class) — Poll type enumeration used in Poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollType</span></code></a>, <em>optional</em>) – Poll type.</p></li>
 <li><p><strong>allows_multiple_answers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the poll allows multiple answers.</p></li>
-<li><p><strong>chosen_option_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – 0-based index of the chosen option), None in case of no vote yet.</p></li>
-<li><p><strong>correct_option_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – 0-based identifier of the correct answer option.
-Available only for polls in the quiz mode, which are closed, or was sent (not forwarded) by the bot or to
-the private chat with the bot.</p></li>
-<li><p><strong>explanation</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll,
-0-200 characters.</p></li>
-<li><p><strong>explanation_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities like usernames, URLs, bot commands, etc. that appear in the explanation.</p></li>
+<li><p><strong>results</strong> (<a class="reference internal" href="PollResults.html#pyrogram.types.PollResults" title="pyrogram.types.PollResults (Python class) — Contains information about results in a poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollResults</span></code></a>, <em>optional</em>) – Poll results.</p></li>
 <li><p><strong>open_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Amount of time in seconds the poll will be active after creation.</p></li>
 <li><p><strong>close_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time when the poll will be automatically closed.</p></li>
 </ul>
