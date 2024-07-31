@@ -1547,6 +1547,34 @@ default to self.</p></li>
 </ul>
 </dd>
 </dl>
+<p class="example rubric">Examples</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># get one transaction by id</span>
+<span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InputStarsTransaction</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions_by_id</span><span class="p">(</span><span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id&quot;</span><span class="p">))</span>
+
+<span class="c1"># get multiple transactions by id</span>
+<span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InputStarsTransaction</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions_by_id</span><span class="p">([</span>
+    <span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id_1&quot;</span><span class="p">),</span>
+    <span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id_2&quot;</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="c1"># get one transaction by id from a specific user</span>
+<span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InputStarsTransaction</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions_by_id</span><span class="p">(</span><span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id&quot;</span><span class="p">),</span> <span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
+
+<span class="c1"># get multiple transaction by id from a specific user</span>
+<span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InputStarsTransaction</span>
+<span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions_by_id</span><span class="p">([</span>
+    <span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id_1&quot;</span><span class="p">),</span>
+    <span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id_2&quot;</span><span class="p">)</span>
+<span class="p">],</span> <span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<dl class="simple">
+<dt>Returns:</dt><dd><p><a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a>: On success, a <a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> object is returned.</p>
+</dd>
+</dl>
 </dd></dl>
 
 
