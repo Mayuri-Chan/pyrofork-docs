@@ -789,6 +789,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pyrogram.Client.get_stars_transactions_by_id-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1508,6 +1515,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pyrogram.Client.get_stars_transactions_by_id-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1543,11 +1557,12 @@
 transaction themselves</p></li>
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the target user.
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).
-default to self.</p></li>
+default to self.
+only for bots.</p></li>
 </ul>
 </dd>
 </dl>
-<p class="example rubric">Examples</p>
+<p class="example rubric">Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># get one transaction by id</span>
 <span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InputStarsTransaction</span>
 <span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions_by_id</span><span class="p">(</span><span class="n">InputStarsTransaction</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;transaction_id&quot;</span><span class="p">))</span>
@@ -1571,8 +1586,9 @@ default to self.</p></li>
 <span class="p">],</span> <span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<dl class="simple">
-<dt>Returns:</dt><dd><p><a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a>: On success, a <a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> object is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.Client.get_stars_transactions_by_id-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_stars_transactions_by_id-returns" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> – On success, a <a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> object is returned.</p>
 </dd>
 </dl>
 </dd></dl>

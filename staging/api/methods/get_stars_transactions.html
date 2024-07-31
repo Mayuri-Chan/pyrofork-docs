@@ -774,6 +774,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pyrogram.Client.get_stars_transactions-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1508,6 +1515,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pyrogram.Client.get_stars_transactions-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1536,18 +1550,22 @@
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span>
-</blockquote><dl class="field-list">
+</blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_stars_transactions-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_stars_transactions-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><ul>
+<dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the target user.
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).
-default to self.</p></li>
+default to self.
+only for bots.</p></li>
 <li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of transactions to be retrieved.</p></li>
 <li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Offset the list of transactions to be retrieved.</p></li>
 <li><p><strong>is_inbound</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if only inbound transactions should be retrieved.</p></li>
 <li><p><strong>is_outbound</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if only outbound transactions should be retrieved.</p></li>
 <li><p><strong>is_ascending</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if transactions should be returned in ascending order.</p></li>
-<li><p><strong>Examples</strong> –</p>
+</ul>
+</dd>
+</dl>
+<p class="example rubric">Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># get all transactions</span>
 <span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions</span><span class="p">()</span>
 
@@ -1561,9 +1579,9 @@ default to self.</p></li>
 <span class="n">app</span><span class="o">.</span><span class="n">get_stars_transactions</span><span class="p">(</span><span class="n">is_ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 </div>
-</li>
-<li><p><strong>Returns</strong> – <a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a>: On success, a <a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> object is returned.</p></li>
-</ul>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.Client.get_stars_transactions-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_stars_transactions-returns" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> – On success, a <a class="reference internal" href="../types/StarsStatus.html#pyrogram.types.StarsStatus" title="pyrogram.types.StarsStatus (Python class) — Contains information about stars status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsStatus</span></code></a> object is returned.</p>
 </dd>
 </dl>
 </dd></dl>
