@@ -1633,7 +1633,9 @@
 <li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product description.</p></li>
 <li><p><strong>currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Three-letter ISO 4217 currency code.
 <cite>XTR</cite> for Telegram Stars.</p></li>
-<li><p><strong>prices</strong> (List of <a class="reference internal" href="../types/LabeledPrice.html#pyrogram.types.LabeledPrice" title="pyrogram.types.LabeledPrice (Python class) — This object represents a price for goods or services."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabeledPrice</span></code></a>) – Price with label.</p></li>
+<li><p><strong>prices</strong> (<a class="reference internal" href="../types/LabeledPrice.html#pyrogram.types.LabeledPrice" title="pyrogram.types.LabeledPrice (Python class) — This object represents a price for goods or services."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabeledPrice</span></code></a> | List of <a class="reference internal" href="../types/LabeledPrice.html#pyrogram.types.LabeledPrice" title="pyrogram.types.LabeledPrice (Python class) — This object represents a price for goods or services."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabeledPrice</span></code></a>) – Price with label.
+If you add multiple prices, the prices will be added up.
+For stars invoice you can only have one item.</p></li>
 <li><p><strong>provider</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Payment provider.
 Get this from botfather.</p></li>
 <li><p><strong>provider_data</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Provider data in json format.</p></li>
@@ -1659,13 +1661,27 @@ for reply_to_message only.</p></li>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># USD</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># USD (single prices)</span>
 <span class="n">app</span><span class="o">.</span><span class="n">send_invoice</span><span class="p">(</span>
     <span class="n">chat_id</span><span class="p">,</span>
     <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Product Name&quot;</span><span class="p">,</span>
     <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Product Description&quot;</span><span class="p">,</span>
     <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;USD&quot;</span><span class="p">,</span>
-    <span class="n">prices</span><span class="o">=</span><span class="p">[</span><span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)],</span>
+    <span class="n">prices</span><span class="o">=</span><span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">),</span>
+    <span class="n">provider</span><span class="o">=</span><span class="s2">&quot;Stripe_provider_codes&quot;</span><span class="p">,</span>
+    <span class="n">provider_data</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># USD (multiple prices)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">send_invoice</span><span class="p">(</span>
+    <span class="n">chat_id</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Product Name&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Product Description&quot;</span><span class="p">,</span>
+    <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+    <span class="n">prices</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product 1&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">),</span>
+        <span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product 2&quot;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
+    <span class="p">],</span>
     <span class="n">provider</span><span class="o">=</span><span class="s2">&quot;Stripe_provider_codes&quot;</span><span class="p">,</span>
     <span class="n">provider_data</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span>
 <span class="p">)</span>
@@ -1676,7 +1692,7 @@ for reply_to_message only.</p></li>
     <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Product Name&quot;</span><span class="p">,</span>
     <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Product Description&quot;</span><span class="p">,</span>
     <span class="n">currency</span><span class="o">=</span><span class="s2">&quot;XTR&quot;</span><span class="p">,</span>
-    <span class="n">prices</span><span class="o">=</span><span class="p">[</span><span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)]</span>
+    <span class="n">prices</span><span class="o">=</span><span class="n">types</span><span class="o">.</span><span class="n">LabeledPrice</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="p">)</span>
 </code></pre></div>
 </div>
