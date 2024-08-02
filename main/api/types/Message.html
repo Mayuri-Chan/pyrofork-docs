@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.e0b5691b38cca82da.min.css?v=b1736040" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.3625f807144f53acf.min.css?v=fbfc4466" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e3bab952" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -1020,21 +1020,6 @@
   
   
     <li class="md-nav__item">
-      <a href="MessageInvoice.html" class="md-nav__link">
-        <span class="md-ellipsis">Message<wbr>Invoice</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="MessageStory.html" class="md-nav__link">
         <span class="md-ellipsis">Message<wbr>Story</span>
       </a>
@@ -1418,36 +1403,6 @@
 
             
           
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ExtendedMediaPreview.html" class="md-nav__link">
-        <span class="md-ellipsis">Extended<wbr>Media<wbr>Preview</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="PaidMedia.html" class="md-nav__link">
-        <span class="md-ellipsis">Paid<wbr>Media</span>
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1525,6 +1480,21 @@
     <li class="md-nav__item">
       <a href="index.html#bot-commands" class="md-nav__link">
         <span class="md-ellipsis">Bot commands</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html#telegram-business" class="md-nav__link">
+        <span class="md-ellipsis">Telegram Business</span>
       </a>
     </li>
   
@@ -2206,7 +2176,7 @@ The linked channel for messages automatically forwarded to the discussion group.
 <li><p><strong>sender_business_bot</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Sender of the message, sent on behalf of a business bot.</p></li>
 <li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the message was sent.</p></li>
 <li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Conversation the message belongs to.</p></li>
-<li><p><strong>topics</strong> (<a class="reference internal" href="ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a>, <em>optional</em>) – Topic the message belongs to.
+<li><p><strong>topic</strong> (<a class="reference internal" href="ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a>, <em>optional</em>) – Topic the message belongs to.
 only returned using when client.get_messages.</p></li>
 <li><p><strong>forward_from</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – For forwarded messages, sender of the original message.</p></li>
 <li><p><strong>forward_sender_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For messages forwarded from users who have hidden their accounts, name of the user.</p></li>
@@ -2262,7 +2232,7 @@ only animation, photo, video, and webpage preview messages.</p></li>
 <li><p><strong>game</strong> (<a class="reference internal" href="Game.html#pyrogram.types.Game" title="pyrogram.types.Game (Python class) — A game. Use BotFather to create and edit games, their short names will act as unique identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a>, <em>optional</em>) – Message is a game, information about the game.</p></li>
 <li><p><strong>giveaway</strong> (<a class="reference internal" href="Giveaway.html#pyrogram.types.Giveaway" title="pyrogram.types.Giveaway (Python class) — A giveaway."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Giveaway</span></code></a>, <em>optional</em>) – Message is a giveaway, information about the giveaway.</p></li>
 <li><p><strong>giveaway_result</strong> (<a class="reference internal" href="GiveawayResult.html#pyrogram.types.GiveawayResult" title="pyrogram.types.GiveawayResult (Python class) — A giveaway result."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayResult</span></code></a>, <em>optional</em>) – Message is a giveaway result, information about the giveaway result.</p></li>
-<li><p><strong>invoice</strong> (<a class="reference internal" href="MessageInvoice.html#pyrogram.types.MessageInvoice" title="pyrogram.types.MessageInvoice (Python class) — Contains information about an Invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageInvoice</span></code></a>, <em>optional</em>) – Message is an invoice for a payment, information about the invoice.</p></li>
+<li><p><strong>invoice</strong> (<a class="reference internal" href="Invoice.html#pyrogram.types.Invoice" title="pyrogram.types.Invoice (Python class) — Contains information about an Invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Invoice</span></code></a>, <em>optional</em>) – Message is an invoice for a payment, information about the invoice.</p></li>
 <li><p><strong>story</strong> (<a class="reference internal" href="MessageStory.html#pyrogram.types.MessageStory" title="pyrogram.types.MessageStory (Python class) — Contains information about a forwarded story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageStory</span></code></a> | <a class="reference internal" href="Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — A story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a>, <em>optional</em>) – Message is a forwarded story, information about the forwarded story.</p></li>
 <li><p><strong>video</strong> (<a class="reference internal" href="Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a>, <em>optional</em>) – Message is a video, information about the video.</p></li>
 <li><p><strong>voice</strong> (<a class="reference internal" href="Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice (Python class) — A voice note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a>, <em>optional</em>) – Message is a voice message, information about the file.</p></li>
@@ -2319,8 +2289,7 @@ the text of this message. Only applicable when using <code class="xref py py-obj
 E.g.: “/start 1 2 3” would produce [“start”, “1”, “2”, “3”].
 Only applicable when using <a class="reference internal" href="../filters.html#pyrogram.filters.command" title="pyrogram.filters.command (Python function) — Filter commands, i.e.: text messages starting with &quot;/&quot; or any other custom prefix."><code class="xref py py-obj docutils literal notranslate"><span class="pre">command</span></code></a>.</p></li>
 <li><p><strong>bot_allowed</strong> (<a class="reference internal" href="BotAllowed.html#pyrogram.types.BotAllowed" title="pyrogram.types.BotAllowed (Python class) — Contains information about a allowed bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotAllowed</span></code></a>, <em>optional</em>) – Contains information about a allowed bot.</p></li>
-<li><p><strong>chat_shared</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Service message: chat/channel shared</p></li>
-<li><p><strong>user_shared</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Service message: user shared</p></li>
+<li><p><strong>chats_shared</strong> (List of <a class="reference internal" href="RequestedChats.html#pyrogram.types.RequestedChats" title="pyrogram.types.RequestedChats (Python class) — Contains information about a requested chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestedChats</span></code></a>, <em>optional</em>) – Service message: chats shared</p></li>
 <li><p><strong>forum_topic_created</strong> (<a class="reference internal" href="ForumTopicCreated.html#pyrogram.types.ForumTopicCreated" title="pyrogram.types.ForumTopicCreated (Python class) — A service message about a new forum topic created in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicCreated</span></code></a>, <em>optional</em>) – Service message: forum topic created</p></li>
 <li><p><strong>forum_topic_closed</strong> (<a class="reference internal" href="ForumTopicClosed.html#pyrogram.types.ForumTopicClosed" title="pyrogram.types.ForumTopicClosed (Python class) — A service message about a forum topic closed in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicClosed</span></code></a>, <em>optional</em>) – Service message: forum topic closed</p></li>
 <li><p><strong>forum_topic_reopened</strong> (<a class="reference internal" href="ForumTopicReopened.html#pyrogram.types.ForumTopicReopened" title="pyrogram.types.ForumTopicReopened (Python class) — A service message about a forum topic reopened in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicReopened</span></code></a>, <em>optional</em>) – Service message: forum topic reopened</p></li>
@@ -2420,7 +2389,7 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.4.7.
+    8.0.2.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
