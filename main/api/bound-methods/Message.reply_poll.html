@@ -1969,19 +1969,31 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">send_poll</span><span class="p">(</span>
     <span class="n">chat_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
     <span class="n">question</span><span class="o">=</span><span class="s2">&quot;This is a poll&quot;</span><span class="p">,</span>
-    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C]</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">PollOption</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">),</span>
+        <span class="n">PollOption</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">),</span>
+        <span class="n">PollOption</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+    <span class="p">]</span>
 <span class="p">)</span>
 </code></pre></div>
 </div>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">reply_poll</span><span class="p">(</span><span class="s2">&quot;This is a poll&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">reply_poll</span><span class="p">(</span>
+    <span class="s2">&quot;This is a poll&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="n">PollOption</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">),</span>
+        <span class="n">PollOption</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">),</span>
+        <span class="n">PollOption</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
 </code></pre></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Message.reply_poll-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_poll-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>question</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Poll question, 1-255 characters.</p></li>
-<li><p><strong>options</strong> (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>) – List of answer options, 2-10 strings 1-100 characters each.</p></li>
+<li><p><strong>options</strong> (List of <a class="reference internal" href="../types/PollOption.html#pyrogram.types.PollOption" title="pyrogram.types.PollOption (Python class) — Contains information about one answer option in a poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOption</span></code></a>) – List of PollOption.</p></li>
+<li><p><strong>question_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – List of special entities that appear in the poll question, which can be specified instead of <em>parse_mode</em>.</p></li>
 <li><p><strong>is_anonymous</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the poll needs to be anonymous.
 Defaults to True.</p></li>
 <li><p><strong>type (</strong> – obj`~pyrogram.enums.PollType`, <em>optional</em>):
