@@ -1540,7 +1540,14 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>set_short_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Stickerset shortname.</p></li>
 <li><p><strong>sticker</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – sticker to add.
-Pass a file_id as string to send a file that exists on the Telegram servers.</p></li>
+Pass a file_id as string to add a sticker that exists on the Telegram servers,
+pass an HTTP URL as a string for Telegram to get a sticker from the Internet,
+pass a file path as string to upload a new sticker that exists on your local machine, or
+pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
+<li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the Stickerset owner.
+For you yourself you can simply use “me” or “self” (users only).
+required for bots.
+default to “me”.</p></li>
 <li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Associated emoji.
 default to “🤔”</p></li>
 </ul>
