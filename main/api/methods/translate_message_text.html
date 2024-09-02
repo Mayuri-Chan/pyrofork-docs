@@ -2339,8 +2339,25 @@ You can combine both syntaxes together.</p></li>
 <li><p><strong>entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
 </ul>
 </dd>
-<dt class="field-even" id="pyrogram.Client.translate_message_text-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.translate_message_text-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/TranslatedText.html#pyrogram.types.TranslatedText" title="pyrogram.types.TranslatedText (Python class) — A translated text with entities."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TranslatedText</span></code></a> | List of <a class="reference internal" href="../types/TranslatedText.html#pyrogram.types.TranslatedText" title="pyrogram.types.TranslatedText (Python class) — A translated text with entities."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TranslatedText</span></code></a> – In case <em>message_ids</em> was not
+</dl>
+<p class="example rubric">Example</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Using chat_id and message_ids</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">translate_message_text</span><span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="n">chat_id</span><span class="p">,</span> <span class="n">message_ids</span><span class="p">)</span>
+
+<span class="c1"># Using text</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">translate_message_text</span><span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Hello, how are you?&quot;</span><span class="p">)</span>
+
+<span class="c1"># Using text with parse_mode</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">translate_message_text</span><span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;*Hello*, how are you?&quot;</span><span class="p">,</span> <span class="n">parse_mode</span><span class="o">=</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">MARKDOWN</span><span class="p">)</span>
+
+<span class="c1"># Using text with entities</span>
+<span class="n">entities</span> <span class="o">=</span> <span class="p">[</span><span class="n">types</span><span class="o">.</span><span class="n">MessageEntityBold</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">)]</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">translate_message_text</span><span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;*Hello*, how are you?&quot;</span><span class="p">,</span> <span class="n">entities</span><span class="o">=</span><span class="n">entities</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.Client.translate_message_text-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.translate_message_text-returns" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><a class="reference internal" href="../types/TranslatedText.html#pyrogram.types.TranslatedText" title="pyrogram.types.TranslatedText (Python class) — A translated text with entities."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TranslatedText</span></code></a> | List of <a class="reference internal" href="../types/TranslatedText.html#pyrogram.types.TranslatedText" title="pyrogram.types.TranslatedText (Python class) — A translated text with entities."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TranslatedText</span></code></a> – In case <em>message_ids</em> was not
 a list, a single result is returned, otherwise a list of results is returned.</p>
 </dd>
 </dl>
