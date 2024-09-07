@@ -2372,7 +2372,7 @@ from your local machine or a binary file-like object with its attribute
 “.name” set for in-memory uploads.</p></li>
 <li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier (int) of the emoji to be used as the chat photo.</p></li>
 <li><p><strong>emoji_background</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – hexadecimal colors or List of hexadecimal colors to be used as the chat photo background.</p></li>
-<li><p><strong>video</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – New chat video. You can pass a a file path to upload a new video
+<li><p><strong>video</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – New chat video. You can pass a file path to upload a new video
 from your local machine or a binary file-like object with its attribute
 “.name” set for in-memory uploads.</p></li>
 <li><p><strong>video_start_ts</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>optional</em>) – The timestamp in seconds of the video frame to use as photo profile preview.</p></li>
@@ -2400,11 +2400,8 @@ otherwise, in case a message object couldn’t be returned, True is returned.</p
 <span class="c1"># Set chat photo using an emoji and background colors</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="mi">5366316836101038579</span><span class="p">,</span> <span class="n">emoji_background</span><span class="o">=</span><span class="p">[</span><span class="mh">0xFFFFFF</span><span class="p">,</span> <span class="mh">0x000000</span><span class="p">])</span>
 
-<span class="c1"># Set chat video using a local file</span>
+<span class="c1"># Set chat video</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">video</span><span class="o">=</span><span class="s2">&quot;video.mp4&quot;</span><span class="p">)</span>
-
-<span class="c1"># Set chat photo using an existing Video file_id</span>
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">video</span><span class="o">=</span><span class="n">video</span><span class="o">.</span><span class="n">file_id</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </dd></dl>
