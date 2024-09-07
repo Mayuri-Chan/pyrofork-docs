@@ -2394,6 +2394,12 @@ otherwise, in case a message object couldn’t be returned, True is returned.</p
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">photo</span><span class="o">=</span><span class="n">photo</span><span class="o">.</span><span class="n">file_id</span><span class="p">)</span>
 
 
+<span class="c1"># Set chat photo using an emoji</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="mi">5366316836101038579</span><span class="p">)</span>
+
+<span class="c1"># Set chat photo using an emoji and background colors</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="mi">5366316836101038579</span><span class="p">,</span> <span class="n">emoji_background</span><span class="o">=</span><span class="p">[</span><span class="mh">0xFFFFFF</span><span class="p">,</span> <span class="mh">0x000000</span><span class="p">])</span>
+
 <span class="c1"># Set chat video using a local file</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_chat_photo</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">video</span><span class="o">=</span><span class="s2">&quot;video.mp4&quot;</span><span class="p">)</span>
 
