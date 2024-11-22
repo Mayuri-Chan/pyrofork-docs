@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.3625f807144f53acf.min.css?v=fbfc4466" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.4b4a8c74e2ff2ab5b.min.css?v=afa97f93" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e3bab952" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -1274,6 +1274,7 @@
 <li class="toctree-l2"><a class="reference internal" href="bots/allow-send-message.html">AllowSendMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/answer-webhook-json-query.html">AnswerWebhookJSONQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/can-send-message.html">CanSendMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bots/check-download-file-params.html">CheckDownloadFileParams</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/delete-preview-media.html">DeletePreviewMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/edit-preview-media.html">EditPreviewMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/get-bot-commands.html">GetBotCommands</a></li>
@@ -1292,12 +1293,13 @@
 <li class="toctree-l2"><a class="reference internal" href="bots/set-bot-group-default-admin-rights.html">SetBotGroupDefaultAdminRights</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/set-bot-info.html">SetBotInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/set-bot-menu-button.html">SetBotMenuButton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bots/toggle-user-emoji-status-permission.html">ToggleUserEmojiStatusPermission</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/toggle-username.html">ToggleUsername</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bots/update-user-emoji-status.html">UpdateUserEmojiStatus</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="channels/index.html">Channels</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="channels/check-username.html">CheckUsername</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channels/click-sponsored-message.html">ClickSponsoredMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/convert-to-gigagroup.html">ConvertToGigagroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/create-channel.html">CreateChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/create-forum-topic.html">CreateForumTopic</a></li>
@@ -1329,7 +1331,6 @@
 <li class="toctree-l2"><a class="reference internal" href="channels/get-participant.html">GetParticipant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/get-participants.html">GetParticipants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/get-send-as.html">GetSendAs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channels/get-sponsored-messages.html">GetSponsoredMessages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/invite-to-channel.html">InviteToChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/join-channel.html">JoinChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/leave-channel.html">LeaveChannel</a></li>
@@ -1339,7 +1340,6 @@
 <li class="toctree-l2"><a class="reference internal" href="channels/reorder-usernames.html">ReorderUsernames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/report-anti-spam-false-positive.html">ReportAntiSpamFalsePositive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/report-spam.html">ReportSpam</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channels/report-sponsored-message.html">ReportSponsoredMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/restrict-sponsored-messages.html">RestrictSponsoredMessages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/search-posts.html">SearchPosts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/set-boosts-to-unblock-restrictions.html">SetBoostsToUnblockRestrictions</a></li>
@@ -1360,7 +1360,6 @@
 <li class="toctree-l2"><a class="reference internal" href="channels/update-emoji-status.html">UpdateEmojiStatus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/update-pinned-forum-topic.html">UpdatePinnedForumTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/update-username.html">UpdateUsername</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channels/view-sponsored-message.html">ViewSponsoredMessage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chatlists/index.html">Chatlists</a><ul>
@@ -1465,6 +1464,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/clear-all-drafts.html">ClearAllDrafts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/clear-recent-reactions.html">ClearRecentReactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/clear-recent-stickers.html">ClearRecentStickers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/click-sponsored-message.html">ClickSponsoredMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/create-chat.html">CreateChat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/delete-chat.html">DeleteChat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/delete-chat-user.html">DeleteChatUser</a></li>
@@ -1554,6 +1554,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/get-pinned-saved-dialogs.html">GetPinnedSavedDialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-poll-results.html">GetPollResults</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-poll-votes.html">GetPollVotes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/get-prepared-inline-message.html">GetPreparedInlineMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-quick-replies.html">GetQuickReplies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-quick-reply-messages.html">GetQuickReplyMessages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-recent-locations.html">GetRecentLocations</a></li>
@@ -1570,6 +1571,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/get-search-results-calendar.html">GetSearchResultsCalendar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-search-results-positions.html">GetSearchResultsPositions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-split-ranges.html">GetSplitRanges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/get-sponsored-messages.html">GetSponsoredMessages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-sticker-set.html">GetStickerSet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-stickers.html">GetStickers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/get-suggested-dialog-filters.html">GetSuggestedDialogFilters</a></li>
@@ -1605,6 +1607,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/report-encrypted-spam.html">ReportEncryptedSpam</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/report-reaction.html">ReportReaction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/report-spam.html">ReportSpam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/report-sponsored-message.html">ReportSponsoredMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/request-app-web-view.html">RequestAppWebView</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/request-encryption.html">RequestEncryption</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/request-main-web-view.html">RequestMainWebView</a></li>
@@ -1614,6 +1617,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/save-default-send-as.html">SaveDefaultSendAs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/save-draft.html">SaveDraft</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/save-gif.html">SaveGif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/save-prepared-inline-message.html">SavePreparedInlineMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/save-recent-sticker.html">SaveRecentSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/search.html">Search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/search-custom-emoji.html">SearchCustomEmoji</a></li>
@@ -1672,12 +1676,14 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/upload-encrypted-file.html">UploadEncryptedFile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/upload-imported-media.html">UploadImportedMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/upload-media.html">UploadMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/view-sponsored-message.html">ViewSponsoredMessage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="payments/index.html">Payments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="payments/apply-gift-code.html">ApplyGiftCode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/assign-app-store-transaction.html">AssignAppStoreTransaction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/assign-play-market-transaction.html">AssignPlayMarketTransaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/bot-cancel-stars-subscription.html">BotCancelStarsSubscription</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/can-purchase-premium.html">CanPurchasePremium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/change-stars-subscription.html">ChangeStarsSubscription</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/check-gift-code.html">CheckGiftCode</a></li>
@@ -1942,7 +1948,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    8.0.2.
+    8.1.3.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
