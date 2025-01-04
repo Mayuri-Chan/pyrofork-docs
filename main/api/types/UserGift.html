@@ -1114,27 +1114,6 @@
 
 
 <h1 id="usergift">UserGift<a class="headerlink" href="#usergift" title="Link to this heading">¶</a></h1>
-<dl class="py class objdesc">
-<dt class="sig sig-object highlight py" id="pyrogram.types.UserGift">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">UserGift</span></span><a class="headerlink" href="#pyrogram.types.UserGift" title="Link to this definition">¶</a></dt>
-<dd><p>Represents a gift received by a user.</p>
-<dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.types.UserGift-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.UserGift-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>sender_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Identifier of the user that sent the gift; None if unknown.</p></li>
-<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Message added to the gift.</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text.</p></li>
-<li><p><strong>is_private</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the sender and gift text are shown only to the gift receiver; otherwise, everyone are able to see them.</p></li>
-<li><p><strong>is_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is displayed on the user’s profile page; may be False only for the receiver of the gift.</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>) – Date when the gift was sent.</p></li>
-<li><p><strong>gift</strong> (<a class="reference internal" href="Gift.html#pyrogram.types.Gift" title="pyrogram.types.Gift (Python class) — Describes a gift that can be sent to another user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gift</span></code></a>, <em>optional</em>) – Information about the gift.</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the message with the gift in the chat with the sender of the gift; can be None or an identifier of a deleted message; only for the gift receiver.</p></li>
-<li><p><strong>sell_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that can be claimed by the receiver instead of the gift; only for the gift receiver.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
 
 
 

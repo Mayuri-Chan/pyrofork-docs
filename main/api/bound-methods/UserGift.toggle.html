@@ -64,11 +64,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#pyrogram.types.UserGift.toggle" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1199,61 +1194,9 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-ellipsis">toggle</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="#" class="md-nav__link md-nav__link--active">
         <span class="md-ellipsis">toggle</span>
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">toggle</span>
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pyrogram.types.UserGift.toggle" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.types.UserGift.toggle (Python method) — Bound method toggle of UserGift." class="md-ellipsis">User<wbr>Gift.<wbr>toggle</span>
-  </a>
-  
-    <nav class="md-nav" aria-label="UserGift.toggle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.types.UserGift.toggle-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.types.UserGift.toggle-returns" class="md-nav__link">
-    <span class="md-ellipsis">Returns</span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1923,46 +1866,9 @@
                   <div class="md-sidebar__inner">
                     
 
-  
-
 <nav class="md-nav md-nav--secondary">
   
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">toggle</span>
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pyrogram.types.UserGift.toggle" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.types.UserGift.toggle (Python method) — Bound method toggle of UserGift." class="md-ellipsis">User<wbr>Gift.<wbr>toggle</span>
-  </a>
-  
-    <nav class="md-nav" aria-label="UserGift.toggle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.types.UserGift.toggle-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyrogram.types.UserGift.toggle-returns" class="md-nav__link">
-    <span class="md-ellipsis">Returns</span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1977,33 +1883,6 @@
 
 
 <h1 id="usergift-toggle">UserGift.toggle()<a class="headerlink" href="#usergift-toggle" title="Link to this heading">¶</a></h1>
-<dl class="py method objdesc">
-<dt class="sig sig-object highlight py" id="pyrogram.types.UserGift.toggle">
-<span class="sig-prename descclassname"><span class="pre">UserGift.</span></span><span class="sig-name descname"><span class="pre">toggle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.types.UserGift.toggle" title="Link to this definition">¶</a></dt>
-<dd><p>Bound method <em>toggle</em> of <a class="reference internal" href="../types/UserGift.html#pyrogram.types.UserGift" title="pyrogram.types.UserGift (Python class) — Represents a gift received by a user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserGift</span></code></a>.</p>
-<p>Use as a shortcut for:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">toggle_gift_is_saved</span><span class="p">(</span>
-    <span class="n">sender_user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">,</span>
-    <span class="n">message_id</span><span class="o">=</span><span class="n">message_id</span>
-<span class="p">)</span>
-</code></pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.types.UserGift.toggle-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.UserGift.toggle-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>is_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – Pass True to display the gift on the user’s profile page; pass False to remove it from the profile page.</p>
-</dd>
-</dl>
-<p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="n">user_gift</span><span class="o">.</span><span class="n">toggle</span><span class="p">(</span><span class="n">is_saved</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</code></pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd" id="pyrogram.types.UserGift.toggle-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.UserGift.toggle-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, True is returned.</p>
-</dd>
-</dl>
-</dd></dl>
-
 
 
 

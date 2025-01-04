@@ -1523,6 +1523,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StarGiftAttribute.html" class="md-nav__link">
+        <span class="md-ellipsis">Star<wbr>Gift<wbr>Attribute</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2286,14 +2301,46 @@
 <dt class="field-odd" id="pyrogram.types.StarGift-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.StarGift-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique star gift identifier.</p></li>
-<li><p><strong>sticker</strong> (<a class="reference internal" href="Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a>) – Information about the star gift sticker.</p></li>
-<li><p><strong>price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Price of this gift in stars.</p></li>
-<li><p><strong>convert_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The number of stars you get if you convert this gift.</p></li>
+<li><p><strong>sticker</strong> (<a class="reference internal" href="Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a>, <em>optional</em>) – Information about the star gift sticker.</p></li>
+<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text message.</p></li>
+<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text.</p></li>
+<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique message identifier.</p></li>
+<li><p><strong>upgrade_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique message identifier.
+For unique gifts only.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Title of the star gift.
+For unique gifts only.</p></li>
+<li><p><strong>number</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Collectible number of the star gift.
+For unique gifts only.</p></li>
+<li><p><strong>model</strong> (<a class="reference internal" href="StarGiftAttribute.html#pyrogram.types.StarGiftAttribute" title="pyrogram.types.StarGiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGiftAttribute</span></code></a>, <em>optional</em>) – Information about the star gift model.
+For unique gifts only.</p></li>
+<li><p><strong>backdrop</strong> (<a class="reference internal" href="StarGiftAttribute.html#pyrogram.types.StarGiftAttribute" title="pyrogram.types.StarGiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGiftAttribute</span></code></a>, <em>optional</em>) – Information about the star gift backdrop.
+For unique gifts only.</p></li>
+<li><p><strong>symbol</strong> (<a class="reference internal" href="StarGiftAttribute.html#pyrogram.types.StarGiftAttribute" title="pyrogram.types.StarGiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGiftAttribute</span></code></a>, <em>optional</em>) – Information about the star gift symbol.
+For unique gifts only.</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the star gift was received.</p></li>
+<li><p><strong>first_sale_date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the star gift was first purchased.</p></li>
+<li><p><strong>last_sale_date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the star gift was last purchased.</p></li>
+<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – User who sent the star gift.</p></li>
+<li><p><strong>price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Price of this gift in stars.</p></li>
+<li><p><strong>convert_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of stars you get if you convert this gift.</p></li>
+<li><p><strong>upgrade_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of stars you need to upgrade this gift.</p></li>
+<li><p><strong>transfer_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of stars you need to transfer this gift.</p></li>
 <li><p><strong>available_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of gifts available for purchase.
 Returned only if is_limited is True.</p></li>
 <li><p><strong>total_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Total amount of gifts.
 Returned only if is_limited is True.</p></li>
+<li><p><strong>can_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be upgraded.</p></li>
+<li><p><strong>can_export_at</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the gift can be exported via blockchain.</p></li>
 <li><p><strong>is_limited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the number of gifts is limited.</p></li>
+<li><p><strong>is_name_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the sender’s name is hidden.</p></li>
+<li><p><strong>is_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the star gift is saved in profile.</p></li>
+<li><p><strong>is_sold_out</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the star gift is sold out.</p></li>
+<li><p><strong>is_converted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was converted to Telegram Stars.
+Only for the receiver of the gift.</p></li>
+<li><p><strong>is_upgraded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was upgraded.</p></li>
+<li><p><strong>is_refunded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was refunded.</p></li>
+<li><p><strong>is_transferred</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was transferred.</p></li>
+<li><p><strong>is_unique</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is unique.</p></li>
 </ul>
 </dd>
 </dl>
