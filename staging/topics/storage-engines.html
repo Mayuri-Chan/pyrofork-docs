@@ -1286,7 +1286,7 @@ The database will be saved to disk as a single portable file and is designed to 
 data whenever they are needed.</p>
 <p>To use this type of engine, simply pass any name of your choice to the <code class="docutils literal notranslate"><span class="pre">name</span></code> parameter of the
 <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client (Python class) — Pyrogram Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor, as usual:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
@@ -1298,7 +1298,7 @@ session database will be automatically loaded.</p>
 <h3 id="memory-storage">Memory Storage<a class="headerlink" href="#memory-storage" title="Link to this heading">¶</a></h3>
 <p>In case you don’t want to have any session file saved to disk, you can use an in-memory storage by passing True to the
 <code class="docutils literal notranslate"><span class="pre">in_memory</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client (Python class) — Pyrogram Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">in_memory</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
@@ -1310,8 +1310,8 @@ a client, the entire database is discarded and the session details used for logg
 <p>In case you want to have persistent session but you don’t have persistent storage you can use mongodb storage by passing
 mongodb config as <code class="docutils literal notranslate"><span class="pre">dict</span></code> to the <code class="docutils literal notranslate"><span class="pre">mongodb</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client (Python class) — Pyrogram Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
 <p>Using async_pymongo (Recommended for python3.9+):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">async_pymongo</span> <span class="kn">import</span> <span class="n">AsyncClient</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">async_pymongo</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncClient</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">conn</span> <span class="o">=</span> <span class="n">AsyncClient</span><span class="p">(</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">)</span>
 
@@ -1320,8 +1320,8 @@ mongodb config as <code class="docutils literal notranslate"><span class="pre">d
 </code></pre></div>
 </div>
 <p>Using motor:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">motor.motor_asyncio</span> <span class="kn">import</span> <span class="n">AsyncIOMotorClient</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">motor.motor_asyncio</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncIOMotorClient</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">conn</span> <span class="o">=</span> <span class="n">AsyncIOMotorClient</span><span class="p">(</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">)</span>
 
@@ -1334,7 +1334,7 @@ restart will make PyroFork search for a database named that way and the session 
 <h2 id="session-strings">Session Strings<a class="headerlink" href="#session-strings" title="Link to this heading">¶</a></h2>
 <p>In case you want to use an in-memory storage, but also want to keep access to the session you created, call
 <a class="reference internal" href="../api/methods/export_session_string.html#pyrogram.Client.export_session_string" title="pyrogram.Client.export_session_string (Python method) — Export the current authorized session as a serialized string."><code class="xref py py-meth docutils literal notranslate"><span class="pre">export_session_string()</span></code></a> anytime before stopping the client…</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">in_memory</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">export_session_string</span><span class="p">())</span>
@@ -1342,7 +1342,7 @@ restart will make PyroFork search for a database named that way and the session 
 </div>
 <p>…and save the resulting string. You can use this string by passing it as Client argument the next time you want to
 login using the same session; the storage used will still be in-memory:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">session_string</span> <span class="o">=</span> <span class="s2">&quot;...ZnUIFD8jsjXTb8g_vpxx48k1zkov9sapD-tzjz-S4WZv70M...&quot;</span>
 

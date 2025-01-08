@@ -1630,7 +1630,7 @@
 desired time. The progress callback is called every time a file chunk is uploaded/downloaded.</p>
 <p class="example rubric">Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Stop transmission once the upload progress reaches 50%</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">progress</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">total</span><span class="p">,</span> <span class="n">client</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">progress</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">total</span><span class="p">,</span> <span class="n">client</span><span class="p">):</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">current</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">total</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
         <span class="n">client</span><span class="o">.</span><span class="n">stop_transmission</span><span class="p">()</span>
 
