@@ -2345,9 +2345,12 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ForumTopicEdited-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ForumTopicEdited-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">String</span></code>) – Name of the topic.</p></li>
-<li><p><strong>icon_color</strong> (<code class="docutils literal notranslate"><span class="pre">Integer</span></code>) – Color of the topic icon in RGB format</p></li>
-<li><p><strong>icon_custom_emoji_id</strong> (<code class="docutils literal notranslate"><span class="pre">String</span></code>, <em>optional</em>) – Unique identifier of the custom emoji shown as the topic icon</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Name of the topic.</p></li>
+<li><p><strong>icon_color</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Color of the topic icon in decimal format.</p></li>
+<li><p><strong>custom_emoji_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier of the custom emoji shown as the topic icon.</p></li>
+<li><p><strong>is_closed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the topic is closed.</p></li>
+<li><p><strong>is_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the topic is hidden.
+Valid only for the “General” topic with id=1</p></li>
 </ul>
 </dd>
 </dl>
