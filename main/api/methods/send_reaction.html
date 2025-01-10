@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.4b4a8c74e2ff2ab5b.min.css?v=afa97f93" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.b83f2e057cd610c26.min.css?v=71bc7cdb" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e3bab952" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -956,7 +956,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.send_reaction" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Service messages can&#39;t be reacted to. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel. Bots can&#39;t use paid reactions." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.send_reaction">
@@ -1710,6 +1710,21 @@
   
   
     <li class="md-nav__item">
+      <a href="index.html#payments" class="md-nav__link">
+        <span class="md-ellipsis">Payments</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="index.html#authorization" class="md-nav__link">
         <span class="md-ellipsis">Authorization</span>
       </a>
@@ -2312,7 +2327,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.send_reaction" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Service messages can&#39;t be reacted to. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel. Bots can&#39;t use paid reactions." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.send_reaction">
@@ -2356,15 +2371,24 @@
 <dt class="sig sig-object highlight py" id="pyrogram.Client.send_reaction">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_reaction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.send_reaction" title="Link to this definition">¶</a></dt>
 <dd><p>Use this method to send reactions on a message/stories.
-Service messages can’t be reacted to.
-Automatically forwarded messages from
-a channel to its discussion group have the
-same available reactions as messages in the channel.</p>
+Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel.
+Bots can’t use paid reactions.</p>
+<p>You must use exactly one of <code class="docutils literal notranslate"><span class="pre">message_id</span></code> OR <code class="docutils literal notranslate"><span class="pre">story_id</span></code>.</p>
 <blockquote>
+<div><dl>
+<dt>If you specify, <code class="docutils literal notranslate"><span class="pre">message_id</span></code></dt><dd><blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span>
-</blockquote><dl class="field-list simple">
+</blockquote></dd>
+<dt>If you specify, <code class="docutils literal notranslate"><span class="pre">story_id</span></code></dt><dd><blockquote>
+    <strong>Usable by</strong>
+    <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
+    <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span>
+</blockquote></dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_reaction-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_reaction-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
