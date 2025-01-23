@@ -1357,6 +1357,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/translate-result.html">TranslateResult</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/votes-list.html">VotesList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/web-page.html">WebPage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/web-page-preview.html">WebPagePreview</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="payments/index.html">Payments</a><ul>
@@ -1374,7 +1375,9 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/payment-result.html">PaymentResult</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/payment-verification-needed.html">PaymentVerificationNeeded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/saved-info.html">SavedInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/saved-star-gifts.html">SavedStarGifts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gift-upgrade-preview.html">StarGiftUpgradePreview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/star-gift-withdrawal-url.html">StarGiftWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gifts.html">StarGifts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gifts-not-modified.html">StarGiftsNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/stars-revenue-ads-account-url.html">StarsRevenueAdsAccountUrl</a></li>
@@ -1382,7 +1385,7 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/stars-revenue-withdrawal-url.html">StarsRevenueWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/stars-status.html">StarsStatus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/suggested-star-ref-bots.html">SuggestedStarRefBots</a></li>
-<li class="toctree-l2"><a class="reference internal" href="payments/user-star-gifts.html">UserStarGifts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/unique-star-gift.html">UniqueStarGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/validated-requested-info.html">ValidatedRequestedInfo</a></li>
 </ul>
 </li>
@@ -1705,8 +1708,8 @@
 <li class="toctree-l1"><a class="reference internal" href="emoji-list.html">EmojiList</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emoji-list-not-modified.html">EmojiListNotModified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emoji-status.html">EmojiStatus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emoji-status-collectible.html">EmojiStatusCollectible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emoji-status-empty.html">EmojiStatusEmpty</a></li>
-<li class="toctree-l1"><a class="reference internal" href="emoji-status-until.html">EmojiStatusUntil</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emoji-url.html">EmojiURL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypted-chat.html">EncryptedChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypted-chat-discarded.html">EncryptedChatDiscarded</a></li>
@@ -1790,6 +1793,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-document.html">InputDocument</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-document-empty.html">InputDocumentEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-document-file-location.html">InputDocumentFileLocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-emoji-status-collectible.html">InputEmojiStatusCollectible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-encrypted-chat.html">InputEncryptedChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-encrypted-file.html">InputEncryptedFile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-encrypted-file-big-uploaded.html">InputEncryptedFileBigUploaded</a></li>
@@ -1922,6 +1926,8 @@
 <li class="toctree-l1"><a class="reference internal" href="input-report-reason-pornography.html">InputReportReasonPornography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-report-reason-spam.html">InputReportReasonSpam</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-report-reason-violence.html">InputReportReasonViolence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-saved-star-gift-chat.html">InputSavedStarGiftChat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-saved-star-gift-user.html">InputSavedStarGiftUser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-secure-file.html">InputSecureFile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-secure-file-location.html">InputSecureFileLocation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-secure-file-uploaded.html">InputSecureFileUploaded</a></li>
@@ -2001,6 +2007,7 @@
 <li class="toctree-l1"><a class="reference internal" href="media-area-channel-post.html">MediaAreaChannelPost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-coordinates.html">MediaAreaCoordinates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-geo-point.html">MediaAreaGeoPoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media-area-star-gift.html">MediaAreaStarGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-suggested-reaction.html">MediaAreaSuggestedReaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-url.html">MediaAreaUrl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media-area-venue.html">MediaAreaVenue</a></li>
@@ -2289,6 +2296,7 @@
 <li class="toctree-l1"><a class="reference internal" href="saved-dialog.html">SavedDialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="saved-phone-contact.html">SavedPhoneContact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="saved-reaction-tag.html">SavedReactionTag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="saved-star-gift.html">SavedStarGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="search-result-position.html">SearchResultPosition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="search-results-calendar-period.html">SearchResultsCalendarPeriod</a></li>
 <li class="toctree-l1"><a class="reference internal" href="secure-credentials-encrypted.html">SecureCredentialsEncrypted</a></li>
@@ -2593,7 +2601,6 @@
 <li class="toctree-l1"><a class="reference internal" href="user-full.html">UserFull</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-profile-photo.html">UserProfilePhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-profile-photo-empty.html">UserProfilePhotoEmpty</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user-star-gift.html">UserStarGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-status-empty.html">UserStatusEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-status-last-month.html">UserStatusLastMonth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-status-last-week.html">UserStatusLastWeek</a></li>
@@ -2614,6 +2621,7 @@
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-sticker-set.html">WebPageAttributeStickerSet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-story.html">WebPageAttributeStory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-theme.html">WebPageAttributeTheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web-page-attribute-unique-star-gift.html">WebPageAttributeUniqueStarGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-empty.html">WebPageEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-not-modified.html">WebPageNotModified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-pending.html">WebPagePending</a></li>
