@@ -2380,6 +2380,8 @@
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of topics to be retrieved.</p></li>
+<li><p><strong>offset_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The date of the topic to be used as offset.</p></li>
+<li><p><strong>offset_topic</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The topic ID to be used as offset.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_forum_topics-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topics-returns" title="Permalink to this headline">¶</a></dt>
@@ -2390,6 +2392,18 @@ You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># get all forum topics</span>
 <span class="k">async</span> <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">app</span><span class="o">.</span><span class="n">get_forum_topics</span><span class="p">(</span><span class="n">chat_id</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">topic</span><span class="p">)</span>
+
+<span class="c1"># get more than 100 forum topics</span>
+<span class="n">count</span> <span class="o">=</span> <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_forum_topics_count</span><span class="p">(</span><span class="n">chat_id</span><span class="p">)</span> <span class="c1"># get the count of all topics</span>
+<span class="nb">slice</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># limit per request</span>
+<span class="n">pages</span> <span class="o">=</span> <span class="n">count</span> <span class="o">//</span> <span class="nb">slice</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># number of requests needed</span>
+<span class="n">all_topics</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># list to store all topics</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pages</span><span class="p">):</span>
+    <span class="n">last_date</span> <span class="o">=</span> <span class="n">all_topics</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">date</span> <span class="k">if</span> <span class="n">all_topics</span> <span class="k">else</span> <span class="mi">0</span> <span class="c1"># date of the last found topic</span>
+    <span class="n">last_topic</span> <span class="o">=</span> <span class="n">all_topics</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">id</span> <span class="k">if</span> <span class="n">all_topics</span> <span class="k">else</span> <span class="mi">0</span> <span class="c1"># id of the last found topic</span>
+    <span class="k">async</span> <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">app</span><span class="o">.</span><span class="n">get_forum_topics</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="nb">slice</span><span class="p">,</span> <span class="n">offset_date</span><span class="o">=</span><span class="n">last_date</span><span class="p">,</span> <span class="n">offset_topic</span><span class="o">=</span><span class="n">last_topic</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">topic</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">all_topics</span><span class="p">:</span>
+            <span class="n">all_topics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">topic</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <dl class="field-list simple">
