@@ -1270,6 +1270,11 @@ list of the basic styles currently supported by Pyrofork.</p>
 </li>
 </ul>
 <h2 id="markdown-style">Markdown Style<a class="headerlink" href="#markdown-style" title="Link to this heading">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>The Markdown style is not recommended for complex text formatting.
+If you want to use complex text formatting such as nested entities, overlapping entities use the HTML style instead.</p>
+</div>
 <p>To strictly use this mode, pass <a class="reference internal" href="../api/enums/ParseMode.html#pyrogram.enums.ParseMode.MARKDOWN" title="pyrogram.enums.ParseMode.MARKDOWN (Python attribute) — Markdown only mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code></a> to the <em>parse_mode</em> parameter when using
 <a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. Use the following syntax in your message:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>**bold**
