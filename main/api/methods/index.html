@@ -1920,6 +1920,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="delete_chat_history.html" class="md-nav__link">
+        <span class="md-ellipsis">delete_<wbr>chat_<wbr>history</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2530,6 +2545,21 @@
     <li class="md-nav__item">
       <a href="get_forum_topics_by_id.html" class="md-nav__link">
         <span class="md-ellipsis">get_<wbr>forum_<wbr>topics_<wbr>by_<wbr>id</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="get_forum_topics_count.html" class="md-nav__link">
+        <span class="md-ellipsis">get_<wbr>forum_<wbr>topics_<wbr>count</span>
       </a>
     </li>
   
@@ -4407,8 +4437,8 @@
   
   
     <li class="md-nav__item">
-      <a href="get_user_gifts_count.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>user_<wbr>gifts_<wbr>count</span>
+      <a href="get_upgraded_gift.html" class="md-nav__link">
+        <span class="md-ellipsis">get_<wbr>upgraded_<wbr>gift</span>
       </a>
     </li>
   
@@ -4422,8 +4452,23 @@
   
   
     <li class="md-nav__item">
-      <a href="get_user_gifts.html" class="md-nav__link">
-        <span class="md-ellipsis">get_<wbr>user_<wbr>gifts</span>
+      <a href="get_chat_gifts_count.html" class="md-nav__link">
+        <span class="md-ellipsis">get_<wbr>chat_<wbr>gifts_<wbr>count</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="get_chat_gifts.html" class="md-nav__link">
+        <span class="md-ellipsis">get_<wbr>chat_<wbr>gifts</span>
       </a>
     </li>
   
@@ -5615,6 +5660,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="delete_chat_history.html" class="md-nav__link">
+    <span class="md-ellipsis">delete_<wbr>chat_<wbr>history</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5889,6 +5941,13 @@
           <li class="md-nav__item">
   <a href="get_forum_topics_by_id.html" class="md-nav__link">
     <span class="md-ellipsis">get_<wbr>forum_<wbr>topics_<wbr>by_<wbr>id</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="get_forum_topics_count.html" class="md-nav__link">
+    <span class="md-ellipsis">get_<wbr>forum_<wbr>topics_<wbr>count</span>
   </a>
   
 </li>
@@ -6726,15 +6785,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="get_user_gifts_count.html" class="md-nav__link">
-    <span class="md-ellipsis">get_<wbr>user_<wbr>gifts_<wbr>count</span>
+  <a href="get_upgraded_gift.html" class="md-nav__link">
+    <span class="md-ellipsis">get_<wbr>upgraded_<wbr>gift</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="get_user_gifts.html" class="md-nav__link">
-    <span class="md-ellipsis">get_<wbr>user_<wbr>gifts</span>
+  <a href="get_chat_gifts_count.html" class="md-nav__link">
+    <span class="md-ellipsis">get_<wbr>chat_<wbr>gifts_<wbr>count</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="get_chat_gifts.html" class="md-nav__link">
+    <span class="md-ellipsis">get_<wbr>chat_<wbr>gifts</span>
   </a>
   
 </li>
@@ -7962,6 +8028,9 @@ the main package directly.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="start_bot.html#pyrogram.Client.start_bot" title="pyrogram.Client.start_bot (Python method) — Start bot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start_bot</span></code></a></p></td>
 <td><p>Start bot</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="delete_chat_history.html#pyrogram.Client.delete_chat_history" title="pyrogram.Client.delete_chat_history (Python method) — Delete the history of a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_chat_history</span></code></a></p></td>
+<td><p>Delete the history of a chat.</p></td>
+</tr>
 </tbody>
 </table>
 <div class="toctree-wrapper compound">
@@ -8084,91 +8153,94 @@ the main package directly.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="get_forum_topics_by_id.html#pyrogram.Client.get_forum_topics_by_id" title="pyrogram.Client.get_forum_topics_by_id (Python method) — Get one or more topic from a chat by using topic identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_forum_topics_by_id</span></code></a></p></td>
 <td><p>Get one or more topic from a chat by using topic identifiers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_username.html#pyrogram.Client.set_chat_username" title="pyrogram.Client.set_chat_username (Python method) — Set a channel or a supergroup username."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_username</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_forum_topics_count.html#pyrogram.Client.get_forum_topics_count" title="pyrogram.Client.get_forum_topics_count (Python method) — Get forum topics count from a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_forum_topics_count</span></code></a></p></td>
+<td><p>Get forum topics count from a chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_username.html#pyrogram.Client.set_chat_username" title="pyrogram.Client.set_chat_username (Python method) — Set a channel or a supergroup username."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_username</span></code></a></p></td>
 <td><p>Set a channel or a supergroup username.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="archive_chats.html#pyrogram.Client.archive_chats" title="pyrogram.Client.archive_chats (Python method) — Archive one or more chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">archive_chats</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="archive_chats.html#pyrogram.Client.archive_chats" title="pyrogram.Client.archive_chats (Python method) — Archive one or more chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">archive_chats</span></code></a></p></td>
 <td><p>Archive one or more chats.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="unarchive_chats.html#pyrogram.Client.unarchive_chats" title="pyrogram.Client.unarchive_chats (Python method) — Unarchive one or more chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">unarchive_chats</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="unarchive_chats.html#pyrogram.Client.unarchive_chats" title="pyrogram.Client.unarchive_chats (Python method) — Unarchive one or more chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">unarchive_chats</span></code></a></p></td>
 <td><p>Unarchive one or more chats.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="add_chat_members.html#pyrogram.Client.add_chat_members" title="pyrogram.Client.add_chat_members (Python method) — Add new chat members to a group, supergroup or channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_chat_members</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="add_chat_members.html#pyrogram.Client.add_chat_members" title="pyrogram.Client.add_chat_members (Python method) — Add new chat members to a group, supergroup or channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_chat_members</span></code></a></p></td>
 <td><p>Add new chat members to a group, supergroup or channel</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="create_channel.html#pyrogram.Client.create_channel" title="pyrogram.Client.create_channel (Python method) — Create a new broadcast channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_channel</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="create_channel.html#pyrogram.Client.create_channel" title="pyrogram.Client.create_channel (Python method) — Create a new broadcast channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_channel</span></code></a></p></td>
 <td><p>Create a new broadcast channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="create_group.html#pyrogram.Client.create_group" title="pyrogram.Client.create_group (Python method) — Create a new basic group."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_group</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="create_group.html#pyrogram.Client.create_group" title="pyrogram.Client.create_group (Python method) — Create a new basic group."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_group</span></code></a></p></td>
 <td><p>Create a new basic group.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="create_supergroup.html#pyrogram.Client.create_supergroup" title="pyrogram.Client.create_supergroup (Python method) — Create a new supergroup."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_supergroup</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="create_supergroup.html#pyrogram.Client.create_supergroup" title="pyrogram.Client.create_supergroup (Python method) — Create a new supergroup."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_supergroup</span></code></a></p></td>
 <td><p>Create a new supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="delete_channel.html#pyrogram.Client.delete_channel" title="pyrogram.Client.delete_channel (Python method) — Delete a channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_channel</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="delete_channel.html#pyrogram.Client.delete_channel" title="pyrogram.Client.delete_channel (Python method) — Delete a channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_channel</span></code></a></p></td>
 <td><p>Delete a channel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="delete_supergroup.html#pyrogram.Client.delete_supergroup" title="pyrogram.Client.delete_supergroup (Python method) — Delete a supergroup."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_supergroup</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="delete_supergroup.html#pyrogram.Client.delete_supergroup" title="pyrogram.Client.delete_supergroup (Python method) — Delete a supergroup."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_supergroup</span></code></a></p></td>
 <td><p>Delete a supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="delete_user_history.html#pyrogram.Client.delete_user_history" title="pyrogram.Client.delete_user_history (Python method) — Delete all messages sent by a certain user in a supergroup."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_user_history</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="delete_user_history.html#pyrogram.Client.delete_user_history" title="pyrogram.Client.delete_user_history (Python method) — Delete all messages sent by a certain user in a supergroup."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_user_history</span></code></a></p></td>
 <td><p>Delete all messages sent by a certain user in a supergroup.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_slow_mode.html#pyrogram.Client.set_slow_mode" title="pyrogram.Client.set_slow_mode (Python method) — Set the slow mode interval for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_slow_mode</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_slow_mode.html#pyrogram.Client.set_slow_mode" title="pyrogram.Client.set_slow_mode (Python method) — Set the slow mode interval for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_slow_mode</span></code></a></p></td>
 <td><p>Set the slow mode interval for a chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mark_chat_unread.html#pyrogram.Client.mark_chat_unread" title="pyrogram.Client.mark_chat_unread (Python method) — Mark a chat as unread."><code class="xref py py-obj docutils literal notranslate"><span class="pre">mark_chat_unread</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mark_chat_unread.html#pyrogram.Client.mark_chat_unread" title="pyrogram.Client.mark_chat_unread (Python method) — Mark a chat as unread."><code class="xref py py-obj docutils literal notranslate"><span class="pre">mark_chat_unread</span></code></a></p></td>
 <td><p>Mark a chat as unread.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_chat_event_log.html#pyrogram.Client.get_chat_event_log" title="pyrogram.Client.get_chat_event_log (Python method) — Get the actions taken by chat members and administrators in the last 48h."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_event_log</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_event_log.html#pyrogram.Client.get_chat_event_log" title="pyrogram.Client.get_chat_event_log (Python method) — Get the actions taken by chat members and administrators in the last 48h."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_event_log</span></code></a></p></td>
 <td><p>Get the actions taken by chat members and administrators in the last 48h.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_online_count.html#pyrogram.Client.get_chat_online_count" title="pyrogram.Client.get_chat_online_count (Python method) — Get the number of members that are currently online in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_online_count</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_chat_online_count.html#pyrogram.Client.get_chat_online_count" title="pyrogram.Client.get_chat_online_count (Python method) — Get the number of members that are currently online in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_online_count</span></code></a></p></td>
 <td><p>Get the number of members that are currently online in a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats (Python method) — Get the list of &quot;send_as&quot; chats available."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_send_as_chats</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats (Python method) — Get the list of &quot;send_as&quot; chats available."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_send_as_chats</span></code></a></p></td>
 <td><p>Get the list of &quot;send_as&quot; chats available.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat (Python method) — Set the default &quot;send_as&quot; chat for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_send_as_chat</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat (Python method) — Set the default &quot;send_as&quot; chat for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_send_as_chat</span></code></a></p></td>
 <td><p>Set the default &quot;send_as&quot; chat for a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_protected_content.html#pyrogram.Client.set_chat_protected_content" title="pyrogram.Client.set_chat_protected_content (Python method) — Set the chat protected content setting."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_protected_content</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_protected_content.html#pyrogram.Client.set_chat_protected_content" title="pyrogram.Client.set_chat_protected_content (Python method) — Set the chat protected content setting."><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_protected_content</span></code></a></p></td>
 <td><p>Set the chat protected content setting.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="close_forum_topic.html#pyrogram.Client.close_forum_topic" title="pyrogram.Client.close_forum_topic (Python method) — Close a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_forum_topic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="close_forum_topic.html#pyrogram.Client.close_forum_topic" title="pyrogram.Client.close_forum_topic (Python method) — Close a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_forum_topic</span></code></a></p></td>
 <td><p>Close a forum topic.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="close_general_topic.html#pyrogram.Client.close_general_topic" title="pyrogram.Client.close_general_topic (Python method) — Close a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_general_topic</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="close_general_topic.html#pyrogram.Client.close_general_topic" title="pyrogram.Client.close_general_topic (Python method) — Close a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_general_topic</span></code></a></p></td>
 <td><p>Close a forum topic.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="create_forum_topic.html#pyrogram.Client.create_forum_topic" title="pyrogram.Client.create_forum_topic (Python method) — Create a new forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_forum_topic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="create_forum_topic.html#pyrogram.Client.create_forum_topic" title="pyrogram.Client.create_forum_topic (Python method) — Create a new forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_forum_topic</span></code></a></p></td>
 <td><p>Create a new forum topic.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="delete_forum_topic.html#pyrogram.Client.delete_forum_topic" title="pyrogram.Client.delete_forum_topic (Python method) — Delete a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_forum_topic</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="delete_forum_topic.html#pyrogram.Client.delete_forum_topic" title="pyrogram.Client.delete_forum_topic (Python method) — Delete a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_forum_topic</span></code></a></p></td>
 <td><p>Delete a forum topic.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="edit_forum_topic.html#pyrogram.Client.edit_forum_topic" title="pyrogram.Client.edit_forum_topic (Python method) — Edit a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit_forum_topic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="edit_forum_topic.html#pyrogram.Client.edit_forum_topic" title="pyrogram.Client.edit_forum_topic (Python method) — Edit a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit_forum_topic</span></code></a></p></td>
 <td><p>Edit a forum topic.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="edit_general_topic.html#pyrogram.Client.edit_general_topic" title="pyrogram.Client.edit_general_topic (Python method) — Edit a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit_general_topic</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="edit_general_topic.html#pyrogram.Client.edit_general_topic" title="pyrogram.Client.edit_general_topic (Python method) — Edit a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit_general_topic</span></code></a></p></td>
 <td><p>Edit a general forum topic.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="hide_general_topic.html#pyrogram.Client.hide_general_topic" title="pyrogram.Client.hide_general_topic (Python method) — hide a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">hide_general_topic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="hide_general_topic.html#pyrogram.Client.hide_general_topic" title="pyrogram.Client.hide_general_topic (Python method) — hide a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">hide_general_topic</span></code></a></p></td>
 <td><p>hide a general forum topic.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reopen_forum_topic.html#pyrogram.Client.reopen_forum_topic" title="pyrogram.Client.reopen_forum_topic (Python method) — Reopen a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">reopen_forum_topic</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="reopen_forum_topic.html#pyrogram.Client.reopen_forum_topic" title="pyrogram.Client.reopen_forum_topic (Python method) — Reopen a forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">reopen_forum_topic</span></code></a></p></td>
 <td><p>Reopen a forum topic.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reopen_general_topic.html#pyrogram.Client.reopen_general_topic" title="pyrogram.Client.reopen_general_topic (Python method) — Reopen a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">reopen_general_topic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="reopen_general_topic.html#pyrogram.Client.reopen_general_topic" title="pyrogram.Client.reopen_general_topic (Python method) — Reopen a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">reopen_general_topic</span></code></a></p></td>
 <td><p>Reopen a general forum topic.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="unhide_general_topic.html#pyrogram.Client.unhide_general_topic" title="pyrogram.Client.unhide_general_topic (Python method) — unhide a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">unhide_general_topic</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="unhide_general_topic.html#pyrogram.Client.unhide_general_topic" title="pyrogram.Client.unhide_general_topic (Python method) — unhide a general forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">unhide_general_topic</span></code></a></p></td>
 <td><p>unhide a general forum topic.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="update_color.html#pyrogram.Client.update_color" title="pyrogram.Client.update_color (Python method) — Update color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_color</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="update_color.html#pyrogram.Client.update_color" title="pyrogram.Client.update_color (Python method) — Update color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_color</span></code></a></p></td>
 <td><p>Update color</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="update_folder.html#pyrogram.Client.update_folder" title="pyrogram.Client.update_folder (Python method) — Create or update a user's folder."><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_folder</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="update_folder.html#pyrogram.Client.update_folder" title="pyrogram.Client.update_folder (Python method) — Create or update a user's folder."><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_folder</span></code></a></p></td>
 <td><p>Create or update a user's folder.</p></td>
 </tr>
 </tbody>
@@ -8452,43 +8524,46 @@ the main package directly.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="get_available_gifts.html#pyrogram.Client.get_available_gifts" title="pyrogram.Client.get_available_gifts (Python method) — Get all available star gifts to send."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_available_gifts</span></code></a></p></td>
 <td><p>Get all available star gifts to send.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_user_gifts_count.html#pyrogram.Client.get_user_gifts_count" title="pyrogram.Client.get_user_gifts_count (Python method) — Get the total count of star gifts of specified user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_gifts_count</span></code></a></p></td>
-<td><p>Get the total count of star gifts of specified user.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_upgraded_gift.html#pyrogram.Client.get_upgraded_gift" title="pyrogram.Client.get_upgraded_gift (Python method) — Get information about upgraded gift."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_upgraded_gift</span></code></a></p></td>
+<td><p>Get information about upgraded gift.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_user_gifts.html#pyrogram.Client.get_user_gifts" title="pyrogram.Client.get_user_gifts (Python method) — Get user star gifts."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_gifts</span></code></a></p></td>
-<td><p>Get user star gifts.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_chat_gifts_count.html#pyrogram.Client.get_chat_gifts_count" title="pyrogram.Client.get_chat_gifts_count (Python method) — Get the total count of owned gifts of specified chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_gifts_count</span></code></a></p></td>
+<td><p>Get the total count of owned gifts of specified chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="hide_gift.html#pyrogram.Client.hide_gift" title="pyrogram.Client.hide_gift (Python method) — Hide the star gift from your profile."><code class="xref py py-obj docutils literal notranslate"><span class="pre">hide_gift</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_gifts.html#pyrogram.Client.get_chat_gifts" title="pyrogram.Client.get_chat_gifts (Python method) — Get all gifts owned by specified chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_gifts</span></code></a></p></td>
+<td><p>Get all gifts owned by specified chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="hide_gift.html#pyrogram.Client.hide_gift" title="pyrogram.Client.hide_gift (Python method) — Hide the star gift from your profile."><code class="xref py py-obj docutils literal notranslate"><span class="pre">hide_gift</span></code></a></p></td>
 <td><p>Hide the star gift from your profile.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="refund_star_payment.html#pyrogram.Client.refund_star_payment" title="pyrogram.Client.refund_star_payment (Python method) — Refund the star to the user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">refund_star_payment</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="refund_star_payment.html#pyrogram.Client.refund_star_payment" title="pyrogram.Client.refund_star_payment (Python method) — Refund the star to the user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">refund_star_payment</span></code></a></p></td>
 <td><p>Refund the star to the user.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="send_invoice.html#pyrogram.Client.send_invoice" title="pyrogram.Client.send_invoice (Python method) — Use this method to send invoices."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_invoice</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="send_invoice.html#pyrogram.Client.send_invoice" title="pyrogram.Client.send_invoice (Python method) — Use this method to send invoices."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_invoice</span></code></a></p></td>
 <td><p>Use this method to send invoices.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="send_paid_media.html#pyrogram.Client.send_paid_media" title="pyrogram.Client.send_paid_media (Python method) — Send paid media. Only for channels."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_paid_media</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="send_paid_media.html#pyrogram.Client.send_paid_media" title="pyrogram.Client.send_paid_media (Python method) — Send paid media. Only for channels."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_paid_media</span></code></a></p></td>
 <td><p>Send paid media.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="send_paid_reaction.html#pyrogram.Client.send_paid_reaction" title="pyrogram.Client.send_paid_reaction (Python method) — Use this method to send paid reactions on a channel message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_paid_reaction</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="send_paid_reaction.html#pyrogram.Client.send_paid_reaction" title="pyrogram.Client.send_paid_reaction (Python method) — Use this method to send paid reactions on a channel message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_paid_reaction</span></code></a></p></td>
 <td><p>Use this method to send paid reactions on a channel message.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="send_payment_form.html#pyrogram.Client.send_payment_form" title="pyrogram.Client.send_payment_form (Python method) — Pay an invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_payment_form</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="send_payment_form.html#pyrogram.Client.send_payment_form" title="pyrogram.Client.send_payment_form (Python method) — Pay an invoice."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_payment_form</span></code></a></p></td>
 <td><p>Pay an invoice.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="send_gift.html#pyrogram.Client.send_gift" title="pyrogram.Client.send_gift (Python method) — Send star gift."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_gift</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="send_gift.html#pyrogram.Client.send_gift" title="pyrogram.Client.send_gift (Python method) — Send star gift."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_gift</span></code></a></p></td>
 <td><p>Send star gift.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="show_gift.html#pyrogram.Client.show_gift" title="pyrogram.Client.show_gift (Python method) — Display the star gift in your profile."><code class="xref py py-obj docutils literal notranslate"><span class="pre">show_gift</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="show_gift.html#pyrogram.Client.show_gift" title="pyrogram.Client.show_gift (Python method) — Display the star gift in your profile."><code class="xref py py-obj docutils literal notranslate"><span class="pre">show_gift</span></code></a></p></td>
 <td><p>Display the star gift in your profile.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="transfer_gift.html#pyrogram.Client.transfer_gift" title="pyrogram.Client.transfer_gift (Python method) — Transfer star gift to another user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">transfer_gift</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="transfer_gift.html#pyrogram.Client.transfer_gift" title="pyrogram.Client.transfer_gift (Python method) — Transfer star gift to another user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">transfer_gift</span></code></a></p></td>
 <td><p>Transfer star gift to another user.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="upgrade_gift.html#pyrogram.Client.upgrade_gift" title="pyrogram.Client.upgrade_gift (Python method) — Upgrade star gift to unique."><code class="xref py py-obj docutils literal notranslate"><span class="pre">upgrade_gift</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="upgrade_gift.html#pyrogram.Client.upgrade_gift" title="pyrogram.Client.upgrade_gift (Python method) — Upgrade star gift to unique."><code class="xref py py-obj docutils literal notranslate"><span class="pre">upgrade_gift</span></code></a></p></td>
 <td><p>Upgrade star gift to unique.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_stars_balance.html#pyrogram.Client.get_stars_balance" title="pyrogram.Client.get_stars_balance (Python method) — Get the current Telegram Stars balance of the current account."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_stars_balance</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_stars_balance.html#pyrogram.Client.get_stars_balance" title="pyrogram.Client.get_stars_balance (Python method) — Get the current Telegram Stars balance of the current account."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_stars_balance</span></code></a></p></td>
 <td><p>Get the current Telegram Stars balance of the current account.</p></td>
 </tr>
 </tbody>

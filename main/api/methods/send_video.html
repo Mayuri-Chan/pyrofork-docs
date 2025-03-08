@@ -1582,6 +1582,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="delete_chat_history.html" class="md-nav__link">
+        <span class="md-ellipsis">delete_<wbr>chat_<wbr>history</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2450,6 +2465,12 @@ You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str
 for reply_to_message only.</p></li>
 <li><p><strong>quote_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – List of special entities that appear in quote_text, which can be specified instead of <em>parse_mode</em>.
 for reply_to_message only.</p></li>
+<li><p><strong>cover</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Video cover.
+Pass a file_id as string to attach a photo that exists on the Telegram servers,
+pass a HTTP URL as a string for Telegram to get a video from the Internet,
+pass a file path as string to upload a new photo civer that exists on your local machine, or
+pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
+<li><p><strong>start_timestamp</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Timestamp from which the video playing must start, in seconds.</p></li>
 <li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
 <li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
@@ -2488,6 +2509,9 @@ case the upload is deliberately stopped with <a class="reference internal" href=
 
 <span class="c1"># Send self-destructing video</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_video</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;video.mp4&quot;</span><span class="p">,</span> <span class="n">ttl_seconds</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Add video_cover to the video</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_video</span><span class="p">(</span><span class="n">channel_id</span><span class="p">,</span> <span class="s2">&quot;video.mp4&quot;</span><span class="p">,</span> <span class="n">video_cover</span><span class="o">=</span><span class="s2">&quot;coverku.jpg&quot;</span><span class="p">)</span>
 
 <span class="c1"># Keep track of the progress while uploading</span>
 <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">progress</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">total</span><span class="p">):</span>

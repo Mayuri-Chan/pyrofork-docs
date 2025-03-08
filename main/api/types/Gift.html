@@ -1350,6 +1350,21 @@
   
   
     <li class="md-nav__item">
+      <a href="ForumTopicDeleted.html" class="md-nav__link">
+        <span class="md-ellipsis">Forum<wbr>Topic<wbr>Deleted</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="ForumTopicReopened.html" class="md-nav__link">
         <span class="md-ellipsis">Forum<wbr>Topic<wbr>Reopened</span>
       </a>
@@ -2367,16 +2382,21 @@
 <li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique message identifier.</p></li>
 <li><p><strong>upgrade_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique message identifier.
 For unique gifts only.</p></li>
+<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Name of the star gift.
+For unique gifts only.</p></li>
 <li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Title of the star gift.
 For unique gifts only.</p></li>
-<li><p><strong>number</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Collectible number of the star gift.
+<li><p><strong>collectible_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Collectible number of the star gift.
 For unique gifts only.</p></li>
 <li><p><strong>attributes</strong> (List of <a class="reference internal" href="GiftAttribute.html#pyrogram.types.GiftAttribute" title="pyrogram.types.GiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftAttribute</span></code></a>, <em>optional</em>) – Attributes of the star gift.
 For unique gifts only.</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the star gift was received.</p></li>
-<li><p><strong>first_sale_date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the star gift was first purchased.</p></li>
-<li><p><strong>last_sale_date</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the star gift was last purchased.</p></li>
+<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the star gift was received.</p></li>
+<li><p><strong>first_sale_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the star gift was first purchased.</p></li>
+<li><p><strong>last_sale_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the star gift was last purchased.</p></li>
 <li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – User who sent the star gift.</p></li>
+<li><p><strong>owner</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Current gift owner.</p></li>
+<li><p><strong>owner_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Name of the user who received the star gift.</p></li>
+<li><p><strong>owner_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Address of the gift owner in TON blockchain.</p></li>
 <li><p><strong>price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Price of this gift in stars.</p></li>
 <li><p><strong>convert_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of stars you get if you convert this gift.</p></li>
 <li><p><strong>upgrade_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of stars you need to upgrade this gift.</p></li>
@@ -2386,7 +2406,7 @@ Returned only if is_limited is True.</p></li>
 <li><p><strong>total_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Total amount of gifts.
 Returned only if is_limited is True.</p></li>
 <li><p><strong>can_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be upgraded.</p></li>
-<li><p><strong>can_export_at</strong> (<code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <em>optional</em>) – Date when the gift can be exported via blockchain.</p></li>
+<li><p><strong>can_export_at</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift can be exported via blockchain.</p></li>
 <li><p><strong>is_limited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the number of gifts is limited.</p></li>
 <li><p><strong>is_name_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the sender’s name is hidden.</p></li>
 <li><p><strong>is_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the star gift is saved in profile.</p></li>
@@ -2397,6 +2417,9 @@ Only for the receiver of the gift.</p></li>
 <li><p><strong>is_refunded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was refunded.</p></li>
 <li><p><strong>is_transferred</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was transferred.</p></li>
 <li><p><strong>is_birthday</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is a birthday gift.</p></li>
+<li><p><strong>raw</strong> (<a class="reference internal" href="../../telegram/base/star-gift.html#pyrogram.raw.base.StarGift" title="pyrogram.raw.base.StarGift (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGift</span></code></a>, <em>optional</em>) – The raw object as received from the server.</p></li>
+<li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – A link to the gift.
+For unique gifts only.</p></li>
 </ul>
 </dd>
 </dl>
