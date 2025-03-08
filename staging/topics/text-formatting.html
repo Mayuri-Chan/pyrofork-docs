@@ -810,15 +810,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown-style" class="md-nav__link">
-    <span class="md-ellipsis">Markdown Style</span>
+  <a href="#html-style" class="md-nav__link">
+    <span class="md-ellipsis">HTML Style</span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#html-style" class="md-nav__link">
-    <span class="md-ellipsis">HTML Style</span>
+  <a href="#markdown-style" class="md-nav__link">
+    <span class="md-ellipsis">Markdown Style</span>
   </a>
   
 </li>
@@ -1194,15 +1194,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown-style" class="md-nav__link">
-    <span class="md-ellipsis">Markdown Style</span>
+  <a href="#html-style" class="md-nav__link">
+    <span class="md-ellipsis">HTML Style</span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#html-style" class="md-nav__link">
-    <span class="md-ellipsis">HTML Style</span>
+  <a href="#markdown-style" class="md-nav__link">
+    <span class="md-ellipsis">Markdown Style</span>
   </a>
   
 </li>
@@ -1243,8 +1243,8 @@ variety of decorations that can also be nested in order to combine multiple styl
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#basic-styles" id="id1">Basic Styles</a></p></li>
-<li><p><a class="reference internal" href="#markdown-style" id="id2">Markdown Style</a></p></li>
-<li><p><a class="reference internal" href="#html-style" id="id3">HTML Style</a></p></li>
+<li><p><a class="reference internal" href="#html-style" id="id2">HTML Style</a></p></li>
+<li><p><a class="reference internal" href="#markdown-style" id="id3">Markdown Style</a></p></li>
 <li><p><a class="reference internal" href="#different-styles" id="id4">Different Styles</a></p></li>
 <li><p><a class="reference internal" href="#nested-and-overlapping-entities" id="id5">Nested and Overlapping Entities</a></p></li>
 </ul>
@@ -1269,61 +1269,6 @@ list of the basic styles currently supported by Pyrofork.</p>
 </div>
 </li>
 </ul>
-<h2 id="markdown-style">Markdown Style<a class="headerlink" href="#markdown-style" title="Link to this heading">¶</a></h2>
-<div class="warning admonition">
-<p class="admonition-title">Warning</p>
-<p>The Markdown style is not recommended for complex text formatting.
-If you want to use complex text formatting such as nested entities, overlapping entities use the HTML style instead.</p>
-</div>
-<p>To strictly use this mode, pass <a class="reference internal" href="../api/enums/ParseMode.html#pyrogram.enums.ParseMode.MARKDOWN" title="pyrogram.enums.ParseMode.MARKDOWN (Python attribute) — Markdown only mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code></a> to the <em>parse_mode</em> parameter when using
-<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. Use the following syntax in your message:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>**bold**
-
-__italic__
-
---underline--
-
-~~strike~~
-
-||spoiler||
-
-[text URL](https://pyrogram.org/)
-
-[text user mention](tg://user?id=123456789)
-
-`inline fixed-width code`
-
-```
-pre-formatted
-  fixed-width
-    code block
-```
-
-&gt; Quoted text
-</code></pre></div>
-</div>
-<p><strong>Example</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
-
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
-    <span class="s2">&quot;me&quot;</span><span class="p">,</span>
-    <span class="p">(</span>
-        <span class="s2">&quot;**bold**, &quot;</span>
-        <span class="s2">&quot;__italic__, &quot;</span>
-        <span class="s2">&quot;--underline--, &quot;</span>
-        <span class="s2">&quot;~~strike~~, &quot;</span>
-        <span class="s2">&quot;||spoiler||, &quot;</span>
-        <span class="s2">&quot;[URL](https://pyrogram.org), &quot;</span>
-        <span class="s2">&quot;`code`, &quot;</span>
-        <span class="s2">&quot;```&quot;</span>
-        <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="s2">&quot;    print(i)&quot;</span>
-        <span class="s2">&quot;```&quot;</span>
-    <span class="p">),</span>
-    <span class="n">parse_mode</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">MARKDOWN</span>
-<span class="p">)</span>
-</code></pre></div>
-</div>
 <h2 id="html-style">HTML Style<a class="headerlink" href="#html-style" title="Link to this heading">¶</a></h2>
 <p>To strictly use this mode, pass <code class="xref py py-obj docutils literal notranslate"><span class="pre">HTML</span></code> to the <em>parse_mode</em> parameter when using
 <a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. The following tags are currently supported:</p>
@@ -1394,6 +1339,61 @@ snippet to quickly escape those characters:</p>
 </code></pre></div>
 </div>
 </div>
+<h2 id="markdown-style">Markdown Style<a class="headerlink" href="#markdown-style" title="Link to this heading">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>The Markdown style is not recommended for complex text formatting.
+If you want to use complex text formatting such as nested entities, overlapping entities use the HTML style instead.</p>
+</div>
+<p>To strictly use this mode, pass <a class="reference internal" href="../api/enums/ParseMode.html#pyrogram.enums.ParseMode.MARKDOWN" title="pyrogram.enums.ParseMode.MARKDOWN (Python attribute) — Markdown only mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MARKDOWN</span></code></a> to the <em>parse_mode</em> parameter when using
+<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message (Python method) — Send text messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. Use the following syntax in your message:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>**bold**
+
+__italic__
+
+--underline--
+
+~~strike~~
+
+||spoiler||
+
+[text URL](https://pyrogram.org/)
+
+[text user mention](tg://user?id=123456789)
+
+`inline fixed-width code`
+
+```
+pre-formatted
+  fixed-width
+    code block
+```
+
+&gt; Quoted text
+</code></pre></div>
+</div>
+<p><strong>Example</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
+    <span class="s2">&quot;me&quot;</span><span class="p">,</span>
+    <span class="p">(</span>
+        <span class="s2">&quot;**bold**, &quot;</span>
+        <span class="s2">&quot;__italic__, &quot;</span>
+        <span class="s2">&quot;--underline--, &quot;</span>
+        <span class="s2">&quot;~~strike~~, &quot;</span>
+        <span class="s2">&quot;||spoiler||, &quot;</span>
+        <span class="s2">&quot;[URL](https://pyrogram.org), &quot;</span>
+        <span class="s2">&quot;`code`, &quot;</span>
+        <span class="s2">&quot;```&quot;</span>
+        <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="s2">&quot;    print(i)&quot;</span>
+        <span class="s2">&quot;```&quot;</span>
+    <span class="p">),</span>
+    <span class="n">parse_mode</span><span class="o">=</span><span class="n">enums</span><span class="o">.</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">MARKDOWN</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
 <h2 id="different-styles">Different Styles<a class="headerlink" href="#different-styles" title="Link to this heading">¶</a></h2>
 <p>By default, when ignoring the <em>parse_mode</em> parameter, both Markdown and HTML styles are enabled together.
 This means you can combine together both syntaxes in the same text:</p>
@@ -1433,17 +1433,17 @@ The text will be sent as-is.</p>
 a text message with both <span class="bold-underline">bold and underline</span> styles, or a text that has both <span class="strike-italic">italic and
 strike</span> styles, and you can still combine both Markdown and HTML together.</p>
 <p>Here there are some example texts you can try sending:</p>
-<p><strong>Markdown</strong>:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">**bold,</span> <span class="pre">--underline--**</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">**bold</span> <span class="pre">__italic</span> <span class="pre">--underline</span> <span class="pre">~~strike~~--__**</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">**bold</span> <span class="pre">__and**</span> <span class="pre">italic__</span></code></p></li>
-</ul>
 <p><strong>HTML</strong>:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;b&gt;bold,</span> <span class="pre">&lt;u&gt;underline&lt;/u&gt;&lt;/b&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;b&gt;bold</span> <span class="pre">&lt;i&gt;italic</span> <span class="pre">&lt;u&gt;underline</span> <span class="pre">&lt;s&gt;strike&lt;/s&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;b&gt;bold</span> <span class="pre">&lt;i&gt;and&lt;/b&gt;</span> <span class="pre">italic&lt;/i&gt;</span></code></p></li>
+</ul>
+<p><strong>Markdown</strong>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">**bold,</span> <span class="pre">--underline--**</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">**bold</span> <span class="pre">__italic</span> <span class="pre">--underline</span> <span class="pre">~~strike~~--__**</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">**bold</span> <span class="pre">__and**</span> <span class="pre">italic__</span></code></p></li>
 </ul>
 <p><strong>Combined</strong>:</p>
 <ul class="simple">
