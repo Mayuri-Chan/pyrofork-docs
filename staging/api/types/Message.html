@@ -720,6 +720,96 @@
   
   
     <li class="md-nav__item">
+      <a href="MessageOriginChannel.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Origin<wbr>Channel</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageOriginChat.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Origin<wbr>Chat</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageOriginHiddenUser.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Origin<wbr>Hidden<wbr>User</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageOriginImport.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Origin<wbr>Import</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageOriginUser.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Origin<wbr>User</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageOrigin.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Origin</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Photo.html" class="md-nav__link">
         <span class="md-ellipsis">Photo</span>
       </a>
@@ -782,6 +872,21 @@
     <li class="md-nav__item">
       <a href="Document.html" class="md-nav__link">
         <span class="md-ellipsis">Document</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ExternalReplyInfo.html" class="md-nav__link">
+        <span class="md-ellipsis">External<wbr>Reply<wbr>Info</span>
       </a>
     </li>
   
@@ -872,6 +977,21 @@
     <li class="md-nav__item">
       <a href="Contact.html" class="md-nav__link">
         <span class="md-ellipsis">Contact</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="LinkPreviewOptions.html" class="md-nav__link">
+        <span class="md-ellipsis">Link<wbr>Preview<wbr>Options</span>
       </a>
     </li>
   
@@ -1112,6 +1232,21 @@
     <li class="md-nav__item">
       <a href="TranslatedText.html" class="md-nav__link">
         <span class="md-ellipsis">Translated<wbr>Text</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TextQuote.html" class="md-nav__link">
+        <span class="md-ellipsis">Text<wbr>Quote</span>
       </a>
     </li>
   
@@ -2388,12 +2523,7 @@ The linked channel for messages automatically forwarded to the discussion group.
 <li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Conversation the message belongs to.</p></li>
 <li><p><strong>topic</strong> (<a class="reference internal" href="ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a>, <em>optional</em>) – Topic the message belongs to.
 only returned using when client.get_messages.</p></li>
-<li><p><strong>forward_from</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – For forwarded messages, sender of the original message.</p></li>
-<li><p><strong>forward_sender_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For messages forwarded from users who have hidden their accounts, name of the user.</p></li>
-<li><p><strong>forward_from_chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – For messages forwarded from channels, information about the original channel. For messages forwarded from anonymous group administrators, information about the original supergroup.</p></li>
-<li><p><strong>forward_from_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – For messages forwarded from channels, identifier of the original message in the channel.</p></li>
-<li><p><strong>forward_signature</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For messages forwarded from channels, signature of the post author if present.</p></li>
-<li><p><strong>forward_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – For forwarded messages, date the original message was sent.</p></li>
+<li><p><strong>forward_origin</strong> (<a class="reference internal" href="MessageOrigin.html#pyrogram.types.MessageOrigin" title="pyrogram.types.MessageOrigin (Python class) — This object describes the origin of a message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageOrigin</span></code></a>, <em>optional</em>) – Information about the original message for forwarded messages.</p></li>
 <li><p><strong>is_topic_message</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the message is sent to a forum topic</p></li>
 <li><p><strong>reply_to_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier of the chat where the replied message belongs to.</p></li>
 <li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The id of the message which this message directly replied to.</p></li>
@@ -2429,8 +2559,7 @@ will contain the same text as <em>text</em>.</p></li>
 <li><p><strong>entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text.</p></li>
 <li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear
 in the caption.</p></li>
-<li><p><strong>quote_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Quoted reply text.</p></li>
-<li><p><strong>quote_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For quote text, special entities like usernames, URLs, bot commands, etc. that appear in the quote text.</p></li>
+<li><p><strong>quote</strong> (<a class="reference internal" href="TextQuote.html#pyrogram.types.TextQuote" title="pyrogram.types.TextQuote (Python class) — Describes manually or automatically chosen quote from another message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextQuote</span></code></a>, <em>optional</em>) – Chosen quote from the replied message.</p></li>
 <li><p><strong>effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier of the message effect added to the message.</p></li>
 <li><p><strong>invert_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, If the media position is inverted.
 only animation, photo, video, and webpage preview messages.</p></li>
@@ -2456,6 +2585,7 @@ will contain the same text as <em>caption</em>.</p></li>
 <li><p><strong>contact</strong> (<a class="reference internal" href="Contact.html#pyrogram.types.Contact" title="pyrogram.types.Contact (Python class) — A phone contact."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a>, <em>optional</em>) – Message is a shared contact, information about the contact.</p></li>
 <li><p><strong>location</strong> (<a class="reference internal" href="Location.html#pyrogram.types.Location" title="pyrogram.types.Location (Python class) — A point on the map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a>, <em>optional</em>) – Message is a shared location, information about the location.</p></li>
 <li><p><strong>venue</strong> (<a class="reference internal" href="Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue (Python class) — A venue."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a>, <em>optional</em>) – Message is a venue, information about the venue.</p></li>
+<li><p><strong>link_preview_options</strong> (<a class="reference internal" href="LinkPreviewOptions.html#pyrogram.types.LinkPreviewOptions" title="pyrogram.types.LinkPreviewOptions (Python class) — Describes the options used for link preview generation."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkPreviewOptions</span></code></a>, <em>optional</em>) – Options used for link preview generation for the message.</p></li>
 <li><p><strong>poll</strong> (<a class="reference internal" href="Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll (Python class) — A Poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a>, <em>optional</em>) – Message is a native poll, information about the poll.</p></li>
 <li><p><strong>dice</strong> (<a class="reference internal" href="Dice.html#pyrogram.types.Dice" title="pyrogram.types.Dice (Python class) — A dice with a random value from 1 to 6 for currently supported base emoji."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code></a>, <em>optional</em>) – A dice containing a value that is randomly generated by Telegram.</p></li>
 <li><p><strong>new_chat_members</strong> (List of <a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – New members that were added to the group or supergroup and information about them
@@ -2494,6 +2624,7 @@ The reply_to_message field will contain the game Message.</p></li>
 Messages received from other chats are incoming (<em>outgoing</em> is False).
 Messages sent from yourself to other chats are outgoing (<em>outgoing</em> is True).
 An exception is made for your own personal chat; messages sent there will be incoming.</p></li>
+<li><p><strong>external_reply</strong> (<a class="reference internal" href="ExternalReplyInfo.html#pyrogram.types.ExternalReplyInfo" title="pyrogram.types.ExternalReplyInfo (Python class) — This object contains information about a message that is being replied to, which may come from another chat or forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExternalReplyInfo</span></code></a>, <em>optional</em>) – Information about the message that is being replied to, which may come from another chat or forum topic.</p></li>
 <li><p><strong>matches</strong> (<em>List of regex Matches, *optional*</em>) – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
 the text of this message. Only applicable when using <code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters.regex</span></code>.</p></li>
 <li><p><strong>command</strong> (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – A list containing the command and its arguments, if any.
