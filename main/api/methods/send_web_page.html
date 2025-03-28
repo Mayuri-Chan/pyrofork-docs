@@ -866,7 +866,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.send_web_page" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_web_page (Python method) — Send text Web Page Preview." class="md-ellipsis">Client.<wbr>send_<wbr>web_<wbr>page</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_web_page (Python method) — Send Web Page Preview." class="md-ellipsis">Client.<wbr>send_<wbr>web_<wbr>page</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.send_web_page">
@@ -2357,7 +2357,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.send_web_page" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_web_page (Python method) — Send text Web Page Preview." class="md-ellipsis">Client.<wbr>send_<wbr>web_<wbr>page</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_web_page (Python method) — Send Web Page Preview." class="md-ellipsis">Client.<wbr>send_<wbr>web_<wbr>page</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.send_web_page">
@@ -2400,7 +2400,7 @@
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.Client.send_web_page">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_web_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.send_web_page" title="Link to this definition">¶</a></dt>
-<dd><p>Send text Web Page Preview.</p>
+<dd><p>Send Web Page Preview.</p>
 <blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
@@ -2412,8 +2412,9 @@
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
-<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Link that will be previewed.</p></li>
 <li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text of the message to be sent.</p></li>
+<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Link that will be previewed.
+If url not specified, the first URL found in the text will be used.</p></li>
 <li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
 <li><p><strong>entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
@@ -2443,7 +2444,7 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_web_page-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_web_page-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent text message is returned.</p>
+<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent message is returned.</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
