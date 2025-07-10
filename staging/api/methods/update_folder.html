@@ -2538,6 +2538,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>folder_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique folder identifier.</p></li>
 <li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Folder title.</p></li>
+<li><p><strong>title_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Entities for the folder title.</p></li>
 <li><p><strong>included_chats</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | List of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Users or chats that should added in the folder
 You can pass an ID (int), username (str) or phone number (str).
 Multiple users can be added by passing a list of IDs, usernames or phone numbers.</p></li>
@@ -2558,6 +2559,7 @@ Multiple users can be added by passing a list of IDs, usernames or phone numbers
 Pass None to leave the folder icon as default.</p></li>
 <li><p><strong>color</strong> (<a class="reference internal" href="../enums/FolderColor.html#pyrogram.enums.FolderColor" title="pyrogram.enums.FolderColor (Python class) — Folder color enumeration used in Folder."><code class="xref py py-obj docutils literal notranslate"><span class="pre">FolderColor</span></code></a>, <em>optional</em>) – Color type.
 Pass <a class="reference internal" href="../enums/FolderColor.html#pyrogram.enums.FolderColor" title="pyrogram.enums.FolderColor (Python class) — Folder color enumeration used in Folder."><code class="xref py py-obj docutils literal notranslate"><span class="pre">FolderColor</span></code></a> to set folder color.</p></li>
+<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – The parse mode to use for the title.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.update_folder-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.update_folder-returns" title="Permalink to this headline">¶</a></dt>
