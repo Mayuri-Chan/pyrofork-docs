@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.9badc98c4f78aac06.min.css?v=60124955" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.c5589c0bd87d933a4.min.css?v=eeeb54bc" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e3bab952" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -827,6 +827,81 @@
     <li class="md-nav__item">
       <a href="Thumbnail.html" class="md-nav__link">
         <span class="md-ellipsis">Thumbnail</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TodoList.html" class="md-nav__link">
+        <span class="md-ellipsis">Todo<wbr>List</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TodoTask.html" class="md-nav__link">
+        <span class="md-ellipsis">Todo<wbr>Task</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TodoTasksAdded.html" class="md-nav__link">
+        <span class="md-ellipsis">Todo<wbr>Tasks<wbr>Added</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TodoTasksCompleted.html" class="md-nav__link">
+        <span class="md-ellipsis">Todo<wbr>Tasks<wbr>Completed</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TodoTasksIncompleted.html" class="md-nav__link">
+        <span class="md-ellipsis">Todo<wbr>Tasks<wbr>Incompleted</span>
       </a>
     </li>
   
@@ -2552,6 +2627,7 @@ only animation, photo, video, and webpage preview messages.</p></li>
 <li><p><strong>document</strong> (<a class="reference internal" href="Document.html#pyrogram.types.Document" title="pyrogram.types.Document (Python class) — A generic file (as opposed to photos, voice messages, audio files, ...)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a>, <em>optional</em>) – Message is a general file, information about the file.</p></li>
 <li><p><strong>photo</strong> (<a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Message is a photo, information about the photo.</p></li>
 <li><p><strong>paid_media</strong> (<a class="reference internal" href="PaidMedia.html#pyrogram.types.PaidMedia" title="pyrogram.types.PaidMedia (Python class) — A PaidMedia."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidMedia</span></code></a>, <em>optional</em>) – Message is a paid media, information about the paid media.</p></li>
+<li><p><strong>todo</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Todo</span></code>, <em>optional</em>) – Message is a todo list, information about the todo list.</p></li>
 <li><p><strong>sticker</strong> (<a class="reference internal" href="Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a>, <em>optional</em>) – Message is a sticker, information about the sticker.</p></li>
 <li><p><strong>animation</strong> (<a class="reference internal" href="Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation (Python class) — An animation file (GIF or H.264/MPEG-4 AVC video without sound)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a>, <em>optional</em>) – Message is an animation, information about the animation.</p></li>
 <li><p><strong>game</strong> (<a class="reference internal" href="Game.html#pyrogram.types.Game" title="pyrogram.types.Game (Python class) — A game. Use BotFather to create and edit games, their short names will act as unique identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a>, <em>optional</em>) – Message is a game, information about the game.</p></li>
@@ -2640,6 +2716,11 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
 Contains a <a class="reference external" href="https://core.telegram.org/api/links#premium-giftcode-links">Telegram Premium giftcode link</a>.</p></li>
 <li><p><strong>gift</strong> (<a class="reference internal" href="Gift.html#pyrogram.types.Gift" title="pyrogram.types.Gift (Python class) — A star gift."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gift</span></code></a>, <em>optional</em>) – Service message: star gift information.</p></li>
 <li><p><strong>gifted_premium</strong> (<a class="reference internal" href="GiftedPremium.html#pyrogram.types.GiftedPremium" title="pyrogram.types.GiftedPremium (Python class) — Telegram Premium was gifted to the user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftedPremium</span></code></a>, <em>optional</em>) – Info about a gifted Telegram Premium subscription</p></li>
+<li><p><strong>screenshot_taken</strong> (<a class="reference internal" href="ScreenshotTaken.html#pyrogram.types.ScreenshotTaken" title="pyrogram.types.ScreenshotTaken (Python class) — A service message about a screenshot taken."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScreenshotTaken</span></code></a>, <em>optional</em>) – Service message: screenshot taken.</p></li>
+<li><p><strong>paid_message_price_changed</strong> (<a class="reference internal" href="PaidMessagePriceChanged.html#pyrogram.types.PaidMessagePriceChanged" title="pyrogram.types.PaidMessagePriceChanged (Python class) — A PaidMessagePriceChanged."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidMessagePriceChanged</span></code></a>, <em>optional</em>) – Service message: paid message price changed.</p></li>
+<li><p><strong>todo_tasks_added</strong> (<a class="reference internal" href="TodoTasksAdded.html#pyrogram.types.TodoTasksAdded" title="pyrogram.types.TodoTasksAdded (Python class) — A todo task added to a todo list."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TodoTasksAdded</span></code></a>, <em>optional</em>) – Service message: todo tasks added.</p></li>
+<li><p><strong>todo_tasks_completed</strong> (<a class="reference internal" href="TodoTasksCompleted.html#pyrogram.types.TodoTasksCompleted" title="pyrogram.types.TodoTasksCompleted (Python class) — One or more todo task/s has been flag as complete."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TodoTasksCompleted</span></code></a>, <em>optional</em>) – Service message: todo tasks completed.</p></li>
+<li><p><strong>todo_tasks_incompleted</strong> (<a class="reference internal" href="TodoTasksIncompleted.html#pyrogram.types.TodoTasksIncompleted" title="pyrogram.types.TodoTasksIncompleted (Python class) — One or more todo task/s has been flag as incomplete."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TodoTasksIncompleted</span></code></a>, <em>optional</em>) – Service message: todo tasks incompleted.</p></li>
 <li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a link to this message, only for groups and channels.</p></li>
 <li><p><strong>content</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – The text or caption content of the message.</p></li>
 <li><p><strong>scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Message is a scheduled message and still in schedule.</p></li>
