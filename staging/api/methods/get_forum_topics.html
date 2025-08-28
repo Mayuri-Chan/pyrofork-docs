@@ -1076,7 +1076,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.get_forum_topics" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.get_forum_topics (Python method) — Get one or more topic from a chat." class="md-ellipsis">Client.<wbr>get_<wbr>forum_<wbr>topics</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.get_forum_topics (Python method) — Get forum topics from a chat." class="md-ellipsis">Client.<wbr>get_<wbr>forum_<wbr>topics</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.get_forum_topics">
@@ -2334,7 +2334,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.get_forum_topics" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.get_forum_topics (Python method) — Get one or more topic from a chat." class="md-ellipsis">Client.<wbr>get_<wbr>forum_<wbr>topics</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.get_forum_topics (Python method) — Get forum topics from a chat." class="md-ellipsis">Client.<wbr>get_<wbr>forum_<wbr>topics</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.get_forum_topics">
@@ -2384,7 +2384,7 @@
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.Client.get_forum_topics">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">get_forum_topics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.get_forum_topics" title="Link to this definition">¶</a></dt>
-<dd><p>Get one or more topic from a chat.</p>
+<dd><p>Get forum topics from a chat.</p>
 <blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
@@ -2394,10 +2394,8 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of topics to be retrieved.</p></li>
-<li><p><strong>offset_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Date of the last message of the last found topic.</p></li>
-<li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – ID of the last message of the last found topic.</p></li>
-<li><p><strong>offset_topic</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – ID of the last found topic.</p></li>
+<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of topics to be retrieved.
+By default, no limit is applied and all topics are returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_forum_topics-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topics-returns" title="Permalink to this headline">¶</a></dt>
