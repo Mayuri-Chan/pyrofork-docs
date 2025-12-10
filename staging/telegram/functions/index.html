@@ -1143,6 +1143,7 @@
 <li class="toctree-l2"><a class="reference internal" href="account/delete-account.html">DeleteAccount</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/delete-auto-save-exceptions.html">DeleteAutoSaveExceptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/delete-business-chat-link.html">DeleteBusinessChatLink</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/delete-passkey.html">DeletePasskey</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/delete-secure-value.html">DeleteSecureValue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/disable-peer-connected-bot.html">DisablePeerConnectedBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/edit-business-chat-link.html">EditBusinessChatLink</a></li>
@@ -1171,6 +1172,7 @@
 <li class="toctree-l2"><a class="reference internal" href="account/get-notify-exceptions.html">GetNotifyExceptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-notify-settings.html">GetNotifySettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-paid-messages-revenue.html">GetPaidMessagesRevenue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/get-passkeys.html">GetPasskeys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-password.html">GetPassword</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-password-settings.html">GetPasswordSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-privacy.html">GetPrivacy</a></li>
@@ -1186,11 +1188,13 @@
 <li class="toctree-l2"><a class="reference internal" href="account/get-wall-paper.html">GetWallPaper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-wall-papers.html">GetWallPapers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/get-web-authorizations.html">GetWebAuthorizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/init-passkey-registration.html">InitPasskeyRegistration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/init-takeout-session.html">InitTakeoutSession</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/install-theme.html">InstallTheme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/install-wall-paper.html">InstallWallPaper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/invalidate-sign-in-codes.html">InvalidateSignInCodes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/register-device.html">RegisterDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/register-passkey.html">RegisterPasskey</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/reorder-usernames.html">ReorderUsernames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/report-peer.html">ReportPeer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/report-profile-photo.html">ReportProfilePhoto</a></li>
@@ -1260,10 +1264,12 @@
 <li class="toctree-l2"><a class="reference internal" href="auth/drop-temp-auth-keys.html">DropTempAuthKeys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/export-authorization.html">ExportAuthorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/export-login-token.html">ExportLoginToken</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth/finish-passkey-login.html">FinishPasskeyLogin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/import-authorization.html">ImportAuthorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/import-bot-authorization.html">ImportBotAuthorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/import-login-token.html">ImportLoginToken</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/import-web-token-authorization.html">ImportWebTokenAuthorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth/init-passkey-login.html">InitPasskeyLogin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/log-out.html">LogOut</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/recover-password.html">RecoverPassword</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/report-missing-code.html">ReportMissingCode</a></li>
@@ -1737,6 +1743,7 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-auction-acquired-gifts.html">GetStarGiftAuctionAcquiredGifts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-auction-state.html">GetStarGiftAuctionState</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-collections.html">GetStarGiftCollections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-upgrade-attributes.html">GetStarGiftUpgradeAttributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-upgrade-preview.html">GetStarGiftUpgradePreview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-withdrawal-url.html">GetStarGiftWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gifts.html">GetStarGifts</a></li>
@@ -1756,8 +1763,10 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/launch-prepaid-giveaway.html">LaunchPrepaidGiveaway</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/refund-stars-charge.html">RefundStarsCharge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/reorder-star-gift-collections.html">ReorderStarGiftCollections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/resolve-star-gift-offer.html">ResolveStarGiftOffer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/save-star-gift.html">SaveStarGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/send-payment-form.html">SendPaymentForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/send-star-gift-offer.html">SendStarGiftOffer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/send-stars-form.html">SendStarsForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/toggle-chat-star-gift-notifications.html">ToggleChatStarGiftNotifications</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/toggle-star-gifts-pinned-to-top.html">ToggleStarGiftsPinnedToTop</a></li>
