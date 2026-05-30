@@ -883,6 +883,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#postgresql-storage" class="md-nav__link">
+    <span class="md-ellipsis">Postgre<wbr>SQL Storage</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1235,6 +1242,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#postgresql-storage" class="md-nav__link">
+    <span class="md-ellipsis">Postgre<wbr>SQL Storage</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1340,6 +1354,19 @@ mongodb config as <code class="docutils literal notranslate"><span class="pre">d
 </code></pre></div>
 </div>
 <p>This storage engine is backed by MongoDB, a session will be created and saved to mongodb database. Any subsequent client
+restart will make PyroFork search for a database named that way and the session database will be automatically loaded.</p>
+<h3 id="postgresql-storage">PostgreSQL Storage<a class="headerlink" href="#postgresql-storage" title="Link to this heading">¶</a></h3>
+<p>In case you want to have persistent session but you don’t have persistent storage you can use postgresql storage by passing
+postgresql config as <code class="docutils literal notranslate"><span class="pre">dict</span></code> to the <code class="docutils literal notranslate"><span class="pre">postgresql</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client (Python class) — Pyrogram Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">database_url</span> <span class="o">=</span> <span class="s2">&quot;postgresql://user:password@host:port/database&quot;</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">postgresql</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">database_url</span><span class="o">=</span><span class="n">database_url</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
+</code></pre></div>
+</div>
+<p>This storage engine is backed by PostgreSQL, a session will be created and saved to postgresql database. Any subsequent client
 restart will make PyroFork search for a database named that way and the session database will be automatically loaded.</p>
 <h2 id="session-strings">Session Strings<a class="headerlink" href="#session-strings" title="Link to this heading">¶</a></h2>
 <p>In case you want to use an in-memory storage, but also want to keep access to the session you created, call

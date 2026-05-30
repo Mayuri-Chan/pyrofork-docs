@@ -1169,6 +1169,11 @@
 <li class="toctree-l2"><a class="reference internal" href="account/web-authorizations.html">WebAuthorizations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="aicompose/index.html">Aicompose</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aicompose/tones.html">Tones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aicompose/tones-not-modified.html">TonesNotModified</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="auth/index.html">Auth</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="auth/authorization.html">Authorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/authorization-sign-up-required.html">AuthorizationSignUpRequired</a></li>
@@ -1201,9 +1206,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bots/index.html">Bots</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bots/access-settings.html">AccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/bot-info.html">BotInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bots/exported-bot-token.html">ExportedBotToken</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/popular-app-bots.html">PopularAppBots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/preview-info.html">PreviewInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bots/requested-button.html">RequestedButton</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="channels/index.html">Channels</a><ul>
@@ -1302,6 +1310,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/chats.html">Chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/chats-slice.html">ChatsSlice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/checked-history-import-peer.html">CheckedHistoryImportPeer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/composed-message-with-ai.html">ComposedMessageWithAI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/dh-config.html">DhConfig</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/dh-config-not-modified.html">DhConfigNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/dialog-filters.html">DialogFilters</a></li>
@@ -1446,6 +1455,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stats/broadcast-stats.html">BroadcastStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/megagroup-stats.html">MegagroupStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/message-stats.html">MessageStats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stats/poll-stats.html">PollStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/public-forwards.html">PublicForwards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/story-stats.html">StoryStats</a></li>
 </ul>
@@ -1510,6 +1520,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="access-point-rule.html">AccessPointRule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="account-days-ttl.html">AccountDaysTTL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-compose-tone.html">AiComposeTone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-compose-tone-default.html">AiComposeToneDefault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-compose-tone-example.html">AiComposeToneExample</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-bot.html">AttachMenuBot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-bot-icon.html">AttachMenuBotIcon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-bot-icon-color.html">AttachMenuBotIconColor</a></li>
@@ -1609,6 +1622,7 @@
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-exported-invite-delete.html">ChannelAdminLogEventActionExportedInviteDelete</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-exported-invite-edit.html">ChannelAdminLogEventActionExportedInviteEdit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-exported-invite-revoke.html">ChannelAdminLogEventActionExportedInviteRevoke</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-participant-edit-rank.html">ChannelAdminLogEventActionParticipantEditRank</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-participant-invite.html">ChannelAdminLogEventActionParticipantInvite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-participant-join.html">ChannelAdminLogEventActionParticipantJoin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-admin-log-event-action-participant-join-by-invite.html">ChannelAdminLogEventActionParticipantJoinByInvite</a></li>
@@ -1785,6 +1799,9 @@
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-megagroup.html">InlineQueryPeerTypeMegagroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-pm.html">InlineQueryPeerTypePM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-same-bot-pm.html">InlineQueryPeerTypeSameBotPM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-default.html">InputAiComposeToneDefault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-id.html">InputAiComposeToneID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-slug.html">InputAiComposeToneSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-app-event.html">InputAppEvent</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-bot-app-id.html">InputBotAppID</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-bot-app-short-name.html">InputBotAppShortName</a></li>
@@ -1892,6 +1909,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-message-entity-mention-name.html">InputMessageEntityMentionName</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-message-id.html">InputMessageID</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-message-pinned.html">InputMessagePinned</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-message-read-metric.html">InputMessageReadMetric</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-message-reply-to.html">InputMessageReplyTo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-chat-photos.html">InputMessagesFilterChatPhotos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-contacts.html">InputMessagesFilterContacts</a></li>
@@ -1905,6 +1923,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-photo-video.html">InputMessagesFilterPhotoVideo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-photos.html">InputMessagesFilterPhotos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-pinned.html">InputMessagesFilterPinned</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-messages-filter-poll.html">InputMessagesFilterPoll</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-round-video.html">InputMessagesFilterRoundVideo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-round-voice.html">InputMessagesFilterRoundVoice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-url.html">InputMessagesFilterUrl</a></li>
@@ -1939,6 +1958,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-photo-empty.html">InputPhotoEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-photo-file-location.html">InputPhotoFileLocation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-photo-legacy-file-location.html">InputPhotoLegacyFileLocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-poll-answer.html">InputPollAnswer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-about.html">InputPrivacyKeyAbout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-added-by-phone.html">InputPrivacyKeyAddedByPhone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-birthday.html">InputPrivacyKeyBirthday</a></li>
@@ -2103,7 +2123,10 @@
 <li class="toctree-l1"><a class="reference internal" href="message-action-group-call-scheduled.html">MessageActionGroupCallScheduled</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-history-clear.html">MessageActionHistoryClear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-invite-to-group-call.html">MessageActionInviteToGroupCall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-managed-bot-created.html">MessageActionManagedBotCreated</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-new-creator-pending.html">MessageActionNewCreatorPending</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-no-forwards-request.html">MessageActionNoForwardsRequest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-no-forwards-toggle.html">MessageActionNoForwardsToggle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-paid-messages-price.html">MessageActionPaidMessagesPrice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-paid-messages-refunded.html">MessageActionPaidMessagesRefunded</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-payment-refunded.html">MessageActionPaymentRefunded</a></li>
@@ -2111,6 +2134,8 @@
 <li class="toctree-l1"><a class="reference internal" href="message-action-payment-sent-me.html">MessageActionPaymentSentMe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-phone-call.html">MessageActionPhoneCall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-pin-message.html">MessageActionPinMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-poll-append-answer.html">MessageActionPollAppendAnswer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-poll-delete-answer.html">MessageActionPollDeleteAnswer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-prize-stars.html">MessageActionPrizeStars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-requested-peer.html">MessageActionRequestedPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-requested-peer-sent-me.html">MessageActionRequestedPeerSentMe</a></li>
@@ -2143,7 +2168,11 @@
 <li class="toctree-l1"><a class="reference internal" href="message-entity-cashtag.html">MessageEntityCashtag</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-entity-code.html">MessageEntityCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-entity-custom-emoji.html">MessageEntityCustomEmoji</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-entity-diff-delete.html">MessageEntityDiffDelete</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-entity-diff-insert.html">MessageEntityDiffInsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-entity-diff-replace.html">MessageEntityDiffReplace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-entity-email.html">MessageEntityEmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-entity-formatted-date.html">MessageEntityFormattedDate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-entity-hashtag.html">MessageEntityHashtag</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-entity-italic.html">MessageEntityItalic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-entity-mention.html">MessageEntityMention</a></li>
@@ -2375,6 +2404,7 @@
 <li class="toctree-l1"><a class="reference internal" href="report-result-reported.html">ReportResultReported</a></li>
 <li class="toctree-l1"><a class="reference internal" href="request-peer-type-broadcast.html">RequestPeerTypeBroadcast</a></li>
 <li class="toctree-l1"><a class="reference internal" href="request-peer-type-chat.html">RequestPeerTypeChat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="request-peer-type-create-bot.html">RequestPeerTypeCreateBot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="request-peer-type-user.html">RequestPeerTypeUser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="requested-peer-channel.html">RequestedPeerChannel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="requested-peer-chat.html">RequestedPeerChat</a></li>
@@ -2562,6 +2592,7 @@
 <li class="toctree-l1"><a class="reference internal" href="todo-list.html">TodoList</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer.html">TopPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-bots-app.html">TopPeerCategoryBotsApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="top-peer-category-bots-guest-chat.html">TopPeerCategoryBotsGuestChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-bots-inline.html">TopPeerCategoryBotsInline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-bots-pm.html">TopPeerCategoryBotsPM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-channels.html">TopPeerCategoryChannels</a></li>
@@ -2571,6 +2602,7 @@
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-groups.html">TopPeerCategoryGroups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-peers.html">TopPeerCategoryPeers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-phone-calls.html">TopPeerCategoryPhoneCalls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-ai-compose-tones.html">UpdateAiComposeTones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-attach-menu-bots.html">UpdateAttachMenuBots</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-auto-save-settings.html">UpdateAutoSaveSettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-business-connect.html">UpdateBotBusinessConnect</a></li>
@@ -2580,6 +2612,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-bot-commands.html">UpdateBotCommands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-delete-business-message.html">UpdateBotDeleteBusinessMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-edit-business-message.html">UpdateBotEditBusinessMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-bot-guest-chat-query.html">UpdateBotGuestChatQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-inline-query.html">UpdateBotInlineQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-inline-send.html">UpdateBotInlineSend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-menu-button.html">UpdateBotMenuButton</a></li>
@@ -2609,6 +2642,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-chat-participant-add.html">UpdateChatParticipantAdd</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-chat-participant-admin.html">UpdateChatParticipantAdmin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-chat-participant-delete.html">UpdateChatParticipantDelete</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-chat-participant-rank.html">UpdateChatParticipantRank</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-chat-participants.html">UpdateChatParticipants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-chat-user-typing.html">UpdateChatUserTyping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-config.html">UpdateConfig</a></li>
@@ -2645,6 +2679,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-lang-pack.html">UpdateLangPack</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-lang-pack-too-long.html">UpdateLangPackTooLong</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-login-token.html">UpdateLoginToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-managed-bot.html">UpdateManagedBot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-message-extended-media.html">UpdateMessageExtendedMedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-message-id.html">UpdateMessageID</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-message-poll.html">UpdateMessagePoll</a></li>
@@ -2755,6 +2790,7 @@
 <li class="toctree-l1"><a class="reference internal" href="web-document.html">WebDocument</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-document-no-proxy.html">WebDocumentNoProxy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page.html">WebPage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web-page-attribute-ai-compose-tone.html">WebPageAttributeAiComposeTone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-star-gift-auction.html">WebPageAttributeStarGiftAuction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-star-gift-collection.html">WebPageAttributeStarGiftCollection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-sticker-set.html">WebPageAttributeStickerSet</a></li>
