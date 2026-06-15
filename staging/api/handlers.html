@@ -1,5 +1,6 @@
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -7,6 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+      
+      
+      
+        <link rel="prev" href="enums/StoryPrivacy.html">
+      
+      
+        <link rel="next" href="decorators.html">
       
       
       <link rel="icon" href="">
@@ -19,11 +27,13 @@
     
       
         
-        
       
       
 
+
     
+    
+      
     
     
       
@@ -32,11 +42,11 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.98b57845f223ccb1d.min.css?v=cdd4f6f3" />
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.74c816e3f9967dd6e.min.css?v=6cfe2491" />
         <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e3bab952" />
         <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -53,11 +63,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -74,7 +81,7 @@
       
     </div>
     
-      <div data-md-component="outdated" hidden>
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
         
       </div>
     
@@ -86,10 +93,11 @@
     <a href="../index.html" title="Pyrofork Documentation" class="md-header__button md-logo" aria-label="Pyrofork Documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -108,19 +116,26 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -128,28 +143,32 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -161,7 +180,7 @@
         <a href="https://github.com/Mayuri-Chan/pyrofork/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     pyrofork
@@ -182,31 +201,41 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../intro/quickstart.html" class="md-tabs__link">
+        
+  
+    
+  
+  <span>Introduction</span>
 
-
-  <li class="md-tabs__item">
-    <a href="../intro/quickstart.html" class="md-tabs__link">
-      <span class="md-ellipsis">Introduction</span>
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../start/setup.html" class="md-tabs__link">
+        
+  
+    
+  
+  <span>Getting Started</span>
 
-
-  <li class="md-tabs__item">
-    <a href="../start/setup.html" class="md-tabs__link">
-      <span class="md-ellipsis">Getting Started</span>
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
@@ -214,49 +243,69 @@
   
     
   
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="client.html" class="md-tabs__link">
+        
+  
+    
+  
+  <span>API Reference</span>
 
-
-  <li class="md-tabs__item">
-    <a href="client.html" class="md-tabs__link md-tabs__link--active">
-      <span class="md-ellipsis">API Reference</span>
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../topics/use-filters.html" class="md-tabs__link">
+        
+  
+    
+  
+  <span>Topic Guides</span>
 
-
-  <li class="md-tabs__item">
-    <a href="../topics/use-filters.html" class="md-tabs__link">
-      <span class="md-ellipsis">Topic Guides</span>
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../faq/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  <span>Meta</span>
 
-
-  <li class="md-tabs__item">
-    <a href="../faq/index.html" class="md-tabs__link">
-      <span class="md-ellipsis">Meta</span>
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../telegram/functions/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  <span>Telegram Raw API</span>
 
-
-  <li class="md-tabs__item">
-    <a href="../telegram/functions/index.html" class="md-tabs__link">
-      <span class="md-ellipsis">Telegram Raw API</span>
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
     </ul>
@@ -275,6 +324,7 @@
                   <div class="md-sidebar__inner">
                     
 
+
   
 
 
@@ -283,7 +333,7 @@
     <a href="../index.html" title="Pyrofork Documentation" class="md-nav__button md-logo" aria-label="Pyrofork Documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
     </a>
     Pyrofork Documentation
   </label>
@@ -292,7 +342,7 @@
       <a href="https://github.com/Mayuri-Chan/pyrofork/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     pyrofork
@@ -304,63 +354,98 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1">
-          <span class="md-ellipsis">Introduction</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
-        <label class="md-nav__title" for="__nav_1">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Introduction</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Introduction</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Introduction</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../intro/quickstart.html" class="md-nav__link">
-        <span class="md-ellipsis">Quick Start</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Quick Start</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../intro/install.html" class="md-nav__link">
-        <span class="md-ellipsis">Install Guide</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Install Guide</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
   
@@ -368,123 +453,194 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          <span class="md-ellipsis">Getting Started</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Getting Started</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Getting Started</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Getting Started</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../start/setup.html" class="md-nav__link">
-        <span class="md-ellipsis">Project Setup</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Project Setup</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../start/auth.html" class="md-nav__link">
-        <span class="md-ellipsis">Authorization</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Authorization</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../start/invoking.html" class="md-nav__link">
-        <span class="md-ellipsis">Invoking Methods</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Invoking Methods</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../start/updates.html" class="md-nav__link">
-        <span class="md-ellipsis">Handling Updates</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Handling Updates</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../start/errors.html" class="md-nav__link">
-        <span class="md-ellipsis">Error Handling</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Error Handling</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../start/examples/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Examples</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Examples</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
   
@@ -492,129 +648,208 @@
     
       
       
-      
-
   
   
     
   
   
+  
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      
+        
+        
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        
       
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-      
-        <label class="md-nav__link" for="__nav_3">
-          <span class="md-ellipsis">API Reference</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">API Reference</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>API Reference</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            <span>API Reference</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="client.html" class="md-nav__link">
-        <span class="md-ellipsis">Pyrofork Client</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Pyrofork Client</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="methods/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Available Methods</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Available Methods</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="types/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Available Types</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Available Types</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="bound-methods/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Bound Methods</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Bound Methods</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="enums/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Enumerations</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Enumerations</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
       
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-ellipsis">Update Handlers</span>
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Update Handlers</span>
+    
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="#" class="md-nav__link md-nav__link--active">
-        <span class="md-ellipsis">Update Handlers</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Update Handlers</span>
+    
+  </span>
+  
+
       </a>
       
         
@@ -629,20 +864,26 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">Update Handlers</span>
+      <span>Update Handlers</span>
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#index" class="md-nav__link">
-    <span class="md-ellipsis">Index</span>
+    
+    <span class="md-ellipsis">
+      <span>Index</span>
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#details" class="md-nav__link">
-    <span class="md-ellipsis">Details</span>
+    
+    <span class="md-ellipsis">
+      <span>Details</span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Details">
@@ -650,7 +891,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessConnectHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.BotBusinessConnectHandler (Python class) — The Bot Business Connection handler class. Used to handle new bot business connection. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Connect<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.BotBusinessConnectHandler (Python class) — The Bot Business Connection handler class. Used to handle new bot business connection. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Connect<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.BotBusinessConnectHandler">
@@ -658,14 +904,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessConnectHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessConnectHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -677,7 +929,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.MessageHandler">
@@ -685,14 +942,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -704,7 +967,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessMessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.BotBusinessMessageHandler (Python class) — The Bot Business Message handler class. Used to handle new bot business messages. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.BotBusinessMessageHandler (Python class) — The Bot Business Message handler class. Used to handle new bot business messages. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.BotBusinessMessageHandler">
@@ -712,14 +980,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessMessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessMessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -731,7 +1005,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedMessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.EditedMessageHandler (Python class) — It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Edited<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.EditedMessageHandler (Python class) — It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Edited<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.EditedMessageHandler">
@@ -739,14 +1018,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedMessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedMessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -758,7 +1043,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedBotBusinessMessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.EditedBotBusinessMessageHandler (Python class) — It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Edited<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.EditedBotBusinessMessageHandler (Python class) — It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Edited<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.EditedBotBusinessMessageHandler">
@@ -766,14 +1056,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedBotBusinessMessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedBotBusinessMessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -785,7 +1081,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedMessagesHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.DeletedMessagesHandler (Python class) — The deleted messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Messages<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.DeletedMessagesHandler (Python class) — The deleted messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Messages<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.DeletedMessagesHandler">
@@ -793,14 +1094,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedMessagesHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedMessagesHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -812,7 +1119,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.DeletedBotBusinessMessagesHandler (Python class) — The deleted bot business messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Bot<wbr>Business<wbr>Messages<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.DeletedBotBusinessMessagesHandler (Python class) — The deleted bot business messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Bot<wbr>Business<wbr>Messages<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.DeletedBotBusinessMessagesHandler">
@@ -820,14 +1132,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -839,7 +1157,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.CallbackQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Callback<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Callback<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.CallbackQueryHandler">
@@ -847,14 +1170,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.CallbackQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.CallbackQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -866,7 +1195,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ShippingQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ShippingQueryHandler (Python class) — The ShippingQueryHandler handler class. Used to handle shipping queries coming only from invoice buttons with flexible price." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Shipping<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ShippingQueryHandler (Python class) — The ShippingQueryHandler handler class. Used to handle shipping queries coming only from invoice buttons with flexible price."><span>pyrogram.<wbr>handlers.<wbr>Shipping<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ShippingQueryHandler">
@@ -874,14 +1208,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ShippingQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ShippingQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -893,7 +1233,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PreCheckoutQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.PreCheckoutQueryHandler (Python class) — The PreCheckoutQueryHandler handler class. Used to handle pre-checkout queries coming from buy buttons. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Pre<wbr>Checkout<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.PreCheckoutQueryHandler (Python class) — The PreCheckoutQueryHandler handler class. Used to handle pre-checkout queries coming from buy buttons. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Pre<wbr>Checkout<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.PreCheckoutQueryHandler">
@@ -901,14 +1246,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PreCheckoutQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PreCheckoutQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -920,7 +1271,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionUpdatedHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.MessageReactionUpdatedHandler (Python class) — The MessageReactionUpdated handler class. Used to handle changes in the reaction of a message." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Updated<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.MessageReactionUpdatedHandler (Python class) — The MessageReactionUpdated handler class. Used to handle changes in the reaction of a message."><span>pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Updated<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.MessageReactionUpdatedHandler">
@@ -928,14 +1284,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionUpdatedHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionUpdatedHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -947,7 +1309,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionCountUpdatedHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.MessageReactionCountUpdatedHandler (Python class) — The MessageReactionCountUpdated handler class. Used to handle changes in the anonymous reaction of a message." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Count<wbr>Updated<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.MessageReactionCountUpdatedHandler (Python class) — The MessageReactionCountUpdated handler class. Used to handle changes in the anonymous reaction of a message."><span>pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Count<wbr>Updated<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.MessageReactionCountUpdatedHandler">
@@ -955,14 +1322,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionCountUpdatedHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionCountUpdatedHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -974,7 +1347,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.InlineQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.InlineQueryHandler (Python class) — The InlineQuery handler class. Used to handle inline queries. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Inline<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.InlineQueryHandler (Python class) — The InlineQuery handler class. Used to handle inline queries. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Inline<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.InlineQueryHandler">
@@ -982,14 +1360,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.InlineQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.InlineQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1001,7 +1385,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChosenInlineResultHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ChosenInlineResultHandler (Python class) — The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Chosen<wbr>Inline<wbr>Result<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ChosenInlineResultHandler (Python class) — The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Chosen<wbr>Inline<wbr>Result<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ChosenInlineResultHandler">
@@ -1009,14 +1398,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChosenInlineResultHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChosenInlineResultHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1028,7 +1423,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChatMemberUpdatedHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ChatMemberUpdatedHandler (Python class) — The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member. It is intended to be used with add_handler()." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Chat<wbr>Member<wbr>Updated<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ChatMemberUpdatedHandler (Python class) — The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member. It is intended to be used with add_handler()."><span>pyrogram.<wbr>handlers.<wbr>Chat<wbr>Member<wbr>Updated<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ChatMemberUpdatedHandler">
@@ -1036,14 +1436,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChatMemberUpdatedHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChatMemberUpdatedHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1055,7 +1461,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.UserStatusHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.UserStatusHandler (Python class) — The UserStatus handler class. Used to handle user status updates (user going online or offline). It is intended to be used with add_handler()." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>User<wbr>Status<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.UserStatusHandler (Python class) — The UserStatus handler class. Used to handle user status updates (user going online or offline). It is intended to be used with add_handler()."><span>pyrogram.<wbr>handlers.<wbr>User<wbr>Status<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.UserStatusHandler">
@@ -1063,14 +1474,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.UserStatusHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.UserStatusHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1082,7 +1499,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.StoryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.StoryHandler (Python class) — The Story handler class. Used to handle new stories. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Story<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.StoryHandler (Python class) — The Story handler class. Used to handle new stories. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Story<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.StoryHandler">
@@ -1090,14 +1512,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.StoryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.StoryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1109,7 +1537,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PollHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.PollHandler (Python class) — The Poll handler class. Used to handle polls updates." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Poll<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.PollHandler (Python class) — The Poll handler class. Used to handle polls updates."><span>pyrogram.<wbr>handlers.<wbr>Poll<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.PollHandler">
@@ -1117,14 +1550,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PollHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PollHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1136,7 +1575,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DisconnectHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.DisconnectHandler (Python class) — The Disconnect handler class. Used to handle disconnections. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Disconnect<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.DisconnectHandler (Python class) — The Disconnect handler class. Used to handle disconnections. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Disconnect<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.DisconnectHandler">
@@ -1144,14 +1588,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DisconnectHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DisconnectHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1163,7 +1613,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.RawUpdateHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.RawUpdateHandler (Python class) — The Raw Update handler class. Used to handle raw updates. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Raw<wbr>Update<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.RawUpdateHandler (Python class) — The Raw Update handler class. Used to handle raw updates. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Raw<wbr>Update<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.RawUpdateHandler">
@@ -1171,14 +1626,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.RawUpdateHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.RawUpdateHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1190,7 +1651,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ErrorHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ErrorHandler (Python class) — The Error handler class. Used to handle errors. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Error<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ErrorHandler (Python class) — The Error handler class. Used to handle errors. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Error<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ErrorHandler">
@@ -1198,14 +1664,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ErrorHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ErrorHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1227,55 +1699,83 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="decorators.html" class="md-nav__link">
-        <span class="md-ellipsis">Decorators</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Decorators</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="errors/index.html" class="md-nav__link">
-        <span class="md-ellipsis">RPC Errors</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>RPC Errors</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="filters.html" class="md-nav__link">
-        <span class="md-ellipsis">Update Filters</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Update Filters</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
   
@@ -1283,288 +1783,458 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          <span class="md-ellipsis">Topic Guides</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Topic Guides" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Topic Guides</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Topic Guides</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Topic Guides</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/use-filters.html" class="md-nav__link">
-        <span class="md-ellipsis">Using Filters</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Using Filters</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/create-filters.html" class="md-nav__link">
-        <span class="md-ellipsis">Creating Filters</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Creating Filters</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/more-on-updates.html" class="md-nav__link">
-        <span class="md-ellipsis">More on Updates</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>More on Updates</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/client-settings.html" class="md-nav__link">
-        <span class="md-ellipsis">Client Settings</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Client Settings</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/speedups.html" class="md-nav__link">
-        <span class="md-ellipsis">Speedups</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Speedups</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/text-formatting.html" class="md-nav__link">
-        <span class="md-ellipsis">Text Formatting</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Text Formatting</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/synchronous.html" class="md-nav__link">
-        <span class="md-ellipsis">Synchronous Usage</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Synchronous Usage</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/smart-plugins.html" class="md-nav__link">
-        <span class="md-ellipsis">Smart Plugins</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Smart Plugins</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/storage-engines.html" class="md-nav__link">
-        <span class="md-ellipsis">Storage Engines</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Storage Engines</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/serializing.html" class="md-nav__link">
-        <span class="md-ellipsis">Object Serialization</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Object Serialization</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/proxy.html" class="md-nav__link">
-        <span class="md-ellipsis">Proxy Settings</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Proxy Settings</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/scheduling.html" class="md-nav__link">
-        <span class="md-ellipsis">Scheduling Tasks</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Scheduling Tasks</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/mtproto-vs-botapi.html" class="md-nav__link">
-        <span class="md-ellipsis">MTProto vs.<wbr> Bot API</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>MTProto vs.<wbr> Bot API</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/debugging.html" class="md-nav__link">
-        <span class="md-ellipsis">Debugging</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Debugging</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/test-servers.html" class="md-nav__link">
-        <span class="md-ellipsis">Test Servers</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Test Servers</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/advanced-usage.html" class="md-nav__link">
-        <span class="md-ellipsis">Advanced Usage</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Advanced Usage</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../topics/voice-calls.html" class="md-nav__link">
-        <span class="md-ellipsis">Voice Calls</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Voice Calls</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
   
@@ -1572,63 +2242,98 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          <span class="md-ellipsis">Meta</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Meta" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Meta</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Meta</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Meta</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../faq/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Frequently Asked Questions</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Frequently Asked Questions</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../support.html" class="md-nav__link">
-        <span class="md-ellipsis">Support Pyrofork</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Support Pyrofork</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
   
@@ -1636,78 +2341,122 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          <span class="md-ellipsis">Telegram Raw API</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Telegram Raw API" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Telegram Raw API</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    <span>Telegram Raw API</span>
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            <span>Telegram Raw API</span>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../telegram/functions/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Raw Functions</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Raw Functions</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../telegram/types/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Raw Types</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Raw Types</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
   
     <li class="md-nav__item">
       <a href="../telegram/base/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Raw Base</span>
+        
+  
+  
+  <span class="md-ellipsis">
+    <span>Raw Base</span>
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
   
@@ -1734,20 +2483,26 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">Update Handlers</span>
+      <span>Update Handlers</span>
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#index" class="md-nav__link">
-    <span class="md-ellipsis">Index</span>
+    
+    <span class="md-ellipsis">
+      <span>Index</span>
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#details" class="md-nav__link">
-    <span class="md-ellipsis">Details</span>
+    
+    <span class="md-ellipsis">
+      <span>Details</span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Details">
@@ -1755,7 +2510,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessConnectHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.BotBusinessConnectHandler (Python class) — The Bot Business Connection handler class. Used to handle new bot business connection. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Connect<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.BotBusinessConnectHandler (Python class) — The Bot Business Connection handler class. Used to handle new bot business connection. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Connect<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.BotBusinessConnectHandler">
@@ -1763,14 +2523,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessConnectHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessConnectHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1782,7 +2548,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.MessageHandler">
@@ -1790,14 +2561,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1809,7 +2586,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessMessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.BotBusinessMessageHandler (Python class) — The Bot Business Message handler class. Used to handle new bot business messages. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.BotBusinessMessageHandler (Python class) — The Bot Business Message handler class. Used to handle new bot business messages. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.BotBusinessMessageHandler">
@@ -1817,14 +2599,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessMessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.BotBusinessMessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1836,7 +2624,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedMessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.EditedMessageHandler (Python class) — It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Edited<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.EditedMessageHandler (Python class) — It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Edited<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.EditedMessageHandler">
@@ -1844,14 +2637,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedMessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedMessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1863,7 +2662,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedBotBusinessMessageHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.EditedBotBusinessMessageHandler (Python class) — It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Edited<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.EditedBotBusinessMessageHandler (Python class) — It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Edited<wbr>Bot<wbr>Business<wbr>Message<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.EditedBotBusinessMessageHandler">
@@ -1871,14 +2675,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedBotBusinessMessageHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.EditedBotBusinessMessageHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1890,7 +2700,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedMessagesHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.DeletedMessagesHandler (Python class) — The deleted messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Messages<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.DeletedMessagesHandler (Python class) — The deleted messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Messages<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.DeletedMessagesHandler">
@@ -1898,14 +2713,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedMessagesHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedMessagesHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1917,7 +2738,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.DeletedBotBusinessMessagesHandler (Python class) — The deleted bot business messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Bot<wbr>Business<wbr>Messages<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.DeletedBotBusinessMessagesHandler (Python class) — The deleted bot business messages handler class. Used to handle deleted messages coming from any chat (private, group, channel). It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Deleted<wbr>Bot<wbr>Business<wbr>Messages<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.DeletedBotBusinessMessagesHandler">
@@ -1925,14 +2751,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1944,7 +2776,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.CallbackQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Callback<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Callback<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.CallbackQueryHandler">
@@ -1952,14 +2789,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.CallbackQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.CallbackQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1971,7 +2814,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ShippingQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ShippingQueryHandler (Python class) — The ShippingQueryHandler handler class. Used to handle shipping queries coming only from invoice buttons with flexible price." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Shipping<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ShippingQueryHandler (Python class) — The ShippingQueryHandler handler class. Used to handle shipping queries coming only from invoice buttons with flexible price."><span>pyrogram.<wbr>handlers.<wbr>Shipping<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ShippingQueryHandler">
@@ -1979,14 +2827,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ShippingQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ShippingQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -1998,7 +2852,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PreCheckoutQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.PreCheckoutQueryHandler (Python class) — The PreCheckoutQueryHandler handler class. Used to handle pre-checkout queries coming from buy buttons. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Pre<wbr>Checkout<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.PreCheckoutQueryHandler (Python class) — The PreCheckoutQueryHandler handler class. Used to handle pre-checkout queries coming from buy buttons. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Pre<wbr>Checkout<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.PreCheckoutQueryHandler">
@@ -2006,14 +2865,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PreCheckoutQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PreCheckoutQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2025,7 +2890,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionUpdatedHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.MessageReactionUpdatedHandler (Python class) — The MessageReactionUpdated handler class. Used to handle changes in the reaction of a message." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Updated<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.MessageReactionUpdatedHandler (Python class) — The MessageReactionUpdated handler class. Used to handle changes in the reaction of a message."><span>pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Updated<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.MessageReactionUpdatedHandler">
@@ -2033,14 +2903,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionUpdatedHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionUpdatedHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2052,7 +2928,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionCountUpdatedHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.MessageReactionCountUpdatedHandler (Python class) — The MessageReactionCountUpdated handler class. Used to handle changes in the anonymous reaction of a message." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Count<wbr>Updated<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.MessageReactionCountUpdatedHandler (Python class) — The MessageReactionCountUpdated handler class. Used to handle changes in the anonymous reaction of a message."><span>pyrogram.<wbr>handlers.<wbr>Message<wbr>Reaction<wbr>Count<wbr>Updated<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.MessageReactionCountUpdatedHandler">
@@ -2060,14 +2941,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionCountUpdatedHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.MessageReactionCountUpdatedHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2079,7 +2966,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.InlineQueryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.InlineQueryHandler (Python class) — The InlineQuery handler class. Used to handle inline queries. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Inline<wbr>Query<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.InlineQueryHandler (Python class) — The InlineQuery handler class. Used to handle inline queries. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Inline<wbr>Query<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.InlineQueryHandler">
@@ -2087,14 +2979,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.InlineQueryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.InlineQueryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2106,7 +3004,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChosenInlineResultHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ChosenInlineResultHandler (Python class) — The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Chosen<wbr>Inline<wbr>Result<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ChosenInlineResultHandler (Python class) — The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Chosen<wbr>Inline<wbr>Result<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ChosenInlineResultHandler">
@@ -2114,14 +3017,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChosenInlineResultHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChosenInlineResultHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2133,7 +3042,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChatMemberUpdatedHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ChatMemberUpdatedHandler (Python class) — The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member. It is intended to be used with add_handler()." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Chat<wbr>Member<wbr>Updated<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ChatMemberUpdatedHandler (Python class) — The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member. It is intended to be used with add_handler()."><span>pyrogram.<wbr>handlers.<wbr>Chat<wbr>Member<wbr>Updated<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ChatMemberUpdatedHandler">
@@ -2141,14 +3055,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChatMemberUpdatedHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ChatMemberUpdatedHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2160,7 +3080,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.UserStatusHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.UserStatusHandler (Python class) — The UserStatus handler class. Used to handle user status updates (user going online or offline). It is intended to be used with add_handler()." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>User<wbr>Status<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.UserStatusHandler (Python class) — The UserStatus handler class. Used to handle user status updates (user going online or offline). It is intended to be used with add_handler()."><span>pyrogram.<wbr>handlers.<wbr>User<wbr>Status<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.UserStatusHandler">
@@ -2168,14 +3093,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.UserStatusHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.UserStatusHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2187,7 +3118,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.StoryHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.StoryHandler (Python class) — The Story handler class. Used to handle new stories. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Story<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.StoryHandler (Python class) — The Story handler class. Used to handle new stories. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Story<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.StoryHandler">
@@ -2195,14 +3131,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.StoryHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.StoryHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2214,7 +3156,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PollHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.PollHandler (Python class) — The Poll handler class. Used to handle polls updates." class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Poll<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.PollHandler (Python class) — The Poll handler class. Used to handle polls updates."><span>pyrogram.<wbr>handlers.<wbr>Poll<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.PollHandler">
@@ -2222,14 +3169,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PollHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.PollHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2241,7 +3194,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DisconnectHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.DisconnectHandler (Python class) — The Disconnect handler class. Used to handle disconnections. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Disconnect<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.DisconnectHandler (Python class) — The Disconnect handler class. Used to handle disconnections. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Disconnect<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.DisconnectHandler">
@@ -2249,14 +3207,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DisconnectHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.DisconnectHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2268,7 +3232,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.RawUpdateHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.RawUpdateHandler (Python class) — The Raw Update handler class. Used to handle raw updates. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Raw<wbr>Update<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.RawUpdateHandler (Python class) — The Raw Update handler class. Used to handle raw updates. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Raw<wbr>Update<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.RawUpdateHandler">
@@ -2276,14 +3245,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.RawUpdateHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.RawUpdateHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2295,7 +3270,12 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ErrorHandler" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.handlers.ErrorHandler (Python class) — The Error handler class. Used to handle errors. It is intended to be used with add_handler()" class="md-ellipsis">pyrogram.<wbr>handlers.<wbr>Error<wbr>Handler</span>
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.handlers.ErrorHandler (Python class) — The Error handler class. Used to handle errors. It is intended to be used with add_handler()"><span>pyrogram.<wbr>handlers.<wbr>Error<wbr>Handler</span></span>
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="pyrogram.handlers.ErrorHandler">
@@ -2303,14 +3283,20 @@
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ErrorHandler-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#pyrogram.handlers.ErrorHandler-other-parameters" class="md-nav__link">
-    <span class="md-ellipsis">Other Parameters</span>
+    
+    <span class="md-ellipsis">
+      <span>Other Parameters</span>
+    </span>
   </a>
   
 </li>
@@ -2336,6 +3322,8 @@
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset" role="main">
+                
+                
                   
 
 
@@ -2398,7 +3386,7 @@ For a much more convenient way of registering callback functions have a look at 
 <h2 id="details">Details<a class="headerlink" href="#details" title="Link to this heading">¶</a></h2>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.BotBusinessConnectHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">BotBusinessConnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.BotBusinessConnectHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">BotBusinessConnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.BotBusinessConnectHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Bot Business Connection handler class. Used to handle new bot business connection.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2423,7 +3411,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.MessageHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Message handler class. Used to handle new messages.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2448,7 +3436,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.BotBusinessMessageHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">BotBusinessMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.BotBusinessMessageHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">BotBusinessMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.BotBusinessMessageHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Bot Business Message handler class. Used to handle new bot business messages.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2473,7 +3461,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.EditedMessageHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedMessageHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedMessageHandler" title="Link to this definition">¶</a></dt>
 <dd><dl class="simple">
 <dt>The EditedMessage handler class. Used to handle edited messages.</dt><dd><p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 </dd>
@@ -2500,7 +3488,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.EditedBotBusinessMessageHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedBotBusinessMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedBotBusinessMessageHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">EditedBotBusinessMessageHandler</span></span><a class="headerlink" href="#pyrogram.handlers.EditedBotBusinessMessageHandler" title="Link to this definition">¶</a></dt>
 <dd><dl class="simple">
 <dt>The EditedBotBusinessMessageHandler handler class. Used to handle edited bot business messages.</dt><dd><p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 </dd>
@@ -2527,7 +3515,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.DeletedMessagesHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedMessagesHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedMessagesHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The deleted messages handler class. Used to handle deleted messages coming from any chat
 (private, group, channel). It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2552,7 +3540,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.DeletedBotBusinessMessagesHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedBotBusinessMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DeletedBotBusinessMessagesHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DeletedBotBusinessMessagesHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The deleted bot business messages handler class. Used to handle deleted messages coming from any chat
 (private, group, channel). It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2577,7 +3565,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.CallbackQueryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">CallbackQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.CallbackQueryHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">CallbackQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.CallbackQueryHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The CallbackQuery handler class. Used to handle callback queries coming from inline buttons.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2602,7 +3590,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.ShippingQueryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ShippingQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ShippingQueryHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ShippingQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ShippingQueryHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The ShippingQueryHandler handler class. Used to handle shipping queries coming only from invoice buttons with flexible price.</p>
 <p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2627,7 +3615,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.PreCheckoutQueryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PreCheckoutQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PreCheckoutQueryHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PreCheckoutQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PreCheckoutQueryHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The PreCheckoutQueryHandler handler class. Used to handle pre-checkout queries coming from buy buttons.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2652,7 +3640,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.MessageReactionUpdatedHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageReactionUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageReactionUpdatedHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageReactionUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageReactionUpdatedHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The MessageReactionUpdated handler class.
 Used to handle changes in the reaction of a message.</p>
 <p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
@@ -2678,7 +3666,7 @@ description).</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.MessageReactionCountUpdatedHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageReactionCountUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageReactionCountUpdatedHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">MessageReactionCountUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.MessageReactionCountUpdatedHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The MessageReactionCountUpdated handler class.
 Used to handle changes in the anonymous reaction of a message.</p>
 <p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
@@ -2704,7 +3692,7 @@ description).</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.InlineQueryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">InlineQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.InlineQueryHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">InlineQueryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.InlineQueryHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The InlineQuery handler class. Used to handle inline queries.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2729,7 +3717,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.ChosenInlineResultHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChosenInlineResultHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChosenInlineResultHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChosenInlineResultHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChosenInlineResultHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The ChosenInlineResultHandler handler class. Used to handle chosen inline results coming from inline queries.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2755,7 +3743,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.ChatMemberUpdatedHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChatMemberUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChatMemberUpdatedHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ChatMemberUpdatedHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ChatMemberUpdatedHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The ChatMemberUpdated handler class. Used to handle changes in the status of a chat member.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2780,7 +3768,7 @@ description).</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.UserStatusHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">UserStatusHandler</span></span><a class="headerlink" href="#pyrogram.handlers.UserStatusHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">UserStatusHandler</span></span><a class="headerlink" href="#pyrogram.handlers.UserStatusHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The UserStatus handler class. Used to handle user status updates (user going online or offline).
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a>.</p>
 <p>For a nicer way to register this handler, have a look at the <a class="reference internal" href="decorators.html#pyrogram.Client.on_user_status" title="pyrogram.Client.on_user_status (Python function) — Decorator for handling user status updates. This does the same thing as add_handler() using the UserStatusHandler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_user_status()</span></code></a> decorator.</p>
@@ -2803,7 +3791,7 @@ as positional arguments (look at the section below for a detailed description).<
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.StoryHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">StoryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.StoryHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">StoryHandler</span></span><a class="headerlink" href="#pyrogram.handlers.StoryHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Story handler class. Used to handle new stories.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2828,7 +3816,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.PollHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PollHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PollHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">PollHandler</span></span><a class="headerlink" href="#pyrogram.handlers.PollHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Poll handler class. Used to handle polls updates.</p>
 <p>It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2853,7 +3841,7 @@ in your callback function.</p></li>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.DisconnectHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DisconnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DisconnectHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">DisconnectHandler</span></span><a class="headerlink" href="#pyrogram.handlers.DisconnectHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Disconnect handler class. Used to handle disconnections. It is intended to be used with
 <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2872,7 +3860,7 @@ is established.</p>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.RawUpdateHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">RawUpdateHandler</span></span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">RawUpdateHandler</span></span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Raw Update handler class. Used to handle raw updates. It is intended to be used with
 <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2917,7 +3905,7 @@ They mean you have been blocked by the user or banned from the group/channel.</p
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.handlers.ErrorHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ErrorHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ErrorHandler" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pyrogram.handlers.</span></span><span class="sig-name descname"><span class="pre">ErrorHandler</span></span><a class="headerlink" href="#pyrogram.handlers.ErrorHandler" title="Link to this definition">¶</a></dt>
 <dd><p>The Error handler class. Used to handle errors.
 It is intended to be used with <a class="reference internal" href="methods/add_handler.html#pyrogram.Client.add_handler" title="pyrogram.Client.add_handler (Python method) — Register an update handler."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_handler()</span></code></a></p>
 <p>For a nicer way to register this handler, have a look at the
@@ -2947,59 +3935,32 @@ in your callback function.</p></li>
 
 
 
+  
+  
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </a>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="enums/StoryPrivacy.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: StoryPrivacy" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              StoryPrivacy
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="decorators.html" class="md-footer__link md-footer__link--next" aria-label="Next: Decorators" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Decorators
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   
   
@@ -3010,7 +3971,7 @@ in your callback function.</p></li>
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    8.1.3.
+    9.1.0.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -3026,10 +3987,11 @@ in your callback function.</p></li>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": ["latest"], "title": "main", "version": "main"}, {"aliases": [], "title": "staging", "version": "staging"}], "versionPath": null}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": ["latest"], "title": "main", "version": "main"}, {"aliases": [], "title": "staging", "version": "staging"}], "versionPath": null}}</script>
     
       
-        <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="../_static/copybutton.js?v=a56c686a"></script>
     
